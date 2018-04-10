@@ -58,7 +58,7 @@ a{text-decoration:none;}
 }
 /* header */
 .l_header{
-    height: 11.6rem;
+    height: 9.6rem;
 }
 .l_header .navbar{
     margin-bottom: 0;
@@ -94,7 +94,7 @@ a{text-decoration:none;}
 }
 .l_header .header-swiper-container{
     position: relative;
-    top: -11.6rem;
+    top: -9.6rem;
 }
 .l_header .header-swiper-container .swiper-slide img{
     width: 100%;

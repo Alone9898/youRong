@@ -1,5 +1,5 @@
 var vm = new Vue({
-        el: '#pervip',
+        el: '#aa',
         data: {
             isShow:false
         },
@@ -12,10 +12,6 @@ var vm = new Vue({
             },
         },
         mounted:function(){
-            $('.siteNav').css('display', 'block');
-            $(".J_SiteNav").append(siteNav);
-            $(".l_header").append(l_header);
-            $(".footer").append(footer);
             var mySwiper = new Swiper('.header-swiper-container',{
                 pagination : '.header-pagination',
                 loop : true,

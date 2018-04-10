@@ -10,12 +10,45 @@
     <script type="text/javascript" src="../../common/js/vue.js"></script>
 </head>
 <body>
-<div class="J_SiteNav"></div>
+<div class="J_SiteNav" id="aa"></div>
 <div class="l_header"></div>
-<div class="footer"></div>
+<div class="footer" style="margin-top: 25%"></div>
 </body>
 <script type="text/javascript"  src="../../common/js/puclic_tpl.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
 <script type="text/javascript" src="../../common/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="../../common/js/public.js"></script>
+<script>
+</script>
+<!--<script type="text/javascript" src="../../common/js/public.js"></script>-->
+<script>
+        var vm = new Vue({
+            el: '#aa',
+            data: {
+                isShow:false
+            },
+            created: function () {
+
+            },
+            methods: {
+                modal_tip:function() {
+                    this.isShow=true;
+                },
+                modal_close:function(){
+                    this.isShow=false;
+                }
+            },
+            mounted:function(){
+                var mySwiper = new Swiper('.header-swiper-container',{
+                    pagination : '.header-pagination',
+                    loop : true,
+                    speed:300,
+                    keyboardControl : true,
+                    mousewheelControl : true,//鼠标控制
+                    freeMode : false//切换效果
+                    /*  autoplay : 5000,*/
+                });
+                this.isShow=false;
+            }
+        });
+</script>
 </html>
