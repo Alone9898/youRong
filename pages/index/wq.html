@@ -10,12 +10,21 @@
     <script type="text/javascript" src="../../common/js/vue.js"></script>
 </head>
 <body>
-<div class="J_SiteNav"></div>
-<div class="l_header"></div>
-<div class="footer"></div>
+<div id="example">
+    <sitenav></sitenav>
+    <l_header></l_header>
+    <footer-model></footer-model>
+</div>
 </body>
-<script type="text/javascript"  src="../../common/js/puclic_tpl.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
 <script type="text/javascript" src="../../common/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../../common/js/public.js"></script>
+<script>
+    new Vue({
+        el: '#example',
+        data:{
+
+        }
+    })
+</script>
 </html>

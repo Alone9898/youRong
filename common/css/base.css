@@ -50,6 +50,18 @@ a{text-decoration:none;}
 .siteNav_right{
     text-align: right;
 }
+.siteNav .weixin{
+    cursor: pointer;
+}
+.siteNav .weixin_img{
+    width: 150px;
+    height: 150px;
+    padding: 15px;
+    position: absolute;
+    z-index: 999;
+    top: 22px;
+    right: 0;
+}
 .siteNav .siteNav_welcome a:nth-child(1){
     color: #00dfb9;
 }
@@ -58,7 +70,7 @@ a{text-decoration:none;}
 }
 /* header */
 .l_header{
-    height: 11.6rem;
+    height: 9.6rem;
 }
 .l_header .navbar{
     margin-bottom: 0;
@@ -94,7 +106,7 @@ a{text-decoration:none;}
 }
 .l_header .header-swiper-container{
     position: relative;
-    top: -11.6rem;
+    top: -9.6rem;
 }
 .l_header .header-swiper-container .swiper-slide img{
     width: 100%;

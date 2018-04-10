@@ -2,7 +2,7 @@
  * Created by Administrator on 2018/4/8.
  */
 var siteNav='\
-            <div class="container siteNav" id="pervip">\
+            <div class="container siteNav">\
                     <div class="row" >\
                         <div class="col-xs-2 col-lg-1 place">\
                             <div class="dropdown">\
