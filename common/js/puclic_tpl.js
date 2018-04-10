@@ -95,18 +95,3 @@ var  footer='\
                     </div>\
                 </div>\
                 </div>';
- window.onload=function(){
-                $(".J_SiteNav").append(siteNav);
-                $(".l_header").append(l_header);
-                $(".footer").append(footer);
-                $('.siteNav').css('display', 'block');
-                 var mySwiper = new Swiper('.header-swiper-container',{
-                     pagination : '.header-pagination',
-                     loop : true,
-                     speed:300,
-                     keyboardControl : true,
-                     mousewheelControl : true,//鼠标控制
-                     freeMode : false//切换效果
-                     /*  autoplay : 5000,*/
-                 });
-            };

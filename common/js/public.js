@@ -23,7 +23,8 @@ Vue.component('sitenav', {
                  <div class="col-xs-7 col-lg-7 siteNav_welcome">欢迎来到装修加速平台，请 <a href="#" @click="modal_tip()">登录</a> | <a href="#">注册</a></div>\
                  <div class="col-xs-3 col-lg-4 siteNav_welcome siteNav_right">\
                  <span>搜索</span>\
-                 <span>微信公众号</span>\
+                 <span class="weixin" @mouseover="wei_img(1)" @mouseout="wei_img(2)">微信公众号</span>\
+                 <div class="weixin_img" v-show="weixin"><img src="../../common/img/icon/weixin.jpg" width="120" height="120"></div>\
                  </div>\
                  </div>\
                  <div class="modal_tip" v-show="isShow">\
@@ -45,7 +46,8 @@ Vue.component('sitenav', {
           </div>',
     data: function () {
         return {
-            isShow:false
+            isShow:false,
+            weixin:false
         }
     },
     methods: {
@@ -54,6 +56,13 @@ Vue.component('sitenav', {
         },
         modal_close:function(){
             this.isShow=false;
+        },
+        wei_img:function(item){
+            if(item==1){
+                this.weixin=true;
+            }else {
+                this.weixin=false;
+            }
         }
     },
     mounted:function(){
@@ -93,8 +102,8 @@ Vue.component('l_header', {
                     <div class="swiper-container header-swiper-container">\
                             <div class="swiper-wrapper">\
                                 <div class="swiper-slide"><img src="../../common/img/icon/banner1.jpg"></div>\
-                                <div class="swiper-slide">Slide 2</div>\
-                                <div class="swiper-slide" >Slide 3</div>\
+                                <div class="swiper-slide"><img src="../../common/img/icon/banner1.jpg"></div>\
+                                <div class="swiper-slide" ><img src="../../common/img/icon/banner1.jpg"></div>\
                             </div>\
                             <div class="swiper-pagination header-pagination"></div>\
                         </div>\
@@ -106,8 +115,8 @@ Vue.component('l_header', {
                     speed:300,
                     keyboardControl : true,
                     mousewheelControl : true,//鼠标控制
-                    freeMode : false//切换效果
-                    /*  autoplay : 5000,*/
+                    freeMode : false,//切换效果
+                      autoplay : 5000,
                 });
             }
 });
