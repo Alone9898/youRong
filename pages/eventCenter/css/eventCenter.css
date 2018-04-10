@@ -1,0 +1,79 @@
+body {
+  font-size: 62.5%;
+  font-family: '微软雅黑';
+}
+ul li {
+  list-style: none;
+}
+.clearfix:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+.banner {
+  width: 100%;
+  height: 450px;
+  position: relative;
+}
+/*************************************************/
+.zhead {
+  height: 54px;
+  width: 100%;
+  background: #333333;
+}
+.nav-tabs {
+  border-bottom: transparent;
+}
+.nav-tabs > li.active,
+.nav-tabs > li.active:focus,
+.nav-tabs > li.active:hover {
+  background-color: #01dfba;
+  border: transparent;
+  color: #f5f5f5;
+}
+.nav-tabs > li > a {
+  border-radius: 0;
+  color: #f5f5f5;
+  line-height: 34px;
+  padding: 10px 40px;
+}
+.nav-tabs > li > a:hover {
+  background-color: transparent;
+  border: transparent;
+}
+.nav-tabs > li:hover {
+  background-color: #01dfba;
+  border: transparent;
+  transition: 0.3s;
+}
+.pingxing {
+  transform: skewX(45deg);
+  position: relative;
+}
+.pingxing a {
+  transform: skewX(-45deg) !important;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  color: #f5f5f5;
+  cursor: default;
+  background-color: transparent;
+  border: transparent;
+  border-bottom-color: transparent;
+}
+.rightxinfo {
+  line-height: 54px;
+  color: #f5f5f5;
+}
+.rightxinfo b {
+  font-size: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .banner {
+    height: 220px;
+  }
+}

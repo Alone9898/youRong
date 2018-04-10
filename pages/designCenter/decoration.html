@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>精装工选</title>
+    <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../common/css/swiper.min.css">
+    <link rel="stylesheet" href="css/designCommon.css">
+</head>
+<body>
+<div id="app" v-cloak>
+	    <div class="title">
+	    	<div class="swiper-container-nav">
+		        <div class="myh swiper-wrapper clearfix">
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight" @click="searchcli($event)">精装工选</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event)">精装家装</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event)">找设计师</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event)">名家汇</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event)">设计疑问</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event)">设计专访</div>
+		        </div>
+	        </div>
+	    </div>
+        <div class="search">
+        	<div class="container">
+	            <div class="col-lg-12 col-md-12 clearfix">
+	                <b class="pull-left">擅长类型</b>
+	                <ul class="pull-left">
+	                    <li @click="searchfun($event)">全部</li>
+	                    <li @click="searchfun($event)">普通住宅</li>
+	                    <li @click="searchfun($event)">餐饮空间</li>
+	                    <li @click="searchfun($event)">办公空间</li>
+	                    <li @click="searchfun($event)">商业展厅</li>
+	                    <li @click="searchfun($event)">商业酒店</li>
+	                    <li @click="searchfun($event)">其他</li>
+	                </ul>
+	            </div>
+	            <div class="col-lg-12 col-md-12 clearfix">
+	                <b class="pull-left">服务区域</b>
+	                <ul class="pull-left">
+	                    <li @click="searchfun($event)">成都</li>
+	                    <li @click="searchfun($event)">崇州市</li>
+	                    <li @click="searchfun($event)">邛崃市</li>
+	                    <li @click="searchfun($event)">大邑县</li>
+	                    <li @click="searchfun($event)">金堂县</li>
+	                    <li @click="searchfun($event)">双流县</li>
+	                    <li @click="searchfun($event)">浦江县</li>
+	                    <li @click="searchfun($event)">新津县</li>
+	                    <li @click="searchfun($event)">武侯区</li>
+	                    <li @click="searchfun($event)">成华区</li>
+	                    <li @click="searchfun($event)">金牛区</li>
+	                    <li @click="searchfun($event)">更多</li>
+	                </ul>
+	            </div>
+	            <div class="col-lg-12 col-md-12 clearfix">
+	                <b class="pull-left">设计收费</b>
+	                <ul class="pull-left">
+	                    <li @click="searchfun($event)">全部</li>
+	                    <li @click="searchfun($event)">十万以下</li>
+	                    <li @click="searchfun($event)">10万-30万</li>
+	                    <li @click="searchfun($event)">30万-50万</li>
+	                    <li @click="searchfun($event)">50万-100万</li>
+	                    <li @click="searchfun($event)">100万-300万</li>
+	                    <li @click="searchfun($event)">300万以上</li>
+	                </ul>
+	            </div>
+	        </div>
+        </div>
+        <div class="cont container" style="margin-bottom: 100px">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 mycont">
+				<div class="mycontbox">
+					<div class="contimgcssbox"><div class="contimgcss item-one" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></div></div>
+					<div class="mybgd">
+						<h5 style="padding:10px 0"><b>榆林路小龙坎装修工程</b></h5>
+						<div class="mybor non">
+							<span class="colcss marcss" style="margin-left: 0">新中式</span> | <span class="colcss marcss">连锁加盟</span> | <span class="marcss">123万</span> <span class="marcss">78m2</span><span class="marcss pull-right">2017-3-4</span>
+						</div>
+						<div class="clearfix non" style="margin-top:20px">
+							<span class="sjhead pull-left" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></span>
+							<span class="pcss pull-left mtop">设计师：<samp style="color:#666">申购</samp></span><span class="ji pull-left mtop">一级</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 mycont">
+				<div class="mycontbox">
+					<div class="contimgcssbox"><div class="contimgcss item-one" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></div></div>
+					<div class="mybgd">
+						<h5 style="padding:10px 0"><b>榆林路小龙坎装修工程</b></h5>
+						<div class="mybor non">
+							<span class="colcss marcss" style="margin-left: 0">新中式</span> | <span class="colcss marcss">连锁加盟</span> | <span class="marcss">123万</span> <span class="marcss">78m2</span><span class="marcss pull-right">2017-3-4</span>
+						</div>
+						<div class="clearfix non" style="margin-top:20px">
+							<span class="sjhead pull-left" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></span>
+							<span class="pcss pull-left mtop">设计师：<samp style="color:#666">申购</samp></span><span class="ji pull-left mtop">一级</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 mycont">
+				<div class="mycontbox">
+					<div class="contimgcssbox"><div class="contimgcss item-one" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></div></div>
+					<div class="mybgd">
+						<h5 style="padding:10px 0"><b>榆林路小龙坎装修工程</b></h5>
+						<div class="mybor non">
+							<span class="colcss marcss" style="margin-left: 0">新中式</span> | <span class="colcss marcss">连锁加盟</span> | <span class="marcss">123万</span> <span class="marcss">78m2</span><span class="marcss pull-right">2017-3-4</span>
+						</div>
+						<div class="clearfix non" style="margin-top:20px">
+							<span class="sjhead pull-left" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></span>
+							<span class="pcss pull-left mtop">设计师：<samp style="color:#666">申购</samp></span><span class="ji pull-left mtop">一级</span>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+</div>
+<script src="../../common/js/jquery-1.11.3.js"></script>
+<script src="../../common/js/swiper.min.js"></script>
+<script src="../../common/js/vue.js"></script>
+<script src="../../common/js/vue-resource.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script src="js/designCommon.js"></script>
+<script>
+    function browserRedirect() {
+		var sUserAgent = navigator.userAgent.toLowerCase();
+		var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+		var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+		var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+		var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+		var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+		var bIsAndroid = sUserAgent.match(/android/i) == "android";
+		var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+		var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+		if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+		    var swiper = new Swiper('.swiper-container-nav', {
+				slidesPerView: 4,
+				spaceBetween: 40,
+			});
+		}
+	}
+	browserRedirect();
+  </script>
+</body>
+</html>
