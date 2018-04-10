@@ -219,7 +219,7 @@ img {
   width: 100%;
   height: 100%;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
   }
@@ -412,7 +412,6 @@ img {
   margin-bottom: 10px;
 }
 .imgcss {
-  width: 250px;
   height: 180px;
   background: red;
 }
@@ -551,12 +550,33 @@ img {
   border-radius: 50%;
   display: inline-block;
 }
-@media screen and (max-width: 425px) {
-  .non {
+.zttw {
+  padding: 0 6px;
+  background: #00dfb9;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 6px;
+}
+@media screen and (max-width: 768px) {
+  .myh > div {
+    font-size: 16px;
+    margin-right: 33px!important;
+  }
+  .mip {
+    width: 100%;
+  }
+  .non,
+  .sjyw {
     display: none;
+  }
+  .mcont {
+    display: block!important;
   }
   .contimgcss {
     height: 130px!important;
+  }
+  .mbox {
+    margin: 20px 0 28px 0;
   }
   .mycont {
     padding: 5px;
@@ -566,5 +586,63 @@ img {
   }
   .mycont .mybgd {
     padding: 1px 4px;
+  }
+  .mnone {
+    display: none;
+  }
+  .mt {
+    width: 24px;
+    position: absolute;
+    padding: 4px 5px;
+    background: #267df2;
+    color: #ffffff;
+    font-size: 12px;
+    margin-right: 10px;
+  }
+  .mconbox {
+    margin-top: 20px;
+    padding: 10px;
+    background: #fff;
+  }
+  .mconbox h4 {
+    margin: 10px 0;
+  }
+  .mconbox ul {
+    margin-bottom: 0;
+    background: #f4f4f4;
+    padding-left: 25px;
+    height: 76px;
+    overflow: hidden;
+  }
+  .mconbox ul li {
+    margin: 11px 9px 0px  9px;
+  }
+  .mconbox ul li a {
+    color: #666;
+  }
+  .more {
+    width: 180px;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    margin-left: -90px;
+  }
+  .colcss {
+    color: #00dfb9;
+  }
+  .mbox1 {
+    margin: 12px 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  .myh > div {
+    font-size: 14px;
+    margin-right: 42px!important;
+  }
+}
+@media screen and (max-width: 320px) {
+  .myh > div {
+    font-size: 12px;
+    margin-right: 36px!important;
   }
 }
