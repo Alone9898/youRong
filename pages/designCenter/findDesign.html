@@ -7,19 +7,23 @@
     <title>找设计</title>
     <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../common/css/swiper.min.css">
+    <link rel="stylesheet" href="../../common/css/base.css"/>
     <link rel="stylesheet" href="css/designCommon.css">
 </head>
 <body>
 <div id="app" v-cloak>
+	    <!--header>
+		<sitenav></sitenav>
+		<l_header></l_header-->
 	    <div class="title">
 	    	<div class="swiper-container-nav">
 		        <div class="myh swiper-wrapper clearfix">
-		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight" @click="searchcli($event)">精装工选</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'decoration')">精装工选</div>
 		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event)">精装家装</div>
-		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event)">找设计师</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight" @click="searchcli($event,'findDesign')">找设计师</div>
 		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event)">名家汇</div>
-		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event)">设计疑问</div>
-		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event)">设计专访</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'question')">设计疑问</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'interview')">设计专访</div>
 		        </div>
 	        </div>
 	    </div>
@@ -253,6 +257,8 @@
 				</div>
 			</div>
         </div>
+        <!--footer>
+        <footer-model></footer-model-->	
     </div>
 </div>
 <script src="../../common/js/jquery-1.11.3.js"></script>
@@ -260,6 +266,7 @@
 <script src="../../common/js/vue.js"></script>
 <script src="../../common/js/vue-resource.min.js"></script>
 <script src="../../common/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../common/js/public.js"></script>
 <script src="js/designCommon.js"></script>
 <script>
     function browserRedirect() {

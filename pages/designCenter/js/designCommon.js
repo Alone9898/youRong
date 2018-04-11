@@ -10,8 +10,10 @@ var app = new Vue({
 		searchfun(ev){
 			$(ev.target).addClass('hoverhight').siblings().removeClass('hoverhight');
 		},
-        searchcli(ev){
+        searchcli(ev,a){
             $(ev.target).addClass('myhight').siblings().removeClass('myhight');
+            //alert(a);
+            window.location.href=''+a+'.html';
         },
         viewmore(ev){
             if(this.more==1){
@@ -21,7 +23,6 @@ var app = new Vue({
                 this.more=1;
                 $(ev.target).parents('.mbox').find('.mnone').slideUp();
             }
-            
         },
     },
 })

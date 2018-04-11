@@ -50,7 +50,6 @@ body {
   margin: 0 10px;
 }
 img {
-  width: 100%;
   max-width: 100%;
 }
 /*search*/
@@ -78,6 +77,7 @@ img {
 }
 .title .myh .myhight {
   border-bottom: 2px solid #00dfb9!important;
+  color: #00dfb9 !important;
 }
 .search {
   background: #ffffff;
@@ -566,7 +566,8 @@ img {
     width: 100%;
   }
   .non,
-  .sjyw {
+  .sjyw,
+  .inforight {
     display: none;
   }
   .mcont {
@@ -645,4 +646,178 @@ img {
     font-size: 12px;
     margin-right: 36px!important;
   }
+}
+/**************************************************************************************************/
+.imgleft {
+  width: 160px;
+  height: 190px;
+  margin-right: 20px;
+}
+.mainbox {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.mainbox .numcss {
+  padding: 1px 12px;
+  background: #ff0000;
+  color: #fff;
+  font-size: 16px;
+}
+.mainbox .hm {
+  margin: 10px 0;
+}
+.mainbox .hm p,
+.mainbox .hm h5 {
+  margin: 10px 0;
+}
+.mainbox .hm p {
+  color: #999999;
+}
+/**************************************************************************************************/
+.detbox {
+  margin-bottom: 140px;
+}
+.mybgd {
+  width: 100%;
+  height: 200px;
+}
+.mybgd img {
+  margin: 0 auto;
+  display: block;
+}
+.contdel {
+  background: #fff;
+  padding: 30px;
+}
+.imgleft1 {
+  width: 330px;
+  height: 400px;
+  margin-right: 20px;
+  position: absolute;
+}
+.enter {
+  position: absolute;
+  bottom: -25px;
+  right: -25px;
+  cursor: pointer;
+}
+.detil h3 {
+  font-size: 26px!important;
+}
+.detil2 {
+  margin: 16px 0;
+}
+.botbgd {
+  background: #c6a882;
+  position: relative;
+  left: -20px;
+  padding: 38px 30px;
+}
+.botbgdtxt h5 {
+  color: #f5f5f5;
+  font-size: 16px;
+}
+.botbgdtxt p {
+  color: #f5f5f5;
+  font-size: 12px;
+  margin-top: 18px;
+}
+.detright {
+  width: 100%;
+  padding-left: 350px;
+  height: 400px;
+  padding-top: 20px;
+}
+.botbgdtxt2 {
+  margin-top: 20px;
+}
+.botbgdtxt2 p {
+  font-size: 12px;
+  margin-top: 18px;
+}
+.zfconttop {
+  padding: 53px 60px 66px 86px;
+  border: 1px solid #c6a882;
+  position: relative;
+}
+.zfconttop .imgtxt {
+  width: 120px;
+  height: 120px;
+}
+.zfconttop img {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  margin-bottom: 30px;
+}
+.zfconttop p {
+  font-size: 14px;
+  color: #666;
+  width: 84%;
+}
+.mr {
+  position: absolute;
+  right: 46px;
+  top: 22px;
+}
+.zfcontbottom {
+  margin-top: 40px;
+}
+.zfcontbottom .zfright {
+  width: 68%;
+}
+.zfcontbottom .zfleft {
+  width: 320px;
+  height: 360px;
+  position: absolute;
+  top: -9px;
+  left: -9px;
+}
+.zfcontbottom .zfleft1 {
+  background: #c6a882;
+  width: 320px;
+  height: 360px;
+  position: relative;
+  left: 10px;
+  margin-right: 33px;
+}
+.zfcontbottom .quesbox h4 {
+  margin: 10px 0 12px 0;
+  color: #c6a882;
+}
+.zfcontbottom .quesbox p,
+.zfcontbottom .quesbox h4 {
+  padding-left: 54px;
+  height: 30px;
+  line-height: 22px;
+}
+.zfcontbottom .quesbox {
+  margin-bottom: 55px;
+}
+.zfcontbottom .txtbox {
+  position: relative;
+}
+.zfcontbottom .txtbox > .quesbox {
+  width: 70%;
+}
+.zfcontbottom ._zfleft {
+  width: 320px;
+  height: 360px;
+  position: absolute;
+  top: -9px;
+  left: 9px;
+}
+.zfcontbottom ._zfleft1 {
+  background: #c6a882;
+  width: 320px;
+  height: 360px;
+  position: absolute;
+  right: 0;
+  top: 27px;
+}
+.sjzpbox {
+  width: 100%;
+  height: 700px;
+  position: relative;
 }
