@@ -22,7 +22,6 @@ Vue.component('sitenav', {
                  </div>\
                  <div class="col-xs-7 col-lg-7 siteNav_welcome">欢迎来到装修加速平台，请 <a href="#" @click="modal_tip()">登录</a> | <a href="#">注册</a></div>\
                  <div class="col-xs-3 col-lg-4 siteNav_welcome siteNav_right">\
-                 <span>搜索</span>\
                  <span class="weixin" @mouseover="wei_img(1)" @mouseout="wei_img(2)">微信公众号</span>\
                  <div class="weixin_img" v-show="weixin"><img src="../../common/img/icon/weixin.jpg" width="120" height="120"></div>\
                  </div>\
