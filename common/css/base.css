@@ -61,7 +61,7 @@ a{text-decoration:none;}
 /* header */
 .l_header{
    /* height: 9.6rem;*/
-    height: 580px;
+    height: 562px;
 }
 .l_header .navbar{
     margin-bottom: 0;
@@ -276,6 +276,11 @@ a{text-decoration:none;}
     color: #00dfb9;
     cursor: pointer;
 }
+/*公共样式*/
+.bid_navBox .activ{
+    background-color: #0ab7c7!important;
+    color: white!important;
+}
 /*媒介查询*/
 @media screen and (max-width: 768px) {
     .siteNav{
@@ -299,6 +304,7 @@ a{text-decoration:none;}
         color: #666!important;
     }
     .l_header .navbar-default .navbar-nav{
+        width: 105px;
         margin-left: 0!important;
         overflow: hidden;
     }
