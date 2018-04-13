@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>精装工选</title>
+    <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../common/css/swiper.min.css">
+    <link rel="stylesheet" href="../../common/css/base.css"/>
+    <link rel="stylesheet" href="css/designCommon.css">
+    <link rel="stylesheet" type="text/css" href="css/AskQuestions_b.css">
+    <link href="css/iconfont.css" rel="stylesheet" type="text/css"/>
+    <link href="css/fileUpload.css" rel="stylesheet" type="text/css">
+    <script src="../../common/js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="js/fileUpload.js"></script>
+</head>
+
+<body>
+<div id="app" v-cloak>
+    <!--header>
+    <sitenav></sitenav>
+    <l_header></l_header-->
+    <!--banner-->
+    <div class="z_banner">
+        <img src="../../common/img/images/z_banner.png" alt="">
+    </div>
+    <div class="title">
+        <div class="swiper-container-nav">
+            <div class="myh swiper-wrapper clearfix">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight"
+                     @click="searchcli($event,'decoration')">精装工选
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event)">精装家装</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'findDesign')">
+                    找设计师
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event)">名家汇</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'question')">
+                    设计疑问
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'interview')">
+                    设计专访
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <!--我的位置nav-->
+        <div class="col-xs-12 pd">
+            <ul class="z_menu">
+                <li>我的位置：</li>
+                <li><a href="javascript:history.back(-1)">设计中心</a></li>
+                <li>></li>
+                <li><a href="javascript:history.back(-1)">设计疑问</a></li>
+                <li>></li>
+                <li><a href="">类别</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 left_layout">
+            <div class="title_box">
+                <span class="txt_h1">沙发</span>
+                <span class="font_style">共搜索到<span class="color_g">20</span>个问题</span>
+            </div>
+            <div class="bottom_h">
+                <div class="problem_box clearfix">
+                    <div class="z_ht clearfix">
+                        <div class="z_left">
+                            <div class="h_1">5</div>
+                            <div class="h_2">回答</div>
+                        </div>
+                        <div class="z_center">
+                            <div class="z-title">空间小怎么设计空间小怎么设计空间小怎么设计空间小怎么设计</div>
+                            <div class="wap_qus">回答：<span class="color_g">5</span></div>
+                            <div class="z_z">
+                                <span>Mr.林</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>回答：<span>这个看实际的情况来说吧这个看实际的情况来说吧这个看实际的情况来说吧这个看实际的来说吧这个看实际的来说吧这个看的</span></span>
+                            </div>
+                            <ul class="add_menu">
+                                <li>客厅沙发</li>
+                                <li>沙发</li>
+                                <li>客厅沙发</li>
+                                <li>沙发</li>
+                            </ul>
+                            <div class="z-time">1小时</div>
+                        </div>
+                        <div class="z_right">
+                            <img src="../../common/img/images/b2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="problem_box clearfix">
+                    <div class="z_ht">
+                        <div class="z_left">
+                            <div class="h_1">5</div>
+                            <div class="h_2">回答</div>
+                        </div>
+                        <div class="z_center">
+                            <div class="z-title">空间小怎么设计空间小怎么设计空间小怎么设计空间小怎么设计</div>
+                            <div class="wap_qus">回答：<span class="color_g">5</span></div>
+                            <div class="z_z">
+                                <span>Mr.林</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>回答：<span>这个看实际的情况来说吧这个看实际的情况来说吧这个看实际的情况来说吧这个看实际的来说吧这个看实际的来说吧这个看的</span></span>
+                            </div>
+                            <ul class="add_menu">
+                                <li>客厅沙发</li>
+                                <li>沙发</li>
+                                <li>客厅沙发</li>
+                                <li>沙发</li>
+                            </ul>
+                            <div class="z-time">1小时</div>
+                        </div>
+                        <div class="z_right">
+                            <img src="../../common/img/images/b2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="problem_box clearfix">
+                    <div class="z_ht">
+                        <div class="z_left">
+                            <div class="h_1">5</div>
+                            <div class="h_2">回答</div>
+                        </div>
+                        <div class="z_center">
+                            <div class="z-title">空间小怎么设计空间小怎么设计空间小怎么设计空间小怎么设计</div>
+                            <div class="wap_qus">回答：<span class="color_g">5</span></div>
+                            <div class="z_z">
+                                <span>Mr.林</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>回答：<span>这个看实际的情况来说吧这个看实际的情况来说吧这个看实际的情况来说吧这个看实际的来说吧这个看实际的来说吧这个看的</span></span>
+                            </div>
+                            <ul class="add_menu">
+                                <li>客厅沙发</li>
+                                <li>沙发</li>
+                                <li>客厅沙发</li>
+                                <li>沙发</li>
+                            </ul>
+                            <div class="z-time">1小时</div>
+                        </div>
+                        <div class="z_right">
+                            <img src="../../common/img/images/b2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="problem_box clearfix">
+                    <div class="z_ht">
+                        <div class="z_left">
+                            <div class="h_1">5</div>
+                            <div class="h_2">回答</div>
+                        </div>
+                        <div class="z_center">
+                            <div class="z-title">空间小怎么设计空间小怎么设计空间小怎么设计空间小怎么设计</div>
+                            <div class="wap_qus">回答：<span class="color_g">5</span></div>
+                            <div class="z_z">
+                                <span>Mr.林</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>回答：<span>这个看实际的情况来说吧这个看实际的情况来说吧这个看实际的情况来说吧这个看实际的来说吧这个看实际的来说吧这个看的</span></span>
+                            </div>
+                            <ul class="add_menu">
+                                <li>客厅沙发</li>
+                                <li>沙发</li>
+                                <li>客厅沙发</li>
+                                <li>沙发</li>
+                            </ul>
+                            <div class="z-time">1小时</div>
+                        </div>
+                        <div class="z_right">
+                            <img src="../../common/img/images/b2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="problem_box clearfix">
+                    <div class="z_ht">
+                        <div class="z_left">
+                            <div class="h_1">5</div>
+                            <div class="h_2">回答</div>
+                        </div>
+                        <div class="z_center">
+                            <div class="z-title">空间小怎么设计空间小怎么设计空间小怎么设计空间小怎么设计</div>
+                            <div class="wap_qus">回答：<span class="color_g">5</span></div>
+                            <div class="z_z">
+                                <span>Mr.林</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>回答：<span>这个看实际的情况来说吧这个看实际的情况来说吧这个看实际的情况来说吧这个看实际的来说吧这个看实际的来说吧这个看的</span></span>
+                            </div>
+                            <ul class="add_menu">
+                                <li>客厅沙发</li>
+                                <li>沙发</li>
+                                <li>客厅沙发</li>
+                                <li>沙发</li>
+                            </ul>
+                            <div class="z-time">1小时</div>
+                        </div>
+                        <div class="z_right">
+                            <img src="../../common/img/images/b2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 right_layout">
+            <div class="float_bar_one clearfix">
+                <div class="z_title"><a href="javascript:;">相关标签</a> </div>
+                <ul class="clearfix">
+                    <li>客厅</li>
+                    <li>客厅沙发</li>
+                    <li>客厅</li>
+                    <li>客厅沙发</li>
+                    <li>客厅</li>
+                    <li>客厅沙发</li>
+                    <li>客厅</li>
+                    <li>客厅沙发</li>
+                    <li>客厅</li>
+                    <li>客厅沙发</li>
+                    <li>客厅沙发</li>
+                    <li>客厅沙发</li>
+                </ul>
+            </div>
+            <div class="float_bar_two clearfix">
+                <div class="z_title clearfix">
+                    <a href="javascript:;" class="f_l">精选问题</a>
+                    <a href="javascript:;" class="f_r">更多>></a>
+                </div>
+                <ul class="clearfix">
+                    <li>
+                        <a href="" ><div class="qu_info">问题问题问题问题问问题问题问题问题问</div>
+                            <div class="info_digital"><span class="color_g">2</span>个回答</div></a>
+                    </li>
+                    <li>
+                        <a href="" ><div class="qu_info">问题问题问题问题问问题问题问题问题问</div>
+                            <div class="info_digital"><span class="color_g">2</span>个回答</div></a>
+                    </li>
+                    <li>
+                        <a href="" ><div class="qu_info">问题问题问题问题问问题问题问题问题问</div>
+                            <div class="info_digital"><span class="color_g">2</span>个回答</div></a>
+                    </li>
+                    <li>
+                        <a href="" ><div class="qu_info">问题问题问题问题问问题问题问题问题问</div>
+                            <div class="info_digital"><span class="color_g">2</span>个回答</div></a>
+                    </li>
+                    <li>
+                        <a href="" ><div class="qu_info">问题问题问题问题问问题问题问题问题问</div>
+                            <div class="info_digital"><span class="color_g">2</span>个回答</div></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--footer>
+    <footer-model></footer-model-->
+</div>
+<script src="../../common/js/swiper.min.js"></script>
+<script src="../../common/js/vue.js"></script>
+<script src="../../common/js/vue-resource.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../common/js/public.js"></script>
+<script src="js/designCommon.js"></script>
+<script>
+    function browserRedirect() {
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            var swiper = new Swiper('.swiper-container-nav', {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            });
+        }
+    }
+    browserRedirect();
+</script>
+</body>
+</html>

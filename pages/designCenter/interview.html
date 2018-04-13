@@ -7,21 +7,20 @@
     <title>设计专访</title>
     <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../common/css/swiper.min.css">
-    <link rel="stylesheet" href="../../common/css/base.css"/>
     <link rel="stylesheet" href="css/designCommon.css">
 </head>
 <body>
 <div id="app" v-cloak>
-	    <!--header>
+	    <!--header-->
 		<sitenav></sitenav>
-		<l_header></l_header-->
+		<l_header></l_header>
         <div class="title">
             <div class="swiper-container-nav">
                 <div class="myh swiper-wrapper clearfix">
                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'decoration')">精装工选</div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event)">精装家装</div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'jzdecoration')">精装家装</div>
                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'findDesign')">找设计师</div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event)">名家汇</div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'mingjiahui')">名家汇</div>
                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'question')">设计疑问</div>
                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight" @click="searchcli($event,'interview')">设计专访</div>
                 </div>
@@ -30,7 +29,7 @@
 	    <div class="cont container " style="margin-bottom: 100px">
             <div class="contsj clearfix">
                 <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 infoleft">
-                    <div class="mainbox clearfix">
+                    <div class="mainbox clearfix" @click="viewdetail($event)">
                         <div class="imgleft pull-left" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
                         <div class="imgright pull-left">
                             <div style="margin-bottom: 24px"><span class="numcss ">NO.1</span><h4 style="display: inline-block;margin:0 10px;font-weight: bold;">李老头</h4> 工装设计师</div>
@@ -38,7 +37,7 @@
                             <div class="hm"><h5>设计理念</h5><p>贴近自然的设计才最具有灵感</p></div>
                         </div>
                     </div>
-                    <div class="mainbox clearfix">
+                    <div class="mainbox clearfix" @click="viewdetail($event)">
                         <div class="imgleft pull-left" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
                         <div class="imgright pull-left">
                             <div style="margin-bottom: 24px"><span class="numcss ">NO.1</span><h4 style="display: inline-block;margin:0 10px;font-weight: bold;">李老头</h4> 工装设计师</div>
@@ -46,7 +45,7 @@
                             <div class="hm"><h5>设计理念</h5><p>贴近自然的设计才最具有灵感</p></div>
                         </div>
                     </div>
-                    <div class="mainbox clearfix">
+                    <div class="mainbox clearfix" @click="viewdetail($event)">
                         <div class="imgleft pull-left" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
                         <div class="imgright pull-left">
                             <div style="margin-bottom: 24px"><span class="numcss ">NO.1</span><h4 style="display: inline-block;margin:0 10px;font-weight: bold;">李老头</h4> 工装设计师</div>
@@ -76,8 +75,8 @@
                 </div>
             </div>
         </div>
-        <!--footer>
-        <footer-model></footer-model-->
+        <!--footer-->
+        <footer-model></footer-model>
     </div>
 </div>
 <script src="../../common/js/jquery-1.11.3.js"></script>

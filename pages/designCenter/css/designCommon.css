@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: '微软雅黑', Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #333333;
 }
 ul li {
   list-style: none;
@@ -11,8 +12,9 @@ p {
   margin: 0;
 }
 a {
-  cursor: pointer;
+  cursor: pointer;color:#333;
 }
+a:hover{color:#333;}
 .clearfix:after {
   display: table;
   content: " ";
@@ -25,6 +27,12 @@ a {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.sl1 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 h1,
 h2,
@@ -203,7 +211,7 @@ img {
   border-radius: 50%;
   background: #00dfb9;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 12px;
 }
 .contmain .butt b {
   font-size: 20px;
@@ -218,6 +226,13 @@ img {
 .contmain .contimg p {
   width: 100%;
   height: 100%;
+}
+.swiper-button-nextmy,
+.swiper-container-rtl .swiper-button-next {
+  background-image: url('../../../common/img/icon/ricon.png');
+}
+.swiper-button-prevmy {
+  background-image: url('../../../common/img/icon/licon.png');
 }
 @media screen and (max-width: 768px) {
   body {
@@ -434,25 +449,25 @@ img {
 .contp p a {
   color: #999;
 }
-.nav-tabs {
+.mytabnav .nav-tabs {
   background: #eee;
   border: 0;
   height: 30px;
 }
-.nav > li > a {
+.mytabnav .nav > li > a {
   line-height: 28px;
   padding: 0 14px;
 }
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:focus,
-.nav-tabs > li.active > a:hover {
+.mytabnav .nav-tabs > li.active > a,
+.mytabnav .nav-tabs > li.active > a:focus,
+.mytabnav .nav-tabs > li.active > a:hover {
   color: #555;
   cursor: default;
   border: 0;
   border-top: 2px solid #00dfb9;
   border-radius: 0;
   line-height: 28px;
-  padding: 0 14px;
+  padding: 0 14px;    background: #fff;
 }
 .tabright {
   width: 70px;
@@ -496,6 +511,12 @@ img {
   background: #ffffff;
   margin-bottom: 12px;
 }
+.mynav1 .mynav .nav-tabs > li.active > a,
+.mynav1 .mynav .nav-tabs > li.active > a:focus,
+.mynav1 .mynav .nav-tabs > li.active > a:hover {
+  border-right: 0!important;
+  border-left: 0 !important;
+}
 .contcontright {
   width: 20%;
   text-align: center;
@@ -523,7 +544,7 @@ img {
   margin: 6px 0;
   color: #00dfb9;
 }
-.mynav .nav {
+.mynavcss .nav {
   background: none;
   border-bottom: 1px solid #dddddd;
 }
@@ -535,7 +556,7 @@ img {
 }
 .mynav .nav-tabs > li > a:hover {
   background: none;
-  border: transparent;
+      border: 1px solid transparent;
 }
 .mtb .clearfix {
   margin-bottom: 10px;
@@ -616,7 +637,7 @@ img {
     overflow: hidden;
   }
   .mconbox ul li {
-    margin: 11px 9px 0px  9px;
+    margin: 15px 9px 0px  9px;
   }
   .mconbox ul li a {
     color: #666;
@@ -634,6 +655,162 @@ img {
   .mbox1 {
     margin: 12px 0;
   }
+  .imgright,
+  .imgleft {
+    width: 100% !important;
+  }
+  .imgright > div {
+    margin: 12px 0 0 0;
+    margin-bottom: 12px!important;
+  }
+  .imgright > div h4 {
+    margin: 0 !important;
+  }
+  .mybgd {
+    height: auto!important;
+  }
+  .enter {
+    display: none;
+  }
+  .menter {
+    display: block!important;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    width: 100%;
+  }
+  .imgleft1 {
+    width: 160px!important;
+    height: 200px!important;
+  }
+  .detright {
+    padding-left: 170px!important;
+    height: auto!important;
+    padding-top: 0!important;
+  }
+  .botbgd {
+    background: none!important;
+    position: relative!important;
+    left: 0!important;
+    padding: 0!important;
+  }
+  .botbgdtxt h5,
+  .detil2,
+  .mr,
+  .zfcontbottomn,
+  .sjzpbox,
+  .mybgd1 {
+    display: none;
+  }
+  .botbgdtxt P {
+    color: #333!important;
+    font-size: 14px!important;
+  }
+  .detil h3 {
+    font-size: 22px!important;
+  }
+  .botbgdtxt2 h4 {
+    display: none;
+  }
+  .botbgdtxt2 span {
+    display: block;
+    margin-bottom: 6px;
+  }
+  .zfconttop,
+  .zfleft1 {
+    display: none;
+  }
+  .zfcontbottom .zfright {
+    width: 100%!important;
+  }
+  .detbox {
+    padding-bottom: 55px!important;
+    background: #fff;
+    padding: 24px 20px;
+    margin-bottom: 0!important;
+    margin-top: 16px;
+  }
+  .zfcontbottom .quesbox {
+    margin-bottom: 16px!important;
+  }
+  .zfcontbottom .quesbox p,
+  .zfcontbottom .quesbox h4 {
+    padding-left: 45px!important;
+    height: auto!important;
+    line-height: 19px!important;
+    font-size: 14px!important;
+  }
+  .zfcontbottom .quesbox h4 {
+    padding: 3px 0;
+  }
+  .mmybgd {
+    display: block!important;
+  }
+  .mmybgd {
+    margin-bottom: 30px;
+  }
+  .mmybgd h4 {
+    text-align: center;
+    font-weight: bold;
+  }
+  .zfcontbottom .quesbox h4 {
+    margin: 10px 0 7px 0!important;
+  }
+  .zfcontbottom {
+    margin-top: 0!important;
+  }
+  .mtbox {
+    display: block!important;
+  }
+  .mtbox h5 {
+    padding: 2px 18px;
+    background: #4e4848;
+    color: #fff;
+    display: inline;
+  }
+  .mtbox p {
+    padding: 10px 0;
+  }
+  .mzpbox {
+    display: block !important;
+  }
+  .mybgd2 {
+    background: #f4f4f4!important;
+  }
+  .mbgd {
+    background: #f4f4f4 !important;
+  }
+  .contdel {
+    padding: 10px!important;
+  }
+  .detbox1 {
+    top: 0!important;
+  }
+  .zkbox img {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 16px;
+  }
+  .msw {
+    width: 50% !important;
+    height: 208px;
+    padding: 0 4px;
+    margin-bottom: 10px;
+  }
+  .mpc {
+    display: none;
+  }
+  .mymob {
+    display: block!important;
+  }
+  .msw .swipertop {
+    height: 135px!important;
+  }
+  .mjhbox .mjhmain .mjhmainimg {
+    height: 200px!important;
+  }
 }
 @media screen and (max-width: 425px) {
   .myh > div {
@@ -645,6 +822,13 @@ img {
   .myh > div {
     font-size: 12px;
     margin-right: 36px!important;
+  }
+  .ji {
+    margin: 0 1px;
+    padding: 0px 8px;
+  }
+  .contmain .bao {
+    padding: 0px 9px;
   }
 }
 /**************************************************************************************************/
@@ -680,7 +864,6 @@ img {
 }
 .mybgd {
   width: 100%;
-  height: 200px;
 }
 .mybgd img {
   margin: 0 auto;
@@ -701,9 +884,6 @@ img {
   bottom: -25px;
   right: -25px;
   cursor: pointer;
-}
-.detil h3 {
-  font-size: 26px!important;
 }
 .detil2 {
   margin: 16px 0;
@@ -818,6 +998,530 @@ img {
 }
 .sjzpbox {
   width: 100%;
-  height: 700px;
+  margin-top: 30px;
   position: relative;
+}
+/**********/
+.mjhbox {
+  padding: 0px;
+  margin-bottom: 16px;
+}
+.mjhbox .mjhmain .mjhmainimg {
+  height: 290px;
+}
+.mjhbox .mjhmain .mjhleft {
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  margin-right: 20px;
+  position: absolute;
+}
+.mjhbox .mjhmain .mjhmaininfo {
+  margin: 14px 0;
+}
+.mjhbox .mjhmain .mjhright {
+  width: 100%;
+  padding-left: 65px;
+}
+.mjhbox .mjhmain .mjhright p {
+  margin: 10px 0;
+  width: 100%;
+  color: #999999;
+}
+.mjhmain {
+  width: 97%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 10px;
+}
+/****myheader******/
+.mybanner {
+  width: 100%;
+  height: 420px;
+  position: relative;
+}
+.myheader {
+  width: 1020px;
+  margin: 0 auto;
+  position: relative;
+  top: -75px;
+}
+.myheader li {
+  margin: 0 70px;
+}
+.myheader b,
+.myheader p {
+  color: #ffffff;
+}
+.myheader b {
+  font-size: 24px;
+}
+.myheader p {
+  text-align: center;
+  margin-top: 11px;
+  font-size: 14px;
+}
+.myheader .headimg {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  margin: 0 70px 14px 70px;
+}
+.myheaderm {
+  text-align: center;
+}
+.headt span {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.headt samp {
+  padding: 2px 6px;
+  background: #f7bf18;
+  color: #ffffff;
+}
+.headi {
+  margin: 10px 0 20px 0;
+}
+.btn-info1 {
+  color: #fff;
+  background-color: #00dfb9;
+  border-color: #00dfb9;
+  padding: 6px 84px;
+  border-radius: 0;
+}
+.btn-info1:hover {
+  color: #fff;
+  background-color: #04c5a5;
+  border-color: #04c5a5;
+}
+.headp {
+  margin-top: 4px;
+}
+.headp span {
+  color: #999;
+  margin-right: 10px;
+  background: url('../../../common/img/icon/gou.png') no-repeat;
+  padding-left: 14px;
+  background-position: 1px;
+}
+/*************/
+.zhead {
+  height: 60px;
+  width: 100%;
+  background: #555555;
+}
+.nav-tabs {
+  border-bottom: transparent;
+}
+.mynavcss > li.active,
+.mynavcss > li.active:focus,
+.mynavcss > li.active:hover {
+  background-color: #01dfba;
+  border: transparent;
+  color: #333333;
+}
+.mynavcss > li > a {
+  border-radius: 0;
+  color: #333333;
+  line-height: 34px;
+  padding: 10px 40px;
+}
+.mynavcss > li > a:hover {
+  background-color: transparent;
+  border: transparent;
+}
+.mynavcss > li:hover {
+  background-color: #01dfba;
+  border: transparent;
+  transition: 0.3s;
+}
+.pingxing {
+  transform: skewX(35deg);
+  position: relative;
+}
+.pingxing a {
+  transform: skewX(-35deg) !important;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  color: #333333;
+  cursor: default;
+  background-color: transparent;
+  border: transparent;
+  border-bottom-color: transparent;
+}
+.rightxinfo {
+  line-height: 54px;
+  color: #999;
+}
+.rightxinfo b {
+  font-size: 2.8rem;
+  color: #ffffff;
+}
+.zhead a {
+  color: #f5f5f5!important;
+  padding: 13px 40px!important;
+}
+.mynavcss,
+.mycs {
+  position: relative;
+  left: -36px;
+}
+.mainboxcss {
+  padding: 10px 10px 10px 50px;
+}
+.mainboxcss .comtop {
+  color: #333;
+  background: #f4f4f4;
+  padding: 30px 0;
+}
+.mainboxcss .comtop li {
+  text-align: center;
+}
+.mainboxcss .comtop samp {
+  font-size: 24px;
+  margin-left: 14px;
+}
+.mainboxcss .comtop span {
+  color: #999999;
+}
+.comcont {
+  margin: 30px 0;
+}
+.comtophead {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+}
+.comcontboxl {
+  position: absolute;
+}
+.comcontboxr {
+  padding-left: 100px;
+  width: 100%;
+  min-height: 100px;
+}
+.mborder {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 30px;
+}
+.comtopheadp {
+  margin-bottom: 20px;
+}
+.combotcss {
+  text-align: center;
+  margin-top: 4px;
+  color: #999;
+}
+.combotcss1 {
+  color: #999999;
+}
+.smile {
+  margin: -2px 0 0 3px;
+}
+.comcontbox {
+  margin-bottom: 30px;
+}
+/**/
+.table > thead > tr > th {
+  border-bottom: 0;
+  background: #f4f4f4;
+  padding: 20px 40px;
+  border-bottom: 0!important;
+}
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th {
+  padding: 20px 40px;
+  border-top: 0;
+  border-bottom: 1px solid #ddd;
+}
+.table-hover > tbody > tr:hover {
+  background-color: #fdfdfd;
+}
+.alre {
+  color: #00dfb9;
+}
+.unf {
+  color: #fb4c53;
+}
+/**/
+.headbgd {
+  width: 460px;
+  height: 360px;
+  background: #00dfb9;
+  position: relative;
+}
+.headbgd div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -12px;
+  left: 12px;
+}
+.abouttop > div {
+  padding: 0;
+}
+.mr {
+  padding: 30px 0 30px 33px!important;
+}
+.mr h4 {
+  margin: 20px 0;
+}
+.mr p {
+  margin-bottom: 8px;
+  color: #999;
+}
+.mr p span {
+  color: #999;
+}
+.mr .pco {
+  color: #666;
+  margin-top: 50px;
+}
+.aboutbot div {
+  margin: 26px 0;
+  font-size: 16px;
+}
+.aboutbot li {
+  padding: 0;
+  color: #999999;
+}
+.sjzpboxtop {
+  padding-right: 16px;
+}
+.sjzpboxtop span {
+  color: #999;
+}
+.sjzpboxtop span samp {
+  color: #999;
+}
+.sjzpboxtop img {
+  margin-left: 10px;
+}
+.sjzpboxcont {
+  border-bottom: 1px solid #ddd;
+}
+.contimg1 {
+  height: 240px;
+  margin: 30px 0px;
+  padding: 0 16px 0 0;
+}
+.contimg1 > div {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .headbox,
+  .mynavcss,
+  .comtop {
+    display: none;
+  }
+  .mynavcss1 {
+    background: #fff;
+    display: block!important;
+  }
+  .mynavcss1 li {
+    width: 25%;
+    padding:10px 0;
+  }
+  .mynavcss1 li a {
+    padding: 0!important;
+    text-align: center;
+    color: #333!important;
+  }
+  .mynavcss,
+  .mycs {
+    left: 0;
+  }
+  .mynavcss1 > li.active,
+  .mynavcss1 > li.active:focus,
+  .mynavcss1 > li.active:hover {
+    background: #fff!important;
+    border-bottom: 2px solid #01dfba;
+  }
+  .mynavcss1 > li.active > a,
+  .mynavcss1 > li.active > a:focus,
+  .mynavcss1 > li.active > a:hover {
+    color: #01dfba!important;
+  }
+  .mybanner {
+    height: 200px;
+  }
+  .mainboxcss {
+    padding: 10px;
+  }
+  .mborder {
+    padding-bottom: 16px;
+  }
+  .comtopheadp {
+    margin-bottom: 12px;
+  }
+  .comcontboxr {
+    padding-left: 75px;
+  }
+  .comtophead {
+    width: 65px;
+    height: 65px;
+  }
+  .mheadbox {
+    display: block!important;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    margin-left: -40px;
+    color: #fff;
+  }
+  .mycsbox {
+    padding: 0 !important;
+  }
+  .mtopbox .mji {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    z-index: 9;
+    position: relative;
+  }
+  .mtopbox .rji span {
+    color: #00dfb9;
+  }
+  .mtopbox .lji {
+    color: #00dfb9;
+    position: absolute;
+    top: 46px;
+    left: -37px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 0 12px;
+  }
+  .mtopbox .rji {
+    color: #00dfb9;
+    position: absolute;
+    top: 12px;
+    right: -84px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 0 12px;
+  }
+  .mbotbox {
+    text-align: center;
+    margin-top: 7px;
+  }
+  .mnavbox {
+    display: block!important;
+  }
+  .mnavbox ul {
+    background: #fff;
+    padding: 18px 0;
+  }
+  .mnavbox ul li {
+    width: 25%;
+    text-align: center;
+  }
+  .mnavbox ul b {
+    font-size: 16px;
+  }
+  .mnavbox ul p {
+    color: #999;
+    margin-top: 4px;
+  }
+  .mmian {
+    margin-top: 14px;
+  }
+  .table > thead > tr > th {
+    padding: 8px 3px;
+  }
+  .table > tbody > tr > td,
+  .table > tbody > tr > th,
+  .table > tfoot > tr > td,
+  .table > tfoot > tr > th,
+  .table > thead > tr > td,
+  .table > thead > tr > th {
+    padding: 14px 3px;
+    text-align: center;
+  }
+  .comtopheadp > h4 {
+    font-size: 15px;
+  }
+  .abouttop1,
+  .pco {
+    display: none;
+  }
+  .abouttop2,
+  .mrcss {
+    display: block !important;
+  }
+  .headbgd {
+    width: 100%;
+    height: 190px;
+  }
+  .mrcss {
+    left: 0;
+    right: 0;
+    padding: 0!important;
+    position: static;
+  }
+  .aboutbot div {
+    margin: 0 0 12px 0;
+    font-size: 14px;
+  }
+  .sjzpbox1,
+  .btnbottom {
+    display: block!important;
+  }
+  .sjzpboxtop .pull-right {
+    display: none;
+  }
+  .contimg1 {
+    height: 140px;
+    margin: 0 0 10px 0;
+    padding: 5px;
+  }
+  .sjzpboxtop {
+    margin: 10px 0;
+  }
+  .sjzpbox {
+    margin-top: 0;
+  }
+  .sjzpboxcont {
+    border: 0;
+  }
+  .btnbottom {
+    border-top: 1px solid #ddd;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .btnbottom .col-3 {
+    width: 35%;
+    float: left;
+    padding: 14px 20px;
+    background: #fff;
+    color: #999;
+    text-align: center;
+  }
+  .btnbottom .col-3 img {
+    width: 14px;
+    margin: -2px 4px 0 0;
+  }
+  .btnbottom .col-9 {
+    width: 65%;
+    float: left;
+    background: #fff;
+    color: #999;
+    padding: 14px 20px;
+    text-align: center;
+  }
+  .hiactive {
+    background: #00dfb9!important;
+    color: #fff!important;
+  }
 }

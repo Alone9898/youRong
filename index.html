@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="index/css/bootstrap1.min.css">
+    <link rel="stylesheet" type="text/css" href="common/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="common/css/base.css">
+    <link rel="stylesheet" type="text/css" href="index/css/index.css">
+    <!--[if lte IE 9]>
+    <script>window.location.href='http://cdn.dmeng.net/upgrade-your-browser.html?referrer='+location.href;</script>
+    <![endif]-->
+</head>
+<body>
+<div class="container-fluid" id="app">
+        <!--header-->
+        <sitenav></sitenav>
+        <l_header></l_header>
+        <div class="bg_card">
+            <div class="container">
+                <!--关注的活动-->
+                <div class=" pc_nav_card">
+                    <div class="col-xs-12 title_h1">
+                        你可能想关注的活动
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="border_bottom_box">
+                            <ul id="myTab" class="nav nav-tabs">
+                                <li class="active"><a href="#home" data-toggle="tab">
+                                    设计活动</a>
+                                </li>
+                                <li><a href="#ios" data-toggle="tab">招投标信息</a></li>
+                                <li><a href="#jmeter" data-toggle="tab">品牌动态</a></li>
+                            </ul>
+                        </div>
+                        <div id="myTabContent" class="tab-content">
+                            <div class="tab-pane fade in active " id="home">
+                                <ul class="ul_list">
+                                    <li v-for="list in list_activity">{{list}}</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="ios">
+                                <ul class="ul_list">
+                                    <li v-for="list in list_activity">{{list}}</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="jmeter">
+                                <ul class="ul_list">
+                                    <li v-for="list in list_activity">{{list}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row wap_nav_card">
+                    <div class="col-xs-12 ">
+                        <ul class="wap_ul_list">
+                            <li v-for="time in icon">
+                                <img :src='time.img' alt="">
+                                <div>{{time.txt}}</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--优荣直播-->
+        <div class="row pc_live">
+            <div class="col-xs-12">
+                <div class="title">优荣直播</div>
+                <div class="subtitle">优荣直播展现</div>
+            </div>
+            <div class="col-xs-12 banner">
+                <img src="common/img/images/banner1.jpg" alt="">
+            </div>
+        </div>
+        <!--优荣轮播-->
+        <div class="bg_color">
+            <div class="container container_w hidden_wap">
+                    <div class="row container_inner lb" >
+                        <!-- Swiper -->
+                        <div class="swiper-container7">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide pd_15" v-for="(item,index) in shuffling">
+                                    <div class="tpList video">
+                                        <video class="myvideo" controls poster="common/img/images/sp.png">
+                                            <source :src="item.bg_img" type="video/mp4">
+                                        </video>
+                                        <!--<img :src="item.icon_img" alt="" class="fa-play-circle" @click="playClick(index)">-->
+                                    </div>
+                                    <div class="dv_title">{{item.title}}</div>
+                                </div>
+                            </div>
+                            <!-- Add Arrows -->
+                            <img  src="common/img/images/left.png" class="swiper-button-next">
+                            <img  src="common/img/images/right.png" class="swiper-button-prev">
+                        </div>
+                    </div>
+            </div>
+            <div class="container container_w hidden_pc">
+                <div class="row container_inner wap_ht" >
+                    <!-- Swiper -->
+                    <div class="swiper-container7">
+                        <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-3 pd_15" v-for="(item,index) in shuffling">
+                            <div class="tpList video">
+                                <video class="myvideo" controls poster="common/img/images/sp.png">
+                                    <source :src="item.bg_img" type="video/mp4">
+                                </video>
+                                <!--<img :src="item.icon_img" alt="" class="fa-play-circle" @click="playClick(index)">-->
+                            </div>
+                            <div class="dv_title">{{item.title}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="a_link">
+                <a href="javascript:;" class="color_green_l">更多...</a>
+            </div>
+        </div>
+        <!--我们的服务-->
+        <div class="bg_service">
+            <div class="container">
+                <div class="row pc_service">
+                        <div class="title wap-h">我们的服务</div>
+                        <div class="subtitle">我们的服务我们的服务我们的服务我们的服务</div>
+                    <div  class="col-xs-12 list_service" style="overflow: hidden;clear: both" >
+                        <div class="swiper-container">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide" v-for="item in service" >
+                                    <img :src="item.icon_img" alt="">
+                                    <div class="title_txt">{{item.txt}}</div>
+                                    <div class="txt_info">{{item.content}}</div>
+                                </li>
+                            </ul>
+                            <!-- Add Arrows -->
+                            <img src="common/img/images/wap_left.png" alt="" class="icon_left swiper-button-next" >
+                            <img src="common/img/images/wap_right.png" alt="" class="icon_right swiper-button-prev">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--客户故事-->
+        <div class="bg_customer">
+            <div class="container">
+                <div class="row pc_customer" style="clear: both">
+                        <div class="title">客户故事</div>
+                        <div class="subtitle">我们的服务我们的服务我们的服务我们的服务</div>
+                        <div class="swiper-container1 wap_min" style="overflow: hidden;position: relative">
+                        <ul class="list_customer swiper-wrapper">
+                            <li v-for="item in list_customer" class="swiper-slide">
+                                <img src="common/img/images/tips.png" alt="" class="tips">
+                                <div><img :src="item.bg_img" alt="" class="img_customer"></div>
+                                <div class="txt_box">
+                                    <div class="title_txt">{{item.title}}</div>
+                                    <div class="content">{{item.content}}</div>
+                                </div>
+                            </li>
+                        </ul>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination silde_swiper"></div>
+                        </div>
+                    <a href="" class="color_green ">更多...</a>
+                </div>
+            </div>
+        </div>
+        <!--专业诠释-->
+        <div class="bg_card">
+            <div class="container">
+                <div class="row pc_interpretation">
+                    <div class="title">专业诠释</div>
+                    <div class="subtitle">我们的服务我们的服务我们的服务我们的服务</div>
+                    <ul class="container_x">
+                        <li v-for="item in list_inet">
+                            <img :src="item.bg_img" alt="">
+                            <div class="center_box">
+                                品牌与装修的关系
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--精品设计-->
+        <div class="row pc_live">
+            <div class="col-xs-12">
+                <div class="title">精品设计</div>
+                <div class="subtitle">优荣直播展现</div>
+            </div>
+            <div class="col-xs-12 banner">
+                <img src="common/img/images/banner1.jpg" alt="">
+            </div>
+        </div>
+        <!--精品设计轮播-->
+        <div class="swiper_style">
+            <!-- Swiper -->
+            <div class="container swiper_box swiper_one">
+                <div class="swiper-container4">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide" v-for="item in design">
+                            <img :src="item.bg_img" alt="">
+                            <div class="text_center">
+                                <div class="text">{{item.title}}</div>
+                            </div>
+                            <div class="pos_bottom">
+                                <div class="shop">{{item.content}}</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <!-- Swiper -->
+            <div class="container swiper_two">
+                <div class="swiper-container6" style="overflow: hidden;margin: 10px;">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide" v-for="item in design">
+                            <img :src="item.bg_img" alt="">
+                            <div class="text_center">
+                                <div class="text">{{item.title}}</div>
+                            </div>
+                            <div class="pos_bottom">
+                                <div class="shop">{{item.content}}</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Swiper -->
+        <div class="container">
+            <!--banner_two-->
+            <div class="banner_two">
+                <img src="common/img/images/banner2.jpg" alt="">
+            </div>
+                <div class="container">
+                    <div class="row pc_customer wap_bg ">
+                        <div class="swiper-container1" style="overflow: hidden;position: relative">
+                            <ul class="list_customer swiper-wrapper live_list pc_bg pc_pd">
+                                <li v-for="item in live" class="swiper-slide">
+                                    <img src="common/img/images/hot.png" alt="" class="hot">
+                                    <div class="live_img"><img :src="item.bg_img" alt="" class="img_customer wap_live"></div>
+                                    <div class="txt_box">
+                                        <div class="title_txt_x">
+                                            <div class="txt">{{item.title}}</div></div>
+                                        <div class="content_x">{{item.content}}</div>
+                                        <div class="bottom_s">{{item.tips}}</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                        <a href="" class="color_green cloe_x">更多...</a>
+                    </div>
+                </div>
+        </div>
+        <!--服务流程-->
+        <div class="bg_process">
+            <div class="container">
+                <div class="row pc_interpretation">
+                    <div class="title">服务流程</div>
+                    <div class="subtitle">我们的服务我们的服务我们的服务我们的服务</div>
+                    <img src="common/img/images/lct.jpg" alt="" class="lct_banner">
+                </div>
+            </div>
+        </div>
+        <!--合作伙伴-->
+            <div class="container wap_bg">
+                <div class="row pc_partners ">
+                    <div class="title">合作伙伴</div>
+                    <div class="subtitle">我们的服务我们的服务我们的服务我们的服务</div>
+                </div>
+                <ul class="partners">
+                    <li v-for="item in partners">
+                        <img :src="item" alt="">
+                    </li>
+                </ul>
+                <!-- Swiper -->
+                <div class="swiper-container3 wap_partners" style="width: 100%;overflow: hidden">
+                    <ul class="swiper-wrapper" >
+                        <li class="swiper-slide" v-for="item in partners">
+                            <img :src="item" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        <!--footer-->
+        <footer-model></footer-model>
+    </div>
+<script src="common/js/jquery-1.11.3.js"></script>
+<script src="common/js/bootstrap.min.js"></script>
+<script src="common/js/swiper.min.js"></script>
+<script src="common/js/vue.js"></script>
+<script type="text/javascript" src="common/js/public1.js"></script>
+<script src="index/js/index.js"></script>
+    <script>
+        new Vue({
+            el:'#app',
+            data:{
+                list_activity:['项目活动','项目活动','项目活动','项目活动','项目活动','项目活动','项目活动','项目活动','项目活动','项目活动'],
+                icon:[
+                    {img:'common/img/images/1024.png',txt:'项目活动'},
+                    {img:'common/img/images/user.png',txt:'项目活动'},
+                    {img:'common/img/images/1024.png',txt:'项目活动'},
+                    {img:'common/img/images/user.png',txt:'项目活动'},
+                ],
+                shuffling:[
+                    {
+                        bg_img:'index/video/video.mp4',
+                        icon_img:'common/img/images/bf.png',
+                        title:'我是大标题我是大标题我是大标题',
+                        time:'00:00',
+                    },
+                    {
+                        bg_img:'index/video/video.mp4',
+                        icon_img:'common/img/images/bf.png',
+                        title:'我是大标题我是大标题我是大标题',
+                        time:'00:00',
+                    },
+                    {
+                        bg_img:'index/video/video.mp4',
+                        icon_img:'common/img/images/bf.png',
+                        title:'我是大标题我是大标题我是大标题我是',
+                        time:'00:00',
+                    },
+                    {
+                        bg_img:'index/video/video.mp4',
+                        icon_img:'common/img/images/bf.png',
+                        title:'我是大标题我是大标题我是大标题我是',
+                        time:'00:00',
+                    },
+
+                ],
+                service:[
+                    {icon_img:'common/img/images/gxh.png',txt:'个性化',content:'以业主为核心的有效组织，对平台参与方提供全方位实现个性化需求'},
+                    {icon_img:'common/img/images/tmh.png',txt:'透明化',content:'以业主为核心的有效组织，对平台参与方提供全方位实现个性化需求'},
+                    {icon_img:'common/img/images/bzh.png',txt:'标准化',content:'以业主为核心的有效组织，对平台参与方提供全方位实现个性化需求'},
+                    {icon_img:'common/img/images/zhh.png',txt:'智慧化',content:'以业主为核心的有效组织，对平台参与方提供全方位实现个性化需求'},
+                    {icon_img:'common/img/images/pph.png',txt:'品牌化',content:'以业主为核心的有效组织，对平台参与方提供全方位实现个性化需求'}
+                ],
+                list_customer:[
+                    {bg_img:'common/img/images/1024.png', title:'我是大标1',content:'别致的厨房别致的厨房别致的厨房别致的厨房别致的厨房别致的厨房别致的厨房'},
+                    {bg_img:'common/img/images/cs.png', title:'我是大标2',content:'别致的厨房别致的厨房别致的厨房别致的厨房别致的厨房别致的厨房别致的厨房'},
+                    {bg_img:'common/img/images/cs.png', title:'我是大标3',content:'别致的厨房别致的厨房别致的厨房别致的厨房别致的厨房别致的厨房别致的厨房'},
+                    {bg_img:'common/img/images/cs.png', title:'我是大标4',content:'别致的厨房别致的厨房别致的厨房别致的厨房别致的厨房别致的厨房别致的厨房'},
+                    {bg_img:'common/img/images/1024.png', title:'我是大标1',content:'别致的厨房别致的厨房别致的厨房别致的厨房别致的厨房别致的厨房别致的厨房'},
+                    {bg_img:'common/img/images/cs.png', title:'我是大标4',content:'别致的厨房别致的厨房别致的厨房别致的厨房别致的厨房别致的厨房别致的厨房'},
+                ],
+                list_inet:[
+                    {bg_img:'common/img/images/1024.png', title:'我是大标1',content:'别致的厨房别致的厨房别致的厨房别致的厨房别致的厨房别致的厨房别致的厨房'},
+                    {bg_img:'common/img/images/cs.png', title:'我是大标2',content:'别致的厨房别致的厨房别致的厨房别致的厨房别致的厨房别致的厨房别致的厨房'},
+                    {bg_img:'common/img/images/cs.png', title:'我是大标3',content:'别致的厨房别致的厨房别致的厨房别致的厨房别致的厨房别致的厨房别致的厨房'},
+                    {bg_img:'common/img/images/cs.png', title:'我是大标4',content:'别致的厨房别致的厨房别致的厨房别致的厨房别致的厨房别致的厨房别致的厨房'},
+                ],
+                design:[
+                    {bg_img:'common/img/images/1024.png', title:'我是大标',content:'码头故事火锅-北京店"'},
+                    {bg_img:'common/img/images/cs.png', title:'我是大标',content:'码头故事火锅-北京店"'},
+                    {bg_img:'common/img/images/cs.png', title:'我是大标',content:'码头故事火锅-北京店"'},
+                    {bg_img:'common/img/images/cs.png', title:'我是大标',content:'码头故事火锅-北京店"'},
+                ],
+                live:[
+                    {bg_img:'common/img/images/1024.png', title:'我是大标',content:'流年清浅，安然如初',tips:'北延设计'},
+                    {bg_img:'common/img/images/cs.png', title:'我是大标',content:'流年清浅，安然如初',tips:'北延设计'},
+                    {bg_img:'common/img/images/cs.png', title:'我是大标',content:'流年清浅，安然如初',tips:'北延设计'},
+                    {bg_img:'common/img/images/cs.png', title:'我是大标',content:'流年清浅，安然如初',tips:'北延设计'},
+                    {bg_img:'common/img/images/cs.png', title:'我是大标',content:'流年清浅，安然如初',tips:'北延设计'},
+                    {bg_img:'common/img/images/cs.png', title:'我是大标',content:'流年清浅，安然如初',tips:'北延设计'},
+                ],
+                partners:[
+                    'common/img/images/hezuo.png',
+                    'common/img/images/hezuo.png',
+                    'common/img/images/hezuo.png',
+                    'common/img/images/hezuo.png',
+                    'common/img/images/hezuo.png',
+                    'common/img/images/hezuo.png',
+                    'common/img/images/hezuo.png',
+                    'common/img/images/hezuo.png',
+                    'common/img/images/hezuo.png',
+                    'common/img/images/hezuo.png',
+                    'common/img/images/hezuo.png',
+                    'common/img/images/hezuo.png',
+                    'common/img/images/hezuo.png',
+                    'common/img/images/hezuo.png',
+                    'common/img/images/hezuo.png',
+                    'common/img/images/hezuo.png',
+                    'common/img/images/hezuo.png',
+                    'common/img/images/hezuo.png',
+                ],
+                hides:true,
+            },
+            methods:{
+                playClick(index){
+                   id= document.getElementsByClassName('myvideo')[index];
+                   id.play();
+                },
+            }
+        });
+
+    </script>
+</body>
+</html>
