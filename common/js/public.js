@@ -55,7 +55,7 @@ Vue.component('sitenav', {
                         <span class="icon-bar"></span>\
                         <span class="icon-bar"></span>\
                     </button>\
-                    <a href="#" class="logo">\
+                    <a href="../../index.html" class="logo">\
                         <img src="../../common/img/icon/logo.png">\
                     </a>\
                     <div class="person">\
@@ -64,10 +64,10 @@ Vue.component('sitenav', {
                 </div>\
                 <div class="collapse navbar-collapse" id="navbar-menu">\
                     <ul class="nav navbar-nav navbar-left">\
-                        <li><a href="#">首页</a></li>\
+                        <li><a href="../../index.html">首页</a></li>\
                         <li><a href="#">产品介绍</a></li>\
                         <li><a href="#">品牌中心</a></li>\
-                        <li><a href="#">设计专区</a></li>\
+                        <li><a href="index/pages/designCenter/decoration.html">设计中心</a></li>\
                         <li><a href="#">招投标</a></li>\
                         <li ><a href="#">项目管理</a></li>\
                         <li ><a href="#">服务商</a></li>\
@@ -149,7 +149,7 @@ Vue.component('footer-model', {
         <div class="container">\
         <div class="footerBox">\
         <span><a href="#">加速器首页</a></span>|<span><a href="#">产品介绍</a></span>|<span><a href="#">品牌中心</a></span>|\
-        <span><a href="#">设计专区</a></span>|<span><a href="#">招投标</a></span>|<span><a href="#">项目管理</a></span>|\
+        <span><a href="index/pages/designCenter/decoration.html">设计中心</a></span>|<span><a href="#">招投标</a></span>|<span><a href="#">项目管理</a></span>|\
         <span><a href="#">服务商</a></span>|<span><a href="#">关于我们</a></span>|<span><a href="#">后台登陆</a></span>|\
         <span><a href="#">服务商登陆</a></span>\
         <div class="Copy">Copyright © 2016 - 2017 加速器.com 版权所有 互联网出版许可证编号新出网证(加速器)字155号 加ICP证171239号</div>\

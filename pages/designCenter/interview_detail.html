@@ -7,20 +7,21 @@
     <title>设计专访详情页</title>
     <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../common/css/swiper.min.css">
-    <link rel="stylesheet" href="../../common/css/base.css"/>
     <link rel="stylesheet" href="css/pic_tab.css">
     <link rel="stylesheet" href="css/designCommon.css">
 </head>
 <body>
 <div id="app" v-cloak>
-	    <!--header>
+	    <!--header-->
 		<sitenav></sitenav>
-		<l_header></l_header-->
-	    <div class="contdel container " style="margin-bottom: 100px">
+		<l_header></l_header>
+	    <div class="contdel container mbgd" style="margin-bottom: 100px">
             <div class="detbox clearfix">
-                <div class="mybgd"><img src="../../common/img/icon/t2.png"></div>
+                <div class="mybgd mybgd1"><img src="../../common/img/icon/t2.png"></div>
+                <div class="mmybgd" style="display: none"><h4>设计师介绍</h4></div>
                 <div class="imgleft1 pull-left" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover">
                     <div class="enter"><img src="../../common/img/icon/enter.png"></div>
+                    <div class="menter" style="display: none"><img src="../../common/img/icon/menter.png"></div>
                 </div>
                 <div class="detright pull-left">
                     <div class="detil"><h3>李老头</h3></div>
@@ -31,8 +32,13 @@
                     <div class="hm botbgdtxt2"><h4>代表作品</h4><p><span>《作品名》</span><span>《作品名》</span><span>《作品名》</span></p></div>
                 </div>
             </div>
-            <div class="detbox clearfix">
-                <div class="mybgd"><img src="../../common/img/icon/t3.png"></div>
+            <div class="detbox clearfix" style="margin-bottom:0!important;">
+                <div class="mybgd mybgd1"><img src="../../common/img/icon/t3.png"></div>
+                <div class="mmybgd" style="display: none"><h4>专访内容</h4></div>
+                <div class="mtbox" style="display: none">
+                    <h5>作者名</h5>
+                    <p>采访意见以及评论采访意见以及评论，采访意见以及评论,采访意见以及评论采访意见以及评论采访意见以及评论，,采访意见以及评论，,采访意见以及评论，,采访意见以及评论，采访意见以及评论采采访意见以及评论采访意见以及评论采访意见以及评论，,采访意见以及评论，,采访意见以及评论，,采访意</p>
+                </div>
                 <div class="zfcont">
                     <div class="zfconttop clearfix">
                         <img src="../../common/img/icon/txt.png">
@@ -61,7 +67,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="zfcontbottom">
+                    <div class="zfcontbottom zfcontbottomn">
                         <div class="quesbox">
                             <h4 style="background: url('../../common/img/icon/wen.png')no-repeat;">采访问题</h4>
                             <p style="background: url('../../common/img/icon/da.png')no-repeat;">采访问题采访问题采访问题，采访问题采访问题采访问题采问题采访问题，采访问题采访问题采访问题采访问采访问题采访问题采访问题，采访问题采访问题采访问题采访问题，采访问题，采访问题采访问题，采访问题。</p>
@@ -86,8 +92,9 @@
                     </div>
                 </div>
             </div>
-            <div class="detbox" style="position: relative;top: 30px;">
-                <div class="mybgd" style="height:94px"><img src="../../common/img/icon/t4.png"></div>
+            <div class="detbox detbox1" style="position: relative;top: 30px;">
+                <div class="mybgd mybgd1" style="height:94px"><img src="../../common/img/icon/t4.png"></div>
+                <div class="mmybgd" style="display: none"><h4>设计作品</h4></div>
                 <div class="sjzpbox"><!--style="background: url('../../common/img/images/big1.png'); background-position: 50%;background-size: cover"-->
                     <div class="sjzpswiper">
                         <!-- lunbo 1-->
@@ -150,13 +157,80 @@
                         </div>
                     </div>
                 </div>
+                <div class="mzpbox clearfix" style="display: none">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 mycont">
+                        <div class="mycontbox">
+                            <div class="contimgcssbox"><div class="contimgcss item-one" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></div></div>
+                            <div class="mybgd mybgd2">
+                                <h5 style="padding:10px 0"><b>榆林路小龙坎装修工程</b></h5>
+                                <div class="mybor non">
+                                    <span class="colcss marcss" style="margin-left: 0">新中式</span> | <span class="colcss marcss">连锁加盟</span> | <span class="marcss">123万</span> <span class="marcss">78m2</span><span class="marcss pull-right">2017-3-4</span>
+                                </div>
+                                <div class="clearfix non" style="margin-top:20px">
+                                    <span class="sjhead pull-left" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></span>
+                                    <span class="pcss pull-left mtop">设计师：<samp style="color:#666">申购</samp></span><span class="ji pull-left mtop">一级</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 mycont">
+                        <div class="mycontbox">
+                            <div class="contimgcssbox"><div class="contimgcss item-one" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></div></div>
+                            <div class="mybgd mybgd2">
+                                <h5 style="padding:10px 0"><b>榆林路小龙坎装修工程</b></h5>
+                                <div class="mybor non">
+                                    <span class="colcss marcss" style="margin-left: 0">新中式</span> | <span class="colcss marcss">连锁加盟</span> | <span class="marcss">123万</span> <span class="marcss">78m2</span><span class="marcss pull-right">2017-3-4</span>
+                                </div>
+                                <div class="clearfix non" style="margin-top:20px">
+                                    <span class="sjhead pull-left" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></span>
+                                    <span class="pcss pull-left mtop">设计师：<samp style="color:#666">申购</samp></span><span class="ji pull-left mtop">一级</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zkmorderbox" style="display:none">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 mycont">
+                            <div class="mycontbox">
+                                <div class="contimgcssbox"><div class="contimgcss item-one" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></div></div>
+                                <div class="mybgd mybgd2">
+                                    <h5 style="padding:10px 0"><b>榆林路小龙坎装修工程</b></h5>
+                                    <div class="mybor non">
+                                        <span class="colcss marcss" style="margin-left: 0">新中式</span> | <span class="colcss marcss">连锁加盟</span> | <span class="marcss">123万</span> <span class="marcss">78m2</span><span class="marcss pull-right">2017-3-4</span>
+                                    </div>
+                                    <div class="clearfix non" style="margin-top:20px">
+                                        <span class="sjhead pull-left" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></span>
+                                        <span class="pcss pull-left mtop">设计师：<samp style="color:#666">申购</samp></span><span class="ji pull-left mtop">一级</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 mycont">
+                            <div class="mycontbox">
+                                <div class="contimgcssbox"><div class="contimgcss item-one" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></div></div>
+                                <div class="mybgd mybgd2">
+                                    <h5 style="padding:10px 0"><b>榆林路小龙坎装修工程</b></h5>
+                                    <div class="mybor non">
+                                        <span class="colcss marcss" style="margin-left: 0">新中式</span> | <span class="colcss marcss">连锁加盟</span> | <span class="marcss">123万</span> <span class="marcss">78m2</span><span class="marcss pull-right">2017-3-4</span>
+                                    </div>
+                                    <div class="clearfix non" style="margin-top:20px">
+                                        <span class="sjhead pull-left" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></span>
+                                        <span class="pcss pull-left mtop">设计师：<samp style="color:#666">申购</samp></span><span class="ji pull-left mtop">一级</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zkbox" @click="zkfun($event)"><img src="../../common/img/icon/zk.png" width='55'></div>
+                    
+                </div>
             </div>
             <div class="detbox">
-                <div class="mybgd" style="height:170px"><img src="../../common/img/icon/t5.png"></div>
+                <div class="mybgd mybgd1" style="height:170px"><img src="../../common/img/icon/t5.png"></div>
+                <div class="mmybgd" style="display: none"><h4>往期回顾</h4></div>
                 <!-- Swiper -->
-                <div class="swiper-container">
+                <div class="swiper-container mpc">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide msw ">
+                        <div class="swiper-slide msw">
                             <div class="swipertop" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover">
                             </div>
                             <div class="swiperbottom">
@@ -164,7 +238,7 @@
                                 <p>工装才是未来发展的王道，工装才是</p>
                             </div>
                         </div>
-                        <div class="swiper-slide msw ">
+                        <div class="swiper-slide msw">
                             <div class="swipertop" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover">
                             </div>
                             <div class="swiperbottom">
@@ -172,7 +246,7 @@
                                 <p>工装才是未来发展的王道，工装才是</p>
                             </div>
                         </div>
-                        <div class="swiper-slide msw ">
+                        <div class="swiper-slide msw">
                             <div class="swipertop" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover">
                             </div>
                             <div class="swiperbottom">
@@ -180,7 +254,7 @@
                                 <p>工装才是未来发展的王道，工装才是</p>
                             </div>
                         </div>
-                        <div class="swiper-slide msw ">
+                        <div class="swiper-slide msw">
                             <div class="swipertop" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover">
                             </div>
                             <div class="swiperbottom">
@@ -188,7 +262,7 @@
                                 <p>工装才是未来发展的王道，工装才是</p>
                             </div>
                         </div>
-                        <div class="swiper-slide msw ">
+                        <div class="swiper-slide msw">
                             <div class="swipertop" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover">
                             </div>
                             <div class="swiperbottom">
@@ -196,7 +270,7 @@
                                 <p>工装才是未来发展的王道，工装才是</p>
                             </div>
                         </div>
-                        <div class="swiper-slide  msw ">
+                        <div class="swiper-slide msw">
                             <div class="swipertop" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover">
                             </div>
                             <div class="swiperbottom">
@@ -204,7 +278,7 @@
                                 <p>工装才是未来发展的王道，工装才是</p>
                             </div>
                         </div>
-                        <div class="swiper-slide msw ">
+                        <div class="swiper-slide msw">
                             <div class="swipertop" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover">
                             </div>
                             <div class="swiperbottom">
@@ -212,7 +286,7 @@
                                 <p>工装才是未来发展的王道，工装才是</p>
                             </div>
                         </div>
-                        <div class="swiper-slide msw ">
+                        <div class="swiper-slide msw">
                             <div class="swipertop" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover">
                             </div>
                             <div class="swiperbottom">
@@ -221,14 +295,47 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-next" ></div>
-                    <div class="swiper-button-prev" ></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="mymob clearfix">
+                        <div class="msw pull-left">
+                            <div class="swipertop" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover">
+                            </div>
+                            <div class="swiperbottom">
+                                <h4><b>李老头</b></h4>
+                                <p>工装才是未来发展的王道，工装才是</p>
+                            </div>
+                        </div>
+                        <div class="msw pull-left">
+                            <div class="swipertop" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover">
+                            </div>
+                            <div class="swiperbottom">
+                                <h4><b>李老头</b></h4>
+                                <p>工装才是未来发展的王道，工装才是</p>
+                            </div>
+                        </div>
+                        <div class="msw pull-left">
+                            <div class="swipertop" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover">
+                            </div>
+                            <div class="swiperbottom">
+                                <h4><b>李老头</b></h4>
+                                <p>工装才是未来发展的王道，工装才是</p>
+                            </div>
+                        </div>
+                        <div class="msw pull-left">
+                            <div class="swipertop" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover">
+                            </div>
+                            <div class="swiperbottom">
+                                <h4><b>李老头</b></h4>
+                                <p>工装才是未来发展的王道，工装才是</p>
+                            </div>
+                        </div>
                 </div>
             </div>
-            <div class="detbox"></div>
         </div>
-        <!--footer>
-        <footer-model></footer-model-->
+        <!--footer-->
+        <footer-model></footer-model>
     </div>
 </div>
 <script src="../../common/js/jquery-1.11.3.js"></script>

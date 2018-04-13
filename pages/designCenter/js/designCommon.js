@@ -7,14 +7,18 @@ var app = new Vue({
         
     },
     methods: {
+        //nav高亮
 		searchfun(ev){
 			$(ev.target).addClass('hoverhight').siblings().removeClass('hoverhight');
+            window.location.href='AskQuestions_b.html';
 		},
+        //nav跳转
         searchcli(ev,a){
             $(ev.target).addClass('myhight').siblings().removeClass('myhight');
             //alert(a);
             window.location.href=''+a+'.html';
         },
+        //查看更多
         viewmore(ev){
             if(this.more==1){
                 this.more=0;
@@ -23,6 +27,22 @@ var app = new Vue({
                 this.more=1;
                 $(ev.target).parents('.mbox').find('.mnone').slideUp();
             }
+        },
+        //查看详情
+        viewdetail(ev){
+            window.location.href="interview_detail.html";
+        },
+        zkfun(ev){
+            //alert(1);
+            jq('.zkmorderbox').slideToggle();
+        },
+        //关注
+        guanzhu(ev){
+            $(ev.target).addClass('hiactive').siblings().removeClass('hiactive');
+        },
+        //预约咨询
+        yuyue(ev){
+            $(ev.target).addClass('hiactive').siblings().removeClass('hiactive');
         },
     },
 })
