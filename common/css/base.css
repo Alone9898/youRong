@@ -292,6 +292,7 @@ a{text-decoration:none;}
     }
     .l_header{
         height: 336px!important;
+        overflow: hidden;
     }
     .l_header .navbar-default .navbar-collapse, .navbar-default .navbar-form{
         width: 120px;
