@@ -71,22 +71,19 @@ body {
 /*wap关注活动*/
 .wap_nav_card {
   display: none;
-  height: 137px;
-  padding-top: 2rem;
+  padding: 2rem 0;
 }
 .wap_nav_card .wap_ul_list li {
   width: 25%;
   display: inline-block;
   text-align: center;
+  font-size: 1.4rem;
 }
 .wap_nav_card .wap_ul_list li img {
   width: 70%;
   height: 70%;
   -webkit-border-radius: 50%;
   margin-bottom: 1rem;
-}
-.wap_nav_card .wap_ul_list li .item {
-  font-size: 1.4rem;
 }
 /*优荣直播*/
 .pc_live {
@@ -317,7 +314,6 @@ body {
   width: 40px;
   padding-top: 20px;
   line-height: 20px;
-  font-size: 1.6rem;
 }
 .list_customer li .txt_box .content_x {
   text-align: center;
@@ -449,7 +445,7 @@ body {
 }
 .swiper-container4 .pos_bottom {
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
   width: 100%;
 }
 .swiper-container4 .pos_bottom .shop {
@@ -557,6 +553,9 @@ body {
   }
   .pc_live .banner {
     display: none;
+  }
+  .container_inner {
+    border-bottom: 1px solid #ddd;
   }
   .special_content {
     padding-bottom: 20px;
@@ -718,10 +717,9 @@ body {
   }
   .live_list li .title_txt_x .txt {
     margin: 0 auto;
-    width: 30px!important;
+    width: 24px!important;
     padding-top: 9px!important;
     line-height: 15px!important;
-    font-size: 1.2rem!important;
   }
   .live_list li .content_x {
     font-size: 1rem!important;
@@ -755,21 +753,12 @@ body {
   }
   .swiper_style .pos_bottom {
     position: absolute;
-    bottom: 0;
+    bottom: .5rem;
     color: #fff;
-    border: none;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.3);
-    margin-top: -3rem;
-    z-index: 99;
-    font-size: 2rem;
-    font-weight: normal;
-    width: 100%;
-    height: 3.5rem;
   }
   .swiper_style .pos_bottom .shop {
-    line-height: 3.5rem;
     font-size: 2rem;
+    margin-top: -20px;
   }
   /*banner_two*/
   .banner_two {
@@ -833,7 +822,6 @@ body {
     text-overflow: ellipsis;
     white-space: nowrap;
     margin-top: 0.5rem;
-    font-size: 1.6rem;
   }
   .video {
     height: 200px!important;
@@ -870,7 +858,6 @@ body {
 .a_link .color_green_l {
   padding: 15px;
   color: #00dfb9;
-  font-size: 1.4rem;
 }
 .wap-h {
   margin-top: 15px;

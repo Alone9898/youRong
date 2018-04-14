@@ -9,7 +9,7 @@ $(function () {
         prevButton: '.swiper-button-prev',
         slidesPerView: 1,
         paginationClickable: true,
-        loop: true,
+        loop: true
     });
     var swiper1 = new Swiper('.swiper-container1', {
         pagination: '.swiper-pagination',
@@ -48,13 +48,19 @@ $(function () {
         spaceBetween: 30,
         loop: true
     });
-
+    var swiper7 = new Swiper('.swiper-container7', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 4,
+        paginationClickable: true,
+        spaceBetween: 0,
+        loop: true
+    });
     /*wap直播下拉列表*/
     $('.color_green_l').click(function () {
-        $(this).text('收起')
             $('.wap_ht').toggleClass('add_ht')
     });
-
     function boot(){
         //加载页面时执行一次
         changeMargin();
@@ -68,17 +74,7 @@ $(function () {
             //获取网页可见区域宽度
             var docWidth = document.body.clientWidth;
             if(docWidth <=700){
-                $('.pc_bg').removeClass('pc_pd');
-            }else {
-                var swiper7 = new Swiper('.swiper-container7', {
-                    pagination: '.swiper-pagination',
-                    nextButton: '.swiper-button-next',
-                    prevButton: '.swiper-button-prev',
-                    slidesPerView: 4,
-                    paginationClickable: true,
-                    spaceBetween: 0,
-                    loop: true
-                });
+                $('.pc_bg').removeClass('pc_pd')
             }
         }
     }

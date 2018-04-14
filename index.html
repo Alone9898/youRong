@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="index/css/bootstrap1.min.css">
     <link rel="stylesheet" type="text/css" href="common/css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="common/css/base.css">
     <link rel="stylesheet" type="text/css" href="index/css/index.css">
-    <script src="common/js/swiper.min.js"></script>
     <!--[if lte IE 9]>
     <script>window.location.href='http://cdn.dmeng.net/upgrade-your-browser.html?referrer='+location.href;</script>
     <![endif]-->
 </head>
 <body>
-<div class="container-fluid" id="app"  v-cloak>
+<div class="container-fluid" id="app">
         <!--header-->
         <sitenav></sitenav>
+        <l_header></l_header>
         <div class="bg_card">
             <div class="container">
                 <!--关注的活动-->
@@ -59,7 +59,7 @@
                         <ul class="wap_ul_list">
                             <li v-for="time in icon">
                                 <img :src='time.img' alt="">
-                                <div class="item">{{time.txt}}</div>
+                                <div>{{time.txt}}</div>
                             </li>
                         </ul>
                     </div>
@@ -78,7 +78,7 @@
         </div>
         <!--优荣轮播-->
         <div class="bg_color">
-            <div class="container container_w hidden_wap ">
+            <div class="container container_w hidden_wap">
                     <div class="row container_inner lb" >
                         <!-- Swiper -->
                         <div class="swiper-container7">
@@ -102,7 +102,7 @@
             <div class="container container_w hidden_pc">
                 <div class="row container_inner wap_ht" >
                     <!-- Swiper -->
-                    <div class="">
+                    <div class="swiper-container7">
                         <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-3 pd_15" v-for="(item,index) in shuffling">
                             <div class="tpList video">
                                 <video class="myvideo" controls poster="common/img/images/sp.png">
@@ -296,10 +296,11 @@
                 </div>
             </div>
         <!--footer-->
-      <!--  <footer-model></footer-model>-->
+        <footer-model></footer-model>
     </div>
 <script src="common/js/jquery-1.11.3.js"></script>
 <script src="common/js/bootstrap.min.js"></script>
+<script src="common/js/swiper.min.js"></script>
 <script src="common/js/vue.js"></script>
 <script type="text/javascript" src="common/js/public1.js"></script>
 <script src="index/js/index.js"></script>
@@ -316,25 +317,25 @@
                 ],
                 shuffling:[
                     {
-                        bg_img:'index/video/240.mp4',
+                        bg_img:'index/video/video.mp4',
                         icon_img:'common/img/images/bf.png',
                         title:'我是大标题我是大标题我是大标题',
                         time:'00:00',
                     },
                     {
-                        bg_img:'index/video/240.mp4',
+                        bg_img:'index/video/video.mp4',
                         icon_img:'common/img/images/bf.png',
                         title:'我是大标题我是大标题我是大标题',
                         time:'00:00',
                     },
                     {
-                        bg_img:'index/video/240.mp4',
+                        bg_img:'index/video/video.mp4',
                         icon_img:'common/img/images/bf.png',
                         title:'我是大标题我是大标题我是大标题我是',
                         time:'00:00',
                     },
                     {
-                        bg_img:'index/video/240.mp4',
+                        bg_img:'index/video/video.mp4',
                         icon_img:'common/img/images/bf.png',
                         title:'我是大标题我是大标题我是大标题我是',
                         time:'00:00',
@@ -396,14 +397,14 @@
                     'common/img/images/hezuo.png',
                     'common/img/images/hezuo.png',
                 ],
-
+                hides:true,
             },
             methods:{
                 playClick(index){
                    id= document.getElementsByClassName('myvideo')[index];
                    id.play();
                 },
-            },
+            }
         });
 
     </script>

@@ -1,6 +1,7 @@
 //头部
 Vue.component('sitenav', {
-    template:'<div class="mycontainer">\
+    template:'<div>\
+    <link rel="stylesheet" href="../../common/css/base.css"/>\
     <div class="container siteNav">\
         <div class="row" >\
             <div class="col-xs-2 col-lg-1 place">\
@@ -46,7 +47,7 @@ Vue.component('sitenav', {
     </div>\
     <div class="l_header">\
         <nav class="navbar navbar-default" role="navigation">\
-            <div class="container clearfix">\
+            <div class="container">\
                 <div class="navbar-header">\
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">\
                         <span class="sr-only">切换导航</span>\
@@ -66,7 +67,7 @@ Vue.component('sitenav', {
                         <li><a href="../../index.html">首页</a></li>\
                         <li><a href="#">产品介绍</a></li>\
                         <li><a href="#">品牌中心</a></li>\
-                        <li><a href="decoration.html">设计中心</a></li>\
+                        <li><a href="index/pages/designCenter/decoration.html">设计中心</a></li>\
                         <li><a href="#">招投标</a></li>\
                         <li ><a href="#">项目管理</a></li>\
                         <li ><a href="#">服务商</a></li>\
@@ -89,33 +90,15 @@ Vue.component('sitenav', {
                 </div>\
             </div>\
         </nav>\
-            <div class="swiper-container header-swiper-container pswiper">\
-                <div class="swiper-wrapper ">\
-                    <div class="swiper-slide"><img src="../../common/img/images/banner1.jpg" height="100%" ></div>\
-                    <div class="swiper-slide"><img src="../../common/img/images/banner1.jpg" height="100%" ></div>\
-                    <div class="swiper-slide" ><img src="../../common/img/images/banner1.jpg" height="100%" ></div>\
+        <div class="swiper-container header-swiper-container">\
+                <div class="swiper-wrapper">\
+                    <div class="swiper-slide"><img src="../../common/img/icon/banner1.jpg" width="100%" height="100%"></div>\
+                    <div class="swiper-slide"><img src="../../common/img/icon/banner1.jpg" width="100%" height="100%"></div>\
+                    <div class="swiper-slide" ><img src="../../common/img/icon/banner1.jpg" width="100%" height="100%"></div>\
                 </div>\
                 <div class="swiper-pagination header-pagination"></div>\
             </div>\
-            <div class="swiper-container header-swiper-container mswiper" style="display:none">\
-                <div class="swiper-wrapper ">\
-                    <div class="swiper-slide"><img src="../../common/img/images/mbanner1.png" height="240px" ></div>\
-                    <div class="swiper-slide"><img src="../../common/img/images/mbanner1.png" height="240px" ></div>\
-                    <div class="swiper-slide"><img src="../../common/img/images/mbanner1.png" height="240px" ></div>\
-                </div>\
-                <div class="swiper-pagination header-pagination pswiper"></div>\
-            </div>\
-            <div class="addrbox clearfix mswiper mswiper1" style="display: none">\
-                <div class="pull-left " style="margin-right: 10px;margin-top:4px">\
-                    <img class="myimgp" src="../../common/img/icon/place.png"><span>成都</span>\
-                </div>\
-                <div class="pull-left sear" style="position:relative">\
-                    <input type="search" placeholder="请输入关键字查找"/>\
-                    <img src="../../common/img/icon/search.png">\
-                </div>\
-            </div>\
-        </div>\
-    </div>',
+    </div></div>',
     data: function () {
         return {
             isShow:false,
@@ -156,7 +139,7 @@ Vue.component('sitenav', {
             keyboardControl : true,
           /*  mousewheelControl : true,//鼠标控制*/
             freeMode : false,//切换效果
-              //autoplay : 5000,
+              autoplay : 5000,
         });
     }
 });
@@ -166,7 +149,7 @@ Vue.component('footer-model', {
         <div class="container">\
         <div class="footerBox">\
         <span><a href="#">加速器首页</a></span>|<span><a href="#">产品介绍</a></span>|<span><a href="#">品牌中心</a></span>|\
-        <span><a href="decoration.html">设计中心</a></span>|<span><a href="#">招投标</a></span>|<span><a href="#">项目管理</a></span>|\
+        <span><a href="index/pages/designCenter/decoration.html">设计中心</a></span>|<span><a href="#">招投标</a></span>|<span><a href="#">项目管理</a></span>|\
         <span><a href="#">服务商</a></span>|<span><a href="#">关于我们</a></span>|<span><a href="#">后台登陆</a></span>|\
         <span><a href="#">服务商登陆</a></span>\
         <div class="Copy">Copyright © 2016 - 2017 加速器.com 版权所有 互联网出版许可证编号新出网证(加速器)字155号 加ICP证171239号</div>\

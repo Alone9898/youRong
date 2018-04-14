@@ -47,11 +47,6 @@
 .left_layout .z-tips .z_item {
   display: inline-block;
   margin-right: 3.5rem;
-  color: #999999;
-}
-.left_layout .z-tips .z_item .color_font{
-  color: #999999;
-  font-size: 1.4rem;
 }
 .left_layout .z-tips .item_right {
   float: right;
@@ -419,13 +414,9 @@
     text-align: center;
     font-size: 1.6rem;
   }
-  .left_layout .z-tips{
-    font-size: 1.4rem;
-  }
   .left_layout .z-tips .z_item {
     margin-right: 0;
     display: block;
-    font-size: 1.4rem;
   }
   .left_layout .z-tips .wap_fl {
     float: left;
@@ -496,7 +487,7 @@
     border: none!important;
   }
   .user_box .right_content .center_content {
-    font-size: 1.3rem!important;
+    font-size: 1.2rem!important;
     margin-top: 0!important;
     padding-bottom: 0!important;
     color: #666666!important;
@@ -520,12 +511,8 @@
     width: 100%;
     text-align: center;
     font-size: 1.4rem;
-    line-height: 3rem;
+    line-height: 2rem;
     color: #999999;
-  }
-  .slide_toggle .text_s{
-    font-size: 1.4rem;
-    color:#999999;
   }
   .slide_toggle img {
     width: 19px;
@@ -575,8 +562,5 @@
   }
   .problem_box .z_right {
     display: none;
-  }
-  .right_content .tips_top .z_right{
-    font-size: 1.4rem;
   }
 }

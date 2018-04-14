@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>精装工选</title>
     <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../common/css/swiper.min.css">
@@ -18,22 +18,31 @@
 
 <body>
 <div id="app" v-cloak>
-    <!--header-->
+    <!--header>
     <sitenav></sitenav>
+    <l_header></l_header-->
     <!--banner-->
-    <!--<div class="z_banner">
+    <div class="z_banner">
         <img src="../../common/img/images/z_banner.png" alt="">
-    </div>-->
+    </div>
     <div class="title">
         <div class="swiper-container-nav">
             <div class="myh swiper-wrapper clearfix">
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight" @click="searchcli($event,'decoration')">精装工选</div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'jzdecoration')">精装家装</div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'findDesign')">找设计师</div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'mingjiahui')">名家汇</div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'question')">设计疑问</div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'interview')">设计专访</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight"
+                     @click="searchcli($event,'decoration')">精装工选
                 </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event)">精装家装</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'findDesign')">
+                    找设计师
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event)">名家汇</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'question')">
+                    设计疑问
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'interview')">
+                    设计专访
+                </div>
+            </div>
         </div>
     </div>
     <div class="container">
@@ -66,8 +75,8 @@
             </div>
     </div>
 
-    <!--footer-->
-   <!-- <footer-model></footer-model>-->
+    <!--footer>
+    <footer-model></footer-model-->
 </div>
 <script src="../../common/js/swiper.min.js"></script>
 <script src="../../common/js/vue.js"></script>
