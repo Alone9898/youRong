@@ -3,25 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>设计专访详情页</title>
     <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../common/css/swiper.min.css">
     <link rel="stylesheet" href="css/pic_tab.css">
+    <link rel="stylesheet" href="../../common/css/base.css"/>
     <link rel="stylesheet" href="css/designCommon.css">
+    <style>
+        .swiper-container{display:none;}
+        .l_header {
+            height: auto;
+        }
+        .mycontainer{
+            position: absolute;
+            left: 0;
+            width: 100%;
+        }
+        @media screen and (max-width: 768px) {.swiper-container{display:none!important;}}
+    </style>
 </head>
 <body>
 <div id="app" v-cloak>
 	    <!--header-->
 		<sitenav></sitenav>
-		<l_header></l_header>
+		<div class="mybanner" style="background: url('../../common/img/images/mybanner.png'); background-position: 50%;background-size: cover">
+        <div class="mheadbox" style="display: none">
+            
+        </div>
+    </div>  
 	    <div class="contdel container mbgd" style="margin-bottom: 100px">
             <div class="detbox clearfix">
                 <div class="mybgd mybgd1"><img src="../../common/img/icon/t2.png"></div>
                 <div class="mmybgd" style="display: none"><h4>设计师介绍</h4></div>
                 <div class="imgleft1 pull-left" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover">
-                    <div class="enter"><img src="../../common/img/icon/enter.png"></div>
-                    <div class="menter" style="display: none"><img src="../../common/img/icon/menter.png"></div>
+                    <div @click="kongjian()" class="enter"><img src="../../common/img/icon/enter.png"></div>
+                    <div @click="kongjian()" class="menter" style="display: none"><img src="../../common/img/icon/menter.png"></div>
                 </div>
                 <div class="detright pull-left">
                     <div class="detil"><h3>李老头</h3></div>
