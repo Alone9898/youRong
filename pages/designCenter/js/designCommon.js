@@ -1,4 +1,4 @@
-var app = new Vue({
+﻿var app = new Vue({
     el: '#app',
     data: {
         more:1,
@@ -60,5 +60,6 @@ var app = new Vue({
         AskQuestions(){
             window.location.href="AskQuestions.html";
         },
+
     },
 })
