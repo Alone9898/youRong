@@ -137,9 +137,9 @@ Vue.component('sitenav', {
             loop : true,
             speed:300,
             keyboardControl : true,
-          /*  mousewheelControl : true,//鼠标控制*/
-            freeMode : false,//切换效果
-              autoplay : 5000,
+            //mousewheelControl : true,//鼠标控制
+            freeMode : false//切换效果
+            /*  autoplay : 5000,*/
         });
     }
 });

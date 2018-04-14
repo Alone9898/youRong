@@ -93,8 +93,8 @@ Vue.component('sitenav', {
         <div class="swiper-container header-swiper-container">\
                 <div class="swiper-wrapper">\
                     <div class="swiper-slide"><img src="common/img/icon/banner1.jpg" width="100%" height="100%"></div>\
-                    <div class="swiper-slide">Slide 2</div>\
-                    <div class="swiper-slide" >Slide 3</div>\
+                    <div class="swiper-slide"><img src="common/img/icon/banner1.jpg" width="100%" height="100%"></div>\
+                    <div class="swiper-slide" ><img src="common/img/icon/banner1.jpg" width="100%" height="100%"></div>\
                 </div>\
                 <div class="swiper-pagination header-pagination"></div>\
             </div>\
@@ -137,7 +137,7 @@ Vue.component('sitenav', {
             loop : true,
             speed:300,
             keyboardControl : true,
-            mousewheelControl : true,//鼠标控制
+            //mousewheelControl : true,//鼠标控制
             freeMode : false//切换效果
             /*  autoplay : 5000,*/
         });

@@ -12,8 +12,8 @@
 <body>
 <div id="app" v-cloak>
 	    <!--header-->
-		<sitenav></sitenav>
-		<l_header></l_header>
+		<!--<sitenav></sitenav>
+		<l_header></l_header>-->
 	    <div class="title">
 	    	<div class="swiper-container-nav">
 		        <div class="myh swiper-wrapper clearfix">
@@ -83,7 +83,7 @@
 					</div>
 				</div>
 				<div class="">
-					<div class="contmain clearfix">
+					<div class="contmain clearfix" @click="fdfun($event)">
 						<div class="contbox clearfix">
 							<div class="clearfix" style="position: relative;">
 								<div class="contleft pull-left"><img src="../../common/img/images/avatar2.png"></div>
@@ -115,7 +115,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="contmain clearfix">
+					<div class="contmain clearfix" @click="fdfun($event)">
 						<div class="contbox clearfix">
 							<div class="clearfix" style="position: relative;">
 								<div class="contleft pull-left"><img src="../../common/img/images/avatar2.png"></div>
@@ -147,7 +147,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="contmain clearfix">
+					<div class="contmain clearfix" @click="fdfun($event)">
 						<div class="contbox clearfix">
 							<div class="clearfix" style="position: relative;">
 								<div class="contleft pull-left"><img src="../../common/img/images/avatar2.png"></div>
@@ -213,7 +213,7 @@
 			</div>
         </div>
         <!--footer-->
-        <footer-model></footer-model>	
+       <!-- <footer-model></footer-model>	-->
     </div>
 </div>
 <script src="../../common/js/jquery-1.11.3.js"></script>

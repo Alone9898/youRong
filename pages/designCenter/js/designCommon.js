@@ -44,5 +44,8 @@ var app = new Vue({
         yuyue(ev){
             $(ev.target).addClass('hiactive').siblings().removeClass('hiactive');
         },
+        fdfun(ev){
+            window.location.href="header.html";
+        },
     },
 })
