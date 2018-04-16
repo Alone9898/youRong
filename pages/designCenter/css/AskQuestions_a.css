@@ -437,7 +437,7 @@
     display: none;
   }
   .left_layout .questions_box {
-    min-height: 490px;
+    min-height: 400px;
     background: #fff;
     width: 100%;
     padding: 0;
@@ -464,7 +464,7 @@
     margin: 0 auto;
   }
   .left_layout .questions_box .fileUploadContent .fileItem {
-    width: 120px;
+    width: 110px;
   }
   .left_layout .questions_box .fileUploadContent .fileItem .imgShow {
     width: 100px;
