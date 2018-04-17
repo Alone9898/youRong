@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../../common/css/base.css"/>
+    <link rel="stylesheet" href="css/login.css"/>
+    <link href="https://cdn.bootcss.com/layer/3.1.0/mobile/need/layer.css" rel="stylesheet">
+    <title>登录</title>
+</head>
+<body>
+<div v-cloak id="login">
+    <div class="lunbo">
+        <img src="../../common/img/icon/h5banner.png" width="100%">
+    </div>
+    <div class="content">
+        <div class="login" style="display: none">
+        <ul>
+            <li :class="{atv:isShow==1}" @click="tab(1)">招标商</li>
+            <li :class="{atv:isShow==2}" @click="tab(2)">投标商</li>
+        </ul>
+        <input type="text" placeholder="请输入账号" class="account">
+        <input type="password" placeholder="请输入密码">
+        <div class="login">登录</div>
+        <div class="forget">
+            <span><a href="">忘记密码？</a></span>
+            <span><a href="register.html" target="_blank">我要注册</a></span>
+        </div>
+        </div>
+        <div class="register">
+           <div class="reg">
+               <div class="reg_1" style="height: 60px">
+                   <p>用户类型：<span>*</span></p>
+                   <div class="reg_right">
+                       <select>
+                       <option>请选择会员类型</option>
+                   </select>
+                       <div style="padding-left: 10px;margin-top: 5px;color: #666666;">'<span style="color: #0ab7c7">*</span>'号为必填项</div>
+                   </div>
+               </div>
+               <div class="reg_1">
+                   <p>用 户 名：<span>*</span></p>
+                   <div class="reg_right">
+                       <input type="text" placeholder="请输入用户名"/>
+                   </div>
+               </div>
+               <div class="reg_1">
+                   <p>输入密码：<span>*</span></p>
+                   <div class="reg_right">
+                       <input type="password" placeholder="请输入密码"/>
+                   </div>
+               </div>
+               <div class="reg_1">
+                   <p>确认密码：<span>*</span></p>
+                   <div class="reg_right">
+                       <input type="password" placeholder="请输入密码"/>
+                   </div>
+               </div>
+               <div class="reg_1">
+                   <p>电子邮箱：<span>*</span></p>
+                   <div class="reg_right">
+                       <input type="email" placeholder="请输入邮箱"/>
+                   </div>
+               </div>
+               <div class="reg_1" style="height: 65px">
+                   <p>公司名称：<span>*</span></p>
+                   <div class="reg_right">
+                       <input type="text" placeholder="请输入公司名称"/>
+                       <div style="color: #666666;padding-left: 10px;margin-top: 5px">公司注册后名称不可修改</div>
+                   </div>
+               </div>
+               <div class="reg_1" style="height: 105px">
+                   <p>公司产品：<span>*</span></p>
+                   <div class="reg_right reg_g" style="height: 80px">
+                       <input v-html="reg_input"/>
+                       <div style="color:#0ab7c7;padding-left: 10px;height: 25px;line-height: 25px" @click="add">✚添加产品</div>
+                   </div>
+               </div>
+               <div class="reg_1">
+                   <p>所在省市：<span>*</span></p>
+                   <div class="reg_right reg_gl">
+                       <select>
+                           <option>省份</option>
+                       </select>
+                       <select>
+                           <option>城市</option>
+                       </select>
+                   </div>
+               </div>
+               <div class="reg_1">
+                   <p>联 系 人：<span>*</span></p>
+                   <div class="reg_right">
+                       <input type="text" placeholder="请输入联系人"/>
+                   </div>
+               </div>
+               <div class="reg_1">
+                   <p>地&nbsp; &nbsp; 址：<span>*</span></p>
+                   <div class="reg_right">
+                       <input type="text" placeholder="请输入地址"/>
+                   </div>
+               </div>
+            <div class="reg_1">
+                <p>手 机 号：<span>*</span></p>
+                <div class="reg_right">
+                    <input type="text" placeholder="请输入手机号" maxlength="11"/>
+                </div>
+            </div>
+           </div>
+        </div>
+        </div>
+</div>
+<script src="../../common/js/jquery-1.11.3.js"></script>
+<script src="../../common/js/vue.js"></script>
+<script src="https://cdn.bootcss.com/layer/3.1.0/mobile/layer.js"></script>
+<script>
+    /**
+     * Created by Administrator on 2018/4/12.
+     */
+    new Vue({
+        el: '#login',
+        data:{
+            isShow:1,
+            reg_input:'<input type="text" placeholder="请输入公司产品"/>'
+        },
+        methods: {
+          tab:function(cunt){
+              this.isShow=cunt;
+          },
+           add:function(){
+               //提示
+               layer.open({
+                   content: 'hello layer'
+                   ,skin: 'msg'
+                   ,time: 2 //2秒后自动关闭
+               });
+           }
+        },
+        mounted:function(){
+
+        }
+    });
+
+</script>
+</body>
+</html>

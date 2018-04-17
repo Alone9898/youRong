@@ -32,12 +32,12 @@
   }
 }
 .container_box{
-  padding: 15px 10px;
-  padding-bottom: 0;
+  padding-left: 10px;
   padding-right: 0;
   text-align: center;
   background: #fff;
   .item_1{
+    margin-top: 15px;
     width: 250px;
     float: left;
     .headline{
@@ -148,6 +148,7 @@
   .item_2{
     width: 680px;
     float: left;
+    margin-top: 15px;
     padding: 0 20px;
     .areabox{
       width: 660px;
@@ -326,12 +327,12 @@
   }
   .item_3{
     width: 20px;
-    margin-top: -15px;
     height:1950px;
     background: rgb(238, 238, 238);
     float: left;
   }
   .item_4{
+    margin-top: 15px;
     width: 210px;
     float: left;
     .btn-primary{
@@ -341,16 +342,17 @@
     }
     .btn-primary:nth-child(1){
       margin-left: 12px;
+      margin-bottom: 10px;
     }
     .btn-primary:nth-child(2){
       margin-left: 10px;
+      margin-bottom: 10px;
     }
     .tenderbox{
       width: 190px;
       height: 262px;
       border: solid 1px #e5e5e5;
       margin-left: 12px;
-      margin-top: 10px;
       .tender{
         width: 94px;
         height: 32px;
@@ -366,7 +368,6 @@
         border-top:none ;
       }
       ul{
-        margin-top: 47px;
         li{
           width: 94px;
           height: 49px;
@@ -390,6 +391,64 @@
         width: 170px;
         background-color: #1a66f3;
         margin-top: 30px;
+      }
+      .tr_2{
+        .login_in{
+          width:100%;
+          height: 32px;
+          background: @cor;
+          color: white;
+          padding:0 10px;
+          line-height: 32px;
+          text-align: left;
+          img{
+            float: right;
+            margin-top: 5px;
+            line-height: 32px;
+          }
+        }
+        .state_box{
+          margin-top: 0;
+          padding: 10px;
+          li{
+            width: 100%;
+            height: 16px;
+            color: #333333;
+            margin-top: 10px;
+            text-align: left;
+            span{
+              span{color: #fbb03b;}
+            }
+          }
+          li:nth-child(4){
+            color: #999999;
+            margin-top: 20px;
+            span{
+              padding-left: 5px;
+              vertical-align: middle;
+            }
+          }
+          li:nth-child(5){
+            margin-top: 20px;
+            height: 44px;
+            border-bottom: 1px solid #dcdcdc;
+            .btn-warning{
+              height: 24px;
+              line-height: 12px;
+              background: #fbb03b;
+            }
+          }
+          li:nth-child(6){
+            width: 58px;
+            height: 20px;
+            cursor: pointer;
+            background-color: #ffffff;
+            border-radius: 2px;
+            text-align: center;
+            color: #fbb03b;
+            border: solid 1px #fbb03b;
+          }
+        }
       }
     }
     .Hotline{
@@ -438,6 +497,10 @@
         line-height: 30px;
         color: #666;
         float: left;
+        img{
+          margin-top: -3px;
+          padding-right: 3px;
+        }
       }
       div{
         float:right;
@@ -476,7 +539,7 @@
     width: 902px;
     height: 300px;
     float: left;
-    margin-top: -294px;
+    margin-top: -390px;
     margin-left: 12px;
     .item_5_title{
       width: 100%;
@@ -504,7 +567,7 @@
       }
     }
     .item_5_content{
-      width: 720px;
+      width: 862px;
       height: 162px;
       margin: 0 auto;
       margin-top: 50px;
@@ -527,22 +590,17 @@
     height: 26px;
     padding: 0 3%;
     background: white;
-    ul{
+    .h5_head{
       width: 100%;
-      li{
-        float:left;
-        width: 19%;
-        margin-left: 8%;
+      .swiper-slide div{
+        margin-left:0;
         text-align: center;
         font-size: 1.4rem;
         height: 26px;
         color: #333;
       }
-      li:nth-child(1){
-        margin-left: 0;
-      }
       .active{
-        color: @cor;
+        color: @cor!important;
         border-bottom: 2px solid @cor;
       }
     }
@@ -554,7 +612,12 @@
     background: white;
    .item_1_head{
      height: 36px;
+     padding-top: 10px;
      border-bottom: 1px solid #f4f4f4;
+     select{
+       border: none;
+       width: 80px;
+     }
    }
     .item_1_content{
       ul{
@@ -592,12 +655,6 @@
         width: 92px;
         line-height: 28px;
         color: @cor;
-        float: left;
-      }
-      .headb{
-        width: 502px;
-        margin-top: 15px;
-        border: dashed 1px #0ab7c7;
         float: left;
       }
       .head_2{
@@ -643,7 +700,7 @@
       }
 
     }
-    .head_Content:nth-child(2){
+    .fuvk{
       border-top: dashed 1px @cor;
     }
   }
@@ -656,6 +713,57 @@
       font-size: 1.4rem;
       height: 35px;
       line-height: 35px;
+    }
+    .item_3-container
+    {
+      margin-bottom: 70px;
+      li{
+        width: 32%;
+        height: 42px;
+        padding: 2px 1%;
+        margin-top:7px;
+        float: left;
+        margin-right:2%;
+      }
+      li:nth-child(3n){
+        margin-right: 0;
+      }
+    }
+  }
+  .item_4{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 45%;
+    right: 2%;
+    cursor: pointer;
+  }
+  .item_5{
+    width: 100%;
+    height: 55px;
+    background:white;
+    position: fixed;
+    z-index: 99;
+    bottom: 0px;
+    li{
+      width: 20%;
+      height: 50px;
+      text-align: center;
+      padding-top: 6px;
+      float: left;
+      img{
+        width: 25px;
+        height: 25px;
+      }
+      .boos{
+        margin-top: -15px;
+        width: 36px!important;
+        height: 36px!important;
+      }
+      div{
+        margin-top: 5px;
+        color: #999999;
+      }
     }
   }
 }
@@ -670,4 +778,10 @@
   .h5_box{
     display: block;
   }
+}
+@media screen and (max-width:320px) {
+  .h5_head{
+    .swiper-slide div{
+      font-size: 1.2rem!important;
+    }}
 }

@@ -66,13 +66,13 @@
                 </div>
             </div>
             <div class="item_2">
-                <div class="swiper-container" style="height: 252px">
+                <div class="swiper-container item_2container" style="height: 252px">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"><img src="../../common/img/icon/banner1.jpg" width="100%" height="100%"></div>
                         <div class="swiper-slide"><img src="../../common/img/icon/banner1.jpg" width="100%" height="100%"></div>
                         <div class="swiper-slide" ><img src="../../common/img/icon/banner1.jpg" width="100%" height="100%"></div>
                     </div>
-                    <div class="swiper-pagination"></div>
+                    <div class="swiper-pagination item_2pagination"></div>
                 </div>
                 <div class="areabox">
                     <div class="area">所属地区</div>
@@ -150,9 +150,10 @@
             <div class="item_3">
             </div>
             <div class="item_4">
-                <button type="button" class="btn btn-primary">登录</button>
-                <button type="button" class="btn btn-primary">免费注册</button>
+                <button v-if="login_State==1" type="button" class="btn btn-primary" @click="loginBox(2)">登录</button>
+                <button v-if="login_State==1" type="button" class="btn btn-primary">免费注册</button>
                 <div class="tenderbox">
+                    <div v-if="login_State==1">
                     <div class="tender" :class="{active:1==tenderShow}" @click="toggle_tender(1)">我要招标</div>
                     <div class="tender" :class="{active:2==tenderShow}" @click="toggle_tender(2)">我要投标</div>
                     <div v-if="1==tenderShow">
@@ -197,6 +198,26 @@
                         </ul>
                         <button type="button" class="btn btn-info">加入诚信投</button>
                     </div>
+                    </div>
+                    <div v-if="login_State==2" class="tr_2">
+                        <div class="login_in">
+                            <span class="">欢迎您：</span><span>11024588</span>
+                            <img src="../../common/img/icon/info.png">
+                        </div>
+                        <ul class="state_box">
+                            <li><span>会员类型：</span><span>供应商</span></li>
+                            <li><span>会员级别：</span><span><span>vip</span>会员</span></li>
+                            <li><span>认证状态：</span><span>已认证</span></li>
+                            <li>
+                                <img src="../../common/img/icon/chan.png"><span>14次</span>
+                                <img src="../../common/img/icon/zhong.png"><span>10次</span>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-warning">我的会员中心</button>
+                            </li>
+                            <li @click="loginBox(1)">退出登陆</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="Hotline">
                     <div class="hotline_1">
@@ -222,7 +243,7 @@
                 </div>
                 <div class="xxx"></div>
                 <div class="fix">
-                    <p>招标资料下载</p>
+                    <p> <img src="../../common/img/icon/xiazai.png">招标资料下载</p>
                     <div>更多></div>
                 </div>
                 <div class="fixbiox">
@@ -243,7 +264,7 @@
                 </div>
                 <div class="item_5_content">
                     <ul>
-                        <li v-for="item in 15">
+                        <li v-for="item in 18">
                             <img src="../../common/img/icon/banner1.jpg" width="100%" height="100%"/>
                         </li>
                     </ul>
@@ -253,25 +274,58 @@
     </div>
     <div class="h5_box" style="background: rgb(238, 238, 238)">
         <div class="h5_nav">
-        <ul>
-            <li class="active">招标公告</li>
-            <li>中标公告</li>
-            <li>招标预告</li>
-            <li>推荐项目</li>
-        </ul>
+            <div class="swiper-container h5_head">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                       <div class="active">招标公告</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>中标公告</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>招标预告</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>推荐项目</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>拟在建项目</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>VIP独家项目</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>供应链招标</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>帮助中心</div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="item_1">
-            <div class="item_1_head"></div>
+            <div class="item_1_head">
+                <select>
+                    <option value="">所属地区</option>
+                    <option value="">成都</option>
+                </select>
+                <select>
+                    <option>发布时间</option>
+                    <option>最近一天</option>
+                    <option>最近三天</option>
+                    <option>最近七天</option>
+                    <option>最近一月</option>
+                </select>
+            </div>
             <div class="item_1_content">
                 <ul>
                     <li v-for="item in 5">
-                        <div>招标文案招标文案招标文案布草果18个字...</div>
+                        <div><span>[招标公告] </span> 招标文案招标文案布草果18个字...</div>
                         <p>2018-02-20</p>
                         <div>名公司称</div>
                     </li>
                 </ul>
             </div>
-
         </div>
         <div class="item_2">
             <div><div class="head">
@@ -293,7 +347,7 @@
                 <div class="head_1">推荐招标</div>
                 <div class="head_2">更多></div>
             </div>
-                <div class="head_Content">
+                <div class="head_Content fuvk">
                     <ul>
                         <li v-for="item in 5">
                             <p>文案招标文案招标文案招标</p>
@@ -320,6 +374,58 @@
         </div>
         <div class="item_3">
             <h6>优秀供应商</h6>
+            <div class="swiper-container item_3-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <ul>
+                            <li v-for="ie in 6">
+                                <img src="../../common/img/icon/enter.png" width="100%" height="100%"/>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <ul>
+                        <li v-for="ie in 6">
+                            <img src="../../common/img/icon/enter.png" width="100%" height="100%"/>
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide" >
+                        <ul>
+                        <li v-for="ie in 6">
+                            <img src="../../common/img/icon/enter.png" width="100%" height="100%"/>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item_4">
+            <img src="../../common/img/icon/aaaa.png" width="100%">
+        </div>
+        <div class="item_5">
+            <ul>
+                <li>
+                    <img src="../../common/img/icon/icon1.png">
+                    <div>在线咨询</div>
+                </li>
+                <li>
+                    <img src="../../common/img/icon/icon2.png">
+                    <div>电话咨询</div>
+                </li>
+                <li>
+                    <img src="../../common/img/icon/icon5.png" class="boos">
+                    <div>招标发布</div>
+                </li>
+                <li>
+                    <img src="../../common/img/icon/icon3.png">
+                    <div>我的收藏</div>
+                </li>
+                <li>
+                    <img src="../../common/img/icon/icon4.png">
+                    <div>我的消息</div>
+                </li>
+            </ul>
         </div>
     </div>
     <footer-model></footer-model>

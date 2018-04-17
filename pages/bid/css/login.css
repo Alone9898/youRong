@@ -1,0 +1,112 @@
+[v-cloak] {
+  display: none;
+}
+.lunbo {
+  width: 100%;
+  display: inline;
+}
+.content {
+  width: 80%;
+  padding: 14px 10%;
+}
+.content .login li {
+  width: 49%;
+  cursor: pointer;
+  font-size: 1.6rem;
+  text-align: center;
+  float: left;
+}
+.content .login li:nth-child(1) {
+  border-right: 1px solid #666;
+}
+.content .login .atv {
+  color: #0ab7c7!important;
+}
+.content .login input {
+  width: 90%;
+  height: 40px;
+  font-size: 1.6rem;
+  padding-left: 10%;
+  background-color: #ffffff;
+  border-radius: 45px;
+  border: solid 1px #eeeeee;
+}
+.content .login .account {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.content .login .login {
+  background-color: #0ab7c7;
+  border-radius: 45px;
+  border: solid 1px #eeeeee;
+  color: white;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.6rem;
+  margin-top: 10px;
+}
+.content .login .forget {
+  padding-top: 10px;
+}
+.content .login .forget span a {
+  color: #999999;
+}
+.content .login .forget span:nth-child(2) {
+  margin-left: 23%;
+  cursor: pointer;
+}
+.content .register .reg {
+  width: 100%;
+}
+.content .register .reg .reg_1 {
+  width: 100%;
+  height: 50px;
+}
+.content .register .reg .reg_1 p {
+  width: 38%;
+  height: 50px;
+  line-height: 30px;
+  text-align: left;
+  letter-spacing: 5px;
+  color: #666666;
+  float: left;
+}
+.content .register .reg .reg_1 p span {
+  color: #0ab7c7;
+  text-align: center;
+}
+.content .register .reg .reg_1 .reg_right {
+  width: 62%;
+  height: 50px;
+  float: right;
+}
+.content .register .reg .reg_1 .reg_right select {
+  width: 80%;
+  height: 30px;
+  padding-left: 5%;
+  background-color: #ffffff;
+  border-radius: 33px;
+  border: solid 1px #e5e5e5;
+}
+.content .register .reg .reg_1 .reg_right input {
+  width: 100%;
+  height: 30px;
+  padding-left: 5%;
+  background-color: #ffffff;
+  border-radius: 33px;
+  border: solid 1px #e5e5e5;
+}
+.content .register .reg .reg_1 .reg_g {
+  height: 80px;
+}
+.content .register .reg .reg_1 .reg_g input {
+  margin-top: 10px;
+}
+.content .register .reg .reg_1 .reg_g input:nth-child(1) {
+  margin-top: 0;
+}
+.content .register .reg .reg_1 .reg_gl select {
+  width: 50%;
+  float: left;
+}
