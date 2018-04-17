@@ -1387,6 +1387,9 @@ img {
   height: 100%;
 }
 @media screen and (max-width: 768px) {
+  .botttitle {
+    font-size:12px!important;
+}
   .mycont {
       margin-bottom: 0px;
   }
