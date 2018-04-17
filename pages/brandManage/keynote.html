@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>发表主题</title>
+    <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../common/css/swiper.min.css">
+    <link rel="stylesheet" href="../../common/css/base.css"/>
+    <link rel="stylesheet" href="css/designCommon.css">
+    <link rel="stylesheet" type="text/css" href="css/keynote.css">
+    <link href="css/iconfont.css" rel="stylesheet" type="text/css"/>
+    <link href="css/fileUpload.css" rel="stylesheet" type="text/css">
+    <script src="../../common/js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="js/fileUpload.js"></script>
+</head>
+
+<body>
+<div id="app" v-cloak>
+    <!--header-->
+    <sitenav></sitenav>
+    <!--banner-->
+    <!--<div class="z_banner">
+        <img src="../../common/img/images/z_banner.png" alt="">
+    </div>-->
+    <div class="title">
+        <div class="swiper-container-nav">
+            <div class="myh swiper-wrapper clearfix">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight" @click="searchcli($event,'decoration')">精装工选</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'jzdecoration')">精装家装</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'findDesign')">找设计师</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'mingjiahui')">名家汇</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'question')">设计疑问</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'interview')">设计专访</div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <!--我的位置nav-->
+        <div class="col-xs-12">
+            <ul class="z_menu clearfix">
+                <li>我的位置：</li>
+                <li><a href="javascript:history.back(-1)">品牌中心</a></li>
+                <li>></li>
+                <li><a href="javascript:history.back(-1)">品牌论坛</a></li>
+                <li>></li>
+                <li><a href="">发表主题</a></li>
+            </ul>
+        </div>
+        <!--AskQuestions-->
+        <div class="col-xs-12">
+            <div class="questions_box">
+                <div class="title_txt">发表主题</div>
+                <form action="">
+                    <div class="type_input clearfix">
+                        <div class="items item_one">标题</div>
+                        <div class="items item_two">
+                            <input type="text" name="" value="">
+                            <select class="form-control">
+                                <option value="">选择板块</option>
+                                <option value="">选择板块</option>
+                                <option value="">选择板块</option>
+                                <option value="">选择板块</option>
+                                <option value="">选择板块</option>
+                                <option value="">选择板块</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="type_txt clearfix">
+                        <div class="items item_one">标题</div>
+                        <div class="items item_two">
+                            <textarea class="wishContent" style="resize: none;" maxlength="50"></textarea>
+                            <div class="words">还可输入<span class="wordsNum">50</span>字</div>
+                        </div>
+                    </div>
+                    <div style="width: 90%;margin: auto">
+                        <div class="upload_box">
+                            <div class="upload_btn"><img src="../../common/img/icon/tp.png" alt="">上传图片</div>
+                            <input type="submit" class="submit_btn" onclick="testUpload()" value="立即发布">
+                        </div>
+                        <div id="fileUploadContent" class="fileUploadContent"></div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <!-- <footer-model></footer-model>-->
+</div>
+<script src="../../common/js/swiper.min.js"></script>
+<script src="../../common/js/vue.js"></script>
+<script src="../../common/js/vue-resource.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../common/js/public.js"></script>
+<script src="js/designCommon.js"></script>
+<script>
+    $("#fileUploadContent").initUpload({
+        "uploadUrl":"#",//上传文件信息地址
+        //"size":350,//文件大小限制，单位kb,默认不限制
+        "maxFileNumber":2,//文件个数限制，为整数
+        //"filelSavePath":"",//文件上传地址，后台设置的根目录
+        "beforeUpload":beforeUploadFun,//在上传前执行的函数
+        //"onUpload":onUploadFun，//在上传后执行的函数
+        //autoCommit:true,//文件是否自动上传
+        "fileType":['png','jpg','docx','doc']//文件类型限制，默认不限制，注意写的是文件后缀
+    });
+    function beforeUploadFun(opt){
+        opt.otherData =[{"name":"name","value":"zxm"}];
+    }
+    function onUploadFun(opt,data){
+        alert(data);
+        uploadTools.uploadError(opt);//显示上传错误
+        uploadTools.uploadSuccess(opt);//显示上传成功
+    };
+
+
+    function testUpload(){
+        var opt = uploadTools.getOpt("fileUploadContent");
+        uploadEvent.uploadFileEvent(opt);
+    };
+    //封装一个限制字数方法
+    var checkStrLengths = function (str, maxLength) {
+        var maxLength = maxLength;
+        var result = 0;
+        if (str && str.length > maxLength) {
+            result = maxLength;
+        } else {
+            result = str.length;
+        }
+        return result;
+    }
+
+    //监听输入
+    $(".wishContent").on('input propertychange', function () {
+
+        //获取输入内容
+        var userDesc = $(this).val();
+
+        //判断字数
+        var len;
+        if (userDesc) {
+            len = checkStrLengths(userDesc, 50);
+        } else {
+            len = 0
+        }
+
+        //显示字数
+        $(".wordsNum").html(50 - len);
+    });
+    function browserRedirect() {
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            var swiper = new Swiper('.swiper-container-nav', {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            });
+        }
+    }
+    browserRedirect();
+</script>
+</body>
+</html>
