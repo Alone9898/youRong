@@ -1,10 +1,7 @@
 var app = new Vue({
     el: '#app',
     data: {
-<<<<<<< HEAD
-=======
 
->>>>>>> 3858cb0580004121933fb94ad40cd2db1fc261e5
         videodata:[
             {
                 src:'../../index/video/240.mp4',
@@ -75,10 +72,7 @@ var app = new Vue({
         ],
     },
     created: function () {
-<<<<<<< HEAD
-       
-=======
->>>>>>> 3858cb0580004121933fb94ad40cd2db1fc261e5
+
 
         
     },
