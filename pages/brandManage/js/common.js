@@ -1,7 +1,6 @@
 var app = new Vue({
     el: '#app',
     data: {
-<<<<<<< HEAD
         videodata:[
             {
                 src:'../../index/video/240.mp4',
@@ -73,12 +72,12 @@ var app = new Vue({
     },
     created: function () {
        
-=======
+
         
     },
     created: function () {
         
->>>>>>> 387288fada0fa519d206eb40c155ea2b30be1df1
+
     },
     methods: {
         //nav高亮
@@ -92,7 +91,7 @@ var app = new Vue({
             //alert(a);
             //window.location.href=''+a+'.html';
         },
-<<<<<<< HEAD
+
         //视频
         clickfun(ev,a){
             
@@ -131,7 +130,6 @@ var app = new Vue({
             $("."+a+"").fadeIn();
             $("."+a+"").siblings('.multab').hide();
         },
-=======
->>>>>>> 387288fada0fa519d206eb40c155ea2b30be1df1
+
     },
 })
