@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>品牌论坛</title>
+    <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../common/css/swiper.min.css">
+    <link rel="stylesheet" href="../../common/css/base.css"/>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/forum.css">
+</head>
+<body>
+<div id="app" v-cloak>
+	    <!--header-->
+		<sitenav></sitenav>
+	    <div class="title">
+	    	<div class="swiper-container-nav">
+		        <div class="myh swiper-wrapper clearfix">
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide col-lg-offset-1" @click="searchcli($event)">商业品牌</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event)">品控管理</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event)">品牌推广</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'media')">品牌传媒</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight" @click="searchcli($event)">品牌论坛</div>
+		        </div>
+	        </div>
+	    </div>
+        <div class="cont container " style="margin-bottom: 100px">
+			<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12" >
+				<div class="manbox clearfix manboxm">
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 videobox pczhibo">
+						<div v-for="(item,index) in luntandata" style="position: relative;">
+							<div class="videoobj" :class="'videoobj'+index" v-bind:style="{background: 'url(' + item.src + ')no-repeat'}" style="background-position: 50%;background-size: cover"></div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 vediotitle">
+						<ul class="clearfix">
+							<li><a @click="clickfun($event,'videoobj0')" class="myacbgd">什么是直播？</a></li>
+							<li><a @click="clickfun($event,'videoobj1')">什么是直播？什么是直播？</a></li>
+							<li><a @click="clickfun($event,'videoobj2')">什么是直播？什么是直播？</a></li>
+							<li><a @click="clickfun($event,'videoobj3')">什么是直播？</a></li>
+							<li><a @click="clickfun($event,'videoobj4')">什么是直播？什么是直播？</a></li>
+							<li><a @click="clickfun($event,'videoobj5')">什么是直播？什么是直播？</a></li>
+							<li><a @click="clickfun($event,'videoobj6')">什么是直播？什么是直播？</a></li>
+							<li><a @click="clickfun($event,'videoobj7')">什么是直播？</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="manbox clearfix">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mox">
+						<div class="manboxtop clearfix">
+							<div class="manboxleft pull-left">人物描写</div>
+							<div class="manboxright pull-right">更多 >></div>
+						</div>
+						<div class="manboxcont">
+							<div class="manboxcontimg" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></div>
+							<ul class="manboxconttxt">
+								<li class="sl"><span></span><a>论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论</a></li>
+								<li class="sl"><span></span><a>论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论</a></li>
+								<li class="sl"><span></span><a>论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论论坛标题论坛标题论</a></li>
+								<li class="sl"><span></span><a>论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论</a></li>
+								<li class="sl"><span></span><a>论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论论坛标题论坛标题论</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mox">
+						<div class="manboxtop clearfix">
+							<div class="manboxleft pull-left">品牌活动</div>
+							<div class="manboxright pull-right">更多 >></div>
+						</div>
+						<div class="manboxcont">
+							<div class="manboxcontimg" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></div>
+							<ul class="manboxconttxt">
+								<li class="sl"><span></span><a>论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论</a></li>
+								<li class="sl"><span></span><a>论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论</a></li>
+								<li class="sl"><span></span><a>论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论论坛标题论坛标题论</a></li>
+								<li class="sl"><span></span><a>论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论</a></li>
+								<li class="sl"><span></span><a>论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论论坛标题论坛标题论</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mox">
+						<div class="manboxtop clearfix">
+							<div class="manboxleft pull-left">经验分享</div>
+							<div class="manboxright pull-right">更多 >></div>
+						</div>
+						<div class="manboxcont">
+							<div class="manboxcontimg" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></div>
+							<ul class="manboxconttxt">
+								<li class="sl"><span></span><a>论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论</a></li>
+								<li class="sl"><span></span><a>论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论</a></li>
+								<li class="sl"><span></span><a>论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论论坛标题论坛标题论</a></li>
+								<li class="sl"><span></span><a>论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论</a></li>
+								<li class="sl"><span></span><a>论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论论坛标题论坛标题论</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mox">
+						<div class="manboxtop clearfix">
+							<div class="manboxleft pull-left">品牌故事</div>
+							<div class="manboxright pull-right">更多 >></div>
+						</div>
+						<div class="manboxcont">
+							<div class="manboxcontimg" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></div>
+							<ul class="manboxconttxt">
+								<li class="sl"><span></span><a>论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论</a></li>
+								<li class="sl"><span></span><a>论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论</a></li>
+								<li class="sl"><span></span><a>论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论论坛标题论坛标题论</a></li>
+								<li class="sl"><span></span><a>论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论</a></li>
+								<li class="sl"><span></span><a>论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论论坛标题论坛标题论</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mox">
+						<div class="manboxtop clearfix">
+							<div class="manboxleft pull-left">设计交流</div>
+							<div class="manboxright pull-right">更多 >></div>
+						</div>
+						<div class="manboxcont">
+							<div class="manboxcontimg" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></div>
+							<ul class="manboxconttxt">
+								<li class="sl"><span></span><a>论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论</a></li>
+								<li class="sl"><span></span><a>论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论</a></li>
+								<li class="sl"><span></span><a>论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论论坛标题论坛标题论</a></li>
+								<li class="sl"><span></span><a>论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论</a></li>
+								<li class="sl"><span></span><a>论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论论坛标题论坛标题论</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mox">
+						<div class="manboxtop clearfix">
+							<div class="manboxleft pull-left">安全知识</div>
+							<div class="manboxright pull-right">更多 >></div>
+						</div>
+						<div class="manboxcont">
+							<div class="manboxcontimg" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></div>
+							<ul class="manboxconttxt">
+								<li class="sl"><span></span><a>论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论</a></li>
+								<li class="sl"><span></span><a>论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论</a></li>
+								<li class="sl"><span></span><a>论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论论坛标题论坛标题论</a></li>
+								<li class="sl"><span></span><a>论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论</a></li>
+								<li class="sl"><span></span><a>论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论坛标题论论坛标题论坛标题论</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 right_layout" style="padding:0">
+				<div class="copnbg">
+					<div class="rigt">
+						<h4>专业品牌知识论坛</h4>
+					</div>
+					<div style="margin-bottom: 20px">
+						<h3 class="righ">123456</h3>
+						<p style="color:#999">已有主题数</p>
+					</div>
+					<div>
+						<a class="btn btn-block mbtn mbtncss" style="background: #00dfb9!important;color: #ffffff;" href="#">发表主题</a>
+						
+					</div>
+				</div>
+				<div class="float_bar_one clearfix">
+
+                  <div class="z_title"><a href="javascript:;">达人推荐</a> </div>
+	                  <ul class="clearfix">
+	                      <li>
+	                        <div class="left_user">
+	                            <img src="../../common/img/images/b2.png" alt="">
+	                        </div>
+	                        <div class="z_center">
+	                            <div class="z_name">老李头</div>
+	                            <div class="z_professional">设计设</div>
+	                        </div>
+	                        <div class="z_right_btn">
+	                            <a href="" class="btn_a">进TA空间</a>
+	                        </div>
+	                      </li>
+	                      <li>
+	                        <div class="left_user">
+	                            <img src="../../common/img/images/b2.png" alt="">
+	                        </div>
+	                        <div class="z_center">
+	                            <div class="z_name">老李头</div>
+	                            <div class="z_professional">设计设</div>
+	                        </div>
+	                        <div class="z_right_btn">
+	                            <a href="" class="btn_a">进TA空间</a>
+	                        </div>
+	                      </li>
+	                      <li>
+	                        <div class="left_user">
+	                            <img src="../../common/img/images/b2.png" alt="">
+	                        </div>
+	                        <div class="z_center">
+	                            <div class="z_name">老李头</div>
+	                            <div class="z_professional">设计设</div>
+	                        </div>
+	                        <div class="z_right_btn">
+	                            <a href="" class="btn_a">进TA空间</a>
+	                        </div>
+	                      </li>
+	                      <li>
+	                        <div class="left_user">
+	                            <img src="../../common/img/images/b2.png" alt="">
+	                        </div>
+	                        <div class="z_center">
+	                            <div class="z_name">老李头</div>
+	                            <div class="z_professional">设计设</div>
+	                        </div>
+	                        <div class="z_right_btn">
+	                            <a href="" class="btn_a">进TA空间</a>
+	                        </div>
+	                      </li>
+	                      <li>
+	                        <div class="left_user">
+	                            <img src="../../common/img/images/b2.png" alt="">
+	                        </div>
+	                        <div class="z_center">
+	                            <div class="z_name">老李头</div>
+	                            <div class="z_professional">设计设</div>
+	                        </div>
+	                        <div class="z_right_btn">
+	                            <a href="" class="btn_a">进TA空间</a>
+	                        </div>
+	                      </li>
+	                  </ul>
+	              </div>
+	              <div class="float_bar_two clearfix">
+	                  <div class="z_title clearfix">
+	                      <a href="javascript:;" @click="myultab($event,'multab1')" class="f_l maccss">最新回复</a>
+	                      <a href="javascript:;" @click="myultab($event,'multab2')" class="f_l">最新帖子</a>
+	                  </div>
+	                  <ul class="clearfix multab multab1">
+	                      <li>
+	                          <a href="" ><div class="qu_info">问题问题问题问题问问题问题问题问题问</div>
+	                          <div class="info_digital"><span class="">1</span>小时</div></a>
+	                      </li>
+	                      <li>
+	                          <a href="" ><div class="qu_info">问题问题问题问题问问题问题问题问题问</div>
+	                          <div class="info_digital"><span class="">1</span>小时</div></a>
+	                      </li>
+	                      <li>
+	                          <a href="" ><div class="qu_info">问题问题问题问题问问题问题问题问题问</div>
+	                          <div class="info_digital"><span class="">1</span>小时</div></a>
+	                      </li>
+	                      <li>
+	                          <a href="" ><div class="qu_info">问题问题问题问题问问题问题问题问题问</div>
+	                          <div class="info_digital"><span class="">1</span>小时</div></a>
+	                      </li>
+	                      <li>
+	                          <a href="" ><div class="qu_info">问题问题问题问题问问题问题问题问题问</div>
+	                          <div class="info_digital"><span class="">1</span>小时</div></a>
+	                      </li>
+	                  </ul>
+	                  <ul class="clearfix multab multab2" style="display: none">
+	                      <li>
+	                          <a href="" ><div class="qu_info">问题问题问题问题问问题问题问题问题问</div>
+	                          <div class="info_digital"><span class="">1</span>小时</div></a>
+	                      </li>
+	                      <li>
+	                          <a href="" ><div class="qu_info">问题问题问题问题问问题问题问题问题问</div>
+	                          <div class="info_digital"><span class="">1</span>小时</div></a>
+	                      </li>
+	                      <li>
+	                          <a href="" ><div class="qu_info">问题问题问题问题问问题问题问题问题问</div>
+	                          <div class="info_digital"><span class="">1</span>小时</div></a>
+	                      </li>
+	                      <li>
+	                          <a href="" ><div class="qu_info">问题问题问题问题问问题问题问题问题问</div>
+	                          <div class="info_digital"><span class="">1</span>小时</div></a>
+	                      </li>
+	                      <li>
+	                          <a href="" ><div class="qu_info">问题问题问题问题问问题问题问题问题问</div>
+	                          <div class="info_digital"><span class="">1</span>小时</div></a>
+	                      </li>
+	                  </ul>
+	              </div>
+			</div>
+        </div>
+        <!--footer-->
+        <footer-model></footer-model>	
+    </div>
+</div>
+<script src="../../common/js/jquery-1.11.3.js"></script>
+<script src="../../common/js/swiper.min.js"></script>
+<script src="../../common/js/vue.js"></script>
+<script src="../../common/js/vue-resource.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../common/js/public.js"></script>
+<script src="js/common.js"></script>
+<script>
+    function browserRedirect() {
+		var sUserAgent = navigator.userAgent.toLowerCase();
+		var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+		var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+		var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+		var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+		var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+		var bIsAndroid = sUserAgent.match(/android/i) == "android";
+		var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+		var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+		if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+		    var swiper = new Swiper('.swiper-container-nav', {
+				slidesPerView: 4,
+				spaceBetween: 30,
+			});
+		}else{
+		    var swiper = new Swiper('.swiper-container', {
+		        nextButton: '.swiper-button-next',
+		        prevButton: '.swiper-button-prev',
+		        slidesPerView: 6,
+		        spaceBetween: 0,
+		    });
+		}
+	}
+	browserRedirect();
+</script>
+</body>
+</html>

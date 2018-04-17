@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>品牌论坛详情</title>
+    <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../common/css/swiper.min.css">
+    <link rel="stylesheet" href="../../common/css/base.css"/>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/forum_detail.css">
+</head>
+<body>
+<div id="app" v-cloak>
+	    <!--header-->
+		<sitenav></sitenav>
+	    <div class="title">
+	    	<div class="swiper-container-nav">
+		        <div class="myh swiper-wrapper clearfix">
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide col-lg-offset-1" @click="searchcli($event)">商业品牌</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event)">品控管理</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event)">品牌推广</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'media')">品牌传媒</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight" @click="searchcli($event)">品牌论坛</div>
+		        </div>
+	        </div>
+	    </div>
+        <div class="cont container " style="margin-bottom: 100px">
+			<div class="myaddr">
+				<ul class="clearfix">
+					<li>我的位置：</li> 
+					<li><a href="javascript:history.back(-1)">品牌中心</a></li> 
+					<li>&gt;</li> 
+					<li><a href="javascript:history.back(-1)">品牌传媒</a></li> 
+					<li>&gt;</li> 
+					<li><a href="javascript:history.back(-1)">品牌活动</a></li> 
+					<li>&gt;</li> <li><a href="">详情</a></li>
+				</ul>
+			</div>
+			<div class="detailcont">
+				<div class="pagebox clearfix">
+					<div class="pull-left"></div>
+					<div class="pull-right">
+						<a class="btn btn-info detailbtn">评论主题</a>
+						<a class="btn btn-info detailbtn">发表主题</a>
+					</div>
+				</div>
+				<div class="detailconttile clearfix">
+					<div class="detailconttileleft clearfix pull-left">
+						<div class="pull-left mytitlebox">
+							<div>12345</div>
+							<div>浏览数</div>
+						</div>
+						<div class="pull-left mytitlebox">
+							<div>12345</div>
+							<div>回复</div>
+						</div>
+					</div>
+					<div class="detailconttilecont pull-left"></div>
+				</div>
+				<div class="detailcontmain"></div>
+			</div>
+        </div>
+        <!--footer-->
+        <footer-model></footer-model>	
+    </div>
+</div>
+<script src="../../common/js/jquery-1.11.3.js"></script>
+<script src="../../common/js/swiper.min.js"></script>
+<script src="../../common/js/vue.js"></script>
+<script src="../../common/js/vue-resource.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../common/js/public.js"></script>
+<script src="js/common.js"></script>
+<script>
+    function browserRedirect() {
+		var sUserAgent = navigator.userAgent.toLowerCase();
+		var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+		var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+		var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+		var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+		var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+		var bIsAndroid = sUserAgent.match(/android/i) == "android";
+		var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+		var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+		if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+		    var swiper = new Swiper('.swiper-container-nav', {
+				slidesPerView: 4,
+				spaceBetween: 30,
+			});
+		}else{
+		    var swiper = new Swiper('.swiper-container', {
+		        nextButton: '.swiper-button-next',
+		        prevButton: '.swiper-button-prev',
+		        slidesPerView: 6,
+		        spaceBetween: 0,
+		    });
+		}
+	}
+	browserRedirect();
+</script>
+</body>
+</html>
