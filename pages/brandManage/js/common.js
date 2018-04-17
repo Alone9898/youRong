@@ -1,6 +1,10 @@
 var app = new Vue({
     el: '#app',
     data: {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3858cb0580004121933fb94ad40cd2db1fc261e5
         videodata:[
             {
                 src:'../../index/video/240.mp4',
@@ -71,7 +75,10 @@ var app = new Vue({
         ],
     },
     created: function () {
+<<<<<<< HEAD
        
+=======
+>>>>>>> 3858cb0580004121933fb94ad40cd2db1fc261e5
 
         
     },
@@ -89,7 +96,7 @@ var app = new Vue({
         searchcli(ev,a){
             $(ev.target).addClass('myhight').siblings().removeClass('myhight');
             //alert(a);
-            //window.location.href=''+a+'.html';
+            window.location.href=''+a+'.html';
         },
 
         //视频

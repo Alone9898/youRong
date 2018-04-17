@@ -18,11 +18,11 @@
 	    <div class="title">
 	    	<div class="swiper-container-nav">
 		        <div class="myh swiper-wrapper clearfix">
-		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide col-lg-offset-1" @click="searchcli($event)">商业品牌</div>
-		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event)">品控管理</div>
-		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event)">品牌推广</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide col-lg-offset-1 " @click="searchcli($event,'business')">商业品牌</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'Qc_management')">品控管理</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'promotion')">品牌推广</div>
 		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'media')">品牌传媒</div>
-		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight" @click="searchcli($event)">品牌论坛</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight" @click="searchcli($event,'forum')">品牌论坛</div>
 		        </div>
 	        </div>
 	    </div>
@@ -52,14 +52,42 @@
 							<div>12345</div>
 							<div>浏览数</div>
 						</div>
+						<div class="mbor pull-left mytitlebox"></div>
 						<div class="pull-left mytitlebox">
 							<div>12345</div>
 							<div>回复</div>
 						</div>
 					</div>
-					<div class="detailconttilecont pull-left"></div>
+					<div class="detailconttilecont pull-left">
+						<h4>人物描写]主题的标题名称<img src="../../common/img/icon/jingping.png" /></h4>
+					</div>
 				</div>
-				<div class="detailcontmain"></div>
+				<div class="detailcontmain clearfix">
+					<div class="pull-left detal">
+						<div class="mheadimgbox" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></div>
+						<h4 style="margin: 10px 0;">人物</h4>
+						<p style="margin: 10px 0;">等级：<span>大师</span></p>
+						<a class="btn btn-info detailbtnleft btn-block">关注</a>
+					</div>
+					<div class="pull-left detar">
+						<div class="detbgd">
+							<div class="titinfo"><span class="lzcss">楼主</span> 发布于：<span>2019-2-2</span></div>
+							<p class="titinfotxt">
+								贴吧类容贴吧类容贴吧类容贴吧类容贴吧类容,贴吧类容贴吧类容贴吧类容贴吧类容贴吧,类容贴吧类容贴吧类容贴吧类容贴,吧类容贴吧类容贴吧类容贴吧
+								类容贴吧类容贴吧类容贴贴吧,类容贴吧类容贴吧类,容贴吧类容贴吧类容贴吧类容贴吧类容,贴吧类容贴吧类容贴吧类,容贴吧类容贴吧类容贴吧,类容贴吧类
+								容贴吧类容贴,吧类容贴吧类容贴吧类容贴,吧类容贴吧类容,贴吧类容贴吧类容,贴吧类容贴吧类容贴吧类容贴吧,类容贴吧类容,贴吧类容贴吧类容贴吧类容贴
+								吧类容贴吧类容,贴吧类容贴吧类容贴吧类容贴吧类容贴.
+							</p>
+							<div class="titinfocont" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></div>
+							<p class="titinfotxt">
+								贴吧类容贴吧类容贴吧类容贴吧类容贴吧类容,贴吧类容贴吧类容贴吧类容贴吧类容贴吧,类容贴吧类容贴吧类容贴吧类容贴,吧类容贴吧类容贴吧类容贴吧
+								类容贴吧类容贴吧类容贴贴吧,类容贴吧类容贴吧类,容贴吧类容贴吧类容贴吧类容贴吧类容,贴吧类容贴吧类容贴吧类,容贴吧类容贴吧类容贴吧,类容贴吧类
+								容贴吧类容贴,吧类容贴吧类容贴吧类容贴,吧类容贴吧类容,贴吧类容贴吧类容,贴吧类容贴吧类容贴吧类容贴吧,类容贴吧类容,贴吧类容贴吧类容贴吧类容贴
+								吧类容贴吧类容,贴吧类容贴吧类容贴吧类容贴吧类容贴.
+							</p>
+						</div>
+					</div>
+				</div>
 			</div>
         </div>
         <!--footer-->
