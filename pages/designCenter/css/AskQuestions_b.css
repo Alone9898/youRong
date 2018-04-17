@@ -189,6 +189,9 @@
   font-size: 1.2rem;
   line-height: 24px;
 }
+.right_layout .float_bar_two .z_title .f_r:hover{
+ color:#00dfb9;
+}
 .right_layout .float_bar_two ul {
   margin-bottom: 5rem;
 }
@@ -200,7 +203,7 @@
 .right_layout .float_bar_two ul li a {
   color: #999999;
 }
-.right_layout .float_bar_two ul li a:hover {
+.right_layout .float_bar_two ul li a :hover {
   color: #00dfb9;
 }
 .right_layout .float_bar_two ul li .qu_info {
