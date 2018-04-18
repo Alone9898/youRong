@@ -6,5 +6,63 @@
   padding: 20px;
 }
 .mytitlebox {
-  margin: 10px;
+  margin: 8px 13px;
+}
+.detailconttile {
+  height: 50px;
+  background: #f4f4f4;
+}
+.detailconttile .mytitlebox > div {
+  color: #999999;
+}
+.mbor {
+  position: relative;
+  width: 1px;
+  height: 25px;
+  border: 1px solid #666;
+  top: 7px;
+}
+.detailconttileleft {
+  background: #eaeaea;
+  height: 50px;
+  width: 152px;
+}
+.detailconttilecont {
+  margin-top: 14px;
+  margin-left: 14px;
+}
+.detal {
+  width: 152px;
+  position: absolute;
+  padding: 10px 20px;
+  background: #f4f4f4;
+  text-align: center;
+  height: 100%;
+}
+.detar {
+  padding: 10px 20px;
+  padding-left: 153px;
+  width: 100%;
+}
+.mheadimgbox {
+  width: 120px;
+  height: 120px;
+}
+.lzcss {
+  color: #eeb82a;
+}
+.titinfo {
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 10px;
+}
+.titinfotxt {
+  padding: 10px 0;
+}
+.titinfocont {
+  height: 362px;
+  margin: 16px 0;
+}
+.detbgd {
+  background: #fff;
+  padding: 10px 20px;
 }
