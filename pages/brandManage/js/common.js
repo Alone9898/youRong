@@ -118,6 +118,14 @@ var app = new Vue({
             this.hide=false,
             this.value=''
         },
+        //预约咨询
+        yuyue(ev){
+            $(ev.target).addClass('hiactive').siblings().removeClass('hiactive');
+        },
+        /*关注*/
+        guanzhu(ev){
+            $(ev.target).addClass('hiactive').siblings().removeClass('hiactive');
+        },
         //nav高亮
 		searchfun(ev){
 			$(ev.target).addClass('hoverhight').siblings().removeClass('hoverhight');

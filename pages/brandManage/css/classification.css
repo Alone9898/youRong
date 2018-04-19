@@ -136,6 +136,10 @@
   padding-left: 5px;
   font-size: 16px;
 }
+.Publish_content_box .publish_content .item_list_center .z_title .pd_5:hover {
+  color: #00dfb9!important;
+  text-decoration: underline!important;
+}
 .Publish_content_box .publish_content .item_list_center .z_title .icon_img img {
   margin-top: -4px;
   margin-left: 15px;

@@ -33,12 +33,14 @@
   margin-top: 58px;
   font-size: 14px;
   color: #f6f6f6;
+  text-align: center;
 }
 .row_content .active_block {
   margin-top: -400px;
   z-index: 99999;
   transition: 1s;
   opacity: 1;
+  width: 100%;
 }
 .row_content .time_content {
   height: 400px;
@@ -157,6 +159,10 @@
 }
 /*媒体查询*/
 @media screen and (max-width: 700px) {
+  .myh > div {
+    font-size: 12px;
+    margin-right: 36px!important;
+  }
   .active_block {
     margin-top: -200px !important;
     z-index: 99999;
