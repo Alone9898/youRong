@@ -149,9 +149,17 @@ img {
 .cont {
   margin-top: 20px;
 }
+.swiper_list .swiper-slide{
+    margin-left: -3px;
+}
+.swiper_list .swiper-slide a{
+    width: 90px;
+    display: block;
+    margin: 0 auto;
+}
 .conttitle {
   background: #ffffff;
-  padding: 20px;
+  padding: 20px 0;
 }
 .conttitle h3 {
   margin: 0;

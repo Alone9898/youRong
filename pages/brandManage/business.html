@@ -30,11 +30,21 @@
         <div class="cont container " style="margin-bottom: 100px">
 			<div class="mip col-lg-10 col-md-10 col-sm-10 col-xs-12">
 				<div class="conttitle">
-					<h3>精选品牌</h3>
+					<h3 style="padding-left: 20px;">精选品牌</h3>
 					<div>
 						<!-- Swiper -->
-						<div class="swiper-container">
-						    <div class="swiper-wrapper">
+						<div class="swiper-container-img" style="    position: relative;
+    overflow: hidden;
+    width: 93%;
+    padding-left: 12px;
+    margin: 0 auto;">
+						    <div class="swiper-wrapper swiper_list">
+								<div class="swiper-slide">
+									<a href="header.html">
+										<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
+										<p class="myswipert">小龙坎1</p>
+									</a>
+								</div>
 								<div class="swiper-slide">
 									<a href="header.html">
 										<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
@@ -192,7 +202,7 @@
 						<p class="pinfo">工匠才是后来发展的王道……</p>
 					</div>
 					<div>
-						<a class="amore" href="header.html">查看全部 >></a>
+						<a class="amore" href="activities.html">查看全部 >></a>
 					</div>
 				</div>
 				<div class="rightb" style="margin-top:20px;">
@@ -209,7 +219,7 @@
 						<p class="pinfo">工匠才是后来发展的王道……</p>
 					</div>
 					<div>
-						<a class="amore" href="header.html">查看全部 >></a>
+						<a class="amore" href="forum.html">查看全部 >></a>
 					</div>
 				</div>
 			</div>
@@ -226,6 +236,7 @@
 <script type="text/javascript" src="../../common/js/public.js"></script>
 <script src="js/common.js"></script>
 <script>
+
     function browserRedirect() {
 		var sUserAgent = navigator.userAgent.toLowerCase();
 		var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
@@ -242,13 +253,22 @@
 				spaceBetween: 40,
 			});
 		}else{
-		    var swiper = new Swiper('.swiper-container', {
-		        nextButton: '.swiper-button-next',
-		        prevButton: '.swiper-button-prev',
-		        slidesPerView: 6,
-		        spaceBetween: 0,
-		    });
-		    var swiper = new Swiper('.swiper-container-right', {
+		    //var swiper = new Swiper('.swiper-container-img', {
+		    //    nextButton: '.swiper-button-next',
+		    //    prevButton: '.swiper-button-prev',
+		    //    slidesPerView: 6,
+		    //    spaceBetween: 0,
+		    //});
+			var swiper2 = new Swiper('.swiper-container-img', {
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+				//paginationClickable: true,
+				spaceBetween: 0,
+				//loop: true,
+				slidesPerView: 5,
+				//spaceBetween: 0,
+			});
+		    var swiper1 = new Swiper('.swiper-container-right', {
 		        slidesPerView: 1,
 		        spaceBetween: 0,
 		        pagination : '.right-pagination',
