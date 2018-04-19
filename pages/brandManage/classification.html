@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>人物描写</title>
+    <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../common/css/swiper.min.css">
+    <link rel="stylesheet" href="../../common/css/base.css"/>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/classification.css">
+    <script src="../../common/js/jquery-1.11.3.js"></script>
+</head>
+
+<body>
+<div id="app" v-cloak>
+    <!--header-->
+    <sitenav></sitenav>
+    <!--banner-->
+    <!--<div class="z_banner">
+        <img src="../../common/img/images/z_banner.png" alt="">
+    </div>-->
+    <div class="title">
+        <div class="swiper-container-nav">
+            <div class="myh swiper-wrapper clearfix">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide col-lg-offset-1" @click="searchcli($event)">商业品牌</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event)">品控管理</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event)">品牌推广</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight" @click="searchcli($event,'media')">品牌传媒</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event)">品牌论坛</div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <!--我的位置nav-->
+        <div class="col-xs-12 pd">
+            <ul class="z_menu">
+                <li>我的位置：</li>
+                <li><a href="javascript:history.back(-1)">品牌中心</a></li>
+                <li>></li>
+                <li><a href="javascript:history.back(-1)">品牌传媒</a></li>
+                <li>></li>
+                <li><a href="">品牌活动</a></li>
+                <li>></li>
+                <li><a href="">分类</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 left_layout wap_none">
+            <div class="questions-title">人物描写</div>
+                <div class="tips_info clearfix">
+                    <div class="w_item l-left">精华：<span class="font_color">2</span></div>
+                    <div class="w_item l-vertical">主题：<span class="font_color">2</span></div>
+                    <div class="w_item l-center">贴数：<span class="font_color">2154</span></div>
+                </div>
+                <div class="bottom_txt">人物描写的辅助语言人物描写的辅助语言人物描写的辅助语言</div>
+                <!--分页-->
+                <div class="paging_box clearfix">
+                    <a href="" class="button_btn">发表主题</a>
+                </div>
+                <div class="bar_box">
+                    <a href="" class="txt_link color_active">最新发布</a>
+                    <a href="" class="txt_link">最后回复</a>
+                </div>
+                <div class="Publish_content_box">
+                    <div class="publish_content clearfix">
+                        <div class="item_list_left">
+                            <img src="../../common/img/images/avatar1.png" alt="">
+                        </div>
+                        <div class="item_list_center">
+                            <div class="z_title">
+                                <span class="color_red item_s">【精华】</span><span class="pd_5">主题标题主题标题主题标题</span>
+                                <span class="icon_img item_s"><img src="../../common/img/icon/img.png" alt=""></span>
+                            </div>
+                            <ul class="list_of clearfix">
+                                <li>
+                                    <span class="font_color_3 item_s">Mr.林</span>
+                                    <span class="font_color_6 item_s">发布于</span>
+                                    <span class="font_color_9 item_s">2017-12-12</span>
+                                </li>
+                                <li>
+                                    <span class="font_color_9 item_s">最后回复</span>
+                                    <span class="font_color_6 item_s">Mr.林</span>
+                                    <span class="font_color_3 item_s">3分钟</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="item_list_right">
+                            <div class="middle">
+                                <div class="tips_box">
+                                    <p class="font_color_3">1245</p>
+                                    <p class="font_color_9">浏览量</p>
+                                </div>
+                            </div>
+                            <div class="middle">
+                                <div class="tips_box">
+                                    <div class="font_color_3">1245</div>
+                                    <div class="font_color_9">回复</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="publish_content clearfix">
+                        <div class="item_list_left">
+                            <img src="../../common/img/images/avatar1.png" alt="">
+                        </div>
+                        <div class="item_list_center">
+                            <div class="z_title">
+                                <span class="color_red item_s">【精华】</span><span class="pd_5">主题标题主题标题主题标题</span>
+                                <span class="icon_img item_s"><img src="../../common/img/icon/img.png" alt=""></span>
+                            </div>
+                            <ul class="list_of clearfix">
+                                <li>
+                                    <span class="font_color_3 item_s">Mr.林</span>
+                                    <span class="font_color_6 item_s">发布于</span>
+                                    <span class="font_color_9 item_s">2017-12-12</span>
+                                </li>
+                                <li>
+                                    <span class="font_color_9 item_s">最后回复</span>
+                                    <span class="font_color_6 item_s">Mr.林</span>
+                                    <span class="font_color_3 item_s">3分钟</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="item_list_right">
+                            <div class="middle">
+                                <div class="tips_box">
+                                    <p class="font_color_3">1245</p>
+                                    <p class="font_color_9">浏览量</p>
+                                </div>
+                            </div>
+                            <div class="middle">
+                                <div class="tips_box">
+                                    <div class="font_color_3">1245</div>
+                                    <div class="font_color_9">回复</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="publish_content clearfix">
+                        <div class="item_list_left">
+                            <img src="../../common/img/images/avatar1.png" alt="">
+                        </div>
+                        <div class="item_list_center">
+                            <div class="z_title">
+                                <span class="color_red item_s">【精华】</span><span class="pd_5">主题标题主题标题主题标题</span>
+                                <span class="icon_img item_s"><img src="../../common/img/icon/img.png" alt=""></span>
+                            </div>
+                            <ul class="list_of clearfix">
+                                <li>
+                                    <span class="font_color_3 item_s">Mr.林</span>
+                                    <span class="font_color_6 item_s">发布于</span>
+                                    <span class="font_color_9 item_s">2017-12-12</span>
+                                </li>
+                                <li>
+                                    <span class="font_color_9 item_s">最后回复</span>
+                                    <span class="font_color_6 item_s">Mr.林</span>
+                                    <span class="font_color_3 item_s">3分钟</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="item_list_right">
+                            <div class="middle">
+                                <div class="tips_box">
+                                    <p class="font_color_3">1245</p>
+                                    <p class="font_color_9">浏览量</p>
+                                </div>
+                            </div>
+                            <div class="middle">
+                                <div class="tips_box">
+                                    <div class="font_color_3">1245</div>
+                                    <div class="font_color_9">回复</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="publish_content clearfix">
+                        <div class="item_list_left">
+                            <img src="../../common/img/images/avatar1.png" alt="">
+                        </div>
+                        <div class="item_list_center">
+                            <div class="z_title">
+                                <span class="color_red item_s">【精华】</span><span class="pd_5">主题标题主题标题主题标题</span>
+                                <span class="icon_img item_s"><img src="../../common/img/icon/img.png" alt=""></span>
+                            </div>
+                            <ul class="list_of clearfix">
+                                <li>
+                                    <span class="font_color_3 item_s">Mr.林</span>
+                                    <span class="font_color_6 item_s">发布于</span>
+                                    <span class="font_color_9 item_s">2017-12-12</span>
+                                </li>
+                                <li>
+                                    <span class="font_color_9 item_s">最后回复</span>
+                                    <span class="font_color_6 item_s">Mr.林</span>
+                                    <span class="font_color_3 item_s">3分钟</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="item_list_right">
+                            <div class="middle">
+                                <div class="tips_box">
+                                    <p class="font_color_3">1245</p>
+                                    <p class="font_color_9">浏览量</p>
+                                </div>
+                            </div>
+                            <div class="middle">
+                                <div class="tips_box">
+                                    <div class="font_color_3">1245</div>
+                                    <div class="font_color_9">回复</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="publish_content clearfix">
+                        <div class="item_list_left">
+                            <img src="../../common/img/images/avatar1.png" alt="">
+                        </div>
+                        <div class="item_list_center">
+                            <div class="z_title">
+                                <span class="pd_5">主题标题主题标题主题标题</span>
+                                <span class="icon_img item_s"><img src="../../common/img/icon/img.png" alt=""></span>
+                            </div>
+                            <ul class="list_of clearfix">
+                                <li>
+                                    <span class="font_color_3 item_s">Mr.林</span>
+                                    <span class="font_color_6 item_s">发布于</span>
+                                    <span class="font_color_9 item_s">2017-12-12</span>
+                                </li>
+                                <li>
+                                    <span class="font_color_9 item_s">最后回复</span>
+                                    <span class="font_color_6 item_s">Mr.林</span>
+                                    <span class="font_color_3 item_s">3分钟</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="item_list_right">
+                            <div class="middle">
+                                <div class="tips_box">
+                                    <p class="font_color_3">1245</p>
+                                    <p class="font_color_9">浏览量</p>
+                                </div>
+                            </div>
+                            <div class="middle">
+                                <div class="tips_box">
+                                    <div class="font_color_3">1245</div>
+                                    <div class="font_color_9">回复</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="publish_content clearfix">
+                        <div class="item_list_left">
+                            <img src="../../common/img/images/avatar1.png" alt="">
+                        </div>
+                        <div class="item_list_center">
+                            <div class="z_title">
+                                <span class="pd_5">主题标题主题标题主题标题</span>
+                                <span class="icon_img item_s"><img src="../../common/img/icon/img.png" alt=""></span>
+                            </div>
+                            <ul class="list_of clearfix">
+                                <li>
+                                    <span class="font_color_3 item_s">Mr.林</span>
+                                    <span class="font_color_6 item_s">发布于</span>
+                                    <span class="font_color_9 item_s">2017-12-12</span>
+                                </li>
+                                <li>
+                                    <span class="font_color_9 item_s">最后回复</span>
+                                    <span class="font_color_6 item_s">Mr.林</span>
+                                    <span class="font_color_3 item_s">3分钟</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="item_list_right">
+                            <div class="middle">
+                                <div class="tips_box">
+                                    <p class="font_color_3">1245</p>
+                                    <p class="font_color_9">浏览量</p>
+                                </div>
+                            </div>
+                            <div class="middle">
+                                <div class="tips_box">
+                                    <div class="font_color_3">1245</div>
+                                    <div class="font_color_9">回复</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="publish_content clearfix">
+                        <div class="item_list_left">
+                            <img src="../../common/img/images/avatar1.png" alt="">
+                        </div>
+                        <div class="item_list_center">
+                            <div class="z_title">
+                                <span class="pd_5">主题标题主题标题主题标题</span>
+                                <span class="icon_img item_s"><img src="../../common/img/icon/img.png" alt=""></span>
+                            </div>
+                            <ul class="list_of clearfix">
+                                <li>
+                                    <span class="font_color_3 item_s">Mr.林</span>
+                                    <span class="font_color_6 item_s">发布于</span>
+                                    <span class="font_color_9 item_s">2017-12-12</span>
+                                </li>
+                                <li>
+                                    <span class="font_color_9 item_s">最后回复</span>
+                                    <span class="font_color_6 item_s">Mr.林</span>
+                                    <span class="font_color_3 item_s">3分钟</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="item_list_right">
+                            <div class="middle">
+                                <div class="tips_box">
+                                    <p class="font_color_3">1245</p>
+                                    <p class="font_color_9">浏览量</p>
+                                </div>
+                            </div>
+                            <div class="middle">
+                                <div class="tips_box">
+                                    <div class="font_color_3">1245</div>
+                                    <div class="font_color_9">回复</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="publish_content clearfix">
+                        <div class="item_list_left">
+                            <img src="../../common/img/images/avatar1.png" alt="">
+                        </div>
+                        <div class="item_list_center">
+                            <div class="z_title">
+                                <span class="pd_5">主题标题主题标题主题标题</span>
+                                <span class="icon_img item_s"><img src="../../common/img/icon/img.png" alt=""></span>
+                            </div>
+                            <ul class="list_of clearfix">
+                                <li>
+                                    <span class="font_color_3 item_s">Mr.林</span>
+                                    <span class="font_color_6 item_s">发布于</span>
+                                    <span class="font_color_9 item_s">2017-12-12</span>
+                                </li>
+                                <li>
+                                    <span class="font_color_9 item_s">最后回复</span>
+                                    <span class="font_color_6 item_s">Mr.林</span>
+                                    <span class="font_color_3 item_s">3分钟</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="item_list_right">
+                            <div class="middle">
+                                <div class="tips_box">
+                                    <p class="font_color_3">1245</p>
+                                    <p class="font_color_9">浏览量</p>
+                                </div>
+                            </div>
+                            <div class="middle">
+                                <div class="tips_box">
+                                    <div class="font_color_3">1245</div>
+                                    <div class="font_color_9">回复</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="publish_content clearfix">
+                        <div class="item_list_left">
+                            <img src="../../common/img/images/avatar1.png" alt="">
+                        </div>
+                        <div class="item_list_center">
+                            <div class="z_title">
+                                <span class="pd_5">主题标题主题标题主题标题</span>
+                                <span class="icon_img item_s"><img src="../../common/img/icon/img.png" alt=""></span>
+                            </div>
+                            <ul class="list_of clearfix">
+                                <li>
+                                    <span class="font_color_3 item_s">Mr.林</span>
+                                    <span class="font_color_6 item_s">发布于</span>
+                                    <span class="font_color_9 item_s">2017-12-12</span>
+                                </li>
+                                <li>
+                                    <span class="font_color_9 item_s">最后回复</span>
+                                    <span class="font_color_6 item_s">Mr.林</span>
+                                    <span class="font_color_3 item_s">3分钟</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="item_list_right">
+                            <div class="middle">
+                                <div class="tips_box">
+                                    <p class="font_color_3">1245</p>
+                                    <p class="font_color_9">浏览量</p>
+                                </div>
+                            </div>
+                            <div class="middle">
+                                <div class="tips_box">
+                                    <div class="font_color_3">1245</div>
+                                    <div class="font_color_9">回复</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="wap_block clearfix">
+            <div class="questions-title">人物描写</div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 left_layout">
+                <div class="wap_style">
+                    <div class="wap_publish_content">
+                        <div class="z_title clearfix">
+                            <div class="color_red item_s">【精华】</div><div class="pd_5 w_over">主题标题主题标题主题标题主题标题主题标题主题标题</div>
+                            <div class="icon_img item_s"><img src="../../common/img/icon/img.png" alt=""></div>
+                        </div>
+                        <div class="bottom_info">
+                            <div class="left_info">
+                                <div class="item_in font_color_6">Mr.林</div>
+                                <div class="item_in font_color_9">2019.08.12</div>
+                            </div>
+                            <div class="right_info">
+                                <div class="item_in font_color_9">浏览量&nbsp;<span class="font_color_6">123</span></div>
+                                <div class="item_in font_color_9">回复&nbsp;<span class="font_color_6">123</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 left_layout">
+                <div class="wap_style">
+                    <div class="wap_publish_content">
+                        <div class="z_title clearfix">
+                            <div class="color_red item_s">【精华】</div><div class="pd_5 w_over">主题标题主题标题主题标题主题标题主题标题主题标题</div>
+                            <div class="icon_img item_s"><img src="../../common/img/icon/img.png" alt=""></div>
+                        </div>
+                        <div class="bottom_info">
+                            <div class="left_info">
+                                <div class="item_in font_color_6">Mr.林</div>
+                                <div class="item_in font_color_9">2019.08.12</div>
+                            </div>
+                            <div class="right_info">
+                                <div class="item_in font_color_9">浏览量&nbsp;<span class="font_color_6">123</span></div>
+                                <div class="item_in font_color_9">回复&nbsp;<span class="font_color_6">123</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 left_layout ">
+                <div class="wap_style">
+                    <div class="wap_publish_content">
+                        <div class="z_title clearfix">
+                            <div class="color_red item_s">【精华】</div><div class="pd_5 w_over">主题标题主题标题主题标题主题标题主题标题主题标题</div>
+                            <div class="icon_img item_s"><img src="../../common/img/icon/img.png" alt=""></div>
+                        </div>
+                        <div class="bottom_info">
+                            <div class="left_info">
+                                <div class="item_in font_color_6">Mr.林</div>
+                                <div class="item_in font_color_9">2019.08.12</div>
+                            </div>
+                            <div class="right_info">
+                                <div class="item_in font_color_9">浏览量&nbsp;<span class="font_color_6">123</span></div>
+                                <div class="item_in font_color_9">回复&nbsp;<span class="font_color_6">123</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 left_layout ">
+                <div class="wap_style">
+                    <div class="wap_publish_content">
+                        <div class="z_title clearfix">
+                            <div class="color_red item_s">【精华】</div><div class="pd_5 w_over">主题标题主题标题主题标题主题标题主题标题主题标题</div>
+                            <div class="icon_img item_s"><img src="../../common/img/icon/img.png" alt=""></div>
+                        </div>
+                        <div class="bottom_info">
+                            <div class="left_info">
+                                <div class="item_in font_color_6">Mr.林</div>
+                                <div class="item_in font_color_9">2019.08.12</div>
+                            </div>
+                            <div class="right_info">
+                                <div class="item_in font_color_9">浏览量&nbsp;<span class="font_color_6">123</span></div>
+                                <div class="item_in font_color_9">回复&nbsp;<span class="font_color_6">123</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 left_layout ">
+                <div class="wap_style">
+                    <div class="wap_publish_content">
+                        <div class="z_title clearfix">
+                            <div class="color_red item_s">【精华】</div><div class="pd_5 w_over">主题标题主题标题主题标题主题标题主题标题主题标题</div>
+                            <div class="icon_img item_s"><img src="../../common/img/icon/img.png" alt=""></div>
+                        </div>
+                        <div class="bottom_info">
+                            <div class="left_info">
+                                <div class="item_in font_color_6">Mr.林</div>
+                                <div class="item_in font_color_9">2019.08.12</div>
+                            </div>
+                            <div class="right_info">
+                                <div class="item_in font_color_9">浏览量&nbsp;<span class="font_color_6">123</span></div>
+                                <div class="item_in font_color_9">回复&nbsp;<span class="font_color_6">123</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 left_layout ">
+                <div class="wap_style">
+                    <div class="wap_publish_content">
+                        <div class="z_title clearfix">
+                            <div class="color_red item_s">【精华】</div><div class="pd_5 w_over">主题标题主题标题主题标题主题标题主题标题主题标题</div>
+                            <div class="icon_img item_s"><img src="../../common/img/icon/img.png" alt=""></div>
+                        </div>
+                        <div class="bottom_info">
+                            <div class="left_info">
+                                <div class="item_in font_color_6">Mr.林</div>
+                                <div class="item_in font_color_9">2019.08.12</div>
+                            </div>
+                            <div class="right_info">
+                                <div class="item_in font_color_9">浏览量&nbsp;<span class="font_color_6">123</span></div>
+                                <div class="item_in font_color_9">回复&nbsp;<span class="font_color_6">123</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 left_layout ">
+                <div class="wap_style">
+                    <div class="wap_publish_content">
+                        <div class="z_title clearfix">
+                            <div class="color_red item_s">【精华】</div><div class="pd_5 w_over">主题标题主题标题主题标题主题标题主题标题主题标题</div>
+                            <div class="icon_img item_s"><img src="../../common/img/icon/img.png" alt=""></div>
+                        </div>
+                        <div class="bottom_info">
+                            <div class="left_info">
+                                <div class="item_in font_color_6">Mr.林</div>
+                                <div class="item_in font_color_9">2019.08.12</div>
+                            </div>
+                            <div class="right_info">
+                                <div class="item_in font_color_9">浏览量&nbsp;<span class="font_color_6">123</span></div>
+                                <div class="item_in font_color_9">回复&nbsp;<span class="font_color_6">123</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wap_button_btn">发表主题</div>
+        </div>
+    </div>
+    <!--footer-->
+    <footer-model></footer-model>
+</div>
+<script src="../../common/js/swiper.min.js"></script>
+<script src="../../common/js/vue.js"></script>
+<script src="../../common/js/vue-resource.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../common/js/public.js"></script>
+<script src="js/common.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container-s', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 0,
+        loop: true
+    });
+    function browserRedirect() {
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            var swiper = new Swiper('.swiper-container-nav', {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            });
+        }else{
+            var swiper = new Swiper('.swiper-container', {
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                slidesPerView: 6,
+                spaceBetween: 0,
+            });
+        }
+    }
+    browserRedirect();
+</script>
+</body>
+</html>

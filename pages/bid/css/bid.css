@@ -1,42 +1,20 @@
 [v-cloak] {
   display: none;
 }
-.bid_navBox {
-  width: 100%;
-  height: 40px;
-  background: white;
-  text-align: center;
-  padding-top: 6px;
-  border-bottom: 1px solid #000;
-}
-.bid_navBox ul {
-  padding: 0 0 0 125px;
-}
-.bid_navBox li {
-  float: left;
-  font-size: 16px;
-  width: 102px;
-  height: 30px;
-  line-height: 30px;
-  margin-right: 35px;
-  color: #333333;
-  cursor: pointer;
-}
-.bid_navBox li:nth-child(7) {
-  margin-right: 0;
-}
-.bid_navBox li:hover {
-  color: #fff;
-  background-color: #0ab7c7;
+.container {
+  padding-left: 0;
+  padding-right: 0;
 }
 .container_box {
-  padding: 15px 10px;
-  padding-bottom: 0;
+  width: 940px;
+  float: left;
+  padding-left: 10px;
   padding-right: 0;
   text-align: center;
   background: #fff;
 }
 .container_box .item_1 {
+  margin-top: 15px;
   width: 250px;
   float: left;
 }
@@ -147,6 +125,7 @@
 .container_box .item_2 {
   width: 680px;
   float: left;
+  margin-top: 15px;
   padding: 0 20px;
 }
 .container_box .item_2 .areabox {
@@ -323,158 +302,11 @@
   border: none;
   border-bottom: dashed 2px #0ab7c7;
 }
-.container_box .item_3 {
-  width: 20px;
-  margin-top: -15px;
-  height: 1950px;
-  background: #eeeeee;
-  float: left;
-}
-.container_box .item_4 {
-  width: 210px;
-  float: left;
-}
-.container_box .item_4 .btn-primary {
-  background: #0ab7c7;
-  border: none;
-  width: 85px;
-}
-.container_box .item_4 .btn-primary:nth-child(1) {
-  margin-left: 12px;
-}
-.container_box .item_4 .btn-primary:nth-child(2) {
-  margin-left: 10px;
-}
-.container_box .item_4 .tenderbox {
-  width: 190px;
-  height: 262px;
-  border: solid 1px #e5e5e5;
-  margin-left: 12px;
-  margin-top: 10px;
-}
-.container_box .item_4 .tenderbox .tender {
-  width: 94px;
-  height: 32px;
-  line-height: 32px;
-  font-size: 14px;
-  color: #666;
-  float: left;
-  cursor: pointer;
-}
-.container_box .item_4 .tenderbox .active {
-  background-color: #f9f9f9;
-  border: solid 1px #e5e5e5;
-  border-top: none ;
-}
-.container_box .item_4 .tenderbox ul {
-  margin-top: 47px;
-}
-.container_box .item_4 .tenderbox ul li {
-  width: 94px;
-  height: 49px;
-  float: left;
-  margin-top: 18px;
-}
-.container_box .item_4 .tenderbox ul li p {
-  width: 24px;
-  margin: 0 auto;
-  height: 24px;
-  background-color: #666666;
-  border-radius: 50%;
-}
-.container_box .item_4 .tenderbox ul li div {
-  margin-top: 9px;
-  font-size: 14px;
-  color: #666;
-}
-.container_box .item_4 .tenderbox .btn-info {
-  width: 170px;
-  background-color: #1a66f3;
-  margin-top: 30px;
-}
-.container_box .item_4 .Hotline {
-  width: 190px;
-  height: 65px;
-  margin-bottom: 10px;
-  background-color: #ffffff;
-  border: solid 1px #e5e5e5;
-  margin-left: 12px;
-  margin-top: 10px;
-  padding-left: 12px;
-}
-.container_box .item_4 .Hotline .hotline_1 {
-  width: 60px;
-  float: left;
-  padding-top: 13px;
-}
-.container_box .item_4 .Hotline .hotline_1 div {
-  font-size: 14px;
-  color: #666;
-  margin-top: 1px;
-}
-.container_box .item_4 .Hotline .hotline_2 {
-  float: left;
-  line-height: 65px;
-  font-size: 16px;
-  margin-left: 5px;
-  color: #1a66f3;
-}
-.container_box .item_4 .xxx {
-  width: 100%;
-  height: 11px;
-  background: #eeeeee;
-}
-.container_box .item_4 .fix {
-  width: 190px;
-  height: 30px;
-  margin-left: 12px;
-  background-color: #f4f4f4;
-  margin-top: 10px;
-  border: solid 1px #e5e5e5;
-  padding: 0 10px;
-}
-.container_box .item_4 .fix p {
-  font-size: 14px;
-  line-height: 30px;
-  color: #666;
-  float: left;
-}
-.container_box .item_4 .fix div {
-  float: right;
-  line-height: 30px;
-  color: #1a66f3;
-}
-.container_box .item_4 .fixbiox {
-  width: 200px;
-  height: 198px;
-  margin-left: 12px;
-  border: solid 1px #e5e5e5;
-  margin-bottom: 12px;
-}
-.container_box .item_4 .fixbiox ul {
-  padding: 22px 0 19px 16px;
-}
-.container_box .item_4 .fixbiox ul li {
-  text-align: left;
-  margin-top: 12px;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  overflow: hidden;
-  width: 158px;
-  cursor: pointer;
-}
-.container_box .item_4 .fixbiox ul li span {
-  padding-right: 10px;
-}
-.container_box .item_4 .fixbiox ul li:nth-child(1) {
-  margin-top: 0;
-}
 .container_box .item_5 {
   width: 902px;
   height: 300px;
   float: left;
-  margin-top: -294px;
+  margin-top: 20px;
   margin-left: 12px;
 }
 .container_box .item_5 .item_5_title {
@@ -502,7 +334,7 @@
   color: #333333;
 }
 .container_box .item_5 .item_5_content {
-  width: 720px;
+  width: 862px;
   height: 162px;
   margin: 0 auto;
   margin-top: 50px;
@@ -517,31 +349,6 @@
 .h5_box {
   display: none;
 }
-.h5_box .h5_nav {
-  width: 100%;
-  height: 26px;
-  padding: 0 3%;
-  background: white;
-}
-.h5_box .h5_nav ul {
-  width: 100%;
-}
-.h5_box .h5_nav ul li {
-  float: left;
-  width: 19%;
-  margin-left: 8%;
-  text-align: center;
-  font-size: 1.4rem;
-  height: 26px;
-  color: #333;
-}
-.h5_box .h5_nav ul li:nth-child(1) {
-  margin-left: 0;
-}
-.h5_box .h5_nav ul .active {
-  color: #0ab7c7;
-  border-bottom: 2px solid #0ab7c7;
-}
 .h5_box .item_1 {
   margin-top: 10px;
   padding: 0 3%;
@@ -550,7 +357,12 @@
 }
 .h5_box .item_1 .item_1_head {
   height: 36px;
+  padding-top: 10px;
   border-bottom: 1px solid #f4f4f4;
+}
+.h5_box .item_1 .item_1_head select {
+  border: none;
+  width: 90px;
 }
 .h5_box .item_1 .item_1_content ul li {
   color: #666;
@@ -585,12 +397,6 @@
   width: 92px;
   line-height: 28px;
   color: #0ab7c7;
-  float: left;
-}
-.h5_box .item_2 .head .headb {
-  width: 502px;
-  margin-top: 15px;
-  border: dashed 1px #0ab7c7;
   float: left;
 }
 .h5_box .item_2 .head .head_2 {
@@ -632,7 +438,7 @@
   color: #999;
   float: right;
 }
-.h5_box .item_2 .head_Content:nth-child(2) {
+.h5_box .item_2 .fuvk {
   border-top: dashed 1px #0ab7c7;
 }
 .h5_box .item_3 {
@@ -646,14 +452,22 @@
   height: 35px;
   line-height: 35px;
 }
+.h5_box .item_3 .item_3-container {
+  margin-bottom: 70px;
+}
+.h5_box .item_3 .item_3-container li {
+  width: 32%;
+  height: 42px;
+  padding: 2px 1%;
+  margin-top: 7px;
+  float: left;
+  margin-right: 2%;
+}
+.h5_box .item_3 .item_3-container li:nth-child(3n) {
+  margin-right: 0;
+}
 @media screen and (max-width: 768px) {
-  .bid_navBox {
+  .container_aaa {
     display: none;
-  }
-  .container_box {
-    display: none;
-  }
-  .h5_box {
-    display: block;
   }
 }

@@ -1387,6 +1387,12 @@ img {
   height: 100%;
 }
 @media screen and (max-width: 768px) {
+<<<<<<< HEAD
+=======
+  .botttitle {
+    font-size:12px!important;
+}
+>>>>>>> 53867945ee5ab30a3bce438605a873c95c5afa80
   .mycont {
       margin-bottom: 0px;
   }
