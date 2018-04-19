@@ -7,6 +7,8 @@
     <title>品牌论坛详情</title>
     <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../common/css/swiper.min.css">
+	<link href="css/iconfont.css" rel="stylesheet" type="text/css"/>
+	<link href="css/fileUpload.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../../common/css/base.css"/>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/forum_detail.css">
@@ -48,7 +50,7 @@
 						<a class="btn btn-info detailbtn " href="keynote.html">发表主题</a>
 					</div>
 				</div>
-				<div class="detailconttile clearfix">
+				<div class="detailconttile clearfix mdetailconttile">
 					<div class="detailconttileleft clearfix pull-left">
 						<div class="pull-left mytitlebox">
 							<div>12345</div>
@@ -63,6 +65,9 @@
 					<div class="detailconttilecont pull-left">
 						<span class="font_color_6">[人物描写]</span>主题的标题名称<img src="../../common/img/icon/jingping.png" />
 					</div>
+					<p class="detailconttilecont detailconttilecont1 pull-left" style="display: none;">
+						<span>浏览量<samp>123</samp> | </span><span>回复<samp>123</samp></span>
+					</p>
 				</div>
 				<div class="detailcontmain clearfix">
 					<div class="pull-left detal">
@@ -73,7 +78,7 @@
 					</div>
 					<div class="pull-left detar">
 						<div class="detbgd">
-							<div class="titinfo"><span class="lzcss">楼主</span><span class="font_color_6">发布于：<span class="font_color_6">2019-02-02</span></span></div>
+							<div class="titinfo"><span class="lzcss">楼主</span><span class="font_color_6"><samp>发布于：</samp><span class="font_color_6">2019-02-02</span></span></div>
 							<p class="titinfotxt">
 								贴吧类容贴吧类容贴吧类容贴吧类容贴吧类容,贴吧类容贴吧类容贴吧类容贴吧类容贴吧,类容贴吧类容贴吧类容贴吧类容贴,吧类容贴吧类容贴吧类容贴吧
 								类容贴吧类容贴吧类容贴贴吧,类容贴吧类容贴吧类,容贴吧类容贴吧类容贴吧类容贴吧类容,贴吧类容贴吧类容贴吧类,容贴吧类容贴吧类容贴吧,类容贴吧类
@@ -101,7 +106,7 @@
 						<div class="detbgd">
 							<div class="titinfo">
 								<span class="lzcss">楼主</span>
-								<span class="font_color_6">发布于：<span class="font_color_6">{{item.time}}</span></span>
+								<span class="font_color_6"><samp>发布于：</samp><span class="font_color_6">{{item.time}}</span></span>
 								<div class="right_report"><a href="">举报</a></div>
 							</div>
 							<p class="titinfotxt">{{item.txt}}</p>
@@ -136,8 +141,26 @@
 						</div>
 					</div>
 				</div>
+				<div class="bottcombox">
+					<div class="bottcomtop"><span>李老头</span>发表评论</div>
+					<div class="bottcomcont">
+						<textarea placeholder="请输入内容……"></textarea>
+						<div id="fileUploadContent" class="fileUploadContent"></div>
+					</div>
+					<div class="bottcombtn clearfix">
+						<a href="keynote.html" class="btn btn-info detailbtn active_bg pull-right">发表评论</a>
+					</div>
+				</div>
 			</div>
         </div>
+		<div class="bobtn clearfix">
+			<div class="bo_left pull-left">
+				<a class="btn btn-info1 btn_left btn-block" @click="btnfun($event)">评论主题</a>
+			</div>
+			<div class="bo_right pull-left">
+				<a class="btn btn-info1 btn_left btn-block btnaccss" @click="btnfun($event)">发表主题</a>
+			</div>
+		</div>
         <!--footer-->
         <footer-model></footer-model>	
     </div>
@@ -148,6 +171,7 @@
 <script src="../../common/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../../common/js/public.js"></script>
 <script type="text/javascript" src="../../common/js/zxf_page.js"></script>
+<script type="text/javascript" src="js/fileUpload.js"></script>
 <script src="js/common.js"></script>
 <script>
     function browserRedirect() {
@@ -179,7 +203,16 @@
 		pageNum: "100",
 		current: 1,
 	});
-
+	$("#fileUploadContent").initUpload({
+		"uploadUrl":"#",//上传文件信息地址
+		//"size":350,//文件大小限制，单位kb,默认不限制
+		"maxFileNumber":2,//文件个数限制，为整数
+		//"filelSavePath":"",//文件上传地址，后台设置的根目录
+		//"beforeUpload":beforeUploadFun,//在上传前执行的函数
+		//"onUpload":onUploadFun，//在上传后执行的函数
+		//autoCommit:true,//文件是否自动上传
+		"fileType":['png','jpg','docx','doc']//文件类型限制，默认不限制，注意写的是文件后缀
+	});
 </script>
 </body>
 </html>

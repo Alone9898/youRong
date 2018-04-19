@@ -176,6 +176,8 @@ var app = new Vue({
             $("."+a+"").fadeIn();
             $("."+a+"").siblings('.multab').hide();
         },
-
+        btnfun(ev){
+            $(ev.target).addClass('btnaccss').parent().siblings().find('a').removeClass('btnaccss');
+        },
     },
 })
