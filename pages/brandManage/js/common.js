@@ -96,12 +96,6 @@ var app = new Vue({
         message:[],
     },
     created: function () {
-        $(".zxf_pagediv").createPage({
-            pageNum: "100",
-            current: 1,
-        });
-
-        
     },
     methods: {
         show:function(index){

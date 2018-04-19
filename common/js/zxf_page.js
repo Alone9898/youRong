@@ -24,10 +24,10 @@
 				}
 				/*上一页*/
 				if (pageinit.current > 1) {
-					obj.append('<a href="javascript:;" class="prebtn">上一页</a>');
+					obj.append('<a href="javascript:;" class="prebtn">《</a>');
 				} else{
 					obj.remove('.prevPage');
-					obj.append('<span class="disabled">上一页</span>');
+					obj.append('<span class="disabled">《</span>');
 				}
 				/*中间页*/
 				if (pageinit.current >4 && pageinit.pageNum > pageinit.shownum) {
@@ -63,14 +63,14 @@
 				/*下一页*/
 				if (pageinit.current >= pageinit.pageNum) {
 					obj.remove('.nextbtn');
-					obj.append('<span class="disabled">下一页</span>');
+					obj.append('<span class="disabled">》</span>');
 				} else{
-					obj.append('<a href="javascript:;" class="nextbtn">下一页</a>');
+					obj.append('<a href="javascript:;" class="nextbtn">》</a>');
 				}
 				/*尾部*/
 				obj.append('<span>'+'共'+'<b>'+pageinit.pageNum+'</b>'+'页，'+'</span>');
 				obj.append('<span>'+'到第'+'<input type="text" class="zxfinput" value="'+pageinit.current+'"/>'+'页'+'</span>');
-				obj.append('<span class="zxfokbtn">'+'go'+'</span>');
+				obj.append('<span class="zxfokbtn">'+'Go'+'</span>');
 			}());
 		},
 		bindEvent:function(obj,pageinit){
