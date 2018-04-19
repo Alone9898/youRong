@@ -105,6 +105,44 @@ img {
   color: #01dfba;
 }
 .contbox .pcss span{margin-right:20px;}
+.myheaderm1{    text-align: center;
+    margin: 0 auto;
+    width: 280px;}
+.mypcss{margin:12px 0;color:#888;}
+.mc .contimg1>div{height:240px!important;}
+.mc .contimg1{height:270px!important;}
+.mcontbox1 .mb {
+    margin-bottom: 22px;
+}
+.mb {
+    padding-right: 0;
+}
+.mycontimg2 {
+    width: 100%;
+    height: 240px;
+    position: relative;
+    overflow: hidden;
+}
+.botttitle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    padding: 0 12px;
+}
+.toptime {
+    position: absolute;
+    top: -15px;
+    right: -14px;
+    color: #fff;
+    background: #00dfb9;
+    padding: 20px 20px 5px 16px;
+    border-radius: 40px;
+}
 /****************************************************************************************************/
 /*cont*/
 .cont {
@@ -192,8 +230,12 @@ img {
 .contmain {
   margin-top: 20px;
   background: #ffffff;
-  padding: 20px;
+  padding: 20px;position: relative;
+
 }
+.img{    position: absolute;
+    top: -27px;
+    right: 15px;}
 .mycont{margin-bottom:20px;}
 .contmain .contleft {
   width: 100px;
@@ -312,10 +354,16 @@ img {
     width: 65px;
     height: 65px;
     margin-right: 10px;
+        position: absolute;
   }
+  .lcss{    padding-left: 73px;}
+  .ll,.san{display: none}
   .contbox h4 {
     font-size: 15px;
     margin-bottom: 19px;
+  }
+  .contmain span,.pcss{
+         font-size: 12px!important;
   }
   .contmain .butt b {
     font-size: 12px;
@@ -504,7 +552,6 @@ img {
   width: 80%;
 }
 .mb {
-  border-bottom: 2px dashed #ddd;
   padding-bottom: 26px;
   margin-bottom: 26px;
 }
@@ -584,6 +631,19 @@ img {
   p,a,span,b{font-size:14px!important;}
   .title .myh {
     height: 58px;
+}
+.mc .contimg1>div {
+    height: 128px!important;
+}
+.mc .contimg1 {
+    height: 170px!important;
+}
+.mcontbox1 .mb {
+    margin-bottom: 0;
+    padding: 4px;
+}
+.mycontimg2 {
+    height: 128px!important;
 }
   .container1{margin-top:0!important;}
   .myh > div {
@@ -819,6 +879,7 @@ img {
   .mjhbox .mjhmain .mjhmainimg {
     height: 200px!important;
   }
+  .img{display: none}
 }
 @media screen and (max-width: 425px) {
   .myh > div {
@@ -1302,7 +1363,7 @@ img {
   color: #999999;
 }
 .sjzpboxtop {
-  padding-right: 16px;
+  padding-right: 16px;    margin-bottom: 14px;
 }
 .sjzpboxtop span {
   color: #999;
@@ -1314,11 +1375,11 @@ img {
   margin-left: 10px;
 }
 .sjzpboxcont {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;    padding-bottom: 20px;
 }
 .contimg1 {
   height: 240px;
-  margin: 30px 0px;
+  margin: 9px 0px;
   padding: 0 16px 0 0;
 }
 .contimg1 > div {
@@ -1339,8 +1400,9 @@ img {
     display: block!important;
   }
   .mynavcss1 li {
-    width: 25%;
+    width: 20%;
     padding:10px 0;
+    a{font-size: 12px!important}
   }
   .mynavcss1 li a {
     padding: 0!important;
@@ -1348,6 +1410,14 @@ img {
     color: #333!important;
     font-size: 14px !important;
   }
+  .mynavcss1 li a {
+    font-size: 12px !important;
+}
+.pco1{display: block!important;}
+.zhead {
+   
+    background: #fff; 
+}
   .mynavcss,
   .mycs {
     left: 0;
