@@ -69,6 +69,13 @@ var app = new Vue({
                 title:'什么是论坛？',
             },
         ],
+<<<<<<< HEAD
+    },
+    created: function () {
+       
+    },
+    methods: {
+=======
         user_info:[
             {
                 name:'Mr.林',
@@ -124,6 +131,7 @@ var app = new Vue({
             this.hide=false,
             this.value=''
         },
+>>>>>>> 53867945ee5ab30a3bce438605a873c95c5afa80
         //nav高亮
 		searchfun(ev){
 			$(ev.target).addClass('hoverhight').siblings().removeClass('hoverhight');
@@ -133,9 +141,14 @@ var app = new Vue({
         searchcli(ev,a){
             $(ev.target).addClass('myhight').siblings().removeClass('myhight');
             //alert(a);
+<<<<<<< HEAD
+            //window.location.href=''+a+'.html';
+        },
+=======
             window.location.href=''+a+'.html';
         },
 
+>>>>>>> 53867945ee5ab30a3bce438605a873c95c5afa80
         //视频
         clickfun(ev,a){
             
@@ -174,6 +187,9 @@ var app = new Vue({
             $("."+a+"").fadeIn();
             $("."+a+"").siblings('.multab').hide();
         },
+<<<<<<< HEAD
+=======
 
+>>>>>>> 53867945ee5ab30a3bce438605a873c95c5afa80
     },
 })
