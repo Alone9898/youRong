@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33d571ef-f0a5-4d9d-8fcf-84c1eb0a3bbd" name="默认的" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/designCenter/css/AskQuestions.css" afterPath="$PROJECT_DIR$/pages/designCenter/css/AskQuestions.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/designCenter/css/AskQuestions_a.css" afterPath="$PROJECT_DIR$/pages/designCenter/css/AskQuestions_a.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/designCenter/css/AskQuestions_b.css" afterPath="$PROJECT_DIR$/pages/designCenter/css/AskQuestions_b.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/designCenter/css/designCommon.css" afterPath="$PROJECT_DIR$/pages/designCenter/css/designCommon.css" />
-    </list>
+    <list default="true" id="33d571ef-f0a5-4d9d-8fcf-84c1eb0a3bbd" name="默认的" comment="" />
     <ignored path="web.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
