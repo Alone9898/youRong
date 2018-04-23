@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>品牌论坛详情</title>
+    <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../common/css/swiper.min.css">
+	<link href="css/iconfont.css" rel="stylesheet" type="text/css"/>
+	<link href="css/fileUpload.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../../common/css/base.css"/>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/forum_detail.css">
+</head>
+<body>
+<div id="app" v-cloak="">
+	    <!--header-->
+		<sitenav></sitenav>
+	    <div class="title">
+	    	<div class="swiper-container-nav">
+		        <div class="myh swiper-wrapper clearfix">
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide col-lg-offset-1 " @click="searchcli($event,'business')">商业品牌</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'Qc_management')">品控管理</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'promotion')">品牌推广</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'media')">品牌传媒</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight" @click="searchcli($event,'forum')">品牌论坛</div>
+		        </div>
+	        </div>
+	    </div>
+        <div class="cont container " style="margin-bottom: 100px">
+			<div class="myaddr">
+				<ul class="clearfix">
+					<li>我的位置：</li> 
+					<li><a href="javascript:history.back(-1)">品牌中心</a></li> 
+					<li>&gt;</li> 
+					<li><a href="javascript:history.back(-1)">品牌传媒</a></li> 
+					<li>&gt;</li> 
+					<li><a href="javascript:history.back(-1)">品牌活动</a></li> 
+					<li>&gt;</li> <li><a href="">详情</a></li>
+				</ul>
+			</div>
+			<div class="detailcont">
+				<div class="pagebox clearfix">
+					<div class="pull-left">
+						<div class="zxf_pagediv" style="padding-bottom: 1.5%"></div>
+					</div>
+					<div class="pull-right">
+						<a class="btn btn-info detailbtn active_bg" href="keynote.html">评论主题</a>
+						<a class="btn btn-info detailbtn " href="keynote.html">发表主题</a>
+					</div>
+				</div>
+				<div class="detailconttile clearfix mdetailconttile">
+					<div class="detailconttileleft clearfix pull-left">
+						<div class="pull-left mytitlebox">
+							<div>12345</div>
+							<div>浏览数</div>
+						</div>
+						<div class="mbor pull-left mytitlebox"></div>
+						<div class="pull-left mytitlebox">
+							<div>12345</div>
+							<div>回复</div>
+						</div>
+					</div>
+					<div class="detailconttilecont pull-left">
+						<span class="font_color_6">[安全知识]</span>主题的标题名称<img src="../../common/img/icon/jingping.png" />
+					</div>
+					<p class="detailconttilecont detailconttilecont1 pull-left" style="display: none;">
+						<span>浏览量<samp>123</samp> | </span><span>回复<samp>123</samp></span>
+					</p>
+				</div>
+				<div class="detailcontmain clearfix">
+					<div class="pull-left detal">
+						<div class="mheadimgbox" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></div>
+						<h4 style="margin: 10px 0;">人物</h4>
+						<p style="margin: 10px 0;">等级：<span>大师</span></p>
+						<a class="btn btn-info detailbtnleft btn-block">关注</a>
+					</div>
+					<div class="pull-left detar">
+						<div class="detbgd">
+							<div class="titinfo"><span class="lzcss">楼主</span><span class="font_color_6"><samp>发布于：</samp><span class="font_color_6">2019-02-02</span></span></div>
+							<p class="titinfotxt">
+								贴吧类容贴吧类容贴吧类容贴吧类容贴吧类容,贴吧类容贴吧类容贴吧类容贴吧类容贴吧,类容贴吧类容贴吧类容贴吧类容贴,吧类容贴吧类容贴吧类容贴吧
+								类容贴吧类容贴吧类容贴贴吧,类容贴吧类容贴吧类,容贴吧类容贴吧类容贴吧类容贴吧类容,贴吧类容贴吧类容贴吧类,容贴吧类容贴吧类容贴吧,类容贴吧类
+								容贴吧类容贴,吧类容贴吧类容贴吧类容贴,吧类容贴吧类容,贴吧类容贴吧类容,贴吧类容贴吧类容贴吧类容贴吧,类容贴吧类容,贴吧类容贴吧类容贴吧类容贴
+								吧类容贴吧类容,贴吧类容贴吧类容贴吧类容贴吧类容贴.
+							</p>
+							<div class="titinfocont" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></div>
+							<p class="titinfotxt">
+								贴吧类容贴吧类容贴吧类容贴吧类容贴吧类容,贴吧类容贴吧类容贴吧类容贴吧类容贴吧,类容贴吧类容贴吧类容贴吧类容贴,吧类容贴吧类容贴吧类容贴吧
+								类容贴吧类容贴吧类容贴贴吧,类容贴吧类容贴吧类,容贴吧类容贴吧类容贴吧类容贴吧类容,贴吧类容贴吧类容贴吧类,容贴吧类容贴吧类容贴吧,类容贴吧类
+								容贴吧类容贴,吧类容贴吧类容贴吧类容贴,吧类容贴吧类容,贴吧类容贴吧类容,贴吧类容贴吧类容贴吧类容贴吧,类容贴吧类容,贴吧类容贴吧类容贴吧类容贴
+								吧类容贴吧类容,贴吧类容贴吧类容贴吧类容贴吧类容贴.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="detailcontmain clearfix" v-for="(item,index) in user_info">
+					<div class="pull-left detal">
+						<div class="mheadimgbox" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></div>
+						<h4 style="margin: 10px 0;">{{item.name}}</h4>
+						<p style="margin: 10px 0;">等级：<span>{{item.level}}</span></p>
+						<a class="btn btn-info detailbtnleft btn-block">关注</a>
+					</div>
+					<div class="pull-left detar">
+						<div class="detbgd">
+							<div class="titinfo">
+								<span class="lzcss">楼主</span>
+								<span class="font_color_6"><samp>发布于：</samp><span class="font_color_6">{{item.time}}</span></span>
+								<div class="right_report"><a href="">举报</a></div>
+							</div>
+							<p class="titinfotxt">{{item.txt}}</p>
+							<div class="w_auto clearfix ">
+								<div class="float_comments_info">
+									<div class="item_lin" @click="show(index)">评论</div>
+									<div class="item_lin">赞</div>
+								</div>
+							</div>
+							<div class="float_rt clearfix">
+								<div class="hr_lin" :class="{show:hides}"></div>
+								<div class="comments_text clearfix" :class="{show:hides} " v-for="values in message" >
+									<div class="ones_title clearfix">
+										<div class="left_float">赵林</div>
+										<div class="right_float">
+											<span style="font-size: 12px;color:#999999">2017-10-10 12:20</span>
+											<span style="font-size: 14px;color:#00dfb9;margin-left: 40px;cursor: pointer" @click="show(index)">评论</span>
+										</div>
+									</div>
+									<div class="body_txt">
+										评论&nbsp;<span class="username">赵林</span>：<span>{{values.content}}</span>
+									</div>
+								</div>
+							</div>
+							<div class="type_comments clearfix" :class="{show:index===hide}">
+								  <textarea class="wishContents" style="resize: none;"  v-model="value"></textarea>
+								<div class="right_btn">
+									<div class="cancel_btn" @click="cancel()">取消</div>
+									<div class="submit_btn" @click="submit(index)">评论</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bottcombox">
+					<div class="bottcomtop"><span>李老头</span>发表评论</div>
+					<div class="bottcomcont">
+						<textarea placeholder="请输入内容……"></textarea>
+						<div id="fileUploadContent" class="fileUploadContent"></div>
+					</div>
+					<div class="bottcombtn clearfix">
+						<a href="keynote.html" class="btn btn-info detailbtn active_bg pull-right">发表评论</a>
+					</div>
+				</div>
+			</div>
+        </div>
+		<div class="bobtn clearfix">
+			<div class="bo_left pull-left">
+				<a class="btn btn-info1 btn_left btn-block" @click="btnfun($event)">评论主题</a>
+			</div>
+			<div class="bo_right pull-left">
+				<a class="btn btn-info1 btn_left btn-block btnaccss" @click="btnfun($event)">发表主题</a>
+			</div>
+		</div>
+        <!--footer-->
+        <footer-model></footer-model>	
+    </div>
+<script src="../../common/js/jquery-1.11.3.js"></script>
+<script src="../../common/js/swiper.min.js"></script>
+<script src="../../common/js/vue.js"></script>
+<script src="../../common/js/vue-resource.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../common/js/public.js"></script>
+<script type="text/javascript" src="../../common/js/zxf_page.js"></script>
+<script type="text/javascript" src="js/fileUpload.js"></script>
+<script src="js/common.js"></script>
+<script>
+    function browserRedirect() {
+		var sUserAgent = navigator.userAgent.toLowerCase();
+		var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+		var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+		var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+		var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+		var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+		var bIsAndroid = sUserAgent.match(/android/i) == "android";
+		var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+		var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+		if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+		    var swiper = new Swiper('.swiper-container-nav', {
+				slidesPerView: 4,
+				spaceBetween: 30,
+			});
+		}else{
+		    var swiper = new Swiper('.swiper-container', {
+		        nextButton: '.swiper-button-next',
+		        prevButton: '.swiper-button-prev',
+		        slidesPerView: 6,
+		        spaceBetween: 0,
+		    });
+		}
+	}
+	browserRedirect();
+	$(".zxf_pagediv").createPage({
+		pageNum: "100",
+		current: 1,
+	});
+	$("#fileUploadContent").initUpload({
+		"uploadUrl":"#",//上传文件信息地址
+		//"size":350,//文件大小限制，单位kb,默认不限制
+		"maxFileNumber":2,//文件个数限制，为整数
+		//"filelSavePath":"",//文件上传地址，后台设置的根目录
+		//"beforeUpload":beforeUploadFun,//在上传前执行的函数
+		//"onUpload":onUploadFun，//在上传后执行的函数
+		//autoCommit:true,//文件是否自动上传
+		"fileType":['png','jpg','docx','doc']//文件类型限制，默认不限制，注意写的是文件后缀
+	});
+</script>
+</body>
+</html>

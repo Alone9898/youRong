@@ -112,11 +112,7 @@ img {
 }
 .conttitle {
   background: #ffffff;
-<<<<<<< HEAD
-  padding: 20px;
-=======
   padding: 20px 0;
->>>>>>> 53148e0a073a5100a458b955d599241b04aae66e
 }
 .conttitle h3 {
   margin: 0;
@@ -240,9 +236,6 @@ img {
 .swiper-button-prevmy {
   background-image: url('../../../common/img/icon/licon.png');
 }
-<<<<<<< HEAD
-@media screen and (max-width: 768px) {
-=======
 .list-btn{
   margin-bottom: 20px;
   padding: 0 10px;
@@ -283,7 +276,6 @@ img {
     margin-right: 15px;
     cursor: pointer;
   }
->>>>>>> 53148e0a073a5100a458b955d599241b04aae66e
   body {
     overflow-x: hidden;
   }
@@ -627,8 +619,6 @@ img {
   font-size: 12px;
   border-radius: 6px;
 }
-<<<<<<< HEAD
-=======
 .hover_bg{
   overflow: hidden;
 }
@@ -666,7 +656,6 @@ img {
   color:#fff;
   font-size: 14px;
 }
->>>>>>> 53148e0a073a5100a458b955d599241b04aae66e
 @media screen and (max-width: 768px) {
   p,a,span,b{font-size:14px!important;}
   .title .myh {
@@ -909,13 +898,8 @@ img {
 }
 @media screen and (max-width: 425px) {
   .myh > div {
-<<<<<<< HEAD
-    font-size: 12px;
-    margin-right: 32px!important;
-=======
     font-size: 14px;
     margin-right: 42px!important;
->>>>>>> 53148e0a073a5100a458b955d599241b04aae66e
   }
 }
 @media screen and (max-width: 320px) {
@@ -1393,15 +1377,12 @@ img {
   padding: 0;
   color: #999999;
 }
-<<<<<<< HEAD
-=======
 .sjzpboxtop .mg_l .color_green{
     color: #00dfb9;
 }
 .sjzpboxtop .mg_l{
     font-size: 18px;
 }
->>>>>>> 53148e0a073a5100a458b955d599241b04aae66e
 .sjzpboxtop {
   padding-right: 16px;
 }
@@ -1427,13 +1408,10 @@ img {
   height: 100%;
 }
 @media screen and (max-width: 768px) {
-<<<<<<< HEAD
-=======
   .myh > div {
     font-size: 12px!important;
     margin-right: 42px!important;
   }
->>>>>>> 53148e0a073a5100a458b955d599241b04aae66e
   .mycont {
       margin-bottom: 0px;
   }

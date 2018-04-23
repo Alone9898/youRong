@@ -83,11 +83,14 @@ video {
   height: 345px;
   overflow: hidden;
 }
-.manboxright {
+.manboxright a {
   color: #999;
   cursor: pointer;
   font-size: 14px;
   margin-top: 5px;
+}
+.manboxright a:hover {
+  color: #00dfb9;
 }
 .right_layout .float_bar_one {
   padding: 10px 10px 24px 10px;

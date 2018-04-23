@@ -317,6 +317,9 @@ video {
   margin-bottom: 12px;
 }
 @media screen and (max-width: 768px) {
+  html {
+    font-size: 14px!important;
+  }
   .myh > div {
     font-size: 16px;
   }
@@ -359,11 +362,19 @@ video {
   }
 }
 @media screen and (max-width: 425px) {
+  a,
+  .manboxright {
+    font-size: 12px;
+  }
   .myh > div {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 320px) {
+  a,
+  .manboxright {
+    font-size: 12px;
+  }
   .myh > div {
     font-size: 12px;
   }
