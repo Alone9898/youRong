@@ -49,7 +49,8 @@ video {
 }
 .manboxcontimg {
   width: 100%;
-  height: 120px;
+  height: 180px;
+  position: relative;
   margin-bottom: 10px;
 }
 .manboxconttxt li {
@@ -77,10 +78,6 @@ video {
   font-size: 18px;
   border-bottom: 2px solid #00dfb9;
   padding-bottom: 12px;
-}
-.mox {
-  height: 345px;
-  overflow: hidden;
 }
 .manboxright {
   color: #999;
@@ -232,30 +229,142 @@ video {
   border: 1px solid #00dfb9;
   color: #00dfb9;
 }
+/*zhishi*/
+.zhishirbox {
+  background: #fff;
+  padding: 18px 15px;
+}
+.zhishirbox a {
+  display: block;
+  width: 170px;
+}
+.zhishirbox .m a:hover {
+  color: #00dfb9;
+}
+.zhishirbox .h {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #00dfb9;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.zhishirbox li {
+  margin-bottom: 4px;
+}
+.zhishirbox .a {
+  text-align: center;
+  margin-top: 10px;
+}
+.zhishirbox .a a {
+  color: #999;
+}
+.zhishibox {
+  background: #fff;
+  padding: 20px;
+}
+.zhishibox .zhishitop {
+  border-bottom: 1px solid #ddd;
+  padding: 14px 0;
+}
+.zhishibox .zhishitop ul li {
+  margin-right: 20px;
+}
+.zhishibox .zhishitop ul li a {
+  font-size: 16px;
+  color: #999;
+}
+.zhishibox .zhishitop ul li a:hover {
+  color: #00dfb9;
+}
+.zhishibox .zhishitop a {
+  font-size: 16px;
+  color: #00dfb9;
+}
+.zhishibox .zhishicont {
+  padding: 26px 0;
+}
+.zhishibox .zhishib {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+}
+.zhishibox .zhishirimg {
+  width: 140px;
+  height: 90px;
+  position: relative;
+  padding: 0;
+}
+.zhishibox .zhishirimg img {
+  position: absolute;
+  top: 0;
+  left: -4px;
+}
+.zhishibox .zhishiritx {
+  padding-right: 0;
+  padding-top: 6px;
+}
+.zhishibox .zhishiritx p {
+  color: #999;
+  margin-top: 10px;
+}
+.zhishibox .zhishiritx b {
+  font-size: 14px;
+}
+.zhishibox .zhishir {
+  margin-bottom: 12px;
+}
 @media screen and (max-width: 768px) {
+  .myh > div {
+    font-size: 16px;
+  }
   .right_layout,
   .manboxm {
     display: none;
   }
-  a,
-  .manboxright {
-    font-size: 12px!important;
+  .manboxm,
+  .zhishirbox,
+  .zhishirm,
+  .rm,
+  .rrm {
+    display: none;
+  }
+  .manboxcontimg {
+    height: 160px;
+  }
+  .zhishibox .zhishitop {
+    border-bottom: 0;
+  }
+  .zhishibox {
+    padding: 0;
+  }
+  .zhishibox > div {
+    padding: 10px;
+    background: #fff;
+    margin-bottom: 10px;
+  }
+  .cont {
+    padding: 0;
+  }
+  .zhishibox {
+    background: none;
+  }
+  .mox {
+    margin-bottom: 10px;
+  }
+  .zhishibox .zhishicont {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  .myh > div {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 320px) {
   .myh > div {
     font-size: 12px;
-    margin-right: 32px!important;
   }
-  .ji {
-    margin: 0 1px;
-    padding: 0px 8px;
-  }
-  .contmain .bao {
-    padding: 0px 9px;
-  }
-}
-.myh > div {
-  font-size: 12px;
-  margin-right: 32px!important;
 }

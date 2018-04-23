@@ -640,6 +640,7 @@ img {
   p,a,span,b{font-size:14px!important;}
   .title .myh {
     height: 58px;
+    font-size:16px;
 }
 .mc .contimg1>div {
     height: 128px!important;
@@ -892,14 +893,14 @@ img {
 }
 @media screen and (max-width: 425px) {
   .myh > div {
-    font-size: 14px;
-    margin-right: 42px!important;
+    font-size: 12px;
+    margin-right: 32px!important;
   }
 }
 @media screen and (max-width: 320px) {
   .myh > div {
     font-size: 12px;
-    margin-right: 36px!important;
+    margin-right: 32px!important;
   }
   .ji {
     margin: 0 1px;

@@ -588,7 +588,7 @@ img {
   .container1{margin-top:0!important;}
   .myh > div {
     font-size: 16px;
-    margin-right: 32px!important;
+    margin-right: 33px!important;
   }
   .mip {
     width: 100%;
@@ -829,7 +829,7 @@ img {
 @media screen and (max-width: 320px) {
   .myh > div {
     font-size: 12px;
-    margin-right: 32px!important;
+    margin-right: 36px!important;
   }
   .ji {
     margin: 0 1px;

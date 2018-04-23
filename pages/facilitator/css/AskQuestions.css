@@ -1,0 +1,184 @@
+/*z_banner*/
+.z_banner {
+  width: 100%;
+}
+.z_banner img {
+  max-height: 420px;
+  width: 100%;
+}
+/*我的位置nav*/
+.z_menu {
+  margin-top: 2rem;
+}
+.z_menu li {
+  float: left;
+  clear: right;
+  font-size: 1.2rem;
+  font-weight: normal;
+  padding: 0 0.1rem;
+}
+.z_menu li a {
+  color: #666666;
+}
+.z_menu li a:hover {
+  color: #00dfb9;
+}
+/*AskQuestions*/
+.questions_box {
+  padding-top: 5rem;
+  margin-top: 1rem;
+  background: #fff;
+  min-height: 710px;
+}
+.questions_box .title_txt {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: normal;
+  color: #333333;
+}
+.questions_box .type_txt {
+  width: 80%;
+  margin: 0 auto;
+  height: 150px;
+  margin-top: 50px;
+  position: relative;
+}
+.questions_box .type_txt textarea::-webkit-input-placeholder {
+  color: #999999;
+}
+.questions_box .type_txt textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #999999;
+}
+.questions_box .type_txt textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #999999;
+}
+.questions_box .type_txt textarea:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #999999;
+}
+.questions_box .type_txt .wishContent {
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+  resize: none;
+  padding: 2rem 2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  border: none;
+  border-radius: 3px;
+}
+.questions_box .type_txt .wishContent:focus {
+  border-color: #66afe9;
+}
+.questions_box .upload_box {
+  position: relative;
+  height: 40px;
+  margin-top: 3rem;
+}
+.questions_box .upload_box .upload_btn {
+  line-height: 40px;
+  float: left;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #666666;
+}
+.questions_box .upload_box .upload_btn img {
+  padding-right: 5px;
+}
+.questions_box .upload_box .submit_btn {
+  float: right;
+  width: 120px;
+  height: 40px;
+  background: #00dfb9;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 5px;
+  outline: none;
+}
+.words {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 96px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #999999;
+}
+.words .wordsNum {
+  font-size: 14px;
+  font-weight: 700;
+  color: #00dfb9;
+  padding-right: 2px;
+}
+/*媒体查询*/
+@media screen and (max-width: 700px) {
+  .wishContent {
+    font-weight: inherit!important;
+  }
+  .words {
+    font-weight: inherit!important;
+  }
+  .words .wordsNum {
+    font-weight: inherit!important;
+  }
+  .z_menu {
+    padding-left: 1rem;
+    display: none;
+  }
+  .questions_box {
+    width: 100%;
+    padding: 0;
+  }
+  .questions_box .title_txt {
+    padding-top: 2rem;
+    font-size: 1.6rem ;
+  }
+  .questions_box .type_txt {
+    width: 90%;
+    margin: 0 auto;
+    height: 150px;
+    position: relative;
+    margin-top: 3rem;
+  }
+  .questions_box .upload_box {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+  .questions_box .upload_box .submit_btn {
+    height: 2.5rem;
+    width: 6rem;
+    font-size: 1.4rem;
+  }
+  .questions_box .upload_box .upload_btn {
+    line-height: 3rem;
+    font-size: 1.4rem;
+  }
+  .questions_box .upload_box .upload_btn img {
+    width: 2rem;
+  }
+  .questions_box .fileUploadContent {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .questions_box .fileUploadContent .fileItem {
+    width: 120px;
+  }
+  .questions_box .fileUploadContent .fileItem .imgShow {
+    width: 100px;
+    height: 100px;
+  }
+  .questions_box .selectFileBt {
+    font-size: 1rem!important;
+    padding: 7px!important;
+  }
+  .questions_box .iconfont {
+    font-size: 2.5rem!important;
+    line-height: 28px!important;
+  }
+}
