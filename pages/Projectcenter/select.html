@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>日记详情</title>
+    <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../common/css/swiper.min.css">
+    <link rel="stylesheet" href="../../common/css/base.css"/>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/select.css">
+    <script src="../../common/js/jquery-1.11.3.js"></script>
+</head>
+
+<body>
+<div id="app" v-cloak>
+    <!--header-->
+    <sitenav></sitenav>
+    <!--banner-->
+    <!--<div class="z_banner">
+        <img src="../../common/img/images/z_banner.png" alt="">
+    </div>-->
+    <div class="title">
+        <div class="swiper-container-nav">
+            <div class="myh swiper-wrapper clearfix">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide col-lg-offset-1" @click="searchcli($event)">商业品牌</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event)">品控管理</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event)">品牌推广</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight" @click="searchcli($event,'media')">品牌传媒</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event)">品牌论坛</div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <!--我的位置nav-->
+        <div class="col-xs-12 pd" style="padding-left: 15px">
+            <ul class="z_menu">
+                <li>我的位置：</li>
+                <li><a href="javascript:history.back(-1)">项目中心</a></li>
+                <li>></li>
+                <li><a href="javascript:history.back(-1)">装修知识</a></li>
+                <li>></li>
+                <li><a href="">分类</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 left_layout" style="position: relative">
+            <div class="title_box">
+                <span class="txt_h1">精选知识</span>
+            </div>
+            <div class="goods_box clearfix">
+                <div class="goods_list clearfix">
+                    <div class="img-user">
+                        <img src="../../common/img/images/img2.png" alt="">
+                    </div>
+                    <div class="right-info">
+                        <div class="title-tp">
+                            <div class="title_s">标题标题</div>
+                            <ul class="info-tips">
+                                <li>木材</li>
+                                <li>天花板</li>
+                            </ul>
+                        </div>
+                        <div class="content_p">
+                            <p>
+                                描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
+                                描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
+                                描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
+                            </p>
+                        </div>
+                        <div class="bottom_info">
+                            <div class="left-lock">
+                                <span class="item"><img src="../../common/img/icon/lock.png" alt="">&nbsp;123</span>
+                                <span class="item"><img src="../../common/img/icon/sc.png" alt="">&nbsp;123</span>
+                            </div>
+                            <div class="right-time">
+                                2017/10/10
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods_list clearfix">
+                    <div class="img-user">
+                        <img src="../../common/img/images/img2.png" alt="">
+                    </div>
+                    <div class="right-info">
+                        <div class="title-tp">
+                            <div class="title_s">标题标题</div>
+                            <ul class="info-tips">
+                                <li>木材</li>
+                                <li>天花板</li>
+                            </ul>
+                        </div>
+                        <div class="content_p">
+                            <p>
+                                描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
+                                描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
+                                描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
+                            </p>
+                        </div>
+                        <div class="bottom_info">
+                            <div class="left-lock">
+                                <span class="item"><img src="../../common/img/icon/lock.png" alt="">&nbsp;123</span>
+                                <span class="item"><img src="../../common/img/icon/sc.png" alt="">&nbsp;123</span>
+                            </div>
+                            <div class="right-time">
+                                2017/10/10
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods_list clearfix">
+                    <div class="img-user">
+                        <img src="../../common/img/images/img2.png" alt="">
+                    </div>
+                    <div class="right-info">
+                        <div class="title-tp">
+                            <div class="title_s">标题标题</div>
+                            <ul class="info-tips">
+                                <li>木材</li>
+                                <li>天花板</li>
+                            </ul>
+                        </div>
+                        <div class="content_p">
+                            <p>
+                                描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
+                                描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
+                                描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
+                            </p>
+                        </div>
+                        <div class="bottom_info">
+                            <div class="left-lock">
+                                <span class="item"><img src="../../common/img/icon/lock.png" alt="">&nbsp;123</span>
+                                <span class="item"><img src="../../common/img/icon/sc.png" alt="">&nbsp;123</span>
+                            </div>
+                            <div class="right-time">
+                                2017/10/10
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods_list clearfix">
+                    <div class="img-user">
+                        <img src="../../common/img/images/img2.png" alt="">
+                    </div>
+                    <div class="right-info">
+                        <div class="title-tp">
+                            <div class="title_s">标题标题</div>
+                            <ul class="info-tips">
+                                <li>木材</li>
+                                <li>天花板</li>
+                            </ul>
+                        </div>
+                        <div class="content_p">
+                            <p>
+                                描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
+                                描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
+                                描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
+                            </p>
+                        </div>
+                        <div class="bottom_info">
+                            <div class="left-lock">
+                                <span class="item"><img src="../../common/img/icon/lock.png" alt="">&nbsp;123</span>
+                                <span class="item"><img src="../../common/img/icon/sc.png" alt="">&nbsp;123</span>
+                            </div>
+                            <div class="right-time">
+                                2017/10/10
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods_list clearfix">
+                    <div class="img-user">
+                        <img src="../../common/img/images/img2.png" alt="">
+                    </div>
+                    <div class="right-info">
+                        <div class="title-tp">
+                            <div class="title_s">标题标题</div>
+                            <ul class="info-tips">
+                                <li>木材</li>
+                                <li>天花板</li>
+                            </ul>
+                        </div>
+                        <div class="content_p">
+                            <p>
+                                描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
+                                描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
+                                描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
+                            </p>
+                        </div>
+                        <div class="bottom_info">
+                            <div class="left-lock">
+                                <span class="item"><img src="../../common/img/icon/lock.png" alt="">&nbsp;123</span>
+                                <span class="item"><img src="../../common/img/icon/sc.png" alt="">&nbsp;123</span>
+                            </div>
+                            <div class="right-time">
+                                2017/10/10
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods_list clearfix">
+                    <div class="img-user">
+                        <img src="../../common/img/images/img2.png" alt="">
+                    </div>
+                    <div class="right-info">
+                        <div class="title-tp">
+                            <div class="title_s">标题标题</div>
+                            <ul class="info-tips">
+                                <li>木材</li>
+                                <li>天花板</li>
+                            </ul>
+                        </div>
+                        <div class="content_p">
+                            <p>
+                                描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
+                                描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
+                                描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述
+                            </p>
+                        </div>
+                        <div class="bottom_info">
+                            <div class="left-lock">
+                                <span class="item"><img src="../../common/img/icon/lock.png" alt="">&nbsp;123</span>
+                                <span class="item"><img src="../../common/img/icon/sc.png" alt="">&nbsp;123</span>
+                            </div>
+                            <div class="right-time">
+                                2017/10/10
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 right_layout">
+            <div class="float_bar_one clearfix">
+                <div class="z_title"><a href="javascript:;">精选标签</a> </div>
+                <ul class="clearfix">
+                    <li>客厅</li>
+                    <li>客厅沙发</li>
+                    <li>客厅</li>
+                    <li>客厅沙发</li>
+                    <li>客厅</li>
+                    <li>客厅沙发</li>
+                    <li>客厅</li>
+                    <li>客厅沙发</li>
+                    <li>客厅</li>
+                    <li>客厅沙发</li>
+                    <li>客厅沙发</li>
+                    <li>客厅沙发</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <footer-model></footer-model>
+</div>
+<script src="../../common/js/swiper.min.js"></script>
+<script src="../../common/js/vue.js"></script>
+<script src="../../common/js/vue-resource.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../common/js/public.js"></script>
+<script src="js/common.js"></script>
+<script>
+
+    var swiper = new Swiper('.swiper-container-s', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 0,
+        loop: true
+    });
+
+    function browserRedirect() {
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            var swiper = new Swiper('.swiper-container-nav', {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            });
+        }else{
+            var swiper = new Swiper('.swiper-container', {
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                slidesPerView: 6,
+                spaceBetween: 0,
+            });
+        }
+    }
+    browserRedirect();
+</script>
+</body>
+</html>

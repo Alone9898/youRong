@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>联系我们</title>
+    <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../common/css/swiper.min.css">
+    <link rel="stylesheet" href="../../common/css/base.css"/>
+    <link rel="stylesheet" href="css/designCommon.css">
+    <link rel="stylesheet" type="text/css" href="css/Contactus.css">
+    <script src="../../common/js/jquery-1.11.3.js"></script>
+</head>
+
+<body>
+<div id="app" v-cloak>
+    <!--header-->
+    <sitenav></sitenav>
+    <!--banner-->
+    <!--<div class="z_banner">
+        <img src="../../common/img/images/z_banner.png" alt="">
+    </div>-->
+    <div class="title">
+        <div class="swiper-container-nav">
+            <div class="myh swiper-wrapper clearfix">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight" @click="searchcli($event,'decoration')">品台简介</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'jzdecoration')">公司简介</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'findDesign')">服务对象</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'mingjiahui')">帮助中心</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'question')">联系我们</div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="contact clearfix">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+                <div class="left_img">
+                    <img src="../../common/img/images/avatar2.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+                <div class="title_us">四川优荣商业管理有限公司</div>
+                <div class="iphone_info clearfix">
+                    <div class="float-l"><img src="../../common/img/icon/iphone1.png" alt="">|</div><div class="fonts">15881016210</div></div>
+                <div class="email">企业邮箱：yourongzhixing.com</div>
+                <div class="micro_letter">
+                    <img src="../../common/img/icon/weixin.jpg" alt="">
+                    <div class="wx_txt">关注我们微信公众号</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer-model></footer-model>
+</div>
+<script src="../../common/js/swiper.min.js"></script>
+<script src="../../common/js/vue.js"></script>
+<script src="../../common/js/vue-resource.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../common/js/public.js"></script>
+<script src="js/designCommon.js"></script>
+<script>
+    function browserRedirect() {
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            var swiper = new Swiper('.swiper-container-nav', {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            });
+        }
+    }
+    browserRedirect();
+</script>
+</body>
+</html>

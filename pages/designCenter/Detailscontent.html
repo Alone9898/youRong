@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>项目详情</title>
+    <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../common/css/swiper.min.css">
+    <link rel="stylesheet" href="../../common/css/base.css"/>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/Detailscontent.css">
+    <script src="../../common/js/jquery-1.11.3.js"></script>
+</head>
+
+<body>
+<div id="app" v-cloak>
+    <!--header-->
+    <sitenav></sitenav>
+    <!--banner-->
+    <!--<div class="z_banner">
+        <img src="../../common/img/images/z_banner.png" alt="">
+    </div>-->
+    <div class="title">
+        <div class="swiper-container-nav">
+            <div class="myh swiper-wrapper clearfix">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide col-lg-offset-1" @click="searchcli($event)">商业品牌</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event)">品控管理</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event)">品牌推广</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight" @click="searchcli($event,'media')">品牌传媒</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event)">品牌论坛</div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <!--我的位置nav-->
+        <div class="col-xs-12 pd">
+            <ul class="z_menu">
+                <li>我的位置：</li>
+                <li><a href="javascript:history.back(-1)">设计中心</a></li>
+                <li>></li>
+                <li><a href="javascript:history.back(-1)">精选专家</a></li>
+                <li>></li>
+                <li><a href="">作品名称</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 left_layout">
+            <div class="float_box">
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="../../common/img/icon/star.png" alt="">
+                            <div class="font">145</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../../common/img/icon/link.png" alt="">
+                            <div class="font">145</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../../common/img/icon/ly.png" alt="">
+                            <div class="font">145</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="questions-title">作品名称</div>
+            <div class="tips_info clearfix">
+                <div class="wap_left clearfix">
+                    <div class="l-left">参考造价：40万</div>
+                    <div class="l-vertical">|</div>
+                    <div class="l-center">风格：新中式</div>
+                    <div class="l-vertical">|</div>
+                </div>
+                <div class="wap_right clearfix">
+                    <div class="l-center">面积：78m²</div>
+                    <div class="l-vertical">|</div>
+                    <div class="l-center img_none">图片量：5</div>
+                    <div class="l-vertical">|</div>
+                    <div class="l-center l-center_r">浏览量：123</div>
+                </div>
+            </div>
+            <div class="bg_box ">
+                <div class="positon-title">案例解析</div>
+                <p class="clearfix">案例的相关介绍案例的案例的相关介绍案例的案例的相关介绍案例的案例的相关介绍案例的案例的相关介绍案例的案例的相关介绍案例的案例的相关介绍案
+                    例的案例的相关介绍案例的案例的相关介绍案例的案例的相关介绍案例的案例的相关介绍案例的案例的相关介绍案例的案例的相关介绍案例的案例的相关介
+                </p>
+            </div>
+
+            <div class="info_box">
+                <div class="info_img"><img src="../../common/img/images/big1.png" alt=""></div>
+                <div class="txt_p clearfix">
+                    <p>相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关
+                        描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描</p>
+                </div>
+                <div class="info_img"><img src="../../common/img/images/big1.png" alt=""></div>
+                <div class="info_img"><img src="../../common/img/images/big1.png" alt=""></div>
+            </div>
+
+            <div class="questions_box">
+                <div class="title_txt">我要提问</div>
+                <div class="type_txt">
+                    <form>
+                        <div class="textarea_ht">
+                            <textarea class=" wishContent" style="resize: none;" placeholder="" maxlength="50"></textarea>
+                            <div class="words"><span class="wordsNum">0/50</span></div>
+                        </div>
+
+                        <div class="upload_box">
+                           <div class="right_score">
+                               <div class="score_txt">打分:</div>
+                               <ul class="score">
+                                   <li class="active_score">好</li>
+                                   <li>中</li>
+                                   <li>差</li>
+                               </ul>
+                           </div>
+                            <input type="submit" class="submit_btn"  value="提交">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="wap_float clearfix">
+            <ul>
+                <li><a href=""><img src="../../common/img/icon/star.png" alt="">收藏</a></li>
+                <li class="border_con"><a href=""><img src="../../common/img/icon/link.png" alt="">分享</a></li>
+                <li><a href=""><img src="../../common/img/icon/ly.png" alt="">评论</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 right_layout">
+            <div class="list_one">
+                <div class="user_box_info">
+                    <div class="img_user"><img src="../../common/img/images/img1.png" alt=""></div>
+                    <div class="user_name">
+                        <div style="height: 60px;  display: table-cell;vertical-align: middle;">
+                            <div class="name">Mr.林</div>
+                            <div class="region">四川成都</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex_box">
+                    <div class="item">
+                        <div class="font">123</div>
+                        <div class="font1">预约量</div>
+                    </div>
+                    <div class="item">
+                        <div class="font">123</div>
+                        <div class="font1">签单</div>
+                    </div>
+                    <div class="item">
+                        <div class="font">123</div>
+                        <div class="font1">评论</div>
+                    </div>
+                </div>
+                <div class="money">
+                    <span class="font_size">¥</span><span class="font_big">1200-1300</span><span class="font_size">/m²</span>
+                </div>
+                <a href="" class="btn_yy">我要预约</a>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <footer-model></footer-model>
+</div>
+<script src="../../common/js/swiper.min.js"></script>
+<script src="../../common/js/vue.js"></script>
+<script src="../../common/js/vue-resource.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../common/js/public.js"></script>
+<script src="js/common.js"></script>
+<script>
+    $(function(){
+        $('.score li').click(function(){
+            $(this).addClass('active_score').siblings().removeClass('active_score')
+        })
+    });
+    var swiper = new Swiper('.swiper-container-s', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 0,
+        loop: true
+    });
+    function testUpload(){
+        var opt = uploadTools.getOpt("fileUploadContent");
+        uploadEvent.uploadFileEvent(opt);
+    };
+    //封装一个限制字数方法
+    var checkStrLengths = function (str, maxLength) {
+        var maxLength = maxLength;
+        var result = 0;
+        if (str && str.length > maxLength) {
+            result = maxLength;
+        } else {
+            result = str.length;
+        }
+        return result;
+    }
+
+    //监听输入
+    $(".wishContent").on('input propertychange', function () {
+
+        //获取输入内容
+        var userDesc = $(this).val();
+
+        //判断字数
+        var len;
+        if (userDesc) {
+            len = checkStrLengths(userDesc, 50);
+        } else {
+            len = 0
+        }
+
+        //显示字数
+        $(".wordsNum").html(50 - len +'/50');
+    });
+    function browserRedirect() {
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            var swiper = new Swiper('.swiper-container-nav', {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            });
+        }else{
+            var swiper = new Swiper('.swiper-container', {
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                slidesPerView: 6,
+                spaceBetween: 0,
+            });
+        }
+    }
+    browserRedirect();
+</script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>动态日记</title>
+    <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../common/css/swiper.min.css">
+    <link rel="stylesheet" href="../../common/css/base.css"/>
+    <link rel="stylesheet" href="css/designCommon.css">
+</head>
+<body>
+<div id="app" v-cloak>
+    <!--header-->
+    <sitenav></sitenav>
+
+    <div class="title">
+        <div class="swiper-container-nav">
+            <div class="myh swiper-wrapper clearfix">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'decoration')">精装工选</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'jzdecoration')">精装家装</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'findDesign')">找设计师</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight" @click="searchcli($event,'mingjiahui')">名家汇</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'question')">设计疑问</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'interview')">设计专访</div>
+            </div>
+        </div>
+    </div>
+    <div class="container container1" style="margin:40px auto 100px auto">
+        <div class="list-btn clearfix">
+            <ul id="myTab">
+                <li class="active_bg"><a href="#one"  data-toggle="tab">服务培训</a></li>
+                <li><a href="#two"  data-toggle="tab">项目经理培训</a></li>
+                <li><a href="#three"  data-toggle="tab">团队培训</a></li>
+            </ul>
+        </div>
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade in active" id="one">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mjhbox">
+                    <div class="mjhmain">
+                        <div class="mjhmainimg" style="background: url('../../common/img/images/mjh1.png'); background-position: 50%;background-size: cover"></div>
+                        <div class="mjhmaininfo clearfix">
+                            <div class="mjhleft pull-left" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
+                            <div class="mjhright pull-left">
+                                <h4><b style="font-size:18px">作品名称</b></h4>
+                                <p>
+                                    <span class="pull-left">李老头</span>
+                                    <span class="pull-right">1小时</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mjhbox">
+                    <div class="mjhmain">
+                        <div class="mjhmainimg" style="background: url('../../common/img/images/mjh1.png'); background-position: 50%;background-size: cover"></div>
+                        <div class="mjhmaininfo clearfix">
+                            <div class="mjhleft pull-left" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
+                            <div class="mjhright pull-left">
+                                <h4><b style="font-size:18px">作品名称</b></h4>
+                                <p>
+                                    <span class="pull-left">李老头</span>
+                                    <span class="pull-right">1小时</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mjhbox">
+                    <div class="mjhmain">
+                        <div class="mjhmainimg" style="background: url('../../common/img/images/mjh1.png'); background-position: 50%;background-size: cover"></div>
+                        <div class="mjhmaininfo clearfix">
+                            <div class="mjhleft pull-left" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
+                            <div class="mjhright pull-left">
+                                <h4><b style="font-size:18px">作品名称</b></h4>
+                                <p>
+                                    <span class="pull-left">李老头</span>
+                                    <span class="pull-right">1小时</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mjhbox">
+                    <div class="mjhmain">
+                        <div class="mjhmainimg" style="background: url('../../common/img/images/mjh1.png'); background-position: 50%;background-size: cover"></div>
+                        <div class="mjhmaininfo clearfix">
+                            <div class="mjhleft pull-left" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
+                            <div class="mjhright pull-left">
+                                <h4><b style="font-size:18px">作品名称</b></h4>
+                                <p>
+                                    <span class="pull-left">李老头</span>
+                                    <span class="pull-right">1小时</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="two">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mjhbox">
+                    <div class="mjhmain">
+                        <div class="mjhmainimg" style="background: url('../../common/img/images/mjh1.png'); background-position: 50%;background-size: cover"></div>
+                        <div class="mjhmaininfo clearfix">
+                            <div class="mjhleft pull-left" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
+                            <div class="mjhright pull-left">
+                                <h4><b style="font-size:18px">作品名称</b></h4>
+                                <p>
+                                    <span class="pull-left">李老头</span>
+                                    <span class="pull-right">1小时</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mjhbox">
+                    <div class="mjhmain">
+                        <div class="mjhmainimg" style="background: url('../../common/img/images/mjh1.png'); background-position: 50%;background-size: cover"></div>
+                        <div class="mjhmaininfo clearfix">
+                            <div class="mjhleft pull-left" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
+                            <div class="mjhright pull-left">
+                                <h4><b style="font-size:18px">作品名称</b></h4>
+                                <p>
+                                    <span class="pull-left">李老头</span>
+                                    <span class="pull-right">1小时</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mjhbox">
+                    <div class="mjhmain">
+                        <div class="mjhmainimg" style="background: url('../../common/img/images/mjh1.png'); background-position: 50%;background-size: cover"></div>
+                        <div class="mjhmaininfo clearfix">
+                            <div class="mjhleft pull-left" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
+                            <div class="mjhright pull-left">
+                                <h4><b style="font-size:18px">作品名称</b></h4>
+                                <p>
+                                    <span class="pull-left">李老头</span>
+                                    <span class="pull-right">1小时</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mjhbox">
+                    <div class="mjhmain">
+                        <div class="mjhmainimg" style="background: url('../../common/img/images/mjh1.png'); background-position: 50%;background-size: cover"></div>
+                        <div class="mjhmaininfo clearfix">
+                            <div class="mjhleft pull-left" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
+                            <div class="mjhright pull-left">
+                                <h4><b style="font-size:18px">作品名称</b></h4>
+                                <p>
+                                    <span class="pull-left">李老头</span>
+                                    <span class="pull-right">1小时</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="three">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mjhbox">
+                    <div class="mjhmain">
+                        <div class="mjhmainimg" style="background: url('../../common/img/images/mjh1.png'); background-position: 50%;background-size: cover"></div>
+                        <div class="mjhmaininfo clearfix">
+                            <div class="mjhleft pull-left" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
+                            <div class="mjhright pull-left">
+                                <h4><b style="font-size:18px">作品名称</b></h4>
+                                <p>
+                                    <span class="pull-left">李老头</span>
+                                    <span class="pull-right">1小时</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mjhbox">
+                    <div class="mjhmain">
+                        <div class="mjhmainimg" style="background: url('../../common/img/images/mjh1.png'); background-position: 50%;background-size: cover"></div>
+                        <div class="mjhmaininfo clearfix">
+                            <div class="mjhleft pull-left" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
+                            <div class="mjhright pull-left">
+                                <h4><b style="font-size:18px">作品名称</b></h4>
+                                <p>
+                                    <span class="pull-left">李老头</span>
+                                    <span class="pull-right">1小时</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mjhbox">
+                    <div class="mjhmain">
+                        <div class="mjhmainimg" style="background: url('../../common/img/images/mjh1.png'); background-position: 50%;background-size: cover"></div>
+                        <div class="mjhmaininfo clearfix">
+                            <div class="mjhleft pull-left" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
+                            <div class="mjhright pull-left">
+                                <h4><b style="font-size:18px">作品名称</b></h4>
+                                <p>
+                                    <span class="pull-left">李老头</span>
+                                    <span class="pull-right">1小时</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mjhbox">
+                    <div class="mjhmain">
+                        <div class="mjhmainimg" style="background: url('../../common/img/images/mjh1.png'); background-position: 50%;background-size: cover"></div>
+                        <div class="mjhmaininfo clearfix">
+                            <div class="mjhleft pull-left" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
+                            <div class="mjhright pull-left">
+                                <h4><b style="font-size:18px">作品名称</b></h4>
+                                <p>
+                                    <span class="pull-left">李老头</span>
+                                    <span class="pull-right">1小时</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--footer-->
+    <footer-model></footer-model>
+</div>
+</div>
+<script src="../../common/js/jquery-1.11.3.js"></script>
+<script src="../../common/js/swiper.min.js"></script>
+<script src="../../common/js/vue.js"></script>
+<script src="../../common/js/vue-resource.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../common/js/public.js"></script>
+<script src="js/designCommon.js"></script>
+<script>
+    $(function(){
+        $('.list-btn li').click(function(){
+            $(this).addClass('active_bg').siblings().removeClass('active_bg')
+        })
+    })
+</script>
+</body>
+</html>

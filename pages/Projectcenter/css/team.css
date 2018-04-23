@@ -12,9 +12,12 @@ p {
   margin: 0;
 }
 a {
-  cursor: pointer;color:#333;
+  cursor: pointer;
+  color: #333;
 }
-a:hover{color:#333;}
+a:hover {
+  color: #333;
+}
 .clearfix:after {
   display: table;
   content: " ";
@@ -104,62 +107,17 @@ img {
 .hoverhight {
   color: #01dfba;
 }
-.contbox .pcss span{margin-right:20px;}
-.myheaderm1{    text-align: center;
-    margin: 0 auto;
-    width: 280px;}
-.mypcss{margin:12px 0;color:#888;}
-.mc .contimg1>div{height:240px!important;}
-.mc .contimg1{height:270px!important;}
-.mcontbox1 .mb {
-    margin-bottom: 22px;
-}
-.mb {
-    padding-right: 0;
-}
-.mycontimg2 {
-    width: 100%;
-    height: 240px;
-    position: relative;
-    overflow: hidden;
-}
-.botttitle {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 40px;
-    line-height: 40px;
-    color: #fff;
-    background: rgba(0,0,0,0.5);
-    width: 100%;
-    padding: 0 12px;
-}
-.toptime {
-    position: absolute;
-    top: -15px;
-    right: -14px;
-    color: #fff;
-    background: #00dfb9;
-    padding: 20px 20px 5px 16px;
-    border-radius: 40px;
-    font-size: 14px;
+.contbox .pcss span {
+  margin-right: 20px;
 }
 /****************************************************************************************************/
 /*cont*/
 .cont {
   margin-top: 20px;
 }
-.swiper_list .swiper-slide{
-    margin-left: -3px;
-}
-.swiper_list .swiper-slide a{
-    width: 90px;
-    display: block;
-    margin: 0 auto;
-}
 .conttitle {
   background: #ffffff;
-  padding: 20px 0;
+  padding: 20px;
 }
 .conttitle h3 {
   margin: 0;
@@ -239,13 +197,11 @@ img {
 .contmain {
   margin-top: 20px;
   background: #ffffff;
-  padding: 20px;position: relative;
-
+  padding: 20px;
 }
-.img{    position: absolute;
-    top: -27px;
-    right: 15px;}
-.mycont{margin-bottom:20px;}
+.mycont {
+  margin-bottom: 20px;
+}
 .contmain .contleft {
   width: 100px;
   height: 100px;
@@ -363,16 +319,10 @@ img {
     width: 65px;
     height: 65px;
     margin-right: 10px;
-        position: absolute;
   }
-  .lcss{    padding-left: 73px;}
-  .ll,.san{display: none}
   .contbox h4 {
     font-size: 15px;
     margin-bottom: 19px;
-  }
-  .contmain span,.pcss{
-         font-size: 12px!important;
   }
   .contmain .butt b {
     font-size: 12px;
@@ -526,7 +476,8 @@ img {
   border-top: 2px solid #00dfb9;
   border-radius: 0;
   line-height: 28px;
-  padding: 0 14px;    background: #fff;
+  padding: 0 14px;
+  background: #fff;
 }
 .tabright {
   width: 70px;
@@ -561,6 +512,7 @@ img {
   width: 80%;
 }
 .mb {
+  border-bottom: 2px dashed #ddd;
   padding-bottom: 26px;
   margin-bottom: 26px;
 }
@@ -614,7 +566,7 @@ img {
 }
 .mynav .nav-tabs > li > a:hover {
   background: none;
-      border: 1px solid transparent;
+  border: 1px solid transparent;
 }
 .mtb .clearfix {
   margin-bottom: 10px;
@@ -636,25 +588,40 @@ img {
   font-size: 12px;
   border-radius: 6px;
 }
+.z-img-box {
+  margin: 0 0 10px 0;
+  padding: 0 5px;
+}
+.z-img-box img {
+  height: 240px;
+  width: 100%;
+}
 @media screen and (max-width: 768px) {
-  p,a,span,b{font-size:14px!important;}
+  .z-img-box img {
+    height: 140px;
+    width: 100%;
+  }
+  .z-img-box .color_9 {
+    font-size: 12px!important;
+  }
+  .z-img-box .top_name {
+    padding: 5px 0!important;
+  }
+  .z-img-box .bottom_info {
+    padding: 5px 0!important;
+  }
+  p,
+  a,
+  span,
+  b {
+    font-size: 14px!important;
+  }
   .title .myh {
     height: 58px;
-}
-.mc .contimg1>div {
-    height: 128px!important;
-}
-.mc .contimg1 {
-    height: 170px!important;
-}
-.mcontbox1 .mb {
-    margin-bottom: 0;
-    padding: 4px;
-}
-.mycontimg2 {
-    height: 128px!important;
-}
-  .container1{margin-top:0!important;}
+  }
+  .container1 {
+    margin-top: 0!important;
+  }
   .myh > div {
     font-size: 16px;
     margin-right: 33px!important;
@@ -716,7 +683,8 @@ img {
     margin: 15px 9px 0px  9px;
   }
   .mconbox ul li a {
-    color: #666;    font-size: 12px;
+    color: #666;
+    font-size: 12px;
   }
   .more {
     width: 180px;
@@ -731,12 +699,15 @@ img {
   .mbox1 {
     margin: 12px 0;
   }
-  .mft{font-size:14px;}
+  .mft {
+    font-size: 14px;
+  }
   .imgright,
   .imgleft {
     width: 100% !important;
   }
-  .imgright > div {font-size: 12px;
+  .imgright > div {
+    font-size: 12px;
     margin: 12px 0 0 0;
     margin-bottom: 12px!important;
   }
@@ -888,12 +859,16 @@ img {
   .mjhbox .mjhmain .mjhmainimg {
     height: 200px!important;
   }
-  .img{display: none}
 }
-
+@media screen and (max-width: 425px) {
+  .myh > div {
+    font-size: 14px;
+    margin-right: 42px!important;
+  }
+}
 @media screen and (max-width: 320px) {
   .myh > div {
-    font-size: 12px!important;
+    font-size: 12px;
     margin-right: 36px!important;
   }
   .ji {
@@ -902,12 +877,6 @@ img {
   }
   .contmain .bao {
     padding: 0px 9px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .myh > div {
-    font-size: 12px!important;
-    margin-right: 36px!important;
   }
 }
 /**************************************************************************************************/
@@ -1019,6 +988,9 @@ img {
   position: absolute;
   right: 46px;
   top: 22px;
+}
+.mr .color_font {
+  color: #666666;
 }
 .zfcontbottom {
   margin-top: 40px;
@@ -1372,8 +1344,17 @@ img {
   padding: 0;
   color: #999999;
 }
+.sjzpboxtop .mg_l .color_green {
+  color: #00dfb9;
+  font-size: 18px;
+}
+.sjzpboxtop .mg_l {
+  margin-left: 5px;
+  font-size: 18px;
+  color: #000;
+}
 .sjzpboxtop {
-  padding-right: 16px;    margin-bottom: 14px;
+  padding-right: 16px;
 }
 .sjzpboxtop span {
   color: #999;
@@ -1385,23 +1366,100 @@ img {
   margin-left: 10px;
 }
 .sjzpboxcont {
-  border-bottom: 1px solid #ddd;    padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.projection_txt {
+  opacity: 0;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  position: absolute;
+  width: 94%!important;
+  height: 100%;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 46px 0 30px;
+  color: #fff;
+  font-size: 14px;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.border_box {
+  border: 1px solid #ddd;
+  padding: 0 10px;
+}
+.border_box .color_3 {
+  font-size: 18px;
+}
+.border_box .color_9 {
+  color: #999999;
+  font-size: 12px;
+}
+.border_box .fl_t {
+  float: left;
+  margin-right: 10px;
+  font-size: 14px;
+}
+.border_box .fl_t .color_g {
+  color: #00dfb9;
+  font-size: 14px;
+}
+.border_box .top_name {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+.border_box .bottom_info {
+  padding: 10px 0;
+}
+.contimg1:hover .projection_txt {
+  opacity: 1;
+  top: 0;
+  transition: 1s;
+}
+.projection_txt .flex_display {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.projection_txt .flex_display P {
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  color: #fff;
+  font-size: 14px;
 }
 .contimg1 {
   height: 240px;
-  margin: 9px 0px;
+  margin-top: 30px;
   padding: 0 16px 0 0;
+  position: relative;
 }
-.contimg1 > div {
+.contimg1 .item_with {
   width: 100%;
   height: 100%;
 }
 @media screen and (max-width: 768px) {
-  .botttitle {
-    font-size:12px!important;
-}
+  .projection_txt {
+    opacity: 0;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    position: absolute;
+    width: 94%!important;
+    top: 60px;
+    left: 6px;
+    right: 0;
+    bottom: 0;
+    padding: 0 10px 0 7px;
+    color: #fff;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
   .mycont {
-      margin-bottom: 0px;
+    margin-bottom: 0px;
   }
   .headbox,
   .mynavcss,
@@ -1414,8 +1472,7 @@ img {
   }
   .mynavcss1 li {
     width: 25%;
-    padding:10px 0;
-    a{font-size: 12px!important}
+    padding: 10px 0;
   }
   .mynavcss1 li a {
     padding: 0!important;
@@ -1423,14 +1480,6 @@ img {
     color: #333!important;
     font-size: 14px !important;
   }
-  .mynavcss1 li a {
-    font-size: 12px !important;
-}
-.pco1{display: block!important;}
-.zhead {
-   
-    background: #fff; 
-}
   .mynavcss,
   .mycs {
     left: 0;
@@ -1485,7 +1534,8 @@ img {
     position: relative;
   }
   .mtopbox .rji span {
-    color: #00dfb9;font-size:12px!important;
+    color: #00dfb9;
+    font-size: 12px!important;
   }
   .mtopbox .lji {
     color: #00dfb9;
@@ -1495,26 +1545,31 @@ img {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     padding: 4px 12px;
-    font-size:12px!important;
+    font-size: 12px!important;
   }
   .mtopbox .rji {
     color: #00dfb9;
     position: absolute;
     top: 12px;
-        right: -86px;
+    right: -86px;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
-    padding: 4px 12px;font-size:12px!important;
+    padding: 4px 12px;
+    font-size: 12px!important;
   }
   .mr p span {
-      color: #999;
+    color: #999;
   }
-  .combot {font-size:14px;}
+  .combot {
+    font-size: 14px;
+  }
   .mbotbox {
     text-align: center;
     margin-top: 7px;
   }
-  .combotcss{font-size:14px;}
+  .combotcss {
+    font-size: 14px;
+  }
   .mnavbox {
     display: block!important;
   }
@@ -1548,7 +1603,7 @@ img {
   .table > thead > tr > th {
     padding: 14px 3px;
     text-align: center;
-        font-size: 12px;
+    font-size: 12px;
   }
   .comtopheadp > h4 {
     font-size: 15px;
@@ -1557,7 +1612,10 @@ img {
   .pco {
     display: none;
   }
-  .mr p,.aboutbot li{font-size: 14px;}
+  .mr p,
+  .aboutbot li {
+    font-size: 14px;
+  }
   .abouttop2,
   .mrcss {
     display: block !important;
@@ -1586,7 +1644,7 @@ img {
   .contimg1 {
     height: 140px;
     margin: 0 0 10px 0;
-    padding: 5px;
+    padding: 0 5px;
   }
   .sjzpboxtop {
     margin: 10px 0;
@@ -1603,7 +1661,6 @@ img {
     bottom: 0;
     left: 0;
     width: 100%;
-
   }
   .btnbottom .col-3 {
     width: 35%;
@@ -1611,7 +1668,8 @@ img {
     padding: 14px 20px;
     background: #fff;
     color: #999;
-    text-align: center;font-size: 14px;
+    text-align: center;
+    font-size: 14px;
   }
   .btnbottom .col-3 img {
     width: 14px;
@@ -1623,7 +1681,8 @@ img {
     background: #fff;
     color: #999;
     padding: 14px 20px;
-    text-align: center;font-size: 14px;
+    text-align: center;
+    font-size: 14px;
   }
   .hiactive {
     background: #00dfb9!important;
