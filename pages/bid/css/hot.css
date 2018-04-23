@@ -1,0 +1,227 @@
+.bid-nav li:nth-child(4) {
+  background-color: #0ab7c7;
+}
+.bid-nav li:nth-child(4) a {
+  color: #fff;
+}
+.h5_nav .h5_head .swiper-slide:nth-of-type(4) div {
+  color: #0ab7c7 !important;
+  border-bottom: 2px solid #0ab7c7;
+}
+.container_box {
+  padding: 50px 20px 112px;
+}
+.container_box .item1 {
+  width: 100%;
+  height: 389px;
+}
+.container_box .item1 .imgbox {
+  width: 278px;
+  height: 389px;
+  float: left;
+}
+.container_box .item1 .listBox {
+  float: left;
+  height: 389px;
+  margin-left: 20px;
+  width: 600px;
+  border-bottom: 2px solid #0ab7c7;
+}
+.container_box .item1 .listBox .list-head {
+  width: 100%;
+  height: 30px;
+  text-align: left;
+  border-bottom: 1px solid #dcdcdc;
+}
+.container_box .item1 .listBox .list-head div:nth-child(1) {
+  font-size: 20px;
+  float: left;
+  color: #666666;
+}
+.container_box .item1 .listBox .list-head div:nth-child(2) {
+  font-size: 14px;
+  float: right;
+  color: #0ab7c7;
+  line-height: 28px;
+}
+.container_box .item1 .listBox .list {
+  padding: 10px 0 28px 14px;
+}
+.container_box .item1 .listBox .list .list1 {
+  width: 100%;
+  height: 14px;
+  margin-top: 17px;
+}
+.container_box .item1 .listBox .list .list1 div {
+  float: left;
+  height: 14px;
+}
+.container_box .item1 .listBox .list .list1 div:nth-child(1) {
+  text-align: left;
+  width: 307px;
+}
+.container_box .item1 .listBox .list .list1 div:nth-child(1) div {
+  width: 6px;
+  height: 6px;
+  margin-top: 4px;
+  margin-right: 10px;
+  background-color: #6df2fe;
+  border-radius: 1px;
+}
+.container_box .item1 .listBox .list .list1 div:nth-child(2) {
+  margin-left: 125px;
+  width: 40px;
+}
+.container_box .item1 .listBox .list .list1 div:nth-child(3) {
+  float: right;
+  width: 71px;
+}
+.container_box .item2 {
+  width: 100%;
+  margin-top: 105px;
+  height: 226px;
+}
+.container_box .item2 .listBox {
+  float: left;
+  height: 226px;
+  margin-right: 20px;
+  width: 600px;
+  border-bottom: 2px solid #0ab7c7;
+}
+.container_box .item2 .listBox .list-head {
+  width: 100%;
+  height: 30px;
+  text-align: left;
+  border-bottom: 1px solid #dcdcdc;
+}
+.container_box .item2 .listBox .list-head div:nth-child(1) {
+  font-size: 20px;
+  float: left;
+  color: #666666;
+}
+.container_box .item2 .listBox .list-head div:nth-child(2) {
+  font-size: 14px;
+  float: right;
+  color: #0ab7c7;
+  line-height: 28px;
+}
+.container_box .item2 .listBox .list {
+  padding: 10px 0 28px 14px;
+}
+.container_box .item2 .listBox .list .list1 {
+  width: 100%;
+  height: 14px;
+  margin-top: 17px;
+}
+.container_box .item2 .listBox .list .list1 div {
+  float: left;
+  height: 14px;
+}
+.container_box .item2 .listBox .list .list1 div:nth-child(1) {
+  text-align: left;
+  width: 307px;
+}
+.container_box .item2 .listBox .list .list1 div:nth-child(1) div {
+  width: 6px;
+  height: 6px;
+  margin-top: 4px;
+  margin-right: 10px;
+  background-color: #6df2fe;
+  border-radius: 1px;
+}
+.container_box .item2 .listBox .list .list1 div:nth-child(2) {
+  margin-left: 125px;
+  width: 40px;
+}
+.container_box .item2 .listBox .list .list1 div:nth-child(3) {
+  float: right;
+  width: 71px;
+}
+.container_box .item2 .imgbox {
+  width: 278px;
+  height: 226px;
+  float: left;
+}
+.container_box .item3 {
+  width: 100%;
+  margin-top: 105px;
+  height: 226px;
+}
+.container_box .item3 .listBox {
+  float: left;
+  height: 226px;
+  margin-left: 20px;
+  width: 600px;
+  border-bottom: 2px solid #0ab7c7;
+}
+.container_box .item3 .listBox .list-head {
+  width: 100%;
+  height: 30px;
+  text-align: left;
+  border-bottom: 1px solid #dcdcdc;
+}
+.container_box .item3 .listBox .list-head div:nth-child(1) {
+  font-size: 20px;
+  float: left;
+  color: #666666;
+}
+.container_box .item3 .listBox .list-head div:nth-child(2) {
+  font-size: 14px;
+  float: right;
+  color: #0ab7c7;
+  line-height: 28px;
+}
+.container_box .item3 .listBox .list {
+  padding: 10px 0 28px 14px;
+}
+.container_box .item3 .listBox .list .list1 {
+  width: 100%;
+  height: 14px;
+  margin-top: 17px;
+}
+.container_box .item3 .listBox .list .list1 div {
+  float: left;
+  height: 14px;
+}
+.container_box .item3 .listBox .list .list1 div:nth-child(1) {
+  text-align: left;
+  width: 307px;
+}
+.container_box .item3 .listBox .list .list1 div:nth-child(1) div {
+  width: 6px;
+  height: 6px;
+  margin-top: 4px;
+  margin-right: 10px;
+  background-color: #6df2fe;
+  border-radius: 1px;
+}
+.container_box .item3 .listBox .list .list1 div:nth-child(2) {
+  margin-left: 125px;
+  width: 40px;
+}
+.container_box .item3 .listBox .list .list1 div:nth-child(3) {
+  float: right;
+  width: 71px;
+}
+.container_box .item3 .imgbox {
+  width: 278px;
+  height: 226px;
+  float: left;
+}
+.container_box .item4 {
+  width: 100%;
+  margin-top: 110px;
+  height: 400px;
+}
+.container_box .item4 .swiperBox {
+  width: 100%;
+  height: 340px;
+  margin-top: 35px;
+}
+.container_box .item4 .swiperBox .item_4-container {
+  width: 100%;
+  height: 340px;
+}
+.container_box .item4 .swiperBox .item_4-container .swiper-slide {
+  width: 505px;
+}

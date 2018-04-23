@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>推荐项目</title>
+    <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../common/css/swiper.min.css">
+    <link rel="stylesheet" href="../../common/css/base.css"/>
+    <link rel="stylesheet" href="css/model.css"/>
+    <link rel="stylesheet" href="css/hot.css"/>
+</head>
+<body>
+<div class="container-fluid" v-cloak id="example">
+    <sitenav></sitenav>
+    <bid-nav></bid-nav>
+    <div class="container-fluid" style="background: #eee">
+        <div class="container container_aaa">
+            <div class="container_box">
+                <div class="item1">
+                    <div class="imgbox"><img src="../../common/img/images/u=3825699595,2217068594&fm=27.png"></div>
+                    <div class="listBox">
+                        <div class="list-head">
+                            <div>[材料项目]</div>
+                            <div>更多></div>
+                        </div>
+                        <div class="list">
+                            <div class="list1" v-for="item in 10">
+                            <div><div></div>招标文案招标文案招标文案招标文案招标文案</div>
+                            <div>四川省</div>
+                            <div>2018-02-20</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item2">
+                <div class="listBox">
+                    <div class="list-head">
+                        <div>[材料项目]</div>
+                        <div>更多></div>
+                    </div>
+                    <div class="list">
+                        <div class="list1" v-for="item in 5">
+                            <div><div></div>招标文案招标文案招标文案招标文案招标文案</div>
+                            <div>四川省</div>
+                            <div>2018-02-20</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="imgbox"><img src="../../common/img/images/u=43825699595,2217068594&fm=27&gp=.png"></div>
+            </div>
+                <div class="item3">
+                    <div class="imgbox"><img src="../../common/img/images/u=43825699595,2217068594&fm=27&gp=.png"></div>
+                    <div class="listBox">
+                        <div class="list-head">
+                            <div>[材料项目]</div>
+                            <div>更多></div>
+                        </div>
+                        <div class="list">
+                            <div class="list1" v-for="item in 5">
+                                <div><div></div>招标文案招标文案招标文案招标文案招标文案</div>
+                                <div>四川省</div>
+                                <div>2018-02-20</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item4">
+                    <h3>项目精选</h3>
+                    <div class="swiperBox">
+                        <div class="swiper-container item_4-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="../../common/img/images/bannn.png" width="100%"/>
+                                </div>
+                                <div class="swiper-slide">
+                                   <img src="../../common/img/images/bannn.png" width="100%"/>
+                                </div>
+                                <div class="swiper-slide" >
+                                    <img src="../../common/img/images/bannn.png" width="100%" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <web-config></web-config>
+        </div>
+    </div>
+    <div class="h5_box" style="background: rgb(238, 238, 238)">
+        <h5-nav></h5-nav>
+        <h5-model></h5-model>
+    </div>
+</div>
+</body>
+<script src="../../common/js/jquery-1.11.3.js"></script>
+<script src="../../common/js/swiper.min.js"></script>
+<script src="../../common/js/vue.js"></script>
+<script src="../../common/js/vue-resource.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../common/js/public.js"></script>
+<script type="text/javascript" src="js/model.js"></script>
+<script>
+    new Vue({
+        el: '#example',
+        data:{
+
+        },
+        methods: {
+
+        },
+        mounted:function(){
+            var swiper = new Swiper('.item_4-container',{
+                threshold : 100,
+                grabCursor:true,
+                paginationClickable :true,
+                loop: true,
+                centeredSlides:true,
+                slidesPerView:'auto',
+                effect:'coverflow', //动画效果：3D覆盖流效果
+                coverflow:{
+                    rotate:60,
+                    stretch:0,
+                    depth:100,
+                    modifier:1,
+                    slideShadows:true
+                }
+            });
+        }
+    });
+</script>
+</html>

@@ -48,28 +48,28 @@ Vue.component('h5-nav', {
             <div class="swiper-container h5_head">\
                 <div class="swiper-wrapper">\
                     <div class="swiper-slide">\
-                       <div class="active">招标公告</div>\
+                       <div><a href="bid.html">招标公告</a></div>\
                     </div>\
                     <div class="swiper-slide">\
-                        <div>中标公告</div>\
+                        <div><a href="winBid.html">中标公告</a></div>\
                     </div>\
                     <div class="swiper-slide">\
-                        <div>招标预告</div>\
+                        <div><a href="notice.html">招标预告</a></div>\
                     </div>\
                     <div class="swiper-slide">\
-                        <div>推荐项目</div>\
+                        <div><a href="hot.html">推荐项目</a></div>\
                     </div>\
                     <div class="swiper-slide">\
-                        <div>拟在建项目</div>\
+                        <div><a href="construction.html">拟在建项目</a></div>\
                     </div>\
                     <div class="swiper-slide">\
-                        <div>VIP独家项目</div>\
+                        <div><a href="vipProject.html">VIP独家项目</a></div>\
                     </div>\
                     <div class="swiper-slide">\
-                        <div>供应链招标</div>\
+                        <div><a href="supplyChain.html">供应链招标</a></div>\
                     </div>\
                     <div class="swiper-slide">\
-                        <div>帮助中心</div>\
+                        <div><a href="help.html">帮助中心</a></div>\
                     </div>\
                 </div>\
             </div>\
@@ -86,7 +86,7 @@ Vue.component('h5-nav', {
         var h5_head = new Swiper('.h5_head', {
             slidesPerView: 4,
             loop : false,
-            spaceBetween: 0
+            spaceBetween: 0,
         });
     }
 });
@@ -94,13 +94,13 @@ Vue.component('h5-nav', {
 Vue.component('bid-nav', {
     template:'<div class="bid-nav">\
         <ul class="container">\
-            <li class="activ">招标公告</li>\
-            <li>中标公告</li>\
-            <li>招标预告</li>\
-            <li>推荐项目</li>\
-            <li>拟在建项目</li>\
-            <li>VIP独家项目</li>\
-            <li>供应链招标</li>\
+            <li><a href="bid.html">招标公告</a></li>\
+            <li><a href="winBid.html">中标公告</a></li>\
+            <li><a href="notice.html">招标预告</a></li>\
+            <li><a href="hot.html">推荐项目</a></li>\
+            <li><a href="construction.html">拟在建项目</a></li>\
+            <li><a href="vipProject.html">VIP独家项目</a></li>\
+            <li><a href="supplyChain.html">供应链招标</a></li>\
         </ul>\
     </div>',
     data: function () {
@@ -180,7 +180,7 @@ Vue.component('web-config', {
                             <img src="../../common/img/icon/zhong.png"><span>10次</span>\
                         </li>\
                         <li>\
-                            <button type="button" class="btn btn-warning">我的会员中心</button>\
+                            <button type="button" class="btn btn-warning" @click="pub()">我的个人应用</button>\
                         </li>\
                         <li @click="loginBox(1)">退出登陆</li>\
                     </ul>\
@@ -235,14 +235,54 @@ Vue.component('web-config', {
             this.tenderShow=ct
         },
         loginBox:function(c){
-            localStorage.setItem("login_State",c);
+            sessionStorage.setItem("login_State",c);
             this.login_State=c;
-        }
+        },
+        pub(){
+        window.location.href='publish.html'
+       }
     },
     mounted:function(){
-        if(localStorage.getItem("login_State")){
-            this.login_State=localStorage.getItem("login_State");
+        if(sessionStorage.getItem("login_State")){
+            this.login_State=sessionStorage.getItem("login_State");
         }
     }
+})
+Vue.component('my-panel', {
+    template:'<div class="myPanel">\
+                <div class="panel_1">\
+                    <div class="pictureFrame"><img src="../../common/img/icon/default.png" width="100%"></div>\
+                    <div class="msg">\
+                        <p>王宇<i>></i></p>\
+                        <p>采购商<i>VIP</i></p>\
+                    </div>\
+                    <div class="name">四川欣新建材</div>\
+                </div>\
+                <div class="panel_2">\
+                    <div class="head">我的应用</div>\
+                    <div class="imgbox"><img src="../../common/img/icon/inner.png"/></div>\
+                    <div class="nav_box">\
+                        <ul>\
+                            <li><a href="myNews.html"><img src="../../common/img/icon/smile.png"/><i>我的消息</i></a></li>\
+                            <li><a><img src="../../common/img/icon/smile.png"/><i>我的足迹</i></a></li>\
+                            <li><a><img src="../../common/img/icon/smile.png"/><i>我的收藏</i></a></li>\
+                            <li><a href="publish.html"><img src="../../common/img/icon/smile.png"/><i>发布招标</i></a></li>\
+                            <li><a><img src="../../common/img/icon/smile.png"/><i>项目管理</i></a></li>\
+                            <li><a><img src="../../common/img/icon/smile.png"/><i>注册账号</i></a></li>\
+                            <li><a href="publish.html"><img src="../../common/img/icon/smile.png"/><i>账号升级</i></a></li>\
+                            <li><a href="attestation.html"><img src="../../common/img/icon/smile.png"/><i>诚信认证</i></a></li>\
+                            <li><a><img src="../../common/img/icon/smile.png"/><i>邮件推送</i></a></li>\
+                        </ul>\
+                    </div>\
+                    <div class="head">帮助中心</div>\
+                    <div class="imgbox"><img src="../../common/img/icon/inner.png"/></div>\
+                    <div class="nav_box nav-foo">\
+                        <ul>\
+                            <li><i>招投标指南</i></li>\
+                            <li><i>服务协议</i></li>\
+                        </ul>\
+                    </div>\
+                </div>\
+            </div>',
 })
 

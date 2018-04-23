@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>诚信认证</title>
+    <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../common/css/swiper.min.css">
+    <link rel="stylesheet" href="../../common/css/base.css"/>
+    <link rel="stylesheet" href="css/attestation.css"/>
+    <link rel="stylesheet" href="css/model.css"/>
+    <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+    <link rel="stylesheet" type="text/css" href="css/build.css">
+</head>
+<body>
+<div class="container-fluid" v-cloak id="example">
+    <sitenav></sitenav>
+    <bid-nav></bid-nav>
+    <div class="container-fluid" style="background: #eee">
+        <div class="container container_aaa">
+            <my-panel></my-panel>
+            <div class="container_box">
+                <div class="head">
+                    <div :class="{active:isShow==true}" @click="tab(1)">个人认证</div>
+                    <div :class="{active:isShow==false}" @click="tab(2)">公司认证</div>
+                </div>
+                <div class="content">
+                    <div v-if="isShow==true">
+                    <ul>
+                        <li style="height: 60px">
+                            <div class="cool_1">头像：</div>
+                            <div class="imgrot"></div>
+                            <div class="xiugai">修改</div>
+                        </li>
+                        <li>
+                           <div>企业用户名：</div>
+                           <i>*</i>
+                            <input type="text" value="ZHAOBIAO00" disabled/>
+                            <i style="width: 180px;font-size: 12px;color: #999999;">
+                                <img src="../../common/img/icon/icpn.png" style="vertical-align: middle;margin-right: 3px;margin-top: -2px"/><span style="vertical-align: middle">用户名在注册后无法修改！</span></i>
+                        </li>
+                        <li>
+                            <div>业务负责人：</div>
+                            <i>*</i>
+                            <input type="text" value="陈奕迅"/>
+                        </li>
+                        <li class="sex">
+                            <div>性别：</div>
+                            <i>*</i>
+                            <input type="radio" name="1" style="width: 14px;height: 14px"/><span>男</span>
+                            <input type="radio" name="1" style="width: 14px;height: 14px"/><span>女</span>
+                        </li>
+                        <li>
+                            <div>所在部门：</div>
+                            <i>*</i>
+                            <input type="text"/>
+                        </li>
+                        <li>
+                            <div>职务：</div>
+                            <i>*</i>
+                            <input type="text"/>
+                        </li>
+                        <li class="synopsis">
+                            <div>个人简介:</div>
+                            <textarea></textarea>
+                        </li>
+                        <li>
+                            <div>联系人手机号：</div>
+                            <i>*</i>
+                            <input type="text" value="188888888888" maxlength="11"/>
+                        </li>
+                        <li>
+                            <div>固定电话：</div>
+                            <i>*</i>
+                            <input type="text" placeholder="区号-电话号"/>
+                        </li>
+                        <li>
+                            <div>企业邮箱：</div>
+                            <i>*</i>
+                            <input type="text" value="52863658@qq.com"/>
+                        </li>
+                        <li>
+                            <div>通讯地址：</div>
+                            <i>*</i>
+                            <input type="text" />
+                        </li>
+                        <li>
+                            <div>邮政编码：</div>
+                            <input type="text" style="margin-left: 27px"/>
+                        </li>
+                    </ul>
+                    <div class="checkbox checkbox-primary">
+                        <input id="checkbox2" class="styled" type="checkbox" checked>
+                        <label for="checkbox2" style="vertical-align: middle;color: #999;letter-spacing: 1px;font-size: 12px;line-height: 20px">
+                            承诺上述情况属实
+                        </label>
+                    </div>
+                    <div class="save">提交</div>
+                    </div>
+                    <div v-if="isShow==false">
+                        <ul>
+                            <li>
+                                <div>企业名称：</div>
+                                <i>*</i>
+                                <input type="text"/>
+                            </li>
+                            <li>
+                                <div>企业法人姓名：</div>
+                                <i>*</i>
+                                <input type="text"/>
+                            </li>
+                            <li class="monny">
+                                <div>注册资金：</div>
+                                <i>*</i>
+                                <input type="text" style="border-right:none;"/>
+                                <select>
+                                    <option>万元</option>
+                                </select>
+                            </li>
+                            <li>
+                                <div>信用/机构代码：</div>
+                                <i>*</i>
+                                <input type="text"/>
+                            </li>
+                            <li>
+                                <div>注册号：</div>
+                                <i>*</i>
+                                <input type="text"/>
+                            </li>
+                            <li>
+                                <div>企业所在地：</div>
+                                <i>*</i>
+                                <input type="text" value="中国四川成都"/>
+                            </li>
+                            <li>
+                                <div>企业性质 ：</div>
+                                <i>*</i>
+                                <select>
+                                    <option>请选择</option>
+                                </select>
+                            </li>
+                            <li>
+                                <div>所属行业 ：</div>
+                                <i>*</i>
+                                <select>
+                                    <option>工程建筑行业</option>
+                                </select>
+                            </li>
+                            <li class="synopsis">
+                                <div>招标产品 ：</div>
+                                <i>*</i>
+                                <textarea style="margin-left: 0"></textarea>
+                            </li>
+                            <li>
+                                <div>企业雇员 ：</div>
+                                <select class="m-left">
+                                    <option>请选择</option>
+                                </select>
+                            </li>
+                            <li>
+                                <div>企业网址 ：</div>
+                                <input type="text" class="m-left"/>
+                            </li>
+                            </li>
+                            <li class="synopsis">
+                                <div>企业介绍 ：</div>
+                                <textarea></textarea>
+                            </li>
+                            <li style="text-align: left">
+                                <span style="color: #666"><b style="font-size: 18px;font-weight: normal;padding-right: 15px">企业详细资料</b>(我们不会随意泄露以下信息，请放心填写)</span>
+                            </li>
+                            <li>
+                                <div>国税登记号 ：</div>
+                                <input type="text" class="m-left"/>
+                            </li>
+                            <li>
+                                <div>地税登记号 ：</div>
+                                <input type="text" class="m-left"/>
+                            </li>
+                            <li>
+                                <div>开户行名称 ：</div>
+                                <input type="text" class="m-left"/>
+                            </li>
+                            <li>
+                                <div>银行账号 ：</div>
+                                <input type="text" class="m-left"/>
+                            </li>
+                        </ul>
+                        <div class="checkbox checkbox-primary">
+                            <input id="checkbox1" class="styled" type="checkbox" checked>
+                            <label for="checkbox1" style="vertical-align: middle;color: #999;letter-spacing: 1px;font-size: 12px;line-height: 20px">
+                                承诺上述情况属实
+                            </label>
+                        </div>
+                        <div class="save">提交</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="h5_box" style="background: rgb(238, 238, 238)">
+        <h5-nav></h5-nav>
+        <h5-model></h5-model>
+    </div>
+</div>
+</body>
+<script src="../../common/js/jquery-1.11.3.js"></script>
+<script src="../../common/js/swiper.min.js"></script>
+<script src="../../common/js/vue.js"></script>
+<script src="../../common/js/vue-resource.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../common/js/public.js"></script>
+<script type="text/javascript" src="js/model.js"></script>
+<script>
+    new Vue({
+        el: '#example',
+        data:{
+            isShow:true,
+        },
+        methods: {
+            tab(ct){
+                if(ct==1){
+                 this.isShow=true
+                }else {
+                    this.isShow=false
+                }
+            }
+        },
+        mounted:function(){
+
+        }
+    });
+
+</script>
+</html>

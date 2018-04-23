@@ -25,7 +25,7 @@
                        <div>
                            <div class="list_1">
                                <div class="radius"></div>
-                               <div class="lei">建材</div>
+                               <div class="lei"><a href="bidseek.html">临时跳转</a></div>
                            </div>
                        </div>
                        <div class="list_2">
@@ -69,16 +69,16 @@
                 <div class="areabox">
                     <div class="area">所属地区</div>
                     <ul>
-                        <li>全部</li>
+                        <li class="activ">全部</li>
                         <li>成都</li>
                         <li>成都</li>
                         <li>成都</li>
                     </ul>
                 </div>
-                <div class="timebox">
+                <div class="timebox areabox">
                     <div class="area">发布时间</div>
                     <ul>
-                        <li>全部</li>
+                        <li class="activ">全部</li>
                         <li>最近一天</li>
                         <li>最近三天</li>
                         <li>最近七天</li>
@@ -266,5 +266,38 @@
 <script src="../../common/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../../common/js/public.js"></script>
 <script type="text/javascript" src="js/model.js"></script>
-<script type="text/javascript" src="js/bid.js"></script>
+<script>
+    new Vue({
+        el: '#example',
+        data:{
+
+        },
+        methods: {
+
+        },
+        mounted:function(){
+            var item_2 = new Swiper('.item_2container',{
+                pagination : '.item_2pagination',
+                loop : true,
+                speed:300,
+                keyboardControl : true,
+                mousewheelControl : true,//鼠标控制
+                freeMode : false//切换效果
+                /*  autoplay : 5000,*/
+            });
+            var item_3 = new Swiper('.item_3-container',{
+                loop : true,
+                speed:300,
+                keyboardControl : true,
+                /*  mousewheelControl : true,//鼠标控制*/
+                freeMode : false,//切换效果
+                autoplay : 5000,
+            });
+            $('.areabox li').click(function(){
+                $(this).addClass('activ').siblings().removeClass('activ')
+            })
+        }
+    });
+
+</script>
 </html>

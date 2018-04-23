@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>中标公告</title>
+    <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../common/css/swiper.min.css">
+    <link rel="stylesheet" href="../../common/css/base.css"/>
+    <link rel="stylesheet" href="css/model.css"/>
+    <link rel="stylesheet" href="css/bidseek.css"/>
+</head>
+<body>
+<div class="container-fluid" v-cloak id="example">
+    <sitenav></sitenav>
+    <bid-nav></bid-nav>
+    <div class="container-fluid" style="background: #eee">
+        <div class="container container_aaa">
+            <div class="container_box">
+                <div class="filter">
+                    <div class="areabox">
+                        <div class="area">招标方式</div>
+                        <ul>
+                            <li class="aitv">全部</li>
+                            <li>推荐招标</li>
+                            <li>独家招标</li>
+                            <li>业主招标</li>
+                        </ul>
+                    </div>
+                    <div class="areabox">
+                        <div class="area">信息类型</div>
+                        <ul>
+                            <li class="aitv">全部</li>
+                            <li>招标预告</li>
+                            <li>招标公告</li>
+                            <li>中标公告</li>
+                            <li>变更公告</li>
+                        </ul>
+                    </div>
+                    <div class="areabox">
+                        <div class="area">发布时间</div>
+                        <ul>
+                            <li class="aitv">全部</li>
+                            <li>最近一天</li>
+                            <li>最近三天</li>
+                            <li>最近七天</li>
+                            <li>最近一月</li>
+                            <li>近一年</li>
+                            <li>更久</li>
+                        </ul>
+                    </div>
+                    <div class="input_box">
+                        <select>
+                            <option>全部地区</option>
+                        </select>
+                        <select>
+                            <option>全部行业</option>
+                        </select>
+                        关键字 &nbsp;<input type="text">
+                        <div class="search">搜索</div>
+                    </div>
+                    <div class="zzbox">
+                        <div>最新发布</div>
+                        <div>相关度 &nbsp;<img src="../../common/img/icon/jiantou.png"></div>
+                        <div>成都最新招标信息<span>搜索结果 <i>(8139)</i></span></div>
+                    </div>
+                </div>
+                <div style="width:100%;height: 2px;background-color: #f7f7f7;"></div>
+                <ul class="bidList">
+                    <li v-for="item in 4">
+                        <div class="list_1">
+                            <img src="../../common/img/icon/dazhong.png">
+                            <span>四川优异建材有限公司采购大理玉石项目招标公告中标结果</span>
+                            <i>发布日期：2018-03-06</i>
+                        </div>
+                        <div class="list_2">
+                            <span>招标方式：<i>独家招标</i></span>
+                            <span>截止日期：<i>2018-03-06</i></span>
+                        </div>
+                        <div class="list_3">
+                            <span>招标产品：<i>大理玉石</i></span>
+                            <span>招标地区：<i>四川省</i></span>
+                        </div>
+                    </li>
+                    <li v-for="item in 4">
+                        <div class="list_1">
+                            <img src="../../common/img/icon/yu.png">
+                            <span>四川优异建材有限公司采购大理玉石项目招标公告中标结果</span>
+                            <i>发布日期：2018-03-06</i>
+                        </div>
+                        <div class="list_2">
+                            <span>招标方式：<i>独家招标</i></span>
+                            <span>截止日期：<i>2018-03-06</i></span>
+                        </div>
+                        <div class="list_3">
+                            <span>招标产品：<i>大理玉石</i></span>
+                            <span>招标地区：<i>四川省</i></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <web-config></web-config>
+        </div>
+    </div>
+    <div class="h5_box" style="background: rgb(238, 238, 238)">
+        <h5-nav></h5-nav>
+        <div class="areabox">
+            <select>
+                <option>招标方式</option>
+                <option>推荐招标</option>
+                <option>独家招标</option>
+                <option>业主招标</option>
+            </select>
+            <select>
+                <option>发布时间</option>
+                <option>最近一天</option>
+                <option>最近三天</option>
+                <option>最近七天</option>
+                <option>最近一月</option>
+                <option>近一年</option>
+                <option>更久</option>
+            </select>
+        </div>
+        <div class="item1">
+            <div class="selectbox">
+                <select>
+                    <option>全部地区</option>
+                </select>
+                <select>
+                    <option>全部行业</option>
+                </select>
+            </div>
+            <div class="searchBox">
+                <div>关键字</div>
+                <input type="text"/>
+                <div>搜索</div>
+                <div>成都最新招标预告<span>搜索结果<i>(8139)</i></span></div>
+            </div>
+            <ul class="bidList">
+                <li v-for="item in 8">
+                    <div class="list_1">
+                        <img src="../../common/img/icon/dazhong.png">
+                        <div>四川优异建材有限公司采购大理石项目...</div>
+                    </div>
+                    <div class="list_2">
+                        <div>发布日期：2018-03-06</div>
+                        <div style="color: #999">截止日期：<i>2018-03-06</i></div>
+                        <div>招标方式：<i>独家招标</i></div>
+                        <div>招标产品：<i>大理玉石</i></div>
+                        <div>招标地区：<i>四川省</i></div>
+                    </div>
+                </li>
+            </ul>
+            <div class="more"><img src="../../common/img/icon/more.png" height="15px"></div>
+        </div>
+        <h5-model></h5-model>
+    </div>
+</div>
+</body>
+<script src="../../common/js/jquery-1.11.3.js"></script>
+<script src="../../common/js/swiper.min.js"></script>
+<script src="../../common/js/vue.js"></script>
+<script src="../../common/js/vue-resource.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../common/js/public.js"></script>
+<script type="text/javascript" src="js/model.js"></script>
+<script>
+    new Vue({
+        el: '#example',
+        data:{
+
+        },
+        methods: {
+
+        },
+        mounted:function(){
+            $('.areabox li').click(function(){
+                $(this).addClass('aitv').siblings().removeClass('aitv')
+            })
+        }
+    });
+</script>
+</html>

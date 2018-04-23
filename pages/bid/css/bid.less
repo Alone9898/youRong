@@ -1,21 +1,7 @@
-[v-cloak] {
-  display: none;
-}
 @cor: #0ab7c7;
 @xxx:ma;
-.container{
-  padding-left: 0;
-  padding-right: 0;
-}
 .container_box{
-  width: 940px;
-  float: left;
-  padding-left: 10px;
-  padding-right: 0;
-  text-align: center;
-  background: #fff;
   .item_1{
-    margin-top: 15px;
     width: 250px;
     float: left;
     .headline{
@@ -126,11 +112,13 @@
   .item_2{
     width: 680px;
     float: left;
-    margin-top: 15px;
     padding: 0 20px;
     .areabox{
       width: 660px;
       margin-top: 50px;
+      .activ{
+        color: #0ab7c7;
+      }
       .area{
         float: left;
         color: #232323;
@@ -352,7 +340,6 @@
   }
 }
 .h5_box{
-  display: none;
   .item_1{
     margin-top: 10px;
     padding: 0 3%;
@@ -478,6 +465,18 @@
       }
     }
   }
+}
+.bid-nav{
+  li:nth-child(1){
+    background-color: #0ab7c7;
+  }
+  li:nth-child(1) a{
+    color: #fff;
+  }
+}
+.h5_nav .h5_head .swiper-slide:nth-of-type(1) div{
+  color: #0ab7c7 !important;
+  border-bottom: 2px solid #0ab7c7;
 }
 @media screen and (max-width: 768px) {
   .container_aaa{

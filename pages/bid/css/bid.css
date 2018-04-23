@@ -1,20 +1,4 @@
-[v-cloak] {
-  display: none;
-}
-.container {
-  padding-left: 0;
-  padding-right: 0;
-}
-.container_box {
-  width: 940px;
-  float: left;
-  padding-left: 10px;
-  padding-right: 0;
-  text-align: center;
-  background: #fff;
-}
 .container_box .item_1 {
-  margin-top: 15px;
   width: 250px;
   float: left;
 }
@@ -125,12 +109,14 @@
 .container_box .item_2 {
   width: 680px;
   float: left;
-  margin-top: 15px;
   padding: 0 20px;
 }
 .container_box .item_2 .areabox {
   width: 660px;
   margin-top: 50px;
+}
+.container_box .item_2 .areabox .activ {
+  color: #0ab7c7;
 }
 .container_box .item_2 .areabox .area {
   float: left;
@@ -346,9 +332,6 @@
   padding: 3px 5px;
   float: left;
 }
-.h5_box {
-  display: none;
-}
 .h5_box .item_1 {
   margin-top: 10px;
   padding: 0 3%;
@@ -465,6 +448,16 @@
 }
 .h5_box .item_3 .item_3-container li:nth-child(3n) {
   margin-right: 0;
+}
+.bid-nav li:nth-child(1) {
+  background-color: #0ab7c7;
+}
+.bid-nav li:nth-child(1) a {
+  color: #fff;
+}
+.h5_nav .h5_head .swiper-slide:nth-of-type(1) div {
+  color: #0ab7c7 !important;
+  border-bottom: 2px solid #0ab7c7;
 }
 @media screen and (max-width: 768px) {
   .container_aaa {

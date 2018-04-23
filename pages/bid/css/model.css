@@ -1,4 +1,20 @@
+[v-cloak] {
+    display: none;
+}
 /*pc*/
+.container{
+    padding-left: 0;
+    padding-right: 0;
+}
+.container_box {
+    width: 940px;
+    float: left;
+    padding-left: 10px;
+    padding-right: 0;
+    padding-top: 15px;
+    text-align: center;
+    background: #fff;
+}
 .bid-nav {
     width: 100%;
     height: 40px;
@@ -17,15 +33,21 @@
     height: 30px;
     line-height: 30px;
     margin-right: 35px;
-    color: #333333;
     cursor: pointer;
+}
+.bid-nav li a{
+    color: #333333;
+    display: inline-block;
+    width: 100%;
 }
 .bid-nav li:nth-child(7) {
     margin-right: 0;
 }
 .bid-nav li:hover {
-    color: #fff;
     background-color: #0ab7c7;
+}
+.bid-nav li:hover a{
+    color: #fff;
 }
 /*.....................*/
 .web-config {
@@ -230,7 +252,107 @@
 .web-config .fixbiox ul li:nth-child(1) {
     margin-top: 0;
 }
+/*我的应用*/
+.myPanel {
+    width: 210px;
+    height: 900px;
+    float: left;
+    background: white;
+    margin-right: 15px;
+}
+.myPanel .panel_1 {
+    width: 100%;
+    height: 162px;
+    border-bottom: 1px solid #eeeeee;
+    padding: 20px;
+}
+.myPanel .panel_1 .pictureFrame {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    float: left;
+}
+.myPanel .panel_1 .msg {
+    width: 70px;
+    padding-top: 24px;
+    height: 80px;
+    float: left;
+}
+.myPanel .panel_1 .msg p:nth-child(1) {
+    font-size: 16px;
+    color: #666666;
+}
+.myPanel .panel_1 .msg p:nth-child(1) i {
+    margin-left: 3px;
+    font-size: 17px;
+}
+.myPanel .panel_1 .msg p:nth-child(2) {
+    margin-top: 8px;
+    color: #999999;
+}
+.myPanel .panel_1 .msg p:nth-child(2) i {
+    color: #f9b039;
+    margin-left: 3px;
+}
+.myPanel .panel_1 .name {
+    width: 100%;
+    float: left;
+    margin-left: 4px;
+    margin-top: 19px;
+    font-size: 14px;
+    color: #0ab7c7;
+}
+.myPanel .panel_2 {
+    width: 100%;
+}
+.myPanel .panel_2 .head {
+    width: 100%;
+    height: 54px;
+    font-size: 16px;
+    color: #666666;
+    padding-left: 19px;
+    line-height: 54px;
+}
+.myPanel .panel_2 .imgbox {
+    width: 175px;
+    height: 7px;
+    margin-left: 19px;
+}
+.myPanel .panel_2 .nav_box {
+    width: 100%;
+    padding: 20px 55px;
+}
+.myPanel .panel_2 .nav_box li {
+    width: 100%;
+    height: 24px;
+    margin-top: 24px;
+    cursor: pointer;
+}
+.myPanel .panel_2 .nav_box li a{
+    display: block;
+}
+.myPanel .panel_2 .nav_box li img {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+.myPanel .panel_2 .nav_box li i {
+    vertical-align: middle;
+    color: #666666;
+    font-size: 14px;
+}
+.myPanel .panel_2 .nav_box li:hover i {
+    color: #0ab7c7;
+}
+.myPanel .panel_2 .nav-foo li {
+    padding-left: 26px;
+}
 /*h5*/
+.h5_box{
+    display: none;
+}
 .h5_nav {
     width: 100%;
     height: 26px;
@@ -243,13 +365,13 @@
 .h5_nav .h5_head .swiper-slide div {
     margin-left: 0;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 14px;
     height: 26px;
     color: #333;
 }
-.h5_nav .h5_head .active {
-    color: #0ab7c7 !important;
-    border-bottom: 2px solid #0ab7c7;
+.h5_head .swiper-slide div a{
+   display: inline-block;
+   color: #333;
 }
 .h5-login {
     width: 50px;
@@ -262,6 +384,7 @@
 .h5-model {
     width: 100%;
     height: 58px;
+    border-top: solid 1px #e5e5e5;
     background: white;
     position: fixed;
     z-index: 99;
@@ -295,6 +418,123 @@
     margin-top: 5px;
     color: #999999;
 }
+/*公共移动端*/
+.h5_box {
+    font-size: 14px;
+}
+.h5_box .areabox {
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 3%;
+    height: 45px;
+}
+.h5_box .areabox select {
+    margin-right: 15px;
+    line-height: 21px;
+    letter-spacing: 1px;
+    color: #666666;
+    background: none;
+    margin-top: 10px;
+    border: none;
+}
+.h5_box .item1 {
+    background: white;
+    padding: 15px 3% 25px;
+}
+.h5_box .item1 .selectbox {
+    padding-bottom: 5px;
+}
+.h5_box .item1 .selectbox select {
+    background-color: #ffffff;
+    border: solid 1px #e5e5e5;
+    color: #999999;
+    margin-right: 15px;
+}
+.h5_box .item1 .searchBox {
+    text-align: center;
+    width: 100%;
+    height: 42px;
+}
+.h5_box .item1 .searchBox input {
+    float: left;
+    margin-left: 5px;
+    margin-right: 10px;
+    width: 60%;
+}
+.h5_box .item1 .searchBox div {
+    line-height: 24px;
+    height: 24px;
+    float: left;
+    color: #666666;
+    margin-left: 5px;
+}
+.h5_box .item1 .searchBox div:nth-child(3) {
+    width: 51px;
+    background-color: #0ab7c7;
+    color: white;
+}
+.h5_box .item1 .searchBox div:nth-child(4) {
+    padding-left: 45px;
+    font-stretch: normal;
+    line-height: 21px;
+    letter-spacing: 0px;
+    color: #fb3841;
+}
+.h5_box .item1 .searchBox div:nth-child(4) span {
+    padding-left: 20px;
+    color: #232323;
+}
+.h5_box .item1 .searchBox div:nth-child(4) span i {
+    color: #fb3841;
+}
+.h5_box .item1 .bidList {
+    width: 100%;
+}
+.h5_box .item1 .bidList li {
+    width: 100%;
+    height: 145px;
+    padding-top: 20px;
+    border-bottom: 1px #e5e5e5 solid ;
+}
+.h5_box .item1 .bidList li .list_1 {
+    width: 100%;
+    height: 24px;
+}
+.h5_box .item1 .bidList li .list_1 img {
+    float: left;
+    margin-right: 5px;
+}
+.h5_box .item1 .bidList li .list_1 div {
+    width: 250px;
+    height: 24px;
+    line-height: 24px;
+    color: #666666;
+    float: left;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+.h5_box .item1 .bidList li .list_2 {
+    padding-top: 7px;
+    padding-left: 29px;
+}
+.h5_box .item1 .bidList li .list_2 div {
+    float: left;
+    margin-top: 5px;
+    margin-right: 15px;
+}
+.h5_box .item1 .bidList li .list_2 div:nth-child(1){
+    color: #999999;
+}
+.h5_box .item1 .more {
+    width: 100%;
+    padding-top: 15px;
+    text-align: center;
+    height: 15px;
+    padding-bottom: 80px;
+}
+
 /*媒介查询*/
 @media screen and (max-width: 768px) {
     * {
@@ -308,7 +548,12 @@
     }
 }
 @media screen and (max-width: 320px) {
-    .h5_head .swiper-slide div {
-        font-size: 1.2rem!important;
+    *{
+        font-size: 12px!important;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container_aaa {
+        display: none;
     }
 }
