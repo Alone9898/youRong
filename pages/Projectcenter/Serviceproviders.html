@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>服务商主页</title>
+    <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../common/css/swiper.min.css">
+    <link rel="stylesheet" href="../../common/css/base.css"/>
+    <link rel="stylesheet" href="css/Serviceproviders.css">
+</head>
+<body>
+<div id="app" v-cloak>
+    <div class="mybanner" style="background: url('../../common/img/images/mybanner.png'); background-position: 50%;background-size: cover">
+        <div class="mheadbox" style="display: none">
+            <div class="mtopbox clearfix">
+                <div class="pull-left lji">44级</div>
+                <div class="pull-left mji" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
+                <div class="pull-left rji">¥<span>120-300</span>/m²</div>
+            </div>
+            <h5 class="mbotbox">李老头</h5>
+        </div>
+    </div>
+    <div class="headbox" style="background: #fff">
+        <div class="myheader clearfix">
+            <div class="myheaderl pull-left">
+                <ul class="clearfix">
+                    <li>
+                        <b>123</b>
+                        <p>签单</p>
+                    </li>
+                    <li>
+                        <b>123</b>
+                        <p>预约量</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="myheaderm pull-left">
+                <div class="headimg" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
+                <div class="headt"><span>李老头</span><samp>18级别</samp></div>
+                <div class="headi"><span>四川成都 |</span><samp> 工装设计师</samp></div>
+                <div class="headb"><a class="btn btn-info1">预约咨询</a></div>
+                <div class="headp"><span class="yc">原创设计</span><span class="zs">真实评价</span><span class="zj">资金托管</span></div>
+            </div>
+            <div class="myheaderr pull-left">
+                <ul class="clearfix">
+                    <li>
+                        <b>123</b>
+                        <p>签单</p>
+                    </li>
+                    <li>
+                        <b>123</b>
+                        <p>预约量</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="mnavbox" style="display: none">
+        <ul class="clearfix">
+            <li>
+                <b>123</b>
+                <p>签单</p>
+            </li>
+            <li>
+                <b>123</b>
+                <p>预约量</p>
+            </li>
+            <li>
+                <b>123</b>
+                <p>粉丝</p>
+            </li>
+            <li>
+                <b>123</b>
+                <p>作品</p>
+            </li>
+        </ul>
+    </div>
+    <!--content-->
+    <div class="main mmian">
+        <div class="zhead">
+            <div class="container" style="overflow: hidden;margin-bottom:100px">
+                <ul id="myTab" class="nav nav-tabs mynavcss">
+                    <li class=" pingxing active"><a href="#eventshow" data-toggle="tab">商品展示</a></li>
+                    <li class="pingxing "><a href="#comment" data-toggle="tab">业主评价</a></li>
+                    <li class="pingxing"><a href="#about" data-toggle="tab">关于TA</a></li>
+                    <li class="rightxinfo pull-right">￥ <b>120-300</b> /m2</li>
+                </ul>
+                <ul id="myTab1" class="nav nav-tabs mynavcss1 mynavcss2" style="display: none">
+                    <li class="active"><a href="#eventshow" data-toggle="tab">商品展示</a></li>
+                    <li class=" "><a href="#comment" data-toggle="tab">业主评价</a></li>
+                    <li class=" "><a href="#team" data-toggle="tab">团队人员</a></li>
+                    <li class=""><a href="#about" data-toggle="tab">关于TA</a></li>
+                </ul>
+                <div id="myTabContent" class="tab-content mycs mycsbox" style="background:#fff">
+                    <div class="tab-pane fade in active" id="eventshow">
+                        <div class="mainboxcss">
+                            <div class="sjzpbox sjzpbox1">
+                                <div class="sjzpboxtop clearfix">
+                                    <div class="pull-left"><h4>商品类别<span class="mg_l">(<span class="color_green">1</span>)</span></h4></div>
+                                </div>
+                                <div class="sjzpboxcont clearfix">
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1 hide_s">
+                                        <div class="item_with" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></div>
+                                        <div class="projection_txt">
+                                            <div class="flex_display">
+                                                <p> 商品类别商品类别商品类别商品类别商品类别商品类别商品类别</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1 hide_s">
+                                        <div class="item_with" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></div>
+                                        <div class="projection_txt">
+                                            <div class="flex_display">
+                                                <p> 商品类别商品类别商品类别商品类别商品类别商品类别商品类别</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1 hide_s">
+                                        <div class="item_with" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></div>
+                                        <div class="projection_txt">
+                                            <div class="flex_display">
+                                                <p> 商品类别商品类别商品类别商品类别商品类别商品类别商品类别</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1 hide_s">
+                                        <div class="item_with" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></div>
+                                        <div class="projection_txt">
+                                            <div class="flex_display">
+                                                <p> 商品类别商品类别商品类别商品类别商品类别商品类别商品类别</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sjzpbox sjzpbox1">
+                                <div class="sjzpboxtop clearfix">
+                                    <div class="pull-left"><h4>商品类别<span class="mg_l">(<span class="color_green">1</span>)</span></h4></div>
+                                </div>
+                                <div class="sjzpboxcont clearfix">
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1 hide_s">
+                                        <div class="item_with" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></div>
+                                        <div class="projection_txt">
+                                            <div class="flex_display">
+                                                <p> 商品类别商品类别商品类别商品类别商品类别商品类别商品类别</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1 hide_s">
+                                        <div class="item_with" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></div>
+                                        <div class="projection_txt">
+                                            <div class="flex_display">
+                                                <p> 商品类别商品类别商品类别商品类别商品类别商品类别商品类别</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1 hide_s">
+                                        <div class="item_with" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></div>
+                                        <div class="projection_txt">
+                                            <div class="flex_display">
+                                                <p> 商品类别商品类别商品类别商品类别商品类别商品类别商品类别</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1 hide_s">
+                                        <div class="item_with" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></div>
+                                        <div class="projection_txt">
+                                            <div class="flex_display">
+                                                <p> 商品类别商品类别商品类别商品类别商品类别商品类别商品类别</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1 hide_s">
+                                        <div class="item_with" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></div>
+                                        <div class="projection_txt">
+                                            <div class="flex_display">
+                                                <p> 商品类别商品类别商品类别商品类别商品类别商品类别商品类别</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1 hide_s">
+                                        <div class="item_with" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></div>
+                                        <div class="projection_txt">
+                                            <div class="flex_display">
+                                                <p> 商品类别商品类别商品类别商品类别商品类别商品类别商品类别</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1 hide_s">
+                                        <div class="item_with" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></div>
+                                        <div class="projection_txt">
+                                            <div class="flex_display">
+                                                <p> 商品类别商品类别商品类别商品类别商品类别商品类别商品类别</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1 hide_s">
+                                        <div class="item_with" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></div>
+                                        <div class="projection_txt">
+                                            <div class="flex_display">
+                                                <p> 商品类别商品类别商品类别商品类别商品类别商品类别商品类别</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade " id="comment">
+                        <div class="mainboxcss">
+                            <ul class="comtop clearfix">
+                                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><span>好评率：</span><samp style="color:#00dfb9">100%</samp></li>
+                                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><span>好评：</span><samp>100</samp></li>
+                                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><span>中评：</span><samp>45</samp></li>
+                                <li class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><span>差评：</span><samp>16</samp></li>
+                            </ul>
+                            <div class="comcont">
+                                <div class="comcontbox clearfix">
+                                    <div class="comcontboxl pull-left">
+                                        <div class="comtophead" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
+                                        <p class="combot combotcss">用户名</p>
+                                    </div>
+                                    <div class="comcontboxr pull-left">
+                                        <div class="mborder">
+                                            <div class="comtopheadp clearfix"><h4 class="pull-left">好评<img class="smile" src="../../common/img/icon/smile.png"></h4><p class="pull-right combotcss1">2017年1月30日</p></div>
+                                            <p class="combot sl1">用户用户名用户名用户名,用户名用户名用户名用户名用户名,用户名用户用户名用户名用户名,用户名用户名用名用户名用户名,用户名用户用户名用户名用户名,用户名用户名用户名用户名用户名,用户名用户名,用户名,名</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comcontbox clearfix">
+                                    <div class="comcontboxl pull-left">
+                                        <div class="comtophead" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
+                                        <p class="combot combotcss">用户名</p>
+                                    </div>
+                                    <div class="comcontboxr pull-left">
+                                        <div class="mborder">
+                                            <div class="comtopheadp clearfix"><h4 class="pull-left">好评<img class="smile" src="../../common/img/icon/smile.png"></h4><p class="pull-right combotcss1">2017年1月30日</p></div>
+                                            <p class="combot sl1">用户用户名用户名用户名,用户名用户名用户名用户名用户名,用户名用户用户名用户名用户名,用户名用户名用名用户名用户名,用户名用户用户名用户名用户名,用户名用户名用户名用户名用户名,用户名用户名,用户名,名</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comcontbox clearfix">
+                                    <div class="comcontboxl pull-left">
+                                        <div class="comtophead" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
+                                        <p class="combot combotcss">用户名</p>
+                                    </div>
+                                    <div class="comcontboxr pull-left">
+                                        <div class="mborder">
+                                            <div class="comtopheadp clearfix"><h4 class="pull-left">好评<img class="smile" src="../../common/img/icon/smile.png"></h4><p class="pull-right combotcss1">2017年1月30日</p></div>
+                                            <p class="combot sl1">用户用户名用户名用户名,用户名用户名用户名用户名用户名,用户名用户用户名用户名用户名,用户名用户名用名用户名用户名,用户名用户用户名用户名用户名,用户名用户名用户名用户名用户名,用户名用户名,用户名,名</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comcontbox clearfix">
+                                    <div class="comcontboxl pull-left">
+                                        <div class="comtophead" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
+                                        <p class="combot combotcss">用户名</p>
+                                    </div>
+                                    <div class="comcontboxr pull-left">
+                                        <div class="mborder">
+                                            <div class="comtopheadp clearfix"><h4 class="pull-left">好评<img class="smile" src="../../common/img/icon/smile.png"></h4><p class="pull-right combotcss1">2017年1月30日</p></div>
+                                            <p class="combot sl1">用户用户名用户名用户名,用户名用户名用户名用户名用户名,用户名用户用户名用户名用户名,用户名用户名用名用户名用户名,用户名用户用户名用户名用户名,用户名用户名用户名用户名用户名,用户名用户名,用户名,名</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="about">
+                        <div class="mainboxcss">
+                            <div class="abouttop clearfix">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 abouttop1">
+                                    <div class="headbgd">
+                                        <div style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 abouttop2" style="display: none">
+                                    <div class="headbgd" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover">
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mr mrcss">
+                                    <h4>你好，我是李老头</h4>
+                                    <div>
+                                        <p>平台入驻：<span class="color_font">10年</span></p>
+                                        <p>资金注册：<span class="color_font">100万</span></p>
+                                        <p>经营范围：<span class="color_font">一般经营项目：建筑装饰材料的技术开发与销售</span></p>
+                                    </div>
+                                    <p class="pco">相关描述，相关描述相关描述，相关描述相关描述相关描述，相关描述相关描述，相关描述相关描述相关描述，相关描述，相关描述相关描述，相关描述相关描述相关描述，相关描述，相关描述相关描述，相关描述相关描述相关描述，相关关描述相关描述，相关描述相关描述，相关描述相关描述相关描述，相关描述，相关描述相关描述，相关描述相关描述相关描述，相关描述，相关描述相关描述，相关描述相关描述相关描述，相关描述，相关描述相关描述，相关描述相关描述相关描述，相关描述，</p>
+                                </div>
+                            </div>
+
+                            <div class="aboutbot">
+                                <div>产品介绍</div>
+                                <ul class="clearfix">
+                                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12">1.北京装饰协会高级设计师</li>
+                                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12">2.北京装饰协会高级设计师</li>
+                                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12">3.北京装饰协会高级设计师</li>
+                                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12">4.北京装饰协会高级设计师</li>
+                                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12">6.北京装饰协会高级设计师</li>
+                                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12">7.北京装饰协会高级设计师</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--bottom-->
+                <div class="btnbottom clearfix" style="display: none">
+                    <div class="col-3" @click="guanzhu($event)"><img src="../../common/img/icon/star.png">关注</div>
+                    <div class="col-9 hiactive" @click="yuyue($event)">预约咨询</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../common/js/jquery-1.11.3.js"></script>
+<script src="../../common/js/swiper.min.js"></script>
+<script src="../../common/js/vue.js"></script>
+<script src="../../common/js/vue-resource.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../common/js/public.js"></script>
+<script src="js/designCommon.js"></script>
+</body>
+</html>

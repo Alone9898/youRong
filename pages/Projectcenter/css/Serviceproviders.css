@@ -12,9 +12,12 @@ p {
   margin: 0;
 }
 a {
-  cursor: pointer;color:#333;
+  cursor: pointer;
+  color: #333;
 }
-a:hover{color:#333;}
+a:hover {
+  color: #333;
+}
 .clearfix:after {
   display: table;
   content: " ";
@@ -104,7 +107,9 @@ img {
 .hoverhight {
   color: #01dfba;
 }
-.contbox .pcss span{margin-right:20px;}
+.contbox .pcss span {
+  margin-right: 20px;
+}
 /****************************************************************************************************/
 /*cont*/
 .cont {
@@ -112,11 +117,7 @@ img {
 }
 .conttitle {
   background: #ffffff;
-<<<<<<< HEAD
   padding: 20px;
-=======
-  padding: 20px 0;
->>>>>>> 53148e0a073a5100a458b955d599241b04aae66e
 }
 .conttitle h3 {
   margin: 0;
@@ -198,7 +199,9 @@ img {
   background: #ffffff;
   padding: 20px;
 }
-.mycont{margin-bottom:20px;}
+.mycont {
+  margin-bottom: 20px;
+}
 .contmain .contleft {
   width: 100px;
   height: 100px;
@@ -240,50 +243,7 @@ img {
 .swiper-button-prevmy {
   background-image: url('../../../common/img/icon/licon.png');
 }
-<<<<<<< HEAD
 @media screen and (max-width: 768px) {
-=======
-.list-btn{
-  margin-bottom: 20px;
-  padding: 0 10px;
-}
-.list-btn ul li{
-  width: 100px;
-  height: 30px;
-  background-color: rgba(185, 185, 185, 0.65);
-  color: #fff;
-  text-align: center;
-  border-radius: 5px;
-  line-height: 30px;
-  font-size: 14px;
-  margin-right: 20px;
-  cursor: pointer;
-}
-.list-btn .active_bg{
-  background: #00dfb9;
-}
-.list-btn ul li a{
-  display: block;
-  color:#fff;
-  text-decoration:none
-}
-@media screen and (max-width: 768px) {
-  .list-btn{
-    margin-top: 20px;
-  }
-  .list-btn ul li{
-    width: 80px;
-    height: 25px;
-    background-color: rgba(185, 185, 185, 0.65);
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    line-height: 25px;
-    font-size: 12px;
-    margin-right: 15px;
-    cursor: pointer;
-  }
->>>>>>> 53148e0a073a5100a458b955d599241b04aae66e
   body {
     overflow-x: hidden;
   }
@@ -516,7 +476,8 @@ img {
   border-top: 2px solid #00dfb9;
   border-radius: 0;
   line-height: 28px;
-  padding: 0 14px;    background: #fff;
+  padding: 0 14px;
+  background: #fff;
 }
 .tabright {
   width: 70px;
@@ -605,7 +566,7 @@ img {
 }
 .mynav .nav-tabs > li > a:hover {
   background: none;
-      border: 1px solid transparent;
+  border: 1px solid transparent;
 }
 .mtb .clearfix {
   margin-bottom: 10px;
@@ -627,52 +588,40 @@ img {
   font-size: 12px;
   border-radius: 6px;
 }
-<<<<<<< HEAD
-=======
-.hover_bg{
-  overflow: hidden;
+.z-img-box {
+  margin: 0 0 10px 0;
+  padding: 0 5px;
 }
-.projection_txt{
-  opacity: 0;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-  position: absolute;
-  width: 91%!important;
-  height: 100%;
-  top:60px;
-  left: 10px;
-  right: 0;
-  bottom:0;
-  padding: 0 46px 0 30px!important;
-  color: #fff;
-  font-size: 14px;
-  background: rgba(0,0,0,0.5);
-  cursor: pointer;
+.z-img-box img {
+  height: 240px;
+  width: 100%;
 }
-.hover_bg:hover .projection_txt{
-  opacity: 1;
-  top:0;
-  transition: 1s;
-}
-.projection_txt .flex_display{
-  display: table;
-  width: 100%;height: 100%;
-}
-.projection_txt .flex_display P{
-  text-align: center;
-  vertical-align: middle;
-  display: table-cell;
-  color:#fff;
-  font-size: 14px;
-}
->>>>>>> 53148e0a073a5100a458b955d599241b04aae66e
 @media screen and (max-width: 768px) {
-  p,a,span,b{font-size:14px!important;}
+  .z-img-box img {
+    height: 140px;
+    width: 100%;
+  }
+  .z-img-box .color_9 {
+    font-size: 12px!important;
+  }
+  .z-img-box .top_name {
+    padding: 5px 0!important;
+  }
+  .z-img-box .bottom_info {
+    padding: 5px 0!important;
+  }
+  p,
+  a,
+  span,
+  b {
+    font-size: 14px!important;
+  }
   .title .myh {
     height: 58px;
-}
-  .container1{margin-top:0!important;}
+  }
+  .container1 {
+    margin-top: 0!important;
+  }
   .myh > div {
     font-size: 16px;
     margin-right: 33px!important;
@@ -734,7 +683,8 @@ img {
     margin: 15px 9px 0px  9px;
   }
   .mconbox ul li a {
-    color: #666;    font-size: 12px;
+    color: #666;
+    font-size: 12px;
   }
   .more {
     width: 180px;
@@ -749,12 +699,15 @@ img {
   .mbox1 {
     margin: 12px 0;
   }
-  .mft{font-size:14px;}
+  .mft {
+    font-size: 14px;
+  }
   .imgright,
   .imgleft {
     width: 100% !important;
   }
-  .imgright > div {font-size: 12px;
+  .imgright > div {
+    font-size: 12px;
     margin: 12px 0 0 0;
     margin-bottom: 12px!important;
   }
@@ -909,13 +862,8 @@ img {
 }
 @media screen and (max-width: 425px) {
   .myh > div {
-<<<<<<< HEAD
-    font-size: 12px;
-    margin-right: 32px!important;
-=======
     font-size: 14px;
     margin-right: 42px!important;
->>>>>>> 53148e0a073a5100a458b955d599241b04aae66e
   }
 }
 @media screen and (max-width: 320px) {
@@ -1040,6 +988,9 @@ img {
   position: absolute;
   right: 46px;
   top: 22px;
+}
+.mr .color_font {
+  color: #666666;
 }
 .zfcontbottom {
   margin-top: 40px;
@@ -1393,15 +1344,15 @@ img {
   padding: 0;
   color: #999999;
 }
-<<<<<<< HEAD
-=======
-.sjzpboxtop .mg_l .color_green{
-    color: #00dfb9;
+.sjzpboxtop .mg_l .color_green {
+  color: #00dfb9;
+  font-size: 18px;
 }
-.sjzpboxtop .mg_l{
-    font-size: 18px;
+.sjzpboxtop .mg_l {
+  margin-left: 5px;
+  font-size: 18px;
+  color: #000;
 }
->>>>>>> 53148e0a073a5100a458b955d599241b04aae66e
 .sjzpboxtop {
   padding-right: 16px;
 }
@@ -1417,25 +1368,101 @@ img {
 .sjzpboxcont {
   border-bottom: 1px solid #ddd;
 }
+.projection_txt {
+  opacity: 0;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  position: absolute;
+  width: 94%!important;
+  height: 100%;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 46px 0 30px;
+  color: #fff;
+  font-size: 14px;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.border_box {
+  border: 1px solid #ddd;
+  padding: 0 10px;
+}
+.border_box .color_3 {
+  font-size: 18px;
+}
+.border_box .color_9 {
+  color: #999999;
+  font-size: 12px;
+}
+.border_box .fl_t {
+  float: left;
+  margin-right: 10px;
+  font-size: 14px;
+}
+.border_box .fl_t .color_g {
+  color: #00dfb9;
+  font-size: 14px;
+}
+.border_box .top_name {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+.border_box .bottom_info {
+  padding: 10px 0;
+}
+.contimg1:hover .projection_txt {
+  opacity: 1;
+  top: 0;
+  transition: 1s;
+}
+.projection_txt .flex_display {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.projection_txt .flex_display P {
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  color: #fff;
+  font-size: 14px;
+}
 .contimg1 {
   height: 240px;
-  margin: 30px 0px;
+  margin-top: 30px;
   padding: 0 16px 0 0;
+  position: relative;
 }
-.contimg1 > div {
+.hide_s {
+  overflow: hidden;
+}
+.contimg1 .item_with {
   width: 100%;
   height: 100%;
 }
 @media screen and (max-width: 768px) {
-<<<<<<< HEAD
-=======
-  .myh > div {
-    font-size: 12px!important;
-    margin-right: 42px!important;
+  .projection_txt {
+    opacity: 0;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    position: absolute;
+    width: 94%!important;
+    top: 60px;
+    left: 6px;
+    right: 0;
+    bottom: 0;
+    padding: 0 10px 0 7px;
+    color: #fff;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
   }
->>>>>>> 53148e0a073a5100a458b955d599241b04aae66e
   .mycont {
-      margin-bottom: 0px;
+    margin-bottom: 0px;
   }
   .headbox,
   .mynavcss,
@@ -1448,7 +1475,7 @@ img {
   }
   .mynavcss1 li {
     width: 25%;
-    padding:10px 0;
+    padding: 10px 0;
   }
   .mynavcss1 li a {
     padding: 0!important;
@@ -1510,7 +1537,8 @@ img {
     position: relative;
   }
   .mtopbox .rji span {
-    color: #00dfb9;font-size:12px!important;
+    color: #00dfb9;
+    font-size: 12px!important;
   }
   .mtopbox .lji {
     color: #00dfb9;
@@ -1520,26 +1548,31 @@ img {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     padding: 4px 12px;
-    font-size:12px!important;
+    font-size: 12px!important;
   }
   .mtopbox .rji {
     color: #00dfb9;
     position: absolute;
     top: 12px;
-        right: -86px;
+    right: -86px;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
-    padding: 4px 12px;font-size:12px!important;
+    padding: 4px 12px;
+    font-size: 12px!important;
   }
   .mr p span {
-      color: #999;
+    color: #999;
   }
-  .combot {font-size:14px;}
+  .combot {
+    font-size: 14px;
+  }
   .mbotbox {
     text-align: center;
     margin-top: 7px;
   }
-  .combotcss{font-size:14px;}
+  .combotcss {
+    font-size: 14px;
+  }
   .mnavbox {
     display: block!important;
   }
@@ -1573,7 +1606,7 @@ img {
   .table > thead > tr > th {
     padding: 14px 3px;
     text-align: center;
-        font-size: 12px;
+    font-size: 12px;
   }
   .comtopheadp > h4 {
     font-size: 15px;
@@ -1582,7 +1615,10 @@ img {
   .pco {
     display: none;
   }
-  .mr p,.aboutbot li{font-size: 14px;}
+  .mr p,
+  .aboutbot li {
+    font-size: 14px;
+  }
   .abouttop2,
   .mrcss {
     display: block !important;
@@ -1611,7 +1647,7 @@ img {
   .contimg1 {
     height: 140px;
     margin: 0 0 10px 0;
-    padding: 5px;
+    padding: 0 5px;
   }
   .sjzpboxtop {
     margin: 10px 0;
@@ -1628,7 +1664,6 @@ img {
     bottom: 0;
     left: 0;
     width: 100%;
-
   }
   .btnbottom .col-3 {
     width: 35%;
@@ -1636,7 +1671,8 @@ img {
     padding: 14px 20px;
     background: #fff;
     color: #999;
-    text-align: center;font-size: 14px;
+    text-align: center;
+    font-size: 14px;
   }
   .btnbottom .col-3 img {
     width: 14px;
@@ -1648,7 +1684,8 @@ img {
     background: #fff;
     color: #999;
     padding: 14px 20px;
-    text-align: center;font-size: 14px;
+    text-align: center;
+    font-size: 14px;
   }
   .hiactive {
     background: #00dfb9!important;

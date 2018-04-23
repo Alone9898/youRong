@@ -64,6 +64,7 @@ video {
   background: #cccccc;
 }
 .manboxconttxt a {
+  font-size: 12px;
   padding-left: 7px;
 }
 .manboxconttxt a:hover {
@@ -85,6 +86,8 @@ video {
 .manboxright {
   color: #999;
   cursor: pointer;
+  font-size: 14px;
+  margin-top: 5px;
 }
 .right_layout .float_bar_one {
   padding: 10px 10px 24px 10px;

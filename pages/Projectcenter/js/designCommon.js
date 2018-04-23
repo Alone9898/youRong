@@ -2,6 +2,7 @@ var app = new Vue({
     el: '#app',
     data: {
         more:1,
+<<<<<<< HEAD
         service:[
             {icon_img:'../../common/img/images/gxh.png',txt:'设计',content:'以业主为核心的有效组织，对平台参与方提供全方位实现个性化需求'},
             {icon_img:'../../common/img/images/tmh.png',txt:'施工',content:'以业主为核心的有效组织，对平台参与方提供全方位实现个性化需求'},
@@ -43,6 +44,8 @@ var app = new Vue({
                 title:'什么是论坛？',
             },
         ],
+=======
+>>>>>>> 53148e0a073a5100a458b955d599241b04aae66e
     },
     created: function () {
         
@@ -60,6 +63,7 @@ var app = new Vue({
             window.location.href=''+a+'.html';
         },
         //查看更多
+<<<<<<< HEAD
         zkmorefun(ev){
             if(this.more==1){
                 this.more=0;
@@ -67,6 +71,15 @@ var app = new Vue({
             }else{
                 this.more=1;
                 $(ev.target).parent().siblings('.zkmorebox').slideUp();
+=======
+        viewmore(ev){
+            if(this.more==1){
+                this.more=0;
+                $(ev.target).parents('.mbox').find('.mnone').slideDown();
+            }else{
+                this.more=1;
+                $(ev.target).parents('.mbox').find('.mnone').slideUp();
+>>>>>>> 53148e0a073a5100a458b955d599241b04aae66e
             }
         },
         //查看详情
@@ -101,6 +114,7 @@ var app = new Vue({
         AskQuestions(){
             window.location.href="AskQuestions.html";
         },
+<<<<<<< HEAD
         clickfun(ev,a){
 
             $(ev.target).addClass('myacbgd').parent().siblings().find('a').removeClass('myacbgd');
@@ -108,5 +122,7 @@ var app = new Vue({
             $('.'+a+'').parent().siblings().hide();
             console.log($('.'+a+''));
         },
+=======
+>>>>>>> 53148e0a073a5100a458b955d599241b04aae66e
     },
 })
