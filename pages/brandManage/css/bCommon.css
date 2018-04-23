@@ -142,15 +142,24 @@ img {
     background: #00dfb9;
     padding: 20px 20px 5px 16px;
     border-radius: 40px;
+    font-size: 14px;
 }
 /****************************************************************************************************/
 /*cont*/
 .cont {
   margin-top: 20px;
 }
+.swiper_list .swiper-slide{
+    margin-left: -3px;
+}
+.swiper_list .swiper-slide a{
+    width: 90px;
+    display: block;
+    margin: 0 auto;
+}
 .conttitle {
   background: #ffffff;
-  padding: 20px;
+  padding: 20px 0;
 }
 .conttitle h3 {
   margin: 0;
@@ -631,6 +640,7 @@ img {
   p,a,span,b{font-size:14px!important;}
   .title .myh {
     height: 58px;
+    font-size:16px;
 }
 .mc .contimg1>div {
     height: 128px!important;
@@ -881,16 +891,24 @@ img {
   }
   .img{display: none}
 }
+<<<<<<< HEAD
 @media screen and (max-width: 425px) {
   .myh > div {
-    font-size: 14px;
-    margin-right: 42px!important;
+    font-size: 12px;
+    margin-right: 32px!important;
   }
 }
 @media screen and (max-width: 320px) {
   .myh > div {
     font-size: 12px;
+    margin-right: 32px!important;
+=======
+
+@media screen and (max-width: 320px) {
+  .myh > div {
+    font-size: 12px!important;
     margin-right: 36px!important;
+>>>>>>> 53148e0a073a5100a458b955d599241b04aae66e
   }
   .ji {
     margin: 0 1px;
@@ -898,6 +916,12 @@ img {
   }
   .contmain .bao {
     padding: 0px 9px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .myh > div {
+    font-size: 12px!important;
+    margin-right: 36px!important;
   }
 }
 /**************************************************************************************************/
@@ -1403,7 +1427,7 @@ img {
     display: block!important;
   }
   .mynavcss1 li {
-    width: 20%;
+    width: 25%;
     padding:10px 0;
     a{font-size: 12px!important}
   }

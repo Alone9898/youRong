@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>装修知识</title>
+    <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../common/css/swiper.min.css">
+    <link rel="stylesheet" href="../../common/css/base.css"/>
+    <link rel="stylesheet" href="css/designCommon.css">
+	<link rel="stylesheet" href="css/forum.css">
+</head>
+<body>
+<div id="app" v-cloak>
+	    <!--header-->
+		<sitenav></sitenav>
+	    <div class="title">
+	    	<div class="swiper-container-nav">
+		        <div class="myh swiper-wrapper clearfix">
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-1 col-md-offset-1 col-xs-offset-1 col-sm-offset-1 swiper-slide" @click="searchcli($event,'quality')">项目管理</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'')">项目团队</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'')">动态日记</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight" @click="searchcli($event,'knowledge')">装修知识</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'security')">安全文明</div>
+		        </div>
+	        </div>
+	    </div>
+        <div class="cont container" style="margin-top:35px">
+			<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+				<div class="manbox clearfix manboxm">
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 videobox pczhibo">
+						<div v-for="(item,index) in luntandata" style="position: relative;">
+							<div class="videoobj" :class="'videoobj'+index" v-bind:style="{background: 'url(' + item.src + ')no-repeat'}" style="background-position: 50%;background-size: cover"></div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 vediotitle">
+						<ul class="clearfix">
+							<li><a @click="clickfun($event,'videoobj0')" class="myacbgd">装修知识？</a></li>
+							<li><a @click="clickfun($event,'videoobj1')">装修知识？装修知识？</a></li>
+							<li><a @click="clickfun($event,'videoobj2')">装修知识？装修知识？</a></li>
+							<li><a @click="clickfun($event,'videoobj3')">装修知识？</a></li>
+							<li><a @click="clickfun($event,'videoobj4')">装修知识？装修知识？</a></li>
+							<li><a @click="clickfun($event,'videoobj5')">装修知识？装修知识？</a></li>
+							<li><a @click="clickfun($event,'videoobj6')">装修知识？装修知识？</a></li>
+							<li><a @click="clickfun($event,'videoobj7')">装修知识？</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="zhishibox clearfix">
+					<div>
+						<div class="zhishitop clearfix">
+						<h3 class="pull-left">软装</h3>
+						<div class="pull-right rm">
+							<ul class="pull-left">
+								<li><a>木材</a></li>
+								<li><a>木材</a></li>
+								<li><a>木材</a></li>
+								<li><a>木材</a></li>
+								<li><a>木材</a></li>
+							</ul>
+							<a class="pull-left">更多</a>
+						</div>
+					</div>
+						<div class="zhishicont clearfix">
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12" style="padding-left: 0">
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mox" style="padding-left: 0">
+									<div class="manboxcont">
+										<div class="manboxcontimg" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
+											<div class="zhishib">黄花梨木的装修妙用</div>
+										</div>
+										<ul class="manboxconttxt">
+											<li class="sl"><span></span><a href="forum_detail.html">黄花梨木的装修妙用</a></li>
+											<li class="sl"><span></span><a href="forum_detail.html">黄花梨木的装修妙用</a></li>
+											<li class="sl"><span></span><a href="forum_detail.html">黄花梨木的装修妙用黄花梨木的装修妙用</a></li>
+											<li class="sl"><span></span><a href="forum_detail.html">黄花梨木的装修妙用</a></li>
+											<li class="sl"><span></span><a href="forum_detail.html">黄花梨木的装修妙用</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mox" style="padding-left: 0">
+									<div class="manboxcont">
+										<div class="manboxcontimg" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
+											<div class="zhishib">黄花梨木的装修妙用</div>
+										</div>
+										<ul class="manboxconttxt">
+											<li class="sl"><span></span><a href="forum_detail.html">黄花梨木的装修妙用</a></li>
+											<li class="sl"><span></span><a href="forum_detail.html">黄花梨木的装修妙用</a></li>
+											<li class="sl"><span></span><a href="forum_detail.html">黄花梨木的装修妙用黄花梨木的装修妙用黄花梨木的装修妙用</a></li>
+											<li class="sl"><span></span><a href="forum_detail.html">黄花梨木的装修妙用黄花梨木的装修妙用黄花梨木的装修妙用</a></li>
+											<li class="sl"><span></span><a href="forum_detail.html">黄花梨木的装修妙用黄花梨木的装修妙用</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 zhishirm" style="padding:0">
+								<div class="zhishir clearfix">
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 zhishirimg"  style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
+										<img src="../../common/img/icon/jing.png" />
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 zhishiritx">
+										<h5><b>黄花梨木的装饰妙用</b></h5>
+										<p>黄花梨木的装饰妙用描述黄花梨木的装饰妙用描述</p>
+									</div>
+								</div>
+								<div class="zhishir clearfix">
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 zhishirimg"  style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
+										<img src="../../common/img/icon/jing.png" />
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 zhishiritx">
+										<h5><b>黄花梨木的装饰妙用</b></h5>
+										<p>黄花梨木的装饰妙用描述黄花梨木的装饰妙用描述</p>
+									</div>
+								</div>
+								<div class="zhishir clearfix">
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 zhishirimg"  style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
+										<img src="../../common/img/icon/jing.png" />
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 zhishiritx">
+										<h5><b>黄花梨木的装饰妙用</b></h5>
+										<p>黄花梨木的装饰妙用描述黄花梨木的装饰妙用描述</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="zhishitop clearfix">
+							<h3 class="pull-left">风水</h3>
+							<div class="pull-right rm">
+								<ul class="pull-left">
+									<li><a>木材</a></li>
+									<li><a>木材</a></li>
+									<li><a>木材</a></li>
+									<li><a>木材</a></li>
+									<li><a>木材</a></li>
+								</ul>
+								<a class="pull-left">更多</a>
+							</div>
+						</div>
+						<div class="zhishicont clearfix ">
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12" style="padding-left: 0">
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mox" style="padding-left: 0">
+									<div class="manboxcont">
+										<div class="manboxcontimg" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
+											<div class="zhishib">黄花梨木的装修妙用</div>
+										</div>
+										<ul class="manboxconttxt">
+											<li class="sl"><span></span><a href="forum_detail.html">黄花梨木的装修妙用</a></li>
+											<li class="sl"><span></span><a href="forum_detail.html">黄花梨木的装修妙用</a></li>
+											<li class="sl"><span></span><a href="forum_detail.html">黄花梨木的装修妙用黄花梨木的装修妙用</a></li>
+											<li class="sl"><span></span><a href="forum_detail.html">黄花梨木的装修妙用</a></li>
+											<li class="sl"><span></span><a href="forum_detail.html">黄花梨木的装修妙用</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mox" style="padding-left: 0">
+									<div class="manboxcont">
+										<div class="manboxcontimg" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
+											<div class="zhishib">黄花梨木的装修妙用</div>
+										</div>
+										<ul class="manboxconttxt">
+											<li class="sl"><span></span><a href="forum_detail.html">黄花梨木的装修妙用</a></li>
+											<li class="sl"><span></span><a href="forum_detail.html">黄花梨木的装修妙用</a></li>
+											<li class="sl"><span></span><a href="forum_detail.html">黄花梨木的装修妙用黄花梨木的装修妙用黄花梨木的装修妙用</a></li>
+											<li class="sl"><span></span><a href="forum_detail.html">黄花梨木的装修妙用黄花梨木的装修妙用黄花梨木的装修妙用</a></li>
+											<li class="sl"><span></span><a href="forum_detail.html">黄花梨木的装修妙用黄花梨木的装修妙用</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 rm" style="padding:0">
+								<div class="zhishir clearfix">
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 zhishirimg"  style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
+										<img src="../../common/img/icon/jing.png" />
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 zhishiritx">
+										<h5><b>黄花梨木的装饰妙用</b></h5>
+										<p>黄花梨木的装饰妙用描述黄花梨木的装饰妙用描述</p>
+									</div>
+								</div>
+								<div class="zhishir clearfix">
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 zhishirimg"  style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
+										<img src="../../common/img/icon/jing.png" />
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 zhishiritx">
+										<h5><b>黄花梨木的装饰妙用</b></h5>
+										<p>黄花梨木的装饰妙用描述黄花梨木的装饰妙用描述</p>
+									</div>
+								</div>
+								<div class="zhishir clearfix">
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 zhishirimg"  style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
+										<img src="../../common/img/icon/jing.png" />
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 zhishiritx">
+										<h5><b>黄花梨木的装饰妙用</b></h5>
+										<p>黄花梨木的装饰妙用描述黄花梨木的装饰妙用描述</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="zhishitop clearfix">
+							<h3 class="pull-left">建材</h3>
+							<div class="pull-right rm">
+								<ul class="pull-left">
+									<li><a>木材</a></li>
+									<li><a>木材</a></li>
+									<li><a>木材</a></li>
+									<li><a>木材</a></li>
+									<li><a>木材</a></li>
+								</ul>
+								<a class="pull-left">更多</a>
+							</div>
+						</div>
+						<div class="zhishicont clearfix ">
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12" style="padding-left: 0">
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mox" style="padding-left: 0">
+									<div class="manboxcont">
+										<div class="manboxcontimg" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
+											<div class="zhishib">黄花梨木的装修妙用</div>
+										</div>
+										<ul class="manboxconttxt">
+											<li class="sl"><span></span><a href="forum_detail.html">黄花梨木的装修妙用</a></li>
+											<li class="sl"><span></span><a href="forum_detail.html">黄花梨木的装修妙用</a></li>
+											<li class="sl"><span></span><a href="forum_detail.html">黄花梨木的装修妙用黄花梨木的装修妙用</a></li>
+											<li class="sl"><span></span><a href="forum_detail.html">黄花梨木的装修妙用</a></li>
+											<li class="sl"><span></span><a href="forum_detail.html">黄花梨木的装修妙用</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mox" style="padding-left: 0">
+									<div class="manboxcont">
+										<div class="manboxcontimg" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
+											<div class="zhishib">黄花梨木的装修妙用</div>
+										</div>
+										<ul class="manboxconttxt">
+											<li class="sl"><span></span><a href="forum_detail.html">黄花梨木的装修妙用</a></li>
+											<li class="sl"><span></span><a href="forum_detail.html">黄花梨木的装修妙用</a></li>
+											<li class="sl"><span></span><a href="forum_detail.html">黄花梨木的装修妙用黄花梨木的装修妙用黄花梨木的装修妙用</a></li>
+											<li class="sl"><span></span><a href="forum_detail.html">黄花梨木的装修妙用黄花梨木的装修妙用黄花梨木的装修妙用</a></li>
+											<li class="sl"><span></span><a href="forum_detail.html">黄花梨木的装修妙用黄花梨木的装修妙用</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 rm" style="padding:0">
+								<div class="zhishir clearfix">
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 zhishirimg"  style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
+										<img src="../../common/img/icon/jing.png" />
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 zhishiritx">
+										<h5><b>黄花梨木的装饰妙用</b></h5>
+										<p>黄花梨木的装饰妙用描述黄花梨木的装饰妙用描述</p>
+									</div>
+								</div>
+								<div class="zhishir clearfix">
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 zhishirimg"  style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
+										<img src="../../common/img/icon/jing.png" />
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 zhishiritx">
+										<h5><b>黄花梨木的装饰妙用</b></h5>
+										<p>黄花梨木的装饰妙用描述黄花梨木的装饰妙用描述</p>
+									</div>
+								</div>
+								<div class="zhishir clearfix">
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 zhishirimg"  style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
+										<img src="../../common/img/icon/jing.png" />
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 zhishiritx">
+										<h5><b>黄花梨木的装饰妙用</b></h5>
+										<p>黄花梨木的装饰妙用描述黄花梨木的装饰妙用描述</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 zhishirbox">
+				<div class="h">精选知识</div>
+				<ul class="m">
+					<li><a class="sl">木材]黄花梨木的装修妙用黄装黄花梨木的装修妙用黄装</a></li>
+					<li><a class="sl">木材]黄花梨木的装修妙用黄装黄花梨木的装修妙用黄装</a></li>
+					<li><a class="sl">木材]黄花梨木的装修妙用黄装黄花梨木的装修妙用黄装</a></li>
+					<li><a class="sl">木材]黄花梨木的装修妙用黄装黄花梨木的装修妙用黄装</a></li>
+					<li><a class="sl">木材]黄花梨木的装修妙用黄装黄花梨木的装修妙用黄装</a></li>
+				</ul>
+				<div class="a pull-left"><a>查看全部 >></a></div>
+			</div>
+        </div>
+        <!--footer-->
+        <footer-model></footer-model>
+    </div>
+</div>
+
+<script src="http://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+<script src="../../common/js/swiper.min.js"></script>
+<script src="../../common/js/vue.js"></script>
+<script src="../../common/js/vue-resource.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../common/js/public.js"></script>
+<script src="js/switch.js"></script>
+<script src="js/designCommon.js"></script>
+<script>
+    function browserRedirect() {
+		var sUserAgent = navigator.userAgent.toLowerCase();
+		var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+		var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+		var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+		var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+		var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+		var bIsAndroid = sUserAgent.match(/android/i) == "android";
+		var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+		var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+		if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+		    var swiper = new Swiper('.swiper-container-nav', {
+				slidesPerView: 4,
+				spaceBetween:0,
+			});
+		}
+	}
+	browserRedirect();
+  </script>
+</body>
+</html>

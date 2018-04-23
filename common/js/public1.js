@@ -65,11 +65,11 @@ Vue.component('sitenav', {
                     <ul class="nav navbar-nav navbar-left">\
                         <li><a href="index.html">首页</a></li>\
                         <li><a href="#">产品介绍</a></li>\
-                        <li><a href="#">品牌中心</a></li>\
+                        <li><a href="pages/brandManage/business.html">品牌中心</a></li>\
                         <li><a href="pages/designCenter/decoration.html">设计中心</a></li>\
                         <li><a href="#">招投标</a></li>\
-                        <li ><a href="#">项目管理</a></li>\
-                        <li ><a href="#">服务商</a></li>\
+                        <li ><a href="pages/Projectcenter/quality.html">项目管理</a></li>\
+                        <li ><a href="pages/facilitator/decoration.html">服务商</a></li>\
                         <li><a href="#">关于我们</a></li>\
                     </ul>\
                 </div>\
@@ -165,9 +165,9 @@ Vue.component('footer-model', {
     template: '<div class="footer">\
         <div class="container">\
         <div class="footerBox">\
-        <span><a href="#">加速器首页</a></span>|<span><a href="#">产品介绍</a></span>|<span><a href="#">品牌中心</a></span>|\
-        <span><a href="pages/designCenter/decoration.html">设计中心</a></span>|<span><a href="#">招投标</a></span>|<span><a href="#">项目管理</a></span>|\
-        <span><a href="#">服务商</a></span>|<span><a href="#">关于我们</a></span>|<span><a href="#">后台登陆</a></span>|\
+        <span><a href="#">加速器首页</a></span>|<span><a href="#">产品介绍</a></span>|<span><a href="pages/brandManage/business.html">品牌中心</a></span>|\
+        <span><a href="pages/designCenter/decoration.html">设计中心</a></span>|<span><a href="#">招投标</a></span>|<span><a href="pages/Projectcenter/quality.html">项目管理</a></span>|\
+        <span><a href="pages/facilitator/decoration.html">服务商</a></span>|<span><a href="#">关于我们</a></span>|<span><a href="#">后台登陆</a></span>|\
         <span><a href="#">服务商登陆</a></span>\
         <div class="Copy">Copyright © 2016 - 2017 加速器.com 版权所有 互联网出版许可证编号新出网证(加速器)字155号 加ICP证171239号</div>\
         </div>\

@@ -1,0 +1,75 @@
+.contact {
+  margin-top: 25px;
+  background: #fff;
+  padding: 65px 95px;
+}
+.contact .left_img img {
+  width: 450px;
+  height: 310px;
+}
+.contact .title_us {
+  font-size: 24px;
+}
+.contact .iphone_info {
+  margin-top: 45px;
+  font-size: 16px;
+}
+.contact .iphone_info .float-l {
+  float: left;
+}
+.contact .iphone_info img {
+  padding-right: 5px;
+}
+.contact .iphone_info .fonts {
+  float: left;
+  padding-left: 5px;
+  font-size: 16px;
+  color: #666666;
+  font-weight: 600;
+}
+.contact .email {
+  clear: both;
+  font-size: 14px;
+  color: #666666;
+}
+.contact .micro_letter {
+  margin-top: 10px;
+  text-align: center;
+  width: 145px;
+  height: 145px;
+}
+.contact .micro_letter img {
+  width: 140px;
+  height: 140px;
+}
+.contact .micro_letter .wx_txt {
+  font-size: 14px;
+  color: #00dfb9;
+}
+@media screen and (max-width: 768px) {
+  .contact {
+    text-align: center;
+    margin-top: 15px;
+    padding: 20px 15px;
+    padding-bottom: 80px;
+  }
+  .contact .left_img img {
+    width: 100%;
+    height: 200px;
+  }
+  .contact .title_us {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .contact .iphone_info {
+    width: 145px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .contact .micro_letter {
+    margin: 0 auto;
+  }
+  .contact .email {
+    margin-top: 10px;
+  }
+}

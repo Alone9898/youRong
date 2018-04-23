@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>找设计</title>
+    <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../common/css/swiper.min.css">
+    <link rel="stylesheet" href="../../common/css/base.css"/>
+    <link rel="stylesheet" href="css/designCommon.css">
+</head>
+<body>
+<div id="app" v-cloak>
+	    <!--header-->
+		<sitenav></sitenav>
+		
+	    <div class="title">
+	    	<div class="swiper-container-nav">
+		        <div class="myh swiper-wrapper clearfix">
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'decoration')">精装工选</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'jzdecoration')">精装家装</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight" @click="searchcli($event,'findDesign')">找设计师</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'mingjiahui')">名家汇</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'question')">设计疑问</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'interview')">设计专访</div>
+		        </div>
+	        </div>
+	    </div>
+        
+        <div class="cont container " style="margin-bottom: 100px">
+			<div class="mip col-lg-10 col-md-10 col-sm-10 col-xs-12">
+				<div class="conttitle">
+					<h3>优秀设计师</h3>
+					<div>
+						<!-- Swiper -->
+						<div class="swiper-container">
+						    <div class="swiper-wrapper">
+						      	<div class="swiper-slide">
+						      		<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
+						      		<p class="myswipert">老李头1</p>
+						      	</div>
+						      	<div class="swiper-slide">
+						      		<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
+						      		<p class="myswipert">老李头2</p>
+						      	</div>
+						      	<div class="swiper-slide">
+						      		<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
+						      		<p class="myswipert">老李头3</p>
+						      	</div>
+						      	<div class="swiper-slide">
+						      		<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
+						      		<p class="myswipert">老李头4</p>
+						      	</div>
+						      	<div class="swiper-slide">
+						      		<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
+						      		<p class="myswipert">老李头5</p>
+						      	</div>
+						      	<div class="swiper-slide">
+						      		<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
+						      		<p class="myswipert">老李头6</p>
+						      	</div>
+						      	<div class="swiper-slide">
+						      		<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
+						      		<p class="myswipert">老李头7</p>
+						      	</div>
+						      	<div class="swiper-slide">
+						      		<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
+						      		<p class="myswipert">老李头8</p>
+						      	</div>
+						      	<div class="swiper-slide">
+						      		<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
+						      		<p class="myswipert">老李头9</p>
+						      	</div>
+						      	<div class="swiper-slide">
+						      		<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
+						      		<p class="myswipert">老李头0</p>
+						      	</div>
+						    </div>
+						    <!-- Add Arrows -->
+						    <div class="swiper-button-next swiper-button-nextmy"></div>
+						    <div class="swiper-button-prev swiper-button-prevmy"></div>
+						</div>
+					</div>
+				</div>
+				<div class="">
+					<div class="contmain clearfix">
+						<div class="contbox clearfix">
+							<div class="clearfix" style="position: relative;">
+								<div class="contleft pull-left"><img src="../../common/img/images/avatar2.png"></div>
+								<div class="pull-left">
+									<h4 style="margin-bottom:8px"><b>李老头</b><samp class="ji">34</samp><samp class="bao">保</samp></h4>
+									<div><p class="pcss">所在城市 <span> 四川成都</span> 作品 <span> 123套</span></p></div>
+									<div><p class="pcss">擅长类型 <span> 别墅，酒店，商业设计</span></p></div>
+									<div class="yy"><p class="pcss">预约人数</p></div>
+									<div class="numcss">89</div>
+								</div>
+								<div class="pull-right butt">
+									<div style="margin-bottom: 33px"><b>400-600</b> <span class="pcss">元/m2</span></div>
+									<div class="buttno"><a class="btn btn-success btn-block">预约咨询</a></div>
+								</div>
+							</div>
+							<div class="contimg clearfix">
+								<div class="col-lg-3 col-md-3 col-sm-3" >
+									<p style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></p>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3">
+									<p style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></p>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3">
+									<p style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></p>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3" >
+									<p style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="contmain clearfix">
+						<div class="contbox clearfix">
+							<div class="clearfix" style="position: relative;">
+								<div class="contleft pull-left"><img src="../../common/img/images/avatar2.png"></div>
+								<div class="pull-left">
+									<h4 style="margin-bottom:8px"><b>李老头</b><samp class="ji">34</samp><samp class="bao">保</samp></h4>
+									<div><p class="pcss">所在城市 <span> 四川成都</span> 作品 <span> 123套</span></p></div>
+									<div><p class="pcss">擅长类型 <span> 别墅，酒店，商业设计</span></p></div>
+									<div class="yy"><p class="pcss">预约人数</p></div>
+									<div class="numcss">89</div>
+								</div>
+								<div class="pull-right butt">
+									<div style="margin-bottom: 33px"><b>400-600</b> <span class="pcss">元/m2</span></div>
+									<div class="buttno"><a class="btn btn-success btn-block">预约咨询</a></div>
+								</div>
+							</div>
+							<div class="contimg clearfix">
+								<div class="col-lg-3 col-md-3 col-sm-3" >
+									<p style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></p>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3">
+									<p style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></p>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3">
+									<p style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></p>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3" >
+									<p style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="contmain clearfix">
+						<div class="contbox clearfix">
+							<div class="clearfix" style="position: relative;">
+								<div class="contleft pull-left"><img src="../../common/img/images/avatar2.png"></div>
+								<div class="pull-left">
+									<h4 style="margin-bottom:8px"><b>李老头</b><samp class="ji">34</samp><samp class="bao">保</samp></h4>
+									<div><p class="pcss">所在城市 <span> 四川成都</span> 作品 <span> 123套</span></p></div>
+									<div><p class="pcss">擅长类型 <span> 别墅，酒店，商业设计</span></p></div>
+									<div class="yy"><p class="pcss">预约人数</p></div>
+									<div class="numcss">89</div>
+								</div>
+								<div class="pull-right butt">
+									<div style="margin-bottom: 33px"><b>400-600</b> <span class="pcss">元/m2</span></div>
+									<div class="buttno"><a class="btn btn-success btn-block">预约咨询</a></div>
+								</div>
+							</div>
+							<div class="contimg clearfix">
+								<div class="col-lg-3 col-md-3 col-sm-3" >
+									<p style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></p>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3">
+									<p style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></p>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3">
+									<p style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></p>
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3" >
+									<p style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12" style="padding: 0">
+				<div class="rightb">
+					<h5 style="margin-bottom:10px"><b>设计专访</b></h5>
+					<div class="imgcss" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
+					<div>
+						<b>李老头</b>
+						<p class="pinfo">工匠才是后来发展的王道……</p>
+					</div>
+					<div>
+						<a class="amore">查看全部 >></a>
+					</div>
+				</div>
+				<div class="rightb" style="margin-top:20px;">
+					<h5 class="h5cs"><b>我们敢于做承若</b></h5>
+					<div style="padding-top: 51px">
+						<div class="clearfix">
+							<div class="riginfo pull-left" style="background: url('../../common/img/icon/mon.png')no-repeat;"><b>真实案例</b><p class="pcss">万条真实案例</p></div>
+						</div>
+						<div class="clearfix">
+							<div class="riginfo pull-left" style="background: url('../../common/img/icon/mon.png')no-repeat;"><b>专业设计</b><p class="pcss">万条真实案例</p></div>
+						</div>
+						<div class="clearfix">
+							<div class="riginfo pull-left" style="background: url('../../common/img/icon/mon.png')no-repeat;"><b>满意解答</b><p class="pcss">万条真实案例</p></div>
+						</div>
+						<div class="clearfix">
+							<div class="riginfo pull-left" style="background: url('../../common/img/icon/mon.png')no-repeat;"><b>资金托管</b><p class="pcss">万条真实案例</p></div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+        <!--footer-->
+        <footer-model></footer-model>	
+    </div>
+</div>
+<script src="../../common/js/jquery-1.11.3.js"></script>
+<script src="../../common/js/swiper.min.js"></script>
+<script src="../../common/js/vue.js"></script>
+<script src="../../common/js/vue-resource.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../common/js/public.js"></script>
+<script src="js/designCommon.js"></script>
+<script>
+    function browserRedirect() {
+		var sUserAgent = navigator.userAgent.toLowerCase();
+		var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+		var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+		var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+		var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+		var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+		var bIsAndroid = sUserAgent.match(/android/i) == "android";
+		var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+		var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+		if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+		    var swiper = new Swiper('.swiper-container-nav', {
+				slidesPerView: 4,
+				spaceBetween: 40,
+			});
+		}else{
+		    var swiper = new Swiper('.swiper-container', {
+		        nextButton: '.swiper-button-next',
+		        prevButton: '.swiper-button-prev',
+		        slidesPerView: 6,
+		        spaceBetween: 0,
+		    });
+		}
+	}
+	browserRedirect();
+  </script>
+</body>
+</html>

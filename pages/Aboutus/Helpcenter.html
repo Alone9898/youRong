@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>精装工选</title>
+    <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../common/css/swiper.min.css">
+    <link rel="stylesheet" href="../../common/css/base.css"/>
+    <link rel="stylesheet" href="css/designCommon.css">
+    <link rel="stylesheet" type="text/css" href="css/Helpcenter.css">
+    <script src="../../common/js/jquery-1.11.3.js"></script>
+</head>
+
+<body>
+<div id="app" v-cloak>
+    <!--header-->
+    <sitenav></sitenav>
+    <!--banner-->
+    <!--<div class="z_banner">
+        <img src="../../common/img/images/z_banner.png" alt="">
+    </div>-->
+    <div class="title">
+        <div class="swiper-container-nav">
+            <div class="myh swiper-wrapper clearfix">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight" @click="searchcli($event,'decoration')">品台简介</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'jzdecoration')">公司简介</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'findDesign')">服务对象</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'mingjiahui')">帮助中心</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'question')">联系我们</div>
+            </div>
+        </div>
+    </div>
+    <div class="container container_content">
+        <div class="qa_content">
+            <div class="col-xs-12 col-lg-6 mg-top">
+                <div class="q_a">
+                   问：<span class="title_txt">怎么加入平台?</span>
+                </div>
+                <div class="a_q">
+                    答：<span class="title_txt">加入平台的相关回答加入平台的相关回答加入平台的相关回答加平台的相关回答加入平台的相关回答</span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-6 mg-top">
+                <div class="q_a">
+                    问：<span class="title_txt">怎么加入平台?</span>
+                </div>
+                <div class="a_q">
+                    答：<span class="title_txt">加入平台的相关回答加入平台的相关回答加入平台的相关回答加平台的相关回答加入平台的相关回答</span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-6 mg-top">
+                <div class="q_a">
+                    问：<span class="title_txt">怎么加入平台?</span>
+                </div>
+                <div class="a_q">
+                    答：<span class="title_txt">加入平台的相关回答加入平台的相关回答加入平台的相关回答加平台的相关回答加入平台的相关回答</span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-6 mg-top">
+                <div class="q_a">
+                    问：<span class="title_txt">怎么加入平台?</span>
+                </div>
+                <div class="a_q">
+                    答：<span class="title_txt">加入平台的相关回答加入平台的相关回答加入平台的相关回答加平台的相关回答加入平台的相关回答</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+    <!--footer-->
+    <footer-model></footer-model>
+</div>
+<script src="../../common/js/swiper.min.js"></script>
+<script src="../../common/js/vue.js"></script>
+<script src="../../common/js/vue-resource.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../common/js/public.js"></script>
+<script src="js/designCommon.js"></script>
+<script>
+    function browserRedirect() {
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            var swiper = new Swiper('.swiper-container-nav', {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            });
+        }
+    }
+    browserRedirect();
+</script>
+</body>
+</html>

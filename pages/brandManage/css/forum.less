@@ -33,7 +33,13 @@ video{cursor:pointer;}
 .manboxconttxt{
 	 li{float:none;padding: 2px 0;}
    span{display:inline-block;width:5px;height:5px;border-radius:50%;background:#cccccc;}
-   a{padding-left: 7px;}
+   a{
+       font-size: 12px;
+       padding-left: 7px;
+       &:hover{
+           color:#00dfb9;
+       }
+   }
 }
 .manboxtop{
     margin-bottom: 18px;
@@ -45,7 +51,7 @@ video{cursor:pointer;}
     }
 }
 .mox{height: 345px;overflow: hidden;}
-.manboxright{color:#999;cursor:pointer;}
+.manboxright{color:#999;cursor:pointer;font-size: 14px;margin-top: 5px;}
 .right_layout .float_bar_one {
         padding: 10px 10px 24px 10px;
     background: #fff;
@@ -194,4 +200,24 @@ video{cursor:pointer;}
 }
 @media screen and (max-width: 768px) {
 	.right_layout,.manboxm{display:none}
+    a,.manboxright{
+        font-size: 12px!important;
+    }
+}
+@media screen and (max-width: 320px) {
+    .myh > div {
+        font-size: 12px;
+        margin-right: 32px!important;
+    }
+    .ji {
+        margin: 0 1px;
+        padding: 0px 8px;
+    }
+    .contmain .bao {
+        padding: 0px 9px;
+    }
+}
+.myh > div {
+    font-size: 12px;
+    margin-right: 32px!important;
 }

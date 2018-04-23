@@ -1,0 +1,427 @@
+.relative {
+  position: relative;
+}
+.services-box {
+  margin-top: 25px;
+  background: #fff;
+  padding: 75px 95px;
+}
+.services-box .img_list {
+  margin-bottom: 25px;
+  position: relative;
+  width: 100%;
+  height: 240px;
+}
+.services-box .img_list .img_bg {
+  left: 0 ;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.services-box .img_list .content_txt {
+  text-align: center;
+  line-height: 240px;
+  color: #fff;
+  position: relative;
+  z-index: 9999;
+  font-size: 18px;
+}
+.services-box .img_list .z-open {
+  position: absolute;
+  bottom: 10px!important;
+  right: 10px!important;
+  width: 25px;
+  height: 25px;
+  z-index: 99999;
+  cursor: pointer;
+}
+.services-box .img_list:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.superposition1 {
+  display: none;
+  padding: 0 25px;
+  top: 0;
+  right: 15px;
+  position: absolute;
+  background: #00dfb9;
+  width: 624px;
+  height: 240px;
+  z-index: 99999999;
+}
+.superposition1 .title_txt {
+  margin-bottom: 20px;
+  padding-top: 40px;
+  text-align: center;
+  color: #f6eef6;
+  font-size: 24px;
+}
+.superposition1 p {
+  font-size: 14px;
+  color: #f6eef6;
+}
+.superposition1 .gu_an {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  z-index: 9999999;
+}
+.superposition2 {
+  display: none;
+  padding: 0 25px;
+  top: 0;
+  left: 15px;
+  position: absolute;
+  background: #00dfb9;
+  height: 505px;
+  width: 296px;
+  z-index: 99999999;
+}
+.superposition2 .title_txt {
+  margin-bottom: 20px;
+  padding-top: 40px;
+  text-align: center;
+  color: #f6eef6;
+  font-size: 24px;
+}
+.superposition2 p {
+  font-size: 14px;
+  color: #f6eef6;
+}
+.superposition2 .gu_an {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  z-index: 9999999;
+}
+.superposition3 {
+  display: none;
+  padding: 0 25px;
+  top: 0;
+  left: 15px;
+  position: absolute;
+  background: #00dfb9;
+  width: 624px;
+  height: 240px;
+  z-index: 99999999;
+}
+.superposition3 .title_txt {
+  margin-bottom: 20px;
+  padding-top: 40px;
+  text-align: center;
+  color: #f6eef6;
+  font-size: 24px;
+}
+.superposition3 p {
+  font-size: 14px;
+  color: #f6eef6;
+}
+.superposition3 .gu_an {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  z-index: 9999999;
+}
+.superposition4 {
+  display: none;
+  padding: 0 25px;
+  top: 265px;
+  right: 15px;
+  position: absolute;
+  background: #00dfb9;
+  width: 624px;
+  height: 240px;
+  z-index: 99999999;
+}
+.superposition4 .title_txt {
+  margin-bottom: 20px;
+  padding-top: 40px;
+  text-align: center;
+  color: #f6eef6;
+  font-size: 24px;
+}
+.superposition4 p {
+  font-size: 14px;
+  color: #f6eef6;
+}
+.superposition4 .gu_an {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  z-index: 9999999;
+}
+.superposition5 {
+  display: none;
+  padding: 0 25px;
+  top: 0;
+  right: 15px;
+  position: absolute;
+  background: #00dfb9;
+  width: 297px;
+  height: 505px;
+  z-index: 99999999;
+}
+.superposition5 .title_txt {
+  margin-bottom: 20px;
+  padding-top: 40px;
+  text-align: center;
+  color: #f6eef6;
+  font-size: 24px;
+}
+.superposition5 p {
+  font-size: 14px;
+  color: #f6eef6;
+}
+.superposition5 .gu_an {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  z-index: 9999999;
+}
+.superposition6 {
+  display: none;
+  padding: 0 25px;
+  top: 265px;
+  left: 15px;
+  position: absolute;
+  background: #00dfb9;
+  width: 624px;
+  height: 240px;
+  z-index: 99999999;
+}
+.superposition6 .title_txt {
+  margin-bottom: 20px;
+  padding-top: 40px;
+  text-align: center;
+  color: #f6eef6;
+  font-size: 24px;
+}
+.superposition6 p {
+  font-size: 14px;
+  color: #f6eef6;
+}
+.superposition6 .gu_an {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  z-index: 9999999;
+}
+@media screen and (max-width: 768px) {
+  .services-box {
+    padding: 20px 15px;
+  }
+  .superposition1 {
+    display: none;
+    padding: 0 25px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background: #00dfb9;
+    width: 100%;
+    height: 240px;
+    z-index: 99999999;
+  }
+  .superposition1 .title_txt {
+    margin-bottom: 20px;
+    padding-top: 40px;
+    text-align: center;
+    color: #f6eef6;
+    font-size: 24px;
+  }
+  .superposition1 p {
+    font-size: 14px;
+    color: #f6eef6;
+  }
+  .superposition1 .gu_an {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    z-index: 9999999;
+  }
+  .superposition2 {
+    display: none;
+    padding: 0 25px;
+    top: 265px;
+    left: 0;
+    position: absolute;
+    background: #00dfb9;
+    height: 240px;
+    width: 100%;
+    z-index: 99999999;
+  }
+  .superposition2 .title_txt {
+    margin-bottom: 20px;
+    padding-top: 40px;
+    text-align: center;
+    color: #f6eef6;
+    font-size: 24px;
+  }
+  .superposition2 p {
+    font-size: 14px;
+    color: #f6eef6;
+  }
+  .superposition2 .gu_an {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    z-index: 9999999;
+  }
+  .superposition3 {
+    display: none;
+    padding: 0 25px;
+    top: 530px;
+    left: 0;
+    position: absolute;
+    background: #00dfb9;
+    width: 100%;
+    height: 240px;
+    z-index: 99999999;
+  }
+  .superposition3 .title_txt {
+    margin-bottom: 20px;
+    padding-top: 40px;
+    text-align: center;
+    color: #f6eef6;
+    font-size: 24px;
+  }
+  .superposition3 p {
+    font-size: 14px;
+    color: #f6eef6;
+  }
+  .superposition3 .gu_an {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    z-index: 9999999;
+  }
+  .superposition4 {
+    display: none;
+    padding: 0 25px;
+    top: 795px;
+    right: 0;
+    position: absolute;
+    background: #00dfb9;
+    width: 100%;
+    height: 240px;
+    z-index: 99999999;
+  }
+  .superposition4 .title_txt {
+    margin-bottom: 20px;
+    padding-top: 40px;
+    text-align: center;
+    color: #f6eef6;
+    font-size: 24px;
+  }
+  .superposition4 p {
+    font-size: 14px;
+    color: #f6eef6;
+  }
+  .superposition4 .gu_an {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    z-index: 9999999;
+  }
+  .superposition5 {
+    display: none;
+    padding: 0 25px;
+    top: 1060px;
+    right: 0;
+    position: absolute;
+    background: #00dfb9;
+    width: 100%;
+    height: 240px;
+    z-index: 99999999;
+  }
+  .superposition5 .title_txt {
+    margin-bottom: 20px;
+    padding-top: 40px;
+    text-align: center;
+    color: #f6eef6;
+    font-size: 24px;
+  }
+  .superposition5 p {
+    font-size: 14px;
+    color: #f6eef6;
+  }
+  .superposition5 .gu_an {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    z-index: 9999999;
+  }
+  .superposition6 {
+    display: none;
+    padding: 0 25px;
+    top: 1325px;
+    left: 0;
+    position: absolute;
+    background: #00dfb9;
+    width: 100%;
+    height: 240px;
+    z-index: 99999999;
+  }
+  .superposition6 .title_txt {
+    margin-bottom: 20px;
+    padding-top: 40px;
+    text-align: center;
+    color: #f6eef6;
+    font-size: 24px;
+  }
+  .superposition6 p {
+    font-size: 14px;
+    color: #f6eef6;
+  }
+  .superposition6 .gu_an {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    z-index: 9999999;
+  }
+}

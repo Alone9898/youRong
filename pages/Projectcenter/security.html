@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>安全文明</title>
+    <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../common/css/swiper.min.css">
+    <link rel="stylesheet" href="../../common/css/base.css"/>
+    <link rel="stylesheet" href="css/designCommon.css">
+	<link rel="stylesheet" href="css/security.css">
+</head>
+<body>
+<div id="app" v-cloak>
+	    <!--header-->
+		<sitenav></sitenav>
+	    <div class="title">
+	    	<div class="swiper-container-nav">
+		        <div class="myh swiper-wrapper clearfix">
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-1 col-md-offset-1 col-xs-offset-1 col-sm-offset-1 swiper-slide" @click="searchcli($event,'quality')">项目管理</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'')">项目团队</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'')">动态日记</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'knowledge')">装修知识</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight" @click="searchcli($event,'security')">安全文明</div>
+		        </div>
+	        </div>
+	    </div>
+        <div class="cont container clearfix" style="margin-top:35px">
+			<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 clearfix bmxzde" style="background: #fff">
+				<div class="clearfix mto" style="">
+					<div class="mh pull-left" style=" padding: 0;    margin-right: 43px;">
+						<div class="wenmbox">
+							<h4>安全教育</h4>
+							<p>相关描述相关描述相关描述相关描述相关描述</p>
+						</div>
+						<div class="hover_style" style="width:220px;position: relative;height: 180px;overflow:hidden;    margin-top: 18px;">
+							<div class="wenmbox wenmbox1" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%">
+							</div>
+							<div class="time_left">
+								<div class="title_time">时间</div>
+								<div class="txt">相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述</div>
+							</div>
+						</div>
+					</div>
+					<div class="mh pull-left" style="position: relative;height: 378px;overflow:hidden;    margin-right: 42px;">
+						<div class="wenmbox wenmbox1 wenmbox2 hover_style" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%">
+						</div>
+						<div class="time_left">
+							<div class="title_time">时间</div>
+							<div class="txt">相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述</div>
+						</div>
+					</div>
+					<div class="pull-left" style=" padding: 0;">
+						<div class="mh" style="width:320px;position: relative;height: 180px;overflow:hidden;margin-bottom:18px;">
+							<div class="wenmbox wenmbox1 wenmbox3 hover_style" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%">
+							</div>
+							<div class="time_left">
+								<div class="title_time">时间</div>
+								<div class="txt">相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述</div>
+							</div>
+						</div>
+						<div class="mh" style="width:320px;position: relative;height: 180px;overflow:hidden;">
+							<div class="wenmbox wenmbox1 wenmbox3 hover_style " style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%">
+							</div>
+							<div class="time_left">
+								<div class="title_time">时间</div>
+								<div class="txt">相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix mto" style="">
+					<div class="mh pull-left" style=" padding: 0;    margin-right: 43px;">
+						<div class="wenmbox">
+							<h4>装修过程</h4>
+							<p>相关描述相关描述相关描述相关描述相关描述</p>
+						</div>
+						<div class="hover_style" style="width:220px;position: relative;height: 180px;overflow:hidden;    margin-top: 18px;">
+							<div class="wenmbox wenmbox1" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%">
+							</div>
+							<div class="time_left">
+								<div class="title_time">时间</div>
+								<div class="txt">相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述</div>
+							</div>
+						</div>
+					</div>
+					<div class="mh pull-left" style="position: relative;height: 378px;overflow:hidden;    margin-right: 42px;">
+						<div class="wenmbox wenmbox1 wenmbox2 hover_style" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%">
+						</div>
+						<div class="time_left">
+							<div class="title_time">时间</div>
+							<div class="txt">相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述</div>
+						</div>
+					</div>
+					<div class="pull-left" style=" padding: 0;">
+						<div class="mh" style="width:320px;position: relative;height: 180px;overflow:hidden;margin-bottom:18px;">
+							<div class="wenmbox wenmbox1 wenmbox3 hover_style" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%">
+							</div>
+							<div class="time_left">
+								<div class="title_time">时间</div>
+								<div class="txt">相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述</div>
+							</div>
+						</div>
+						<div class="mh" style="width:320px;position: relative;height: 180px;overflow:hidden;">
+							<div class="wenmbox wenmbox1 wenmbox3 hover_style " style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%">
+							</div>
+							<div class="time_left">
+								<div class="title_time">时间</div>
+								<div class="txt">相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix mto" style="">
+					<div class="mh pull-left" style=" padding: 0;    margin-right: 43px;">
+						<div class="wenmbox">
+							<h4>安全整改</h4>
+							<p>相关描述相关描述相关描述相关描述相关描述</p>
+						</div>
+						<div class="hover_style" style="width:220px;position: relative;height: 180px;overflow:hidden;    margin-top: 18px;">
+							<div class="wenmbox wenmbox1" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%">
+							</div>
+							<div class="time_left">
+								<div class="title_time">时间</div>
+								<div class="txt">相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述</div>
+							</div>
+						</div>
+					</div>
+					<div class="mh pull-left" style="position: relative;height: 378px;overflow:hidden;    margin-right: 42px;">
+						<div class="wenmbox wenmbox1 wenmbox2 hover_style" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%">
+						</div>
+						<div class="time_left">
+							<div class="title_time">时间</div>
+							<div class="txt">相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述</div>
+						</div>
+					</div>
+					<div class="pull-left" style=" padding: 0;">
+						<div class="mh" style="width:320px;position: relative;height: 180px;overflow:hidden;margin-bottom:18px;">
+							<div class="wenmbox wenmbox1 wenmbox3 hover_style" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%">
+							</div>
+							<div class="time_left">
+								<div class="title_time">时间</div>
+								<div class="txt">相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述</div>
+							</div>
+						</div>
+						<div class="mh" style="width:320px;position: relative;height: 180px;overflow:hidden;">
+							<div class="wenmbox wenmbox1 wenmbox3 hover_style " style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%">
+							</div>
+							<div class="time_left">
+								<div class="title_time">时间</div>
+								<div class="txt">相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述相关描述</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 zhishirbox">
+				<div style="background: #fff; padding: 10px;">
+					<div class="zhishiboxtit"><h4><b>安全三宝</b></h4></div>
+					<div class="zhishiboxm">
+						<div class="zhishiboxi" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></div>
+						<div class="zhishiboxt">安全带</div>
+					</div>
+					<div class="zhishiboxm">
+						<div class="zhishiboxi" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></div>
+						<div class="zhishiboxt">安全带</div>
+					</div>
+					<div class="zhishiboxm">
+						<div class="zhishiboxi" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></div>
+						<div class="zhishiboxt">安全带</div>
+					</div>
+				</div>
+			</div>
+			<div class="zhishimo" style="display: none;">
+				<div class="zhishimobox">
+					<div class="zhishimotit"><b>安全教育</b></div>
+					<div class="zhishimocon">
+						<div class="zhishimobig" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
+					</div>
+				</div>
+				<div class="zkmorebox" style="display: none;">
+					<div class="zhishimobox">
+						<div class="zhishimotit"><b>安全教育</b></div>
+						<div class="zhishimocon">
+							<div class="zhishimobig" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
+						</div>
+					</div>
+					<div class="zhishimobox">
+						<div class="zhishimotit"><b>安全教育</b></div>
+						<div class="zhishimocon">
+							<div class="zhishimobig" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<img @click="zkmorefun($event)" class="img" src="../../common/img/icon/zk.png" />
+				</div>
+			</div>
+			<div class="zhishimo" style="display: none;">
+				<div class="zhishimobox">
+					<div class="zhishimotit"><b>装修过程</b></div>
+					<div class="zhishimocon">
+						<div class="zhishimobig" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
+					</div>
+				</div>
+				<div class="zkmorebox" style="display: none;">
+					<div class="zhishimobox">
+						<div class="zhishimotit"><b>安全教育</b></div>
+						<div class="zhishimocon">
+							<div class="zhishimobig" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
+						</div>
+					</div>
+					<div class="zhishimobox">
+						<div class="zhishimotit"><b>安全教育</b></div>
+						<div class="zhishimocon">
+							<div class="zhishimobig" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<img @click="zkmorefun($event)" class="img" src="../../common/img/icon/zk.png" />
+				</div>
+			</div>
+			<div class="zhishimo" style="display: none;">
+				<div class="zhishimobox">
+					<div class="zhishimotit"><b>安全整改</b></div>
+					<div class="zhishimocon">
+						<div class="zhishimobig" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
+					</div>
+				</div>
+				<div class="zkmorebox" style="display: none;">
+					<div class="zhishimobox">
+						<div class="zhishimotit"><b>安全教育</b></div>
+						<div class="zhishimocon">
+							<div class="zhishimobig" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
+						</div>
+					</div>
+					<div class="zhishimobox">
+						<div class="zhishimotit"><b>安全教育</b></div>
+						<div class="zhishimocon">
+							<div class="zhishimobig" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<img @click="zkmorefun($event)" class="img" src="../../common/img/icon/zk.png" />
+				</div>
+			</div>
+        </div>
+        <!--footer-->
+        <footer-model></footer-model>
+    </div>
+</div>
+
+<script src="http://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+<script src="../../common/js/swiper.min.js"></script>
+<script src="../../common/js/vue.js"></script>
+<script src="../../common/js/vue-resource.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../common/js/public.js"></script>
+<script src="js/switch.js"></script>
+<script src="js/designCommon.js"></script>
+<script>
+    function browserRedirect() {
+		var sUserAgent = navigator.userAgent.toLowerCase();
+		var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+		var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+		var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+		var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+		var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+		var bIsAndroid = sUserAgent.match(/android/i) == "android";
+		var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+		var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+		if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+		    var swiper = new Swiper('.swiper-container-nav', {
+				slidesPerView: 4,
+				spaceBetween:0,
+			});
+		}
+	}
+	browserRedirect();
+	$(function(){
+		$('.hover_style').hover(function(){
+			$('.time_left').removeClass('active_block');
+			$(this).find('.time_left').addClass('active_block')
+		})
+	})
+  </script>
+</body>
+</html>

@@ -31,7 +31,7 @@
 				<div class="mtitlebox zhibotitle" style="display: none"><h3>品牌活动</h3></div>
 				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 videobox pczhibo">
 					<div v-for="(item,index) in videodata" style="position: relative;">
-						<video @click="playvideo($event,index)" class="videoobj" :class="'videoobj'+index" style="width:100%; object-fit: fill">
+						<video @click="playvideo($event,index)" class="videoobj" poster="../../common/img/images/sp.png" :class="'videoobj'+index" style="width:100%; object-fit: fill">
 						  	<source :src="item.src"/>
 						  	<source :src="item.src"/>
 							Your browser does not support the video tag.
@@ -69,59 +69,83 @@
 					<div class="mcontleft col-lg-9 col-md-9 col-sm-9 col-xs-12">
 						<div class="row" style="margin-bottom:15px">
 							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-6 mb">
-								<div class="mycontimg" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
-									<div class="botttitle">活动标题</div>
-								</div>
+								<a href="activities.html">
+									<div class="mycontimg" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
+										<div class="botttitle">活动标题</div>
+									</div>
+								</a>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 mb">
-								<div class="mycontimg1" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover;"><div class="botttitle">活动标题</div></div>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 mb" >
+								<a href="activities.html">
+									<div class="mycontimg1" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover;"><div class="botttitle">活动标题</div></div>
+								</a>
 							</div>
 							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 mb">
+								<a href="activities.html">
 								<div class="mycontimg1" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"><div class="botttitle">活动标题</div></div>
+								</a>
 							</div>
 							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 mb">
+								<a href="activities.html">
 								<div class="mycontimg1" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover;"><div class="botttitle">活动标题</div></div>
+								</a>
 							</div>
 						</div>
 					</div>
 					<div class="mcontright col-lg-3 col-md-3 col-sm-3 col-xs-12">
+						<a href="activities.html">
 						<div class="mycontimg1" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover;margin-bottom:15px"><div class="botttitle">活动标题</div></div>
-						<div class="mycontimg" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"><div class="botttitle">活动标题</div></div>
+						</a>
+						<a href="activities.html">
+							<div class="mycontimg" style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"><div class="botttitle">活动标题</div></div>
+						</a>
 					</div>
 				</div>
 				<div class="mcontbox clearfix mobox" style="display: none">
 					<div class="col-xs-6 mb">
+						<a href="activities.html">
 						<div class="mycontimg" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
 							<div class="botttitle">活动标题</div>
 						</div>
+						</a>
 					</div>
 					<div class="col-xs-6 mb">
+						<a href="activities.html">
 						<div class="mycontimg" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
 							<div class="botttitle">活动标题</div>
 						</div>
+						</a>
 					</div>
 					<div class="monone myno" style="display: none">
 						<div class="col-xs-6 mb">
+							<a href="activities.html">
 							<div class="mycontimg" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
 								<div class="botttitle">活动标题</div>
 							</div>
+							</a>
 						</div>
 						<div class="col-xs-6 mb">
+							<a href="activities.html">
 							<div class="mycontimg" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
 								<div class="botttitle">活动标题</div>
 							</div>
+							</a>
 						</div>
 						<div class="col-xs-6 mb">
+							<a href="activities.html">
 							<div class="mycontimg" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
 								<div class="botttitle">活动标题</div>
 							</div>
+							</a>
 						</div>
 						<div class="col-xs-6 mb">
+							<a href="activities.html">
 							<div class="mycontimg" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
 								<div class="botttitle">活动标题</div>
 							</div>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -132,54 +156,70 @@
 				<div class="mcontbox clearfix mcontbox1">
 					<div >
 						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 mb">
-							<div class="mycontimg2" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
-								<div class="botttitle">新闻标题</div>
-								<div class="toptime">2017.09.03</div>
-							</div>
+							<a href="new.html">
+								<div class="mycontimg2" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
+									<div class="botttitle">新闻标题</div>
+									<div class="toptime">2017.09.03</div>
+								</div>
+							</a>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 mb">
-							<div class="mycontimg2" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
-								<div class="botttitle">新闻标题</div>
-								<div class="toptime">2017.09.03</div>
-							</div>
+							<a href="new.html">
+								<div class="mycontimg2" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
+									<div class="botttitle">新闻标题</div>
+									<div class="toptime">2017.09.03</div>
+								</div>
+							</a>
 						</div>
 					</div>
 					<div class="mobox1 clearfix myno">
 						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 mb">
-							<div class="mycontimg2" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
-								<div class="botttitle">新闻标题</div>
-								<div class="toptime">2017.09.03</div>
-							</div>
+							<a href="new.html">
+								<div class="mycontimg2" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
+									<div class="botttitle">新闻标题</div>
+									<div class="toptime">2017.09.03</div>
+								</div>
+							</a>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 mb">
-							<div class="mycontimg2" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
-								<div class="botttitle">新闻标题</div>
-								<div class="toptime">2017.09.03</div>
-							</div>
+							<a href="new.html">
+								<div class="mycontimg2" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
+									<div class="botttitle">新闻标题</div>
+									<div class="toptime">2017.09.03</div>
+								</div>
+							</a>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 mb">
-							<div class="mycontimg2" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
-								<div class="botttitle">新闻标题</div>
-								<div class="toptime">2017.09.03</div>
-							</div>
+							<a href="new.html">
+								<div class="mycontimg2" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
+									<div class="botttitle">新闻标题</div>
+									<div class="toptime">2017.09.03</div>
+								</div>
+							</a>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 mb">
-							<div class="mycontimg2" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
-								<div class="botttitle">新闻标题</div>
-								<div class="toptime">2017.09.03</div>
-							</div>
+							<a href="new.html">
+								<div class="mycontimg2" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
+									<div class="botttitle">新闻标题</div>
+									<div class="toptime">2017.09.03</div>
+								</div>
+							</a>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 mb">
-							<div class="mycontimg2" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
-								<div class="botttitle">新闻标题</div>
-								<div class="toptime">2017.09.03</div>
-							</div>
+							<a href="new.html">
+								<div class="mycontimg2" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
+									<div class="botttitle">新闻标题</div>
+									<div class="toptime">2017.09.03</div>
+								</div>
+							</a>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 mb">
-							<div class="mycontimg2" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
-								<div class="botttitle">新闻标题</div>
-								<div class="toptime">2017.09.03</div>
-							</div>
+							<a href="new.html">
+								<div class="mycontimg2" style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover">
+									<div class="botttitle">新闻标题</div>
+									<div class="toptime">2017.09.03</div>
+								</div>
+							</a>
 						</div>
 					</div>
 				</div>

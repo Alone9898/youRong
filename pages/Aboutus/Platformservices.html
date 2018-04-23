@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>公司简介</title>
+    <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../common/css/swiper.min.css">
+    <link rel="stylesheet" href="../../common/css/base.css"/>
+    <link rel="stylesheet" href="css/designCommon.css">
+    <link rel="stylesheet" type="text/css" href="css/Platformservices.css">
+    <script src="../../common/js/jquery-1.11.3.js"></script>
+</head>
+
+<body>
+<div id="app" v-cloak>
+    <!--header-->
+    <sitenav></sitenav>
+    <!--banner-->
+    <!--<div class="z_banner">
+        <img src="../../common/img/images/z_banner.png" alt="">
+    </div>-->
+    <div class="title">
+        <div class="swiper-container-nav">
+            <div class="myh swiper-wrapper clearfix">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight" @click="searchcli($event,'decoration')">品台简介</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'jzdecoration')">公司简介</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'findDesign')">服务对象</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'mingjiahui')">帮助中心</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'question')">联系我们</div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="services-box clearfix">
+
+            <div class="relative">
+                    <div class="superposition1 super" id="one">
+                        <img src="../../common/img/icon/k.png" alt="" class="gu_an">
+                        <div class="title_txt">商业品牌1</div>
+                        <p>商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌</p>
+                    </div>
+                    <div class="superposition2 super" id="two">
+                        <img src="../../common/img/icon/k.png" alt="" class="gu_an">
+                        <div class="title_txt">商业品牌2</div>
+                        <p>商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌</p>
+                    </div>
+                    <div class="superposition3 super" id="three">
+                        <img src="../../common/img/icon/k.png" alt="" class="gu_an">
+                        <div class="title_txt">商业品牌3</div>
+                        <p>商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌</p>
+                    </div>
+                    <div class="superposition4 super" id="four">
+                        <img src="../../common/img/icon/k.png" alt="" class="gu_an">
+                        <div class="title_txt">商业品牌4</div>
+                        <p>商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌</p>
+                    </div>
+                    <div class="superposition5 super" id="five">
+                        <img src="../../common/img/icon/k.png" alt="" class="gu_an">
+                        <div class="title_txt">商业品牌5</div>
+                        <p>商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌</p>
+                    </div>
+                    <div class="superposition6 super" id="six">
+                        <img src="../../common/img/icon/k.png" alt="" class="gu_an">
+                        <div class="title_txt">商业品牌6</div>
+                        <p>商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌商业品牌</p>
+                    </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="img_list">
+                        <img src="../../common/img/images/img1.png" alt="" class="img_bg">
+                        <div class="content_txt">商业品牌1</div>
+                        <img src="../../common/img/icon/g.png" alt="" class="z-open" data-id="#one" >
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="img_list">
+                        <img src="../../common/img/images/img1.png" alt="" class="img_bg">
+                        <div class="content_txt">商业品牌2</div>
+                        <img src="../../common/img/icon/g.png" alt="" class="z-open" data-id="#two">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="img_list">
+                        <img src="../../common/img/images/img1.png" alt="" class="img_bg">
+                        <div class="content_txt">商业品牌3</div>
+                        <img src="../../common/img/icon/g.png" alt="" class="z-open" data-id="#three">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="img_list">
+                        <img src="../../common/img/images/img1.png" alt="" class="img_bg">
+                        <div class="content_txt">商业品牌4</div>
+                        <img src="../../common/img/icon/g.png" alt="" class="z-open" data-id="#four" >
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="img_list">
+                        <img src="../../common/img/images/img1.png" alt="" class="img_bg">
+                        <div class="content_txt">商业品牌5</div>
+                        <img src="../../common/img/icon/g.png" alt="" class="z-open" data-id="#five" >
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="img_list">
+                        <img src="../../common/img/images/img1.png" alt="" class="img_bg">
+                        <div class="content_txt">商业品牌6</div>
+                        <img src="../../common/img/icon/g.png" alt="" class="z-open" data-id="#six">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--footer-->
+    <footer-model></footer-model>
+</div>
+<script src="../../common/js/swiper.min.js"></script>
+<script src="../../common/js/vue.js"></script>
+<script src="../../common/js/vue-resource.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../common/js/public.js"></script>
+<script src="js/designCommon.js"></script>
+<script>
+    $(function(){
+        $('.z-open').click(function(){
+            $('.relative .super').css('display','none');
+            var id=$(this).attr('data-id');
+            $(id).css('display','block');
+        });
+        $('.gu_an').click(function(){
+            $(this).parent('.super').css('display','none')
+        })
+    })
+    function browserRedirect() {
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            var swiper = new Swiper('.swiper-container-nav', {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            });
+        }
+    }
+    browserRedirect();
+</script>
+</body>
+</html>
