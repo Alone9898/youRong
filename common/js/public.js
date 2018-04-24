@@ -48,12 +48,7 @@ Vue.component('sitenav', {
         <nav class="navbar navbar-default" role="navigation">\
             <div class="container clearfix">\
                 <div class="navbar-header">\
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">\
-                        <span class="sr-only">切换导航</span>\
-                        <span class="icon-bar"></span>\
-                        <span class="icon-bar"></span>\
-                        <span class="icon-bar"></span>\
-                    </button>\
+                   <img src="../../common/img/icon/sid.png" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"  alt="">\
                     <a href="../../index.html" class="logo">\
                         <img src="../../common/img/icon/logo.png">\
                     </a>\

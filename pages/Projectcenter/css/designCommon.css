@@ -150,7 +150,7 @@ img {
   left: 0;
 }
 .myh > div {
-  width: 16.666667%!important;
+  width: 20%!important;
   text-align: center;
 }
 /*end*/
@@ -261,6 +261,12 @@ img {
   text-decoration:none
 }
 @media screen and (max-width: 768px) {
+  .title .myh {
+    width: 100%!important;
+  }
+  #myTabContent{
+    padding: 0 0 20px 0!important;
+  }
   .list-btn{
     margin-top: 20px;
   }
@@ -272,7 +278,7 @@ img {
     text-align: center;
     border-radius: 5px;
     line-height: 25px;
-    font-size: 12px;
+    font-size: 12px!important;
     margin-right: 15px;
     cursor: pointer;
   }
@@ -661,10 +667,12 @@ img {
   .title .myh {
     height: 58px;
 }
+  .list-btn ul li a{
+    font-size: 12px!important;
+  }
   .container1{margin-top:0!important;}
   .myh > div {
     font-size: 16px;
-    margin-right: 33px!important;
   }
   .mip {
     width: 100%;
@@ -899,13 +907,11 @@ img {
 @media screen and (max-width: 425px) {
   .myh > div {
     font-size: 14px;
-    margin-right: 42px!important;
   }
 }
 @media screen and (max-width: 320px) {
   .myh > div {
     font-size: 12px;
-    margin-right: 36px!important;
   }
   .ji {
     margin: 0 1px;
@@ -1410,7 +1416,6 @@ img {
 @media screen and (max-width: 768px) {
   .myh > div {
     font-size: 12px!important;
-    margin-right: 42px!important;
   }
   .mycont {
       margin-bottom: 0px;
