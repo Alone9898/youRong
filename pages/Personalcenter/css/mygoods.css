@@ -100,30 +100,13 @@ body {
 }
 .right_content .content-info .item-li .name_txt {
   margin-top: 15px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   font-size: 16px;
 }
 .right_content .content-info .item-li .info-li {
-  margin-bottom: 15px;
-}
-.right_content .content-info .item-li .info-li .item1 {
-  text-align: left;
-  width: 33.333333%;
-}
-.right_content .content-info .item-li .info-li .item {
-  text-align: center;
-  width: 33.333333%;
-}
-.right_content .content-info .item-li .info-li .item2 {
-  text-align: right;
-  width: 33.333333%;
-}
-.right_content .content-info .item-li .info-li .color_9 {
-  color: #999999;
-  margin-right: 5px;
-  font-size: 12px;
-}
-.right_content .content-info .item-li .info-li .color_6 {
+  padding-top: 10px;
+  border-top: 1px solid #DDDDDD;
+  font-size: 14px;
   color: #666666;
-  font-size: 12px;
+  cursor: pointer;
 }
