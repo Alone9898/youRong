@@ -60,5 +60,9 @@ var app = new Vue({
         AskQuestions(){
             window.location.href="AskQuestions.html";
         },
+        acfun(ev){
+            $('.first').removeClass('active_b');
+            $(ev.target).addClass('active').siblings().removeClass('active');
+        }
     },
 })

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>我的信息</title>
+    <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../common/css/swiper.min.css">
+    <link rel="stylesheet" href="../../common/css/base.css"/>
+    <script src="../../common/js/jquery-1.11.3.js"></script>
+    <link rel="stylesheet" href="css/myFocus.css"/>
+    <link rel="stylesheet" href="css/profile.css"/>
+</head>
+
+<body>
+<div id="app" v-cloak>
+    <!--header-->
+    <sitenav></sitenav>
+    <!--banner-->
+    <div class="container">
+        <div class="left_user">
+            <div class="user_info">
+               <img src="../../common/img/images/user.png" alt="" class="user_img">
+                <div class="name_user">Mr.林</div>
+                <a href="" class="btn-kj">进入空间</a>
+            </div>
+            <div class="list_menu">
+                <ul class="clearfix">
+                    <li class=""><a href="">我的关注</a></li>
+                    <li><a href="">我的收藏</a></li>
+                    <li><a href="">我的商品</a></li>
+                    <li><a href="">我的创作</a></li>
+                    <li><a href="">我的团队</a></li>
+                    <li class="active_bd"><a href="">我的信息</a></li>
+                    <li><a href="">我的消息</a></li>
+                    <li><a href="">身份认证</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right_content">
+            <div class="content-info">
+                <div class="infobox">
+                    <div class="infotop clearfix">
+                        <div class="pull-left"><h4>基本信息</h4></div>
+                        <div class="pull-right">
+                            <a class="btn savebtn">保存</a>
+                        </div>
+                    </div>
+                    <div class="infocont">
+                        <form class="form-horizontal" role="form" id="infoform">
+                            <div class="form-group">
+                                <label for="firstname" class="col-sm-1 control-label">账号</label>
+                                <div class="col-sm-4">
+                                    <input type="button" class="inputcss uninput" id="zh" value="1234567890">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="firstname" class="col-sm-1 control-label">身份</label>
+                                <div class="col-sm-4">
+                                    <input type="button" class="inputcss uninput" id="fws" value="服务商">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="firstname" class="col-sm-1 control-label">真实姓名</label>
+                                <div class="col-sm-4">
+                                    <input type="button" class="inputcss uninput" id="zsname" value="周心语">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="firstname" class="col-sm-1 control-label">服务商名称</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="inputcss uninput1" id="fwsname" value="项目团队">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="firstname" class="col-sm-1 control-label">品牌名称</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="inputcss uninput" id="ppname" value="项目团队">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="firstname" class="col-sm-1 control-label">经营类型</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="inputcss uninput" id="jytype" value="火锅">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="firstname" class="col-sm-1 control-label">地址</label>
+                                <div class="col-sm-4">
+                                    <select class="inputcss uninput1">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="firstname" class="col-sm-1 control-label">手机</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="inputcss uninput1" id="phone" value="1234567890">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="firstname" class="col-sm-1 control-label">微信</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="inputcss uninput1" id="wx" value="1234567890">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="firstname" class="col-sm-1 control-label">注册时间</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="inputcss uninput1" id="zctime" value="2019-2-2">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="infobox">
+                    <div class="infotop clearfix">
+                        <div class="pull-left"><h4>关于品牌</h4></div>
+                        <div class="pull-right">
+                            <a class="btn savebtn">保存</a>
+                        </div>
+                    </div>
+                    <div class="infocont">
+                        <form class="form-horizontal" role="form" id="infoform">
+                            <div class="form-group">
+                                <label for="firstname" class="col-sm-1 control-label">经验范围</label>
+                                <div style="float: left;width: 88%;">
+                                    <input type="button" class="inputcss uninput1" id="zh" value="建筑材料售卖">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="firstname" class="col-sm-1 control-label">注册资金</label>
+                                <div class="col-sm-4" style="padding-left:0;">
+                                    <input type="button" class="inputcss uninput" id="fws" value="100万">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="firstname" class="col-sm-1 control-label">运营时间</label>
+                                <div class="col-sm-4" style="padding-left:0;">
+                                    <input type="button" class="inputcss uninput" id="yytime" value="10年">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="infobox">
+                    <div class="infotop clearfix">
+                        <div class="pull-left"><h4>相关能力</h4></div>
+                        <div class="pull-right">
+                            <a class="btn savebtn">保存</a>
+                        </div>
+                    </div>
+                    <div class="infocont">
+                        <form class="form-horizontal" role="form" id="infoform">
+                            <div class="form-group">
+                                <label for="firstname" class="col-sm-1 control-label">擅长能力</label>
+                                <div style="float: left;width: 88%;">
+                                    <input type="button" class="inputcss uninput1" id="scnl" value="酒店设计，别墅设计">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="firstname" class="col-sm-1 control-label">施工经验</label>
+                                <div class="col-sm-4" style="padding-left: 0;">
+                                    <input type="button" class="inputcss uninput1" id="sgjy" value="10年">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="firstname" class="col-sm-1 control-label">施工报价</label>
+                                <div class="col-sm-4" style="padding-left: 0;">
+                                    <input type="button" class="inputcss uninput1" id="sgbj" value="300">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="firstname" class="col-sm-1 control-label">设计荣誉</label>
+                                <div style="float: left;width: 88%;">
+                                    <textarea type="text" class="inputcss uninput1" id="sjry"  style="resize:none;height: 60px;">二等奖
+                                    </textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="firstname" class="col-sm-1 control-label">团队荣誉</label>
+                                <div style="float: left;width: 88%;">
+                                    <textarea type="text" class="inputcss uninput1" id="tdry"  style="resize:none;height: 60px;">二等奖
+                                    </textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="firstname" class="col-sm-1 control-label">施工资质</label>
+                                <div style="float: left;width: 88%;">
+                                    <textarea type="text" class="inputcss uninput1" id="zgzz"  style="resize:none;height: 60px;">设计资质，消防资质
+                                    </textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="infobox">
+                    <div class="infotop clearfix">
+                        <div class="pull-left"><h4>服务商简介</h4></div>
+                        <div class="pull-right">
+                            <a class="btn savebtn">保存</a>
+                        </div>
+                    </div>
+                    <div class="infocont">
+                        <form class="form-horizontal" role="form" id="infoform">
+                            <div class="form-group">
+                                <label for="firstname" class="col-sm-1 control-label">品牌理念</label>
+                                <div style="float: left;width: 88%;">
+                                    <textarea type="text" class="inputcss uninput1" id="ppln" placeholder="相关描述" style="resize:none;height: 60px;"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="firstname" class="col-sm-1 control-label">自我介绍</label>
+                                <div style="float: left;width: 88%;">
+                                    <textarea type="text" class="inputcss uninput1" id="zijs" placeholder="相关描述" style="resize:none;height: 100px;"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <!-- <footer-model></footer-model>-->
+</div>
+<script src="../../common/js/swiper.min.js"></script>
+<script src="../../common/js/vue.js"></script>
+<script src="../../common/js/vue-resource.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../common/js/public.js"></script>
+<script src="js/designCommon.js"></script>
+</body>
+</html>
