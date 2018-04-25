@@ -1,0 +1,98 @@
+.myPanel .panel_2 .nav-11 li:nth-child(9) i {
+  color: #0ab7c7;
+}
+.container_box {
+  height: 1300px;
+}
+.container_box .head {
+  margin: 20px;
+  width: 95%;
+  height: 34px;
+  font-size: 24px;
+  line-height: 21px;
+  text-align: left;
+  color: #0ab7c7;
+  border-bottom: 1px solid #0ab7c7 ;
+}
+.container_box .content {
+  margin: 50px 90px;
+  width: 760px;
+  height: 420px;
+  background-color: #ffffff;
+  border: solid 1px #eeeeee;
+}
+.container_box .content .cls1 {
+  width: 94%;
+  margin-left: 25px;
+  margin-right: 40px;
+  margin-top: 5px;
+  text-align: left;
+  border-bottom: #0ab7c7 1px solid;
+  padding-bottom: 5px;
+}
+.container_box .content .cls1 img {
+  width: 80px;
+  height: 86px;
+  vertical-align: middle;
+}
+.container_box .content .cls1 span {
+  font-size: 24px;
+  vertical-align: middle;
+  margin-left: 15px;
+  color: #333333;
+}
+.container_box .content .cls2 {
+  width: 267px;
+  height: 17px;
+  margin-left: 40px;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+}
+.container_box .content .cls3 {
+  width: 680px;
+  height: 160px;
+  margin-left: 40px;
+  margin-top: 40px;
+  background-color: #ffffff;
+  border: solid 1px #eeeeee;
+}
+.container_box .content .cls3 .cls3-cont {
+  width: 358px;
+  height: 103px;
+  margin-top: 30px;
+  margin-left: 32px;
+  text-align: left;
+}
+.container_box .content .cls3 .cls3-cont p {
+  width: 176px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #333333;
+}
+.container_box .content .cls3 .cls3-cont span {
+  width: 67px;
+  height: 15px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #666666;
+}
+.container_box .content .cls3 .cls3-cont span:nth-child(4) {
+  margin-left: 10px;
+  cursor: pointer;
+}
+.container_box .content .cls3 .cls3-cont .subscription {
+  margin-left: 80px;
+  margin-top: 20px;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #0ab7c7;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #ffffff;
+  cursor: pointer;
+}

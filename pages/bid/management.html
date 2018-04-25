@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>我的消息</title>
+    <title>项目管理</title>
     <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../common/css/swiper.min.css">
     <link rel="stylesheet" href="../../common/css/base.css"/>
-    <link rel="stylesheet" href="css/myNews.css"/>
+    <link rel="stylesheet" href="css/management.css"/>
     <link rel="stylesheet" href="css/model.css"/>
 </head>
 <body>
@@ -20,33 +20,26 @@
             <my-panel></my-panel>
             <div class="container_box">
                 <div class="head">
-                    <div :class="{active:isShow==true}" @click="tab(1)">商家消息</div>
-                    <div :class="{active:isShow==false}" @click="tab(2)">系统消息</div>
+                    项目管理
                 </div>
                 <div class="content">
-                    <div v-if="isShow==true">
-                       <div class="head">
-                           <ul>
-                               <li>查看</li>
-                               <li :class="{tive:cctv==1}" @click="sel(1)">全部</li>
-                               <li :class="{tive:cctv==2}" @click="sel(2)">未读</li>
-                               <li :class="{tive:cctv==3}" @click="sel(3)">已读</li>
-                           </ul>
-                       </div>
-                        <ul class="listBox">
-                            <li v-for="item in 10">
-                                <input type="checkbox"/>
-                                <span>欢迎注册招投标账号</span>
-                                <span>未读</span>
-                                <span>上午3:20</span>
-                            </li>
-                        </ul>
-                        <div class="www">
-                        <input type="checkbox"/><span>删除所选</span>
-                        </div>
-                    </div>
-                    <div v-if="isShow==false">
-                    </div>
+                    <table>
+                        <tr>
+                            <th>项目类型</th>
+                            <th>公告标题</th>
+                            <th>项目地区</th>
+                            <th>发布时间</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr v-for="item in 15">
+                            <td>招标项目</td>
+                            <td>四川某资源建设项目招标 最多放15条</td>
+                            <td>成都</td>
+                            <td>2018-03-06</td>
+                            <td>取消</td>
+                        </tr>
+                    </table>
+                    <div class="count">共 <i>0</i> 条记录</div>
                 </div>
             </div>
         </div>
@@ -68,19 +61,11 @@
     new Vue({
         el: '#example',
         data:{
-            isShow:true,
             cctv:''
         },
         methods: {
-            tab(ct){
-                if(ct==1){
-                    this.isShow=true
-                }else {
-                    this.isShow=false
-                }
-            },
             sel(sel){
-              this.cctv=sel
+                this.cctv=sel
             }
         },
         mounted:function(){
