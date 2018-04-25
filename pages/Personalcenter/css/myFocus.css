@@ -1,4 +1,3 @@
-
 body {
   background: #f9f9f9;
   overflow-x: hidden;
@@ -40,6 +39,7 @@ body {
 }
 .left_user .list_menu {
   margin-top: 10px;
+  padding-bottom: 12px;
   background: #fff;
 }
 .left_user .list_menu ul li a {
@@ -85,7 +85,8 @@ body {
   color: #00dfb9;
   border-bottom: 2px solid #00dfb9;
 }
-.right_content .nav-list .active_b a {
+.right_content .nav-list .active_b a,
+.right_content .nav-list .active a {
   border-bottom: 2px solid #00dfb9;
   color: #00dfb9;
 }
@@ -128,6 +129,3 @@ body {
   color: #666666;
   font-size: 12px;
 }
-
-body{background:#f9f9f9;overflow-x:hidden}.left_user{margin-top:20px;width:220px;margin-right:25px;float:left}.left_user .user_info{background:#fff;width:220px;height:286px;text-align:center;padding-top:50px}.left_user .user_info .user_img{width:88px;height:88px;border-radius:50%}.left_user .user_info .name_user{margin-top:18px;margin-bottom:36px;font-size:18px}.left_user .user_info .btn-kj{display:block;width:160px;height:36px;background-color:#00dfb9;border-radius:5px;font-size:16px;color:#fff;text-align:center;line-height:36px;margin:0 auto}.left_user .list_menu{margin-top:10px;background:#fff}.left_user .list_menu ul li a{padding-left:30px;display:block;height:32px;line-height:32px;color:#666;font-size:14px;margin-top:20px}.left_user .list_menu ul li a:hover{color:#00dfb9;border-left:2px solid #00dfb9}.left_user .list_menu .active_bd a{border-left:2px solid #00dfb9;color:#00dfb9}.right_content{float:left;margin-top:20px;width:79%}.right_content .nav-list{background:#fff;height:60px;line-height:58px}.right_content .nav-list ul li{margin-left:67px;float:left}.right_content .nav-list ul li a{display:block;font-size:14px;color:#666;text-decoration:none}.right_content .nav-list ul li a:hover{color:#00dfb9;border-bottom:2px solid #00dfb9}.right_content .nav-list .active_b a,.right_content .nav-list .active a{border-bottom:2px solid #00dfb9;color:#00dfb9}
-
