@@ -112,7 +112,7 @@ img {
 }
 .conttitle {
   background: #ffffff;
-  padding: 20px;
+  padding: 20px 0;
 }
 .conttitle h3 {
   margin: 0;
@@ -579,6 +579,43 @@ img {
   color: #fff;
   font-size: 12px;
   border-radius: 6px;
+}
+.hover_bg{
+  overflow: hidden;
+}
+.projection_txt{
+  opacity: 0;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  position: absolute;
+  width: 91%!important;
+  height: 100%;
+  top:60px;
+  left: 10px;
+  right: 0;
+  bottom:0;
+  padding: 0 46px 0 30px!important;
+  color: #fff;
+  font-size: 14px;
+  background: rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+.hover_bg:hover .projection_txt{
+  opacity: 1;
+  top:0;
+  transition: 1s;
+}
+.projection_txt .flex_display{
+  display: table;
+  width: 100%;height: 100%;
+}
+.projection_txt .flex_display P{
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  color:#fff;
+  font-size: 14px;
 }
 @media screen and (max-width: 768px) {
   p,a,span,b{font-size:14px!important;}
@@ -1301,6 +1338,12 @@ img {
   padding: 0;
   color: #999999;
 }
+.sjzpboxtop .mg_l .color_green{
+    color: #00dfb9;
+}
+.sjzpboxtop .mg_l{
+    font-size: 18px;
+}
 .sjzpboxtop {
   padding-right: 16px;
 }
@@ -1326,6 +1369,9 @@ img {
   height: 100%;
 }
 @media screen and (max-width: 768px) {
+  .myh > div {
+    font-size: 12px!important;
+  }
   .mycont {
       margin-bottom: 0px;
   }

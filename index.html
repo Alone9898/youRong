@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Document</title>
+    <title>优荣之星装修加速器</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
     <link rel="stylesheet" type="text/css" href="index/css/bootstrap1.min.css">
     <link rel="stylesheet" type="text/css" href="common/css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="common/css/base.css">
     <link rel="stylesheet" type="text/css" href="index/css/index.css">
+    <link href="common/img/icon/l.png" rel="shortcut icon" type="image/x-icon">
     <script src="common/js/swiper.min.js"></script>
     <!--[if lte IE 9]>
     <script>window.location.href='http://cdn.dmeng.net/upgrade-your-browser.html?referrer='+location.href;</script>
@@ -295,18 +298,40 @@
                     </ul>
                 </div>
             </div>
+
         <!--footer-->
         <footer-model></footer-model>
     </div>
+
 <script src="common/js/jquery-1.11.3.js"></script>
 <script src="common/js/bootstrap.min.js"></script>
 <script src="common/js/vue.js"></script>
+<script src="common/js/jquery.cookie.js"></script>
 <script type="text/javascript" src="common/js/public1.js"></script>
 <script src="index/js/index.js"></script>
+<script>
+
+    $(function(){
+        (function($){
+            $.cookies=function(obj,name,id){
+                $(obj).click(function(){
+                    var value=$(id).val();
+                    $.cookie(name, value, { expires: 1 });
+                    $('.name-title').html("<a href='pages/Personalcenter/myFocus.html'>"+a[0].value+"</a>")
+                });
+                var cookie=  $.cookie(name);
+                var a=$(id).val(cookie)
+            }
+        }($));
+        $.cookies('.login','cookieName','.type_text')
+    })
+</script>
     <script>
         new Vue({
             el:'#app',
             data:{
+                cookies:'',
+                text:'',
                 list_activity:['项目活动','项目活动','项目活动','项目活动','项目活动','项目活动','项目活动','项目活动','项目活动','项目活动'],
                 icon:[
                     {img:'common/img/images/1024.png',txt:'项目活动'},

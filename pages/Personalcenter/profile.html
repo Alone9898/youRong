@@ -27,13 +27,13 @@
             </div>
             <div class="list_menu">
                 <ul class="clearfix">
-                    <li class=""><a href="">我的关注</a></li>
-                    <li><a href="">我的收藏</a></li>
-                    <li><a href="">我的商品</a></li>
-                    <li><a href="">我的创作</a></li>
-                    <li><a href="">我的团队</a></li>
-                    <li class="active_bd"><a href="">我的信息</a></li>
-                    <li><a href="">我的消息</a></li>
+                    <li><a href="myFocus.html">我的关注</a></li>
+                    <li><a href="mycollection.html">我的收藏</a></li>
+                    <li><a href="mygoods.html">我的商品</a></li>
+                    <li><a href="mycreation.html">我的创作</a></li>
+                    <li><a href="myteam.html">我的团队</a></li>
+                    <li class="active_bd"><a href="profile.html">我的信息</a></li>
+                    <li><a href="message.html">我的消息</a></li>
                     <li><a href="">身份认证</a></li>
                 </ul>
             </div>
@@ -48,7 +48,7 @@
                         </div>
                     </div>
                     <div class="infocont">
-                        <form class="form-horizontal" role="form" id="infoform">
+                        <form class="form-horizontal infoform" role="form">
                             <div class="form-group">
                                 <label for="firstname" class="col-sm-1 control-label">账号</label>
                                 <div class="col-sm-4">
@@ -58,7 +58,7 @@
                             <div class="form-group">
                                 <label for="firstname" class="col-sm-1 control-label">身份</label>
                                 <div class="col-sm-4">
-                                    <input type="button" class="inputcss uninput" id="fws" value="服务商">
+                                    <input type="button" class="inputcss uninput" id="fws1" value="服务商">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -88,13 +88,10 @@
                             <div class="form-group">
                                 <label for="firstname" class="col-sm-1 control-label">地址</label>
                                 <div class="col-sm-4">
-                                    <select class="inputcss uninput1">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
+                                    <div data-toggle="distpicker" class="linkage">
+                                        <select data-province="---- 选择省 ----"></select>
+                                        <select data-city="---- 选择市 ----"></select>
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -126,11 +123,11 @@
                         </div>
                     </div>
                     <div class="infocont">
-                        <form class="form-horizontal" role="form" id="infoform">
+                        <form class="form-horizontal infoform" role="form">
                             <div class="form-group">
                                 <label for="firstname" class="col-sm-1 control-label">经验范围</label>
                                 <div style="float: left;width: 88%;">
-                                    <input type="button" class="inputcss uninput1" id="zh" value="建筑材料售卖">
+                                    <input type="button" class="inputcss uninput1" id="zh1" value="建筑材料售卖">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -156,7 +153,7 @@
                         </div>
                     </div>
                     <div class="infocont">
-                        <form class="form-horizontal" role="form" id="infoform">
+                        <form class="form-horizontal infoform" role="form">
                             <div class="form-group">
                                 <label for="firstname" class="col-sm-1 control-label">擅长能力</label>
                                 <div style="float: left;width: 88%;">
@@ -207,7 +204,7 @@
                         </div>
                     </div>
                     <div class="infocont">
-                        <form class="form-horizontal" role="form" id="infoform">
+                        <form class="form-horizontal infoform" role="form" >
                             <div class="form-group">
                                 <label for="firstname" class="col-sm-1 control-label">品牌理念</label>
                                 <div style="float: left;width: 88%;">
@@ -226,6 +223,7 @@
             </div>
         </div>
     </div>
+
     <!--footer-->
     <!-- <footer-model></footer-model>-->
 </div>
@@ -234,6 +232,8 @@
 <script src="../../common/js/vue-resource.min.js"></script>
 <script src="../../common/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../../common/js/public.js"></script>
+<script src="js/distpicker.data.js"></script>
+<script src="js/distpicker.js"></script>
 <script src="js/designCommon.js"></script>
 </body>
 </html>
