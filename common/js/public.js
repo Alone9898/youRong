@@ -21,7 +21,7 @@ Vue.component('sitenav', {
                     </ul>\
                 </div>\
             </div>\
-            <div class="col-xs-7 col-lg-7 siteNav_welcome">欢迎来到装修加速平台，请 <a href="#" @click="modal_tip()">登录</a> | <a href="#">注册</a></div>\
+            <div class="col-xs-7 col-lg-7 siteNav_welcome name-title">欢迎来到装修加速平台，请 <a href="#" @click="modal_tip()">登录</a> | <a href="#">注册</a></div>\
             <div class="col-xs-3 col-lg-4 siteNav_welcome siteNav_right">\
               <span class="weixin" @mouseover="wei_img(1)" @mouseout="wei_img(2)">微信公众号</span>\
               <div class="weixin_img" v-show="weixin"><img src="../../common/img/icon/weixin.jpg" width="120" height="120"></div>\
@@ -34,13 +34,13 @@ Vue.component('sitenav', {
                 <img @click="modal_close" src="../../common/img/icon/close.png">\
             </div>\
             <div class="modal_title">账号登录</div>\
-            <input type="text" class="form-control user" maxlength="11" placeholder="用户名/手机号/邮箱">\
-            <input type="text" class="form-control passWord" placeholder="密码" >\
+            <input type="text" class="form-control user type_text" maxlength="11" placeholder="用户名/手机号/邮箱">\
+            <input type="password" class="form-control passWord type_password" placeholder="密码">\
             <div class="state">\
                 <input type="checkbox" class="checkbox"><span>下次自动登录</span>\
                 <div>忘记密码？</div>\
             </div>\
-            <div class="login">立即登录</div>\
+            <div class="login"><a href="javascript:;" style="display:block;color:#fff;" @click="login()">立即登录</a></div>\
             <div class="register">还没有账号？<span>免费注册</span></div>\
         </div>\
     </div>\
@@ -48,12 +48,7 @@ Vue.component('sitenav', {
         <nav class="navbar navbar-default" role="navigation">\
             <div class="container clearfix">\
                 <div class="navbar-header">\
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">\
-                        <span class="sr-only">切换导航</span>\
-                        <span class="icon-bar"></span>\
-                        <span class="icon-bar"></span>\
-                        <span class="icon-bar"></span>\
-                    </button>\
+                   <img src="../../common/img/icon/sid.png" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"  alt="">\
                     <a href="../../index.html" class="logo">\
                         <img src="../../common/img/icon/logo.png">\
                     </a>\
@@ -64,7 +59,7 @@ Vue.component('sitenav', {
                 <div class="collapse navbar-collapse" id="navbar-menu">\
                     <ul class="nav navbar-nav navbar-left">\
                         <li><a href="../../index.html">首页</a></li>\
-                        <li><a href="#">产品介绍</a></li>\
+                        <li><a href="../../pages/introduce/introduce.html">产品介绍</a></li>\
                         <li><a href="../../pages/brandManage/business.html">品牌中心</a></li>\
                         <li><a href="../../pages/designCenter/decoration.html">设计中心</a></li>\
                         <li><a href="../../pages/bid/bid.html">招投标</a></li>\
@@ -120,10 +115,14 @@ Vue.component('sitenav', {
         return {
             isShow:false,
             weixin:false,
-            person_cunt:0
+            person_cunt:0,
+            cookies:''
         }
     },
     methods: {
+        login:function(){
+            this.modal_close()
+        },
         modal_tip:function() {
             this.isShow=true;
         },
@@ -165,7 +164,7 @@ Vue.component('footer-model', {
     template: '<div class="footer">\
         <div class="container">\
         <div class="footerBox">\
-        <span><a href="#">加速器首页</a></span>|<span><a href="#">产品介绍</a></span>|<span><a href="../../pages/brandManage/business.html">品牌中心</a></span>|\
+        <span><a href="#">加速器首页</a></span>|<span><a href="../../pages/introduce/introduce.html">产品介绍</a></span>|<span><a href="../../pages/brandManage/business.html">品牌中心</a></span>|\
         <span><a href="../../pages/designCenter/decoration.html">设计中心</a></span>|<span><a href="../../pages/bid/bid.html">招投标</a></span>|<span><a href="../../pages/Projectcenter/quality.html">项目管理</a></span>|\
         <span><a href="../../pages/facilitator/decoration.html">服务商</a></span>|<span><a href="../../pages/Aboutus/Introductionofplatform.html">关于我们</a></span>|<span><a href="#">后台登陆</a></span>|\
         <span><a href="#">服务商登陆</a></span>\

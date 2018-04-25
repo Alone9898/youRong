@@ -859,7 +859,6 @@ body {
     margin-right: 4px;
   }
   .myh > div {
-    width: auto !important;
     margin-right: 0 important;
   }
   .title .myh {
@@ -1229,9 +1228,6 @@ body {
   .zhishib {
     font-size: 14px;
   }
-  .myh > div {
-    margin-right: 30px!important;
-  }
 }
 .myswitch {
   display: none;
@@ -1248,7 +1244,6 @@ body {
 }
 .ul1 > li {
   float: left;
-  width: 100%;
   padding: 10px;
 }
 #tuandui {

@@ -19,7 +19,7 @@
 	<div class="title">
 		<div class="swiper-container-nav">
 			<div class="myh swiper-wrapper clearfix">
-				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-1 col-md-offset-1 col-xs-offset-1 col-sm-offset-1 swiper-slide myhight" @click="searchcli($event,'quality')">项目管理</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-1 col-md-offset-1 col-xs-offset-1 col-sm-offset-1 swiper-slide myhight" @click="searchcli($event,'quality')" style="margin-left:0;">项目管理</div>
 				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'team')">项目团队</div>
 				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'Dynamicdiary')">动态日记</div>
 				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'knowledge')">装修知识</div>
@@ -641,7 +641,7 @@
 					<div class="">
 						<div class="row pc_service">
 							<div  class="col-xs-12 list_service" style="overflow: hidden;clear: both" >
-								<div class="swiper-container">
+								<div class="swiper-container_lin">
 									<ul class="swiper-wrapper">
 										<li class="swiper-slide" v-for="item in service" >
 											<img :src="item.icon_img" alt="">
@@ -685,7 +685,7 @@
 		var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
 		if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
 		    var swiper = new Swiper('.swiper-container-nav', {
-				slidesPerView: 4,
+				slidesPerView: 5,
 				spaceBetween:0,
 			});
 		}else{
@@ -778,6 +778,15 @@
 	});
 </script>
 <script>
+	var swiper_lin = new Swiper('.swiper-container_lin', {
+		pagination: '.swiper-pagination',
+		nextButton: '.swiper-button-next',
+		prevButton: '.swiper-button-prev',
+		slidesPerView: 1,
+		paginationClickable: true,
+		spaceBetween: 30,
+		loop: true
+	});
 	$(function(){
 		$('.switch-animate').append('<div class="switch_content"></div>')
 		$('.myswitch').click(function(){
