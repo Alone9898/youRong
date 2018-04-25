@@ -63,6 +63,6 @@ var app = new Vue({
         acfun(ev){
             $('.first').removeClass('active_b');
             $(ev.target).addClass('active').siblings().removeClass('active');
-        }
+        },
     },
 })

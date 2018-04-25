@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>身份认证</title>
+    <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../common/css/swiper.min.css">
+    <link rel="stylesheet" href="../../common/css/base.css"/>
+    <script src="../../common/js/jquery-1.11.3.js"></script>
+    <link rel="stylesheet" href="css/myFocus.css"/>
+    <link rel="stylesheet" href="css/authentication.css"/>
+</head>
+
+<body>
+<div id="app" v-cloak>
+    <!--header-->
+    <sitenav></sitenav>
+    <!--banner-->
+    <div class="container" style="margin-bottom:100px;">
+        <div class="left_user">
+            <div class="user_info">
+               <img src="../../common/img/images/user.png" alt="" class="user_img">
+                <div class="name_user">Mr.林</div>
+                <a href="" class="btn-kj">进入空间</a>
+            </div>
+            <div class="list_menu">
+                <ul class="clearfix">
+                    <li class=""><a href="">我的关注</a></li>
+                    <li><a href="">我的收藏</a></li>
+                    <li><a href="">我的商品</a></li>
+                    <li><a href="">我的创作</a></li>
+                    <li><a href="">我的团队</a></li>
+                    <li class="active_bd"><a href="">我的信息</a></li>
+                    <li><a href="">我的消息</a></li>
+                    <li><a href="">身份认证</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right_content">
+            <div class="content-info" style="padding:20px">
+                <h4 class="numid">身份认证</h4>
+                <p class="tipbox">平台采用实名认证，请填写自己真实的信息，如非真实信息，将影响认证审核</p>
+                <div style="padding-left: 20px;">
+                    <form class="form-horizontal" role="form" id="infoform">
+                        <div class="form-group">
+                            <label class="col-sm-1 control-label">认证类型</label>
+                            <div class="col-sm-4">
+                                <input type="button" class="inputcss uninput" id="rztype" value="团队认证申请">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-1 control-label">团队名称</label>
+                            <div class="col-sm-4">
+                                <input type="button" class="inputcss uninput1" id="tdname" value="老李头">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-1 control-label">个人头像</label>
+                            <div class="col-sm-4 upload">
+                                <img src="../../common/img/icon/upload.png" onclick="upload()"/>
+                                <input type="file" accept="image/*" id="uploadinput" onchange="changepic(this)" style="display: none;">
+                            </div>
+                        </div>
+                        <div class="zzbox">
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label">资质1</label>
+                                <div class="col-sm-4">
+                                    <div class="inputcss uninput1 clearfix">
+                                        <div class="upfile pull-left" onclick="upfile()">选择文件</div>
+                                        <input id="upfileinput" type="file" onchange="changefile(this)" style="display: none;" />
+                                        <div class="upfiletxt pull-left">未选择任何文件</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-1 control-label"></label>
+                            <div class="col-sm-4 ">
+                                <div class="addzz" onclick="addzz()">
+                                    <samp>+</samp> 添加资质
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-1 control-label"></label>
+                            <div class="col-sm-7 shuom">
+                                <p>请上传彩色资质，可以是扫描件或数码相机照片，要求里面的文字都清晰可见，支持
+                                    JPG，PNG，BMP格式，文件大小不超过200K</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12 shuom">
+                                <p>请填写银行账户信息，银行账号可以是企业对公账号或法人名下账号，以保障体现是汇款顺利！</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-1 control-label">银行名称</label>
+                            <div class="col-sm-4">
+                                <select class="inputcss uninput1" id="yhname">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-1 control-label">银行卡号</label>
+                            <div class="col-sm-4">
+                                <input type="button" class="inputcss uninput1" id="yhnum" value="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-1 control-label">银行预留电话</label>
+                            <div class="col-sm-4">
+                                <input type="button" class="inputcss uninput1" id="yhphone" value="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-1 control-label">开户所在地</label>
+                            <div class="col-sm-4">
+                                <input type="button" class="inputcss uninput1" id="khaddr" value="">
+                            </div>
+                        </div>
+                        <div class="form-group" style="margin-top:30px">
+                            <label class="col-sm-1 control-label"></label>
+                            <div class="col-sm-4">
+                                <a class="btn btnsub" style="margin-right:20px;">提交资料</a>
+                                <a class="btn btnsub btncal">取消</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+     <footer-model></footer-model>
+</div>
+<script src="../../common/js/swiper.min.js"></script>
+<script src="../../common/js/vue.js"></script>
+<script src="../../common/js/vue-resource.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../common/js/public.js"></script>
+<script src="js/designCommon.js"></script>
+<script>
+    //上传图片
+    function upload(){
+        $('#uploadinput').click();
+    }
+    function changepic(obj){
+        var reader= new FileReader();
+        file=document.getElementById('uploadinput').files[0];
+        //console.log(file);
+        reader.readAsDataURL(file);
+        reader.onload=function (e) {
+            //console.log(this.result);
+            $('.upload').html('<div class="myupload" style="background: url('+this.result+')no-repeat;background-size:cover;background-position:50%;"><div class="editbox">修改头像</div></div><input type="file" accept="image/*" id="uploadinput" onchange="changepic(this)" style="display: none;">');
+        };
+        $('body').on('click','.editbox',function(){
+            $('#uploadinput').click();
+        })
+    }
+    //上传文件
+    function upfile(){
+        $('#upfileinput').click();
+    }
+    function changefile(obj){
+        var reader= new FileReader();
+        file=document.getElementById('upfileinput').files[0];
+        $('.upfiletxt').html(file.name);
+    }
+    //添加资质
+    var item_list='<div class="form-group">'+
+            '<label class="col-sm-1 control-label">资质1</label>'+
+            '<div class="col-sm-4">'+
+            '<div class="inputcss uninput1 clearfix">'+
+            '<div class="upfile pull-left" onclick="upfile()">选择文件</div>'+
+            '<input id="upfileinput" type="file" onchange="changefile(this)" style="display: none;" />'+
+            '<div class="upfiletxt pull-left">未选择任何文件</div>'+
+            '</div>'+
+            '</div>'+
+            '</div>';
+    function addzz(){
+        item_list += '<div class="form-group">'+
+                '<label class="col-sm-1 control-label">资质1</label>'+
+                '<div class="col-sm-4">'+
+                '<div class="inputcss uninput1 clearfix">'+
+                '<div class="upfile pull-left" onclick="upfile()">选择文件</div>'+
+                '<input id="upfileinput" type="file" onchange="changefile(this)" style="display: none;" />'+
+                '<div class="upfiletxt pull-left">未选择任何文件</div>'+
+                '</div>'+
+                '</div>'+
+                '</div>';
+        $('.zzbox').html(item_list)
+    }
+</script>
+</body>
+</html>
