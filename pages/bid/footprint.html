@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>我的消息</title>
-    <meta name="keywords" content="装修,加速器,托管,设计中心,招投标,项目管理,品牌加盟">
-    <meta name="description" content="">
-    <link href="../../common/img/icon/logo-icon.png" rel="shortcut icon" type="image/x-icon">
+    <title>我的足迹</title>
     <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../common/css/swiper.min.css">
     <link rel="stylesheet" href="../../common/css/base.css"/>
-    <link rel="stylesheet" href="css/myNews.css"/>
+    <link rel="stylesheet" href="css/footprint.css"/>
     <link rel="stylesheet" href="css/model.css"/>
 </head>
 <body>
@@ -23,32 +20,25 @@
             <my-panel></my-panel>
             <div class="container_box">
                 <div class="head">
-                    <div :class="{active:isShow==true}" @click="tab(1)">商家消息</div>
-                    <div :class="{active:isShow==false}" @click="tab(2)">系统消息</div>
+                    我的足迹
                 </div>
                 <div class="content">
-                    <div v-if="isShow==true">
-                       <div class="head">
-                           <ul>
-                               <li>查看</li>
-                               <li :class="{tive:cctv==1}" @click="sel(1)">全部</li>
-                               <li :class="{tive:cctv==2}" @click="sel(2)">未读</li>
-                               <li :class="{tive:cctv==3}" @click="sel(3)">已读</li>
-                           </ul>
-                       </div>
-                        <ul class="listBox">
-                            <li v-for="item in 10">
-                                <input type="checkbox"/>
-                                <span>欢迎注册招投标账号</span>
-                                <span>未读</span>
-                                <span>上午3:20</span>
+                    <div class="day" v-for="itrm in 4">
+                        <div class="day1">
+                            今天-2018年4月12日星期四
+                        </div>
+                        <ul class="day2">
+                            <li>
+                                <span>下午3:30</span>
+                                <span>四川优异建材有限公司采购大理石项目招标</span>
+                                <span>发布日期：2018-02-06 </span>
+                            </li>
+                            <li>
+                                <span>下午3:30</span>
+                                <span>四川优异建材有限公司采购大理石项目招标</span>
+                                <span>发布日期：2018-02-06 </span>
                             </li>
                         </ul>
-                        <div class="www">
-                        <input type="checkbox"/><span>删除所选</span>
-                        </div>
-                    </div>
-                    <div v-if="isShow==false">
                     </div>
                 </div>
             </div>
@@ -71,19 +61,11 @@
     new Vue({
         el: '#example',
         data:{
-            isShow:true,
             cctv:''
         },
         methods: {
-            tab(ct){
-                if(ct==1){
-                    this.isShow=true
-                }else {
-                    this.isShow=false
-                }
-            },
             sel(sel){
-              this.cctv=sel
+                this.cctv=sel
             }
         },
         mounted:function(){

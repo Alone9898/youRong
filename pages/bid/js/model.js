@@ -261,25 +261,25 @@ Vue.component('my-panel', {
                 <div class="panel_2">\
                     <div class="head">我的应用</div>\
                     <div class="imgbox"><img src="../../common/img/icon/inner.png"/></div>\
-                    <div class="nav_box">\
+                    <div class="nav_box nav-11">\
                         <ul>\
                             <li><a href="myNews.html"><img src="../../common/img/icon/smile.png"/><i>我的消息</i></a></li>\
-                            <li><a><img src="../../common/img/icon/smile.png"/><i>我的足迹</i></a></li>\
-                            <li><a><img src="../../common/img/icon/smile.png"/><i>我的收藏</i></a></li>\
+                            <li><a href="footprint.html"><img src="../../common/img/icon/smile.png"/><i>我的足迹</i></a></li>\
+                            <li><a href="favorite.html"><img src="../../common/img/icon/smile.png"/><i>我的收藏</i></a></li>\
                             <li><a href="publish.html"><img src="../../common/img/icon/smile.png"/><i>发布招标</i></a></li>\
-                            <li><a><img src="../../common/img/icon/smile.png"/><i>项目管理</i></a></li>\
-                            <li><a><img src="../../common/img/icon/smile.png"/><i>注册账号</i></a></li>\
-                            <li><a href="publish.html"><img src="../../common/img/icon/smile.png"/><i>账号升级</i></a></li>\
+                            <li><a href="management.html"><img src="../../common/img/icon/smile.png"/><i>项目管理</i></a></li>\
+                            <li><a href="register.html"><img src="../../common/img/icon/smile.png"/><i>注册账号</i></a></li>\
+                            <li><a href="upgrade.html"><img src="../../common/img/icon/smile.png"/><i>账号升级</i></a></li>\
                             <li><a href="attestation.html"><img src="../../common/img/icon/smile.png"/><i>诚信认证</i></a></li>\
-                            <li><a><img src="../../common/img/icon/smile.png"/><i>邮件推送</i></a></li>\
+                            <li><a href="mail.html"><img src="../../common/img/icon/smile.png"/><i>邮件推送</i></a></li>\
                         </ul>\
                     </div>\
                     <div class="head">帮助中心</div>\
                     <div class="imgbox"><img src="../../common/img/icon/inner.png"/></div>\
                     <div class="nav_box nav-foo">\
                         <ul>\
-                            <li><i>招投标指南</i></li>\
-                            <li><i>服务协议</i></li>\
+                            <li><a href="guide.html"><i>招投标指南</i></a></li>\
+                            <li><a href="help.html"><i>服务协议</i></a></li>\
                         </ul>\
                     </div>\
                 </div>\

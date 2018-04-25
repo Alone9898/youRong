@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>账号升级</title>
+    <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../common/css/swiper.min.css">
+    <link rel="stylesheet" href="../../common/css/base.css"/>
+    <link rel="stylesheet" href="css/upgrade.css"/>
+    <link rel="stylesheet" href="css/model.css"/>
+</head>
+<body>
+<div class="container-fluid" v-cloak id="example">
+    <sitenav></sitenav>
+    <bid-nav></bid-nav>
+    <div class="container-fluid" style="background: #eee">
+        <div class="container container_aaa">
+            <my-panel></my-panel>
+            <div class="container_box">
+                <div class="head">
+                    账号升级
+                </div>
+                <div class="content">
+                    <div class="vipList">
+                        <div class="vipList1">
+                            会员服务列表
+                        </div>
+                        <div class="vipList2">
+                            <div>非注册会员</div>
+                            <div>注册会员</div>
+                            <div>付费注册会员</div>
+                        </div>
+                        <div class="vipList3">
+                            <div>无需付费，可以浏览网页，但无法查看到重要信息，如联系电话，联系人等。</div>
+                            <div>无需付费，免费查看招标信息，重要信息第一时间电子邮件通知！</div>
+                            <div>付费会员费用分<i>普通会员</i>和<i>VIP会员</i>，享受到的服务如下<i>《付费会员服务清单》</i></div>
+                        </div>
+                    </div>
+                    <div class="name">付费会员清单</div>
+                    <table>
+                        <tr>
+                            <th>服务类别</th>
+                            <th>服务项目</th>
+                            <th>服务说明</th>
+                            <th><p>普通会员</p><p>5000元/年<i>开通</i></p></th>
+                            <th><p>VIP</p><p>10000元/年<i>开通</i></p></th>
+                        </tr>
+                        <tr>
+                            <td rowspan="4">项目信息</td>
+                            <td>VIP独家项目</td>
+                            <td><p>内容说明内容说明内容说明内容说明内容说明内容说明
+                                明内容说明内容说明</p></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>拟在建项目</td>
+                            <td><p>内容说明内容说明内容说明内容说明内容说明内容说明
+                                明内容说明内容说明</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>拟在建项目</td>
+                            <td><p>内容说明内容说明内容说明内容说明内容说明内容说明
+                                明内容说明内容说明</p></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>拟在建项目</td>
+                            <td><p>内容说明内容说明内容说明内容说明内容说明内容说明
+                                明内容说明内容说明</p></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4">项目信息</td>
+                            <td>VIP独家项目</td>
+                            <td><p>内容说明内容说明内容说明内容说明内容说明内容说明
+                                明内容说明内容说明</p></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>拟在建项目</td>
+                            <td><p>内容说明内容说明内容说明内容说明内容说明内容说明
+                                明内容说明内容说明</p></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>拟在建项目</td>
+                            <td><p>内容说明内容说明内容说明内容说明内容说明内容说明
+                                明内容说明内容说明</p></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>拟在建项目</td>
+                            <td><p>内容说明内容说明内容说明内容说明内容说明内容说明
+                                明内容说明内容说明</p></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="h5_box" style="background: rgb(238, 238, 238)">
+        <h5-nav></h5-nav>
+        <h5-model></h5-model>
+    </div>
+</div>
+</body>
+<script src="../../common/js/jquery-1.11.3.js"></script>
+<script src="../../common/js/swiper.min.js"></script>
+<script src="../../common/js/vue.js"></script>
+<script src="../../common/js/vue-resource.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../common/js/public.js"></script>
+<script type="text/javascript" src="js/model.js"></script>
+<script>
+    new Vue({
+        el: '#example',
+        data:{
+            cctv:''
+        },
+        methods: {
+            sel(sel){
+                this.cctv=sel
+            }
+        },
+        mounted:function(){
+
+        }
+    });
+
+</script>
+</html>
