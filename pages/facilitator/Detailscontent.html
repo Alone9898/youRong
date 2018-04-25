@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>项目详情</title>
+    <meta name="keywords" content="装修,加速器,托管,设计中心,招投标,项目管理,品牌加盟">
+    <meta name="description" content="">
+    <link href="../../common/img/icon/logo-icon.png" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../common/css/swiper.min.css">
     <link rel="stylesheet" href="../../common/css/base.css"/>
@@ -24,11 +27,10 @@
     <div class="title">
         <div class="swiper-container-nav">
             <div class="myh swiper-wrapper clearfix">
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide col-lg-offset-1" @click="searchcli($event)">商业品牌</div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event)">品控管理</div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event)">品牌推广</div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight" @click="searchcli($event,'media')">品牌传媒</div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event)">品牌论坛</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight" @click="searchcli($event,'decoration')">合作案例</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'findDesign')">找服务商</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'question')">疑问解答</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'interview')">服务专访</div>
             </div>
         </div>
     </div>
@@ -48,19 +50,19 @@
             <div class="float_box">
                 <ul>
                     <li>
-                        <a href="">
+                        <a href="#que_id">
                             <img src="../../common/img/icon/star.png" alt="">
                             <div class="font">145</div>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="#que_id">
                             <img src="../../common/img/icon/link.png" alt="">
                             <div class="font">145</div>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="#que_id">
                             <img src="../../common/img/icon/ly.png" alt="">
                             <div class="font">145</div>
                         </a>
@@ -100,7 +102,7 @@
                 <div class="info_img"><img src="../../common/img/images/big1.png" alt=""></div>
             </div>
 
-            <div class="questions_box">
+            <div class="questions_box" id="que_id">
                 <div class="title_txt">我要提问</div>
                 <div class="type_txt">
                     <form>

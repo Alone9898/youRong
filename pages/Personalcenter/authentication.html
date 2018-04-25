@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>身份认证</title>
+    <meta name="keywords" content="装修,加速器,托管,设计中心,招投标,项目管理,品牌加盟">
+    <meta name="description" content="">
+    <link href="../../common/img/icon/logo-icon.png" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../common/css/swiper.min.css">
     <link rel="stylesheet" href="../../common/css/base.css"/>
@@ -27,14 +30,14 @@
             </div>
             <div class="list_menu">
                 <ul class="clearfix">
-                    <li class=""><a href="">我的关注</a></li>
-                    <li><a href="">我的收藏</a></li>
-                    <li><a href="">我的商品</a></li>
-                    <li><a href="">我的创作</a></li>
-                    <li><a href="">我的团队</a></li>
-                    <li class="active_bd"><a href="">我的信息</a></li>
-                    <li><a href="">我的消息</a></li>
-                    <li><a href="">身份认证</a></li>
+                    <li><a href="myFocus.html">我的关注</a></li>
+                    <li><a href="mycollection.html">我的收藏</a></li>
+                    <li><a href="mygoods.html">我的商品</a></li>
+                    <li><a href="mycreation.html">我的创作</a></li>
+                    <li><a href="myteam.html">我的团队</a></li>
+                    <li><a href="profile.html">我的信息</a></li>
+                    <li><a href="message.html">我的消息</a></li>
+                    <li class="active_bd"><a href="authentication.html">身份认证</a></li>
                 </ul>
             </div>
         </div>
@@ -53,7 +56,7 @@
                         <div class="form-group">
                             <label class="col-sm-1 control-label">团队名称</label>
                             <div class="col-sm-4">
-                                <input type="button" class="inputcss uninput1" id="tdname" value="老李头">
+                                <input type="text" class="inputcss uninput1" id="tdname" value="老李头">
                             </div>
                         </div>
                         <div class="form-group">
@@ -68,8 +71,8 @@
                                 <label class="col-sm-1 control-label">资质1</label>
                                 <div class="col-sm-4">
                                     <div class="inputcss uninput1 clearfix">
-                                        <div class="upfile pull-left" onclick="upfile()">选择文件</div>
-                                        <input id="upfileinput" type="file" onchange="changefile(this)" style="display: none;" />
+                                        <div class="upfile pull-left" onclick="upfile(this)">选择文件</div>
+                                        <input class="upfileinput" type="file" onchange="changefile(this)" style="display: none;" />
                                         <div class="upfiletxt pull-left">未选择任何文件</div>
                                     </div>
                                 </div>
@@ -109,19 +112,19 @@
                         <div class="form-group">
                             <label class="col-sm-1 control-label">银行卡号</label>
                             <div class="col-sm-4">
-                                <input type="button" class="inputcss uninput1" id="yhnum" value="">
+                                <input type="text" class="inputcss uninput1" id="yhnum" value="">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-1 control-label">银行预留电话</label>
                             <div class="col-sm-4">
-                                <input type="button" class="inputcss uninput1" id="yhphone" value="">
+                                <input type="text" class="inputcss uninput1" id="yhphone" value="">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-1 control-label">开户所在地</label>
                             <div class="col-sm-4">
-                                <input type="button" class="inputcss uninput1" id="khaddr" value="">
+                                <input type="text" class="inputcss uninput1" id="khaddr" value="">
                             </div>
                         </div>
                         <div class="form-group" style="margin-top:30px">
@@ -146,6 +149,7 @@
 <script type="text/javascript" src="../../common/js/public.js"></script>
 <script src="js/designCommon.js"></script>
 <script>
+    var i=1;
     //上传图片
     function upload(){
         $('#uploadinput').click();
@@ -153,7 +157,6 @@
     function changepic(obj){
         var reader= new FileReader();
         file=document.getElementById('uploadinput').files[0];
-        //console.log(file);
         reader.readAsDataURL(file);
         reader.onload=function (e) {
             //console.log(this.result);
@@ -164,37 +167,28 @@
         })
     }
     //上传文件
-    function upfile(){
-        $('#upfileinput').click();
+    function upfile(obj){
+        $(obj).siblings('.upfileinput').click();
     }
     function changefile(obj){
-        var reader= new FileReader();
-        file=document.getElementById('upfileinput').files[0];
-        $('.upfiletxt').html(file.name);
+        file=obj.files[0].name;
+        $(obj).siblings(".upfiletxt").html(file);
     }
     //添加资质
-    var item_list='<div class="form-group">'+
-            '<label class="col-sm-1 control-label">资质1</label>'+
-            '<div class="col-sm-4">'+
-            '<div class="inputcss uninput1 clearfix">'+
-            '<div class="upfile pull-left" onclick="upfile()">选择文件</div>'+
-            '<input id="upfileinput" type="file" onchange="changefile(this)" style="display: none;" />'+
-            '<div class="upfiletxt pull-left">未选择任何文件</div>'+
-            '</div>'+
-            '</div>'+
-            '</div>';
+    var item_list='';
     function addzz(){
-        item_list += '<div class="form-group">'+
-                '<label class="col-sm-1 control-label">资质1</label>'+
+        i++;
+        item_list= '<div class="form-group">'+
+                '<label class="col-sm-1 control-label">资质'+i+'</label>'+
                 '<div class="col-sm-4">'+
                 '<div class="inputcss uninput1 clearfix">'+
-                '<div class="upfile pull-left" onclick="upfile()">选择文件</div>'+
-                '<input id="upfileinput" type="file" onchange="changefile(this)" style="display: none;" />'+
+                '<div class="upfile pull-left" onclick="upfile(this)">选择文件</div>'+
+                '<input class="upfileinput" type="file" onchange="changefile(this)" style="display: none;" />'+
                 '<div class="upfiletxt pull-left">未选择任何文件</div>'+
                 '</div>'+
                 '</div>'+
                 '</div>';
-        $('.zzbox').html(item_list)
+        $('.zzbox').append(item_list);
     }
 </script>
 </body>

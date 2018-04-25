@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>商品展示</title>
+	<meta name="keywords" content="装修,加速器,托管,设计中心,招投标,项目管理,品牌加盟">
+	<meta name="description" content="">
+	<link href="../../common/img/icon/logo-icon.png" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../common/css/swiper.min.css">
     <link rel="stylesheet" href="../../common/css/base.css"/>
@@ -82,7 +85,7 @@
         <div class="zhead">
             <div class="container" style="overflow: hidden;margin-bottom:100px">
                 <ul id="myTab" class="nav nav-tabs mynavcss">
-                    <li class=" pingxing active"><a href="#eventshow" data-toggle="tab">设计作品</a></li>
+                    <li class=" pingxing active"><a href="#eventshow" data-toggle="tab">商品展示</a></li>
                     <li class="pingxing "><a href="#comment" data-toggle="tab">业主评价</a></li>
                     
                     <li class="pingxing"><a href="#about" data-toggle="tab">关于TA</a></li>
@@ -108,41 +111,16 @@
 				       				</div>
 				       			</div>
 				       			<div class="sjzpboxcont clearfix">
-				       				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1">
+				       				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1" @click="Detailscontent()">
 				       					<div style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></div>
 				       				</div>
-				       				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1">
+				       				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1" @click="Detailscontent()">
 				       					<div style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></div>
 				       				</div>
-				       				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1">
+				       				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1"@click="Detailscontent()">
 				       					<div style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></div>
 				       				</div>
-				       				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1">
-				       					<div style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></div>
-				       				</div>
-				       			</div>
-				       		</div>
-				       		<div class="sjzpbox sjzpbox1">
-				       			<div class="sjzpboxtop clearfix">
-				       				<div class="pull-left"><h4>荷香居<img src="../../common/img/icon/hxj.png"></h4></div>
-				       				<div class="pull-right">
-				       					<span>风格：<samp>新中式 | </samp></span>
-				       					<span>面积：<samp>78m² | </samp></span>
-				       					<span>图片量：<samp>13 | </samp></span>
-				       					<span>浏览量：<samp>567</samp></span>
-				       				</div>
-				       			</div>
-				       			<div class="sjzpboxcont clearfix">
-				       				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1">
-				       					<div style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></div>
-				       				</div>
-				       				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1">
-				       					<div style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></div>
-				       				</div>
-				       				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1">
-				       					<div style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></div>
-				       				</div>
-				       				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1">
+				       				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1" @click="Detailscontent()">
 				       					<div style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></div>
 				       				</div>
 				       			</div>
@@ -158,16 +136,41 @@
 				       				</div>
 				       			</div>
 				       			<div class="sjzpboxcont clearfix">
-				       				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1">
+				       				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1" @click="Detailscontent()">
 				       					<div style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></div>
 				       				</div>
-				       				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1">
+				       				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1" @click="Detailscontent()">
 				       					<div style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></div>
 				       				</div>
-				       				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1">
+				       				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1" @click="Detailscontent()">
 				       					<div style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></div>
 				       				</div>
-				       				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1">
+				       				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1" @click="Detailscontent()">
+				       					<div style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></div>
+				       				</div>
+				       			</div>
+				       		</div>
+				       		<div class="sjzpbox sjzpbox1">
+				       			<div class="sjzpboxtop clearfix">
+				       				<div class="pull-left"><h4>荷香居<img src="../../common/img/icon/hxj.png"></h4></div>
+				       				<div class="pull-right">
+				       					<span>风格：<samp>新中式 | </samp></span>
+				       					<span>面积：<samp>78m² | </samp></span>
+				       					<span>图片量：<samp>13 | </samp></span>
+				       					<span>浏览量：<samp>567</samp></span>
+				       				</div>
+				       			</div>
+				       			<div class="sjzpboxcont clearfix">
+				       				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1" @click="Detailscontent()">
+				       					<div style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></div>
+				       				</div>
+				       				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1" @click="Detailscontent()">
+				       					<div style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></div>
+				       				</div>
+				       				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1" @click="Detailscontent()">
+				       					<div style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></div>
+				       				</div>
+				       				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 contimg1" @click="Detailscontent()">
 				       					<div style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></div>
 				       				</div>
 				       			</div>

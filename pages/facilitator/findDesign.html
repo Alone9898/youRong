@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>找设计</title>
+	<meta name="keywords" content="装修,加速器,托管,设计中心,招投标,项目管理,品牌加盟">
+	<meta name="description" content="">
+	<link href="../../common/img/icon/logo-icon.png" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../common/css/swiper.min.css">
     <link rel="stylesheet" href="../../common/css/base.css"/>
@@ -18,173 +21,73 @@
 	    <div class="title">
 	    	<div class="swiper-container-nav">
 		        <div class="myh swiper-wrapper clearfix">
-		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'decoration')">精装工选</div>
-		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'jzdecoration')">精装家装</div>
-		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight" @click="searchcli($event,'findDesign')">找设计师</div>
-		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'mingjiahui')">名家汇</div>
-		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'question')">设计疑问</div>
-		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'interview')">设计专访</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'decoration')">合作案例</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight" @click="searchcli($event,'findDesign')">找服务商</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'question')">疑问解答</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'interview')">服务专访</div>
 		        </div>
 	        </div>
 	    </div>
         
         <div class="cont container " style="margin-bottom: 100px">
 			<div class="mip col-lg-10 col-md-10 col-sm-10 col-xs-12">
-				<div class="conttitle">
-					<h3>优秀设计师</h3>
-					<div>
-						<!-- Swiper -->
-						<div class="swiper-container">
-						    <div class="swiper-wrapper">
-						      	<div class="swiper-slide">
-						      		<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
-						      		<p class="myswipert">老李头1</p>
-						      	</div>
-						      	<div class="swiper-slide">
-						      		<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
-						      		<p class="myswipert">老李头2</p>
-						      	</div>
-						      	<div class="swiper-slide">
-						      		<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
-						      		<p class="myswipert">老李头3</p>
-						      	</div>
-						      	<div class="swiper-slide">
-						      		<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
-						      		<p class="myswipert">老李头4</p>
-						      	</div>
-						      	<div class="swiper-slide">
-						      		<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
-						      		<p class="myswipert">老李头5</p>
-						      	</div>
-						      	<div class="swiper-slide">
-						      		<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
-						      		<p class="myswipert">老李头6</p>
-						      	</div>
-						      	<div class="swiper-slide">
-						      		<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
-						      		<p class="myswipert">老李头7</p>
-						      	</div>
-						      	<div class="swiper-slide">
-						      		<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
-						      		<p class="myswipert">老李头8</p>
-						      	</div>
-						      	<div class="swiper-slide">
-						      		<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
-						      		<p class="myswipert">老李头9</p>
-						      	</div>
-						      	<div class="swiper-slide">
-						      		<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
-						      		<p class="myswipert">老李头0</p>
-						      	</div>
-						    </div>
-						    <!-- Add Arrows -->
-						    <div class="swiper-button-next swiper-button-nextmy"></div>
-						    <div class="swiper-button-prev swiper-button-prevmy"></div>
-						</div>
-					</div>
-				</div>
 				<div class="">
-					<div class="contmain clearfix">
-						<div class="contbox clearfix">
-							<div class="clearfix" style="position: relative;">
-								<div class="contleft pull-left"><img src="../../common/img/images/avatar2.png"></div>
-								<div class="pull-left">
-									<h4 style="margin-bottom:8px"><b>李老头</b><samp class="ji">34</samp><samp class="bao">保</samp></h4>
-									<div><p class="pcss">所在城市 <span> 四川成都</span> 作品 <span> 123套</span></p></div>
-									<div><p class="pcss">擅长类型 <span> 别墅，酒店，商业设计</span></p></div>
-									<div class="yy"><p class="pcss">预约人数</p></div>
-									<div class="numcss">89</div>
-								</div>
-								<div class="pull-right butt">
-									<div style="margin-bottom: 33px"><b>400-600</b> <span class="pcss">元/m2</span></div>
-									<div class="buttno"><a class="btn btn-success btn-block">预约咨询</a></div>
-								</div>
-							</div>
-							<div class="contimg clearfix">
-								<div class="col-lg-3 col-md-3 col-sm-3" >
-									<p style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></p>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<p style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></p>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<p style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></p>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3" >
-									<p style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></p>
+					<div class="contmain clearfix" style="margin-top:0">
+						<a href="header.html">
+							<div class="contbox clearfix">
+								<div class="clearfix" style="position: relative;">
+									<div class="contleft pull-left"><img src="../../common/img/images/avatar2.png"></div>
+									<div class="pull-left" style="width:86%">
+										<h4 style="margin-bottom:8px"><b>李老头</b><samp class="ji">34</samp><samp class="bao">保</samp>
+											<span class="pull-right" style="color:#999"><samp style="color:#999">2019-2-2</samp>加入</span>
+										</h4>
+										<div><p class="pcss">所在城市 <span> 四川成都</span> 作品 <span> 123套</span></p></div>
+										<div><p class="pcss">擅长类型 <span> 别墅，酒店，商业设计</span></p></div>
+										<div class="yy"><p class="pcss" style="margin-top: 6px;">服务理念</p></div>
+									</div>
 								</div>
 							</div>
-						</div>
+						</a>
 					</div>
 					<div class="contmain clearfix">
-						<div class="contbox clearfix">
-							<div class="clearfix" style="position: relative;">
-								<div class="contleft pull-left"><img src="../../common/img/images/avatar2.png"></div>
-								<div class="pull-left">
-									<h4 style="margin-bottom:8px"><b>李老头</b><samp class="ji">34</samp><samp class="bao">保</samp></h4>
-									<div><p class="pcss">所在城市 <span> 四川成都</span> 作品 <span> 123套</span></p></div>
-									<div><p class="pcss">擅长类型 <span> 别墅，酒店，商业设计</span></p></div>
-									<div class="yy"><p class="pcss">预约人数</p></div>
-									<div class="numcss">89</div>
-								</div>
-								<div class="pull-right butt">
-									<div style="margin-bottom: 33px"><b>400-600</b> <span class="pcss">元/m2</span></div>
-									<div class="buttno"><a class="btn btn-success btn-block">预约咨询</a></div>
-								</div>
-							</div>
-							<div class="contimg clearfix">
-								<div class="col-lg-3 col-md-3 col-sm-3" >
-									<p style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></p>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<p style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></p>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<p style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></p>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3" >
-									<p style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></p>
+						<a href="header.html">
+							<div class="contbox clearfix">
+								<div class="clearfix" style="position: relative;">
+									<div class="contleft pull-left"><img src="../../common/img/images/avatar2.png"></div>
+									<div class="pull-left" style="width:86%">
+										<h4 style="margin-bottom:8px"><b>李老头</b><samp class="ji">34</samp><samp class="bao">保</samp>
+											<span class="pull-right" style="color:#999"><samp style="color:#999">2019-2-2</samp>加入</span>
+										</h4>
+										<div><p class="pcss">所在城市 <span> 四川成都</span> 作品 <span> 123套</span></p></div>
+										<div><p class="pcss">擅长类型 <span> 别墅，酒店，商业设计</span></p></div>
+										<div class="yy"><p class="pcss" style="margin-top: 6px;">服务理念</p></div>
+									</div>
 								</div>
 							</div>
-						</div>
+						</a>
 					</div>
 					<div class="contmain clearfix">
-						<div class="contbox clearfix">
-							<div class="clearfix" style="position: relative;">
-								<div class="contleft pull-left"><img src="../../common/img/images/avatar2.png"></div>
-								<div class="pull-left">
-									<h4 style="margin-bottom:8px"><b>李老头</b><samp class="ji">34</samp><samp class="bao">保</samp></h4>
-									<div><p class="pcss">所在城市 <span> 四川成都</span> 作品 <span> 123套</span></p></div>
-									<div><p class="pcss">擅长类型 <span> 别墅，酒店，商业设计</span></p></div>
-									<div class="yy"><p class="pcss">预约人数</p></div>
-									<div class="numcss">89</div>
-								</div>
-								<div class="pull-right butt">
-									<div style="margin-bottom: 33px"><b>400-600</b> <span class="pcss">元/m2</span></div>
-									<div class="buttno"><a class="btn btn-success btn-block">预约咨询</a></div>
-								</div>
-							</div>
-							<div class="contimg clearfix">
-								<div class="col-lg-3 col-md-3 col-sm-3" >
-									<p style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></p>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<p style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></p>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<p style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></p>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3" >
-									<p style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></p>
+						<a href="header.html">
+							<div class="contbox clearfix">
+								<div class="clearfix" style="position: relative;">
+									<div class="contleft pull-left"><img src="../../common/img/images/avatar2.png"></div>
+									<div class="pull-left" style="width:86%">
+										<h4 style="margin-bottom:8px"><b>李老头</b><samp class="ji">34</samp><samp class="bao">保</samp>
+											<span class="pull-right" style="color:#999"><samp style="color:#999">2019-2-2</samp>加入</span>
+										</h4>
+										<div><p class="pcss">所在城市 <span> 四川成都</span> 作品 <span> 123套</span></p></div>
+										<div><p class="pcss">擅长类型 <span> 别墅，酒店，商业设计</span></p></div>
+										<div class="yy"><p class="pcss" style="margin-top: 6px;">服务理念</p></div>
+									</div>
 								</div>
 							</div>
-						</div>
+						</a>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12" style="padding: 0">
 				<div class="rightb">
-					<h5 style="margin-bottom:10px"><b>设计专访</b></h5>
+					<h5 style="margin-bottom:10px"><b>服务专访</b></h5>
 					<div class="imgcss" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
 					<div>
 						<b>李老头</b>
