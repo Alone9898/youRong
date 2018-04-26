@@ -107,7 +107,8 @@
     color: #333;
   }
   .mycontainer,
-  .h5_box {
+  .h5_box,
+  .container {
     display: none!important;
   }
   .mobilebox {
