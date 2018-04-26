@@ -48,17 +48,9 @@ var app = new Vue({
         kongjian(){
             window.location.href="header.html";
         },
-        //提问
-        AskQuestions_a(){
-            window.location.href="AskQuestions_a.html";
-        },
-        //提问
-        AskQuestions_b(){
-            window.location.href="AskQuestions_b.html";
-        },
-        //提问
-        AskQuestions(){
-            window.location.href="AskQuestions.html";
+        //案例详情
+        Detailscontent(){
+            window.location.href="Detailscontent.html";
         },
     },
 })

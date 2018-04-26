@@ -85,9 +85,9 @@ Vue.component('sitenav', {
         </nav>\
             <div class="swiper-container header-swiper-container pswiper">\
                 <div class="swiper-wrapper ">\
-                    <div class="swiper-slide"><img src="../../common/img/images/banner1.jpg" height="100%" ></div>\
-                    <div class="swiper-slide"><img src="../../common/img/images/banner1.jpg" height="100%" ></div>\
-                    <div class="swiper-slide" ><img src="../../common/img/images/banner1.jpg" height="100%" ></div>\
+                    <div class="swiper-slide"><img src="../../common/img/images/banner_1.png" height="100%" ></div>\
+                    <div class="swiper-slide"><img src="../../common/img/images/banner_1.png" height="100%" ></div>\
+                    <div class="swiper-slide" ><img src="../../common/img/images/banner_1.png" height="100%" ></div>\
                 </div>\
                 <div class="swiper-pagination header-pagination"></div>\
             </div>\
