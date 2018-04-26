@@ -8,14 +8,14 @@
 }
 /*我的位置nav*/
 .z_menu {
-  margin-top: 2rem;
+  margin-top: 20px;
 }
 .z_menu li {
   float: left;
   clear: right;
-  font-size: 1.2rem;
+  font-size: 12px;
   font-weight: normal;
-  padding: 0 0.1rem;
+  padding: 0 1px;
 }
 .z_menu li a {
   color: #666666;
@@ -25,14 +25,14 @@
 }
 /*AskQuestions*/
 .questions_box {
-  padding-top: 5rem;
-  margin-top: 1rem;
+  padding-top: 50px;
+  margin-top: 10px;
   background: #fff;
   min-height: 710px;
 }
 .questions_box .title_txt {
   text-align: center;
-  font-size: 3rem;
+  font-size: 30px;
   font-weight: normal;
   color: #333333;
 }
@@ -63,8 +63,8 @@
   height: 100%;
   background-color: #f4f4f4;
   resize: none;
-  padding: 2rem 2rem;
-  font-size: 1.4rem;
+  padding: 20px 20px;
+  font-size: 14px;
   font-weight: 600;
   color: #333;
   border: none;
@@ -76,12 +76,12 @@
 .questions_box .upload_box {
   position: relative;
   height: 40px;
-  margin-top: 3rem;
+  margin-top: 30px;
 }
 .questions_box .upload_box .upload_btn {
   line-height: 40px;
   float: left;
-  font-size: 1.4rem;
+  font-size: 14px;
   font-weight: 600;
   color: #666666;
 }
@@ -94,7 +94,7 @@
   height: 40px;
   background: #00dfb9;
   border: none;
-  font-size: 1.6rem;
+  font-size: 16px;
   font-weight: 600;
   color: #ffffff;
   border-radius: 5px;
@@ -127,7 +127,7 @@
     font-weight: inherit!important;
   }
   .z_menu {
-    padding-left: 1rem;
+    padding-left: 10px;
     display: none;
   }
   .questions_box {
@@ -135,32 +135,32 @@
     padding: 0;
   }
   .questions_box .title_txt {
-    padding-top: 2rem;
-    font-size: 1.6rem ;
+    padding-top: 20px;
+    font-size: 16px ;
   }
   .questions_box .type_txt {
     width: 90%;
     margin: 0 auto;
     height: 150px;
     position: relative;
-    margin-top: 3rem;
+    margin-top: 30px;
   }
   .questions_box .upload_box {
     width: 90%;
     margin: 0 auto;
-    margin-top: 2rem;
+    margin-top: 20px;
   }
   .questions_box .upload_box .submit_btn {
-    height: 2.5rem;
-    width: 6rem;
-    font-size: 1.4rem;
+    height: 25px;
+    width: 60px;
+    font-size: 14px;
   }
   .questions_box .upload_box .upload_btn {
-    line-height: 3rem;
-    font-size: 1.4rem;
+    line-height: 30px;
+    font-size: 14px;
   }
   .questions_box .upload_box .upload_btn img {
-    width: 2rem;
+    width: 20px;
   }
   .questions_box .fileUploadContent {
     width: 90%;
@@ -174,11 +174,11 @@
     height: 100px;
   }
   .questions_box .selectFileBt {
-    font-size: 1rem!important;
+    font-size: 10px!important;
     padding: 7px!important;
   }
   .questions_box .iconfont {
-    font-size: 2.5rem!important;
+    font-size: 25px!important;
     line-height: 28px!important;
   }
 }

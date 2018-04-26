@@ -64,7 +64,7 @@ video {
   background: #cccccc;
 }
 .manboxconttxt a {
-  font-size: 12px;
+  font-size: 14px;
   padding-left: 7px;
 }
 .manboxconttxt a:hover {
@@ -97,20 +97,20 @@ video {
   background: #fff;
 }
 .right_layout .float_bar_one .z_title {
-  margin-top: 2rem;
+  margin-top: 20px;
 }
 .right_layout .float_bar_one .z_title a {
   border-bottom: 2px solid #00dfb9;
   color: #666666;
-  padding-bottom: 0.3rem;
-  font-size: 1.4rem;
+  padding-bottom: 3px;
+  font-size: 14px;
 }
 .right_layout .float_bar_one ul {
-  margin: 2rem 0 2.5rem 0;
+  margin: 20px 0 25px 0;
 }
 .right_layout .float_bar_one ul li {
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 10px;
 }
 .right_layout .float_bar_one ul li .left_user {
   float: left;
@@ -118,27 +118,27 @@ video {
   margin-right: 1rem;
 }
 .right_layout .float_bar_one ul li .left_user img {
-  width: 3.2rem;
-  height: 3.2rem;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
 }
 .right_layout .float_bar_one ul li .z_center {
   float: left;
-  height: 3.2rem;
+  height: 32px;
 }
 .right_layout .float_bar_one ul li .z_center .z_name {
-  font-size: 1.2rem;
+  font-size: 12px;
   /* color: #333333; */
 }
 .right_layout .float_bar_one ul li .z_center .z_professional {
-  font-size: 1rem;
+  font-size: 10px;
   color: #666666;
 }
 .right_layout .float_bar_one ul li .z_right_btn {
   float: right;
 }
 .right_layout .float_bar_one ul li .z_right_btn .btn_a {
-  margin-top: 0.7rem;
+  margin-top: 7px;
   width: 54px;
   height: 18px;
   background-color: #00dfb9;
@@ -146,11 +146,11 @@ video {
   display: block;
   line-height: 18px;
   color: #fff;
-  font-size: 1rem;
+  font-size: 10px;
   text-align: center;
 }
 .right_layout .float_bar_one ul li .z_right_btn .btn_a {
-  margin-top: 0.7rem;
+  margin-top: 7px;
   width: 54px;
   height: 18px;
   background-color: #00dfb9;
@@ -158,17 +158,17 @@ video {
   display: block;
   line-height: 18px;
   color: #fff;
-  font-size: 1rem;
+  font-size: 10px;
   text-align: center;
 }
 .right_layout .float_bar_two .z_title {
-  margin-top: 2rem;
+  margin-top: 20px;
 }
 .right_layout .float_bar_two .z_title .f_l {
   float: left;
   /* clear: left; */
   border-bottom: 1px solid #ddd;
-  padding-bottom: .3rem;
+  padding-bottom: 3px;
   /* margin-right: 10px; */
   width: 50%;
   text-align: center;
@@ -178,25 +178,25 @@ video {
 }
 .right_layout .float_bar_two .z_title a {
   color: #666666;
-  font-size: 1.4rem;
+  font-size: 14px;
 }
 .right_layout .float_bar_two .z_title .f_r {
   float: right;
   clear: right;
-  font-size: 1.2rem;
+  font-size: px;
   line-height: 24px;
 }
 .right_layout .float_bar_two .z_title a {
   color: #666666;
-  font-size: 1.4rem;
+  font-size: 14px;
 }
 .right_layout .float_bar_two ul {
-  margin-bottom: 5rem;
+  margin-bottom: 50px;
 }
 .right_layout .float_bar_two ul li {
   width: 100%;
-  font-size: 1.2rem;
-  margin-top: 1.5rem;
+  font-size: 12px;
+  margin-top: 15px;
 }
 .right_layout .float_bar_two ul li a {
   color: #999999;
@@ -219,7 +219,7 @@ video {
   color: #00dfb9;
 }
 .right_layout .float_bar_two {
-  margin-top: 2rem;
+  margin-top: 20px;
   padding: 10px 10px 24px 10px;
   background: #fff;
 }
