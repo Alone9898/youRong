@@ -2,27 +2,26 @@
 Vue.component('sitenav', {
     template:'<div>\
     <div class="container siteNav">\
-        <div class="row" >\
-            <div class="col-xs-2 col-lg-1 place">\
+        <div class="row clearfix" >\
+            <div class="pull-left place" style="margin-right:10px">\
                 <div class="dropdown">\
-                    <button type="button" class="btn dropdown-toggle " style="background: none" id="dropdownMenu1"\
-                            data-toggle="dropdown">\
+                    <button type="button" class="btn" style="background: none" @click="editaddr()">\
                         <img src="common/img/icon/place.png"/>\
-                        <span>四川·成都</span>\
+                        <span id="addrname"></span>\
                         <span class="caret"></span>\
                     </button>\
-                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">\
-                        <li role="presentation">\
-                            <a role="menuitem" tabindex="-1" href="#">四川·南充</a>\
-                        </li>\
-                        <li role="presentation">\
-                            <a role="menuitem" tabindex="-1" href="#">四川·泸州</a>\
-                        </li>\
+                    <ul class="dropdown-menu myaddr">\
+                        <div data-toggle="distpicker" class="linkage" style="text-align: center;">\
+                            <select id="pro" data-province="---- 选择省 ----" style="width:120px;margin:5px"></select>\
+                            <select id="city" data-city="---- 选择市 ----" style="width:120px;margin:5px"></select>\
+                            <a class="btn btn-block btn-ok" @click="editok()">确定</a>\
+                            <a class="btn btn-block btn-no" @click="editno()">取消</a>\
+                        </div>\
                     </ul>\
                 </div>\
             </div>\
-            <div class="col-xs-7 col-lg-7 siteNav_welcome name-title">欢迎来到装修加速平台，请 <a href="#" @click="modal_tip()">登录</a> | <a href="#">注册</a></div>\
-            <div class="col-xs-3 col-lg-4 siteNav_welcome siteNav_right">\
+            <div class="pull-left siteNav_welcome name-title">欢迎来到装修加速平台，请 <a href="#" @click="modal_tip()">登录</a> | <a href="#">注册</a></div>\
+            <div class="pull-right siteNav_welcome siteNav_right">\
               <span class="weixin" @mouseover="wei_img(1)" @mouseout="wei_img(2)">微信公众号</span>\
               <div class="weixin_img" v-show="weixin"><img src="common/img/icon/weixin.jpg" width="120" height="120"></div>\
             </div>\
@@ -58,14 +57,14 @@ Vue.component('sitenav', {
                 </div>\
                 <div class="collapse navbar-collapse" id="navbar-menu">\
                     <ul class="nav navbar-nav navbar-left">\
-                        <li><a href="index.html">首页</a></li>\
-                        <li><a href="pages/introduce/introduce.html">产品介绍</a></li>\
-                        <li><a href="pages/brandManage/business.html">品牌中心</a></li>\
-                        <li><a href="pages/designCenter/decoration.html">设计中心</a></li>\
-                        <li><a href="pages/bid/bid.html">招投标</a></li>\
-                        <li ><a href="pages/Projectcenter/quality.html">项目管理</a></li>\
-                        <li ><a href="pages/facilitator/decoration.html">服务商</a></li>\
-                        <li><a href="pages/Aboutus/Introductionofplatform.html">关于我们</a></li>\
+                        <li class="sy"  ><a  href="index.html">首页</a></li>\
+                        <li class="cpjs"><a href="pages/introduce/introduce.html">产品介绍</a></li>\
+                        <li class="ppzx"><a href="pages/brandManage/business.html">品牌中心</a></li>\
+                        <li class="sjzx"><a href="pages/designCenter/decoration.html">设计中心</a></li>\
+                        <li class="ztb" ><a href="pages/bid/bid.html">招投标</a></li>\
+                        <li class="xmgl"><a href="pages/Projectcenter/quality.html">项目管理</a></li>\
+                        <li class="fws" ><a href="pages/facilitator/decoration.html">服务商</a></li>\
+                        <li class="gywm"><a href="pages/Aboutus/Introductionofplatform.html">关于我们</a></li>\
                     </ul>\
                 </div>\
                 <div class="navbar-collapse" id="person">\
@@ -144,6 +143,19 @@ Vue.component('sitenav', {
                 this.person_cunt=0
             }
         },
+        editaddr:function(){
+            $(".myaddr").show();
+        },
+        editok(){
+            var addrstr=$("#pro").val()+$("#city").val();
+            addrstr=addrstr.replace("省"," ");
+            addrstr=addrstr.replace("市","");
+            $('#addrname').html(addrstr);
+            $(".myaddr").hide();
+        },
+        editno(){
+            $(".myaddr").hide();
+        },
     },
     mounted:function(){
         $('.siteNav').css('display', 'block');
@@ -172,3 +184,4 @@ Vue.component('footer-model', {
         </div>\
     </div>'
 });
+

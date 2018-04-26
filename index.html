@@ -308,23 +308,12 @@
 <script src="common/js/vue.js"></script>
 <script src="common/js/jquery.cookie.js"></script>
 <script type="text/javascript" src="common/js/public1.js"></script>
+<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+<script src="common/js/distpicker.data.js"></script>
+<script src="common/js/distpicker.js"></script>
+<script src="common/js/main.js"></script>
 <script src="index/js/index.js"></script>
 <script>
-
-    $(function(){
-        (function($){
-            $.cookies=function(obj,name,id){
-                $(obj).click(function(){
-                    var value=$(id).val();
-                    $.cookie(name, value, { expires: 1 });
-                    $('.name-title').html("<a href='pages/Personalcenter/myFocus.html'>"+a[0].value+"</a>")
-                });
-                var cookie=  $.cookie(name);
-                var a=$(id).val(cookie)
-            }
-        }($));
-        $.cookies('.login','cookieName','.type_text')
-    })
 </script>
     <script>
         new Vue({
