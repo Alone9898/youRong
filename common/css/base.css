@@ -9,24 +9,46 @@ abbr,acronym { border: 0; }
 ul{list-style: none;padding:0;margin: 0;}
 a:hover{text-decoration:none;}
 a{text-decoration:none;}
+html,body{
+    font-family:'微软雅黑', Helvetica Neue, Helvetica, Arial, sans-serif;
+}
 .container{
     min-width: 1200px!important;
 }
-
+.myh div {
+   font-size:16px!important;
+}
 btn{
     outline:none;
 }
 .btn-ok,.btn-no{
     margin: 0!important;
-
+}
+.pingxing a {
+    font-size:16px!important;
 }
 
+.swiper-pagination-bullet-active {
+    background: #00dfb9!important;
+}
+.lcss>h4>b,.myswipert{
+    font-size:16px!important;
+}
+.san{
+    color:#999!important;
+}
+.ji {
+    font-size: 14px!important;
+}
+.contmain .bao {
+    font-size: 14px!important;
+}
 .navbar-toggle:hover{
  background: inherit!important;
 }
 *{
     font-family: MicrosoftYaHei;
-    font-size: 62.5%;
+
 }
 [v-cloak] {
 display: none;

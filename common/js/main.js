@@ -91,5 +91,12 @@ $(function(){
         $(".gywm a").css({
             "color":"#00dfb9"
         })
+    }else if(url.indexOf("Projectcenter")>0){
+        $(".xmgl").css({
+            "border-bottom":"4px solid #B2B2B2"
+        })
+        $(".xmgl a").css({
+            "color":"#00dfb9"
+        })
     }
 })

@@ -159,12 +159,12 @@ img {
 }
 .conttitle {
   background: #ffffff;
-  padding: 20px 0;
+  padding:40px 0;
 }
 .conttitle h3 {
   margin: 0;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .btn-success {
   color: #fff;
@@ -203,7 +203,7 @@ img {
 /*end*/
 /*right*/
 .rightb {
-  padding: 10px;
+  padding: 10px 10px 20px 10px;
   background: #ffffff;
   position: relative;
 }
@@ -390,11 +390,11 @@ img {
   }
   .ji {
     padding: 0px 12px;
-    font-size: 12px;
+    font-size: 14px;
   }
   .contmain .bao {
     padding: 0px 12px;
-    font-size: 12px;
+    font-size: 14px;
   }
   .contmain span {
     margin: 0;
@@ -1206,6 +1206,7 @@ img {
   color: #333333;
   line-height: 34px;
   padding: 10px 40px;
+  font-size:16px!important;
 }
 .mynavcss > li > a:hover {
   background-color: transparent;

@@ -1,15 +1,9 @@
 //头部
 Vue.component('sitenav', {
     template:'<div>\
-<<<<<<< HEAD
     <div class="container siteNav">\
         <div class="row clearfix" >\
             <div class="pull-left place" style="margin-right:10px">\
-=======
-    <div class="container siteNav ">\
-        <div class="row" >\
-            <div class="col-xs-2 col-lg-1 place">\
->>>>>>> 19b04a700fdc5a78e2b2dd412ad4792986281c10
                 <div class="dropdown">\
                     <button type="button" class="btn" style="background: none" @click="editaddr()">\
                         <img src="common/img/icon/place.png"/>\
@@ -45,7 +39,7 @@ Vue.component('sitenav', {
                 <input type="checkbox" class="checkbox"><span>下次自动登录</span>\
                 <div>忘记密码？</div>\
             </div>\
-            <div class="login"><a href="pages/Personalcenter/myFocus .html" style="display:block;color:#fff;" @click="login()">立即登录</a></div>\
+            <div class="login"><a href="javascript:;" style="display:block;color:#fff;" @click="login()">立即登录</a></div>\
             <div class="register">还没有账号？<span>免费注册</span></div>\
         </div>\
     </div>\

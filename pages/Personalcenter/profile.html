@@ -10,6 +10,7 @@
     <link href="../../common/img/icon/logo-icon.png" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../common/css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
     <link rel="stylesheet" href="../../common/css/base.css"/>
     <script src="../../common/js/jquery-1.11.3.js"></script>
     <link rel="stylesheet" href="css/myFocus.css"/>
@@ -112,7 +113,15 @@
                             <div class="form-group">
                                 <label for="firstname" class="col-sm-1 control-label">注册时间</label>
                                 <div class="col-sm-4">
-                                    <input type="text" class="inputcss uninput1" id="zctime" value="2019-2-2">
+                                    <!--<input type="text" class="inputcss uninput1" id="zctime" value="2019-2-2">-->
+                                    <div class="block" >
+                                        <el-date-picker
+                                                v-model="value1"
+                                                type="date"
+                                                placeholder="选择日期"
+                                                style="width:100%">
+                                        </el-date-picker>
+                                    </div>
                                 </div>
                             </div>
                         </form>
@@ -237,6 +246,7 @@
 <script type="text/javascript" src="../../common/js/public.js"></script>
 <script src="js/distpicker.data.js"></script>
 <script src="js/distpicker.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
 <script src="js/designCommon.js"></script>
 </body>
 </html>
