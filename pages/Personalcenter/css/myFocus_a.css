@@ -39,6 +39,7 @@ body {
 }
 .left_user .list_menu {
   margin-top: 10px;
+  padding-bottom: 12px;
   background: #fff;
 }
 .left_user .list_menu ul li a {
@@ -84,7 +85,8 @@ body {
   color: #00dfb9;
   border-bottom: 2px solid #00dfb9;
 }
-.right_content .nav-list .active_b a {
+.right_content .nav-list .active_b a,
+.right_content .nav-list .active a {
   border-bottom: 2px solid #00dfb9;
   color: #00dfb9;
 }
@@ -96,6 +98,7 @@ body {
 }
 .right_content .content-info .item-li .img-banner {
   width: 100%;
+  height: 220px;
 }
 .right_content .content-info .item-li .name_txt {
   margin-top: 15px;
@@ -126,21 +129,9 @@ body {
   color: #666666;
   font-size: 12px;
 }
-.right_content .content-info .item-li .border_top {
-  padding-top: 10px;
-  border-top: 1px solid #DDDDDD;
-}
-.right_content .content-info .item-li .border_top .left-item {
-  float: left;
-  font-size: 14px;
-}
-.right_content .content-info .item-li .border_top .deletes {
-  cursor: pointer;
-}
-.right_content .content-info .item-li .border_top .right-item {
-  float: right;
-  font-size: 12px;
-  color: #666666;
+.icon-img,
+.fa-angle-right {
+  display: none;
 }
 @media screen and (max-width: 768px) {
   .left_user {
@@ -160,11 +151,39 @@ body {
     width: 100%;
   }
   .right_content .nav-list li {
-    width: 100%;
+    width: 25%;
     margin-left: 0!important;
     text-align: center;
   }
   .right_content .content-info {
     margin-top: 0;
+  }
+  .right_content .content-info .item-li .img-banner {
+    height: 150px;
+  }
+  .right_content .content-info .item-li .info-li {
+    margin-bottom: 15px;
+  }
+  .right_content .content-info .item-li .info-li .item1 {
+    text-align: left;
+    width: 33.333333%;
+  }
+  .right_content .content-info .item-li .info-li .item {
+    text-align: center;
+    width: 33.333333%;
+  }
+  .right_content .content-info .item-li .info-li .item2 {
+    text-align: right;
+    width: 33.333333%;
+  }
+  .right_content .content-info .item-li .info-li .color_9 {
+    display: block;
+    color: #999999;
+    margin-right: 0;
+    font-size: 12px;
+  }
+  .right_content .content-info .item-li .info-li .color_6 {
+    color: #666666;
+    font-size: 12px;
   }
 }

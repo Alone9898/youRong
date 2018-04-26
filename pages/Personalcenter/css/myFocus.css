@@ -129,3 +129,68 @@ body {
   color: #666666;
   font-size: 12px;
 }
+.icon-img,
+.fa-angle-right {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .right_content {
+    display: none;
+  }
+  .container {
+    padding: 0;
+  }
+  .left_user {
+    margin-top: 0;
+    width: 100%;
+  }
+  .left_user .user_info {
+    height: 180px;
+    width: 100%;
+    padding-top: 20px;
+  }
+  .left_user .user_info .name_user {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .left_user .user_info .user_img {
+    width: 60px;
+    height: 60px;
+  }
+  .left_user .user_info .btn-kj {
+    display: block;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+  }
+  .list_menu {
+    padding-bottom: 0!important;
+    margin-bottom: 50px!important;
+  }
+  .list_menu li {
+    border-bottom: 1px solid #ddd;
+  }
+  .list_menu li a {
+    padding: 0 15px;
+    margin-top: 0!important;
+    height: 40px!important;
+    line-height: 40px!important;
+    border-left: none!important;
+    color: #666666!important;
+    padding-left: 15px!important;
+  }
+  .list_menu li a .fa-angle-right {
+    line-height: 40px;
+    float: right;
+    color: #666666;
+    font-size: 25px;
+    display: block;
+  }
+  .list_menu li a .icon-img {
+    display: inline;
+    width: 20px;
+    margin-right: 10px;
+  }
+}

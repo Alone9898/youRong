@@ -145,64 +145,59 @@ body{
 .icon-img,.fa-angle-right{
   display: none;
 }
-@media screen and (max-width: 768px) {
-      .right_content{
-        display: none;
-      }
-  .container{
-    padding: 0;
-  }
-  .left_user {
-    margin-top: 0;
-    width: 100%;
-    .user_info{
-      height: 180px;
+  @media screen and (max-width: 768px) {
+    .left_user{
+      display: none;
+    }
+    .container{
+      padding: 0;
+    }
+    .right_content{
+      display: block;
       width: 100%;
-      padding-top: 20px;
-      .name_user{
-        margin-top: 10px;
-        margin-bottom: 20px;
+      margin-top: 0;
+      .nav-list{
+        height: 40px;
+        line-height: 38px;;
+        width: 100%;
+        li{
+          width: 25%;
+          margin-left: 0!important;
+          text-align: center;
+        }
       }
-      .user_img{
-        width: 60px;
-        height: 60px;
-      }
-      .btn-kj{
-        display: block;
-        width: 120px;
-        height: 30px;
-        text-align: center;
-        line-height: 30px;
-        font-size: 14px;
+      .content-info{
+        margin-top: 0;
+        .item-li{
+          .img-banner{
+            height: 150px;
+          }
+          .info-li {
+            margin-bottom: 15px;
+            .item1 {
+              text-align: left;
+              width: 33.333333%;
+            }
+            .item {
+              text-align: center;
+              width: 33.333333%;
+            }
+            .item2 {
+              text-align: right;
+              width: 33.333333%;
+            }
+            .color_9 {
+              display: block;
+              color: #999999;
+              margin-right: 0;
+              font-size: 12px;
+            }
+            .color_6 {
+              color: #666666;
+              font-size: 12px;
+            }
+          }
+        }
       }
     }
   }
-  .list_menu{
-    padding-bottom: 0!important;
-    margin-bottom: 50px!important;
-    li{
-      border-bottom: 1px solid #ddd;
-      a{
-        padding: 0 15px;
-        margin-top: 0!important;
-        height: 40px!important;
-        line-height: 40px!important;
-        border-left:none!important;
-        color:#666666!important;
-        padding-left: 15px!important;
-        .fa-angle-right{
-          line-height: 40px;
-          float: right;
-          color:#666666;
-          font-size: 25px;
-          display: block;
-        }
-        .icon-img{
-          display: inline;
-          width: 20px;
-          margin-right: 10px;
-        }
-      }
-    }
-  }
-}

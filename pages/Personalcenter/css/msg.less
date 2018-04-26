@@ -1,3 +1,4 @@
+
 .msgbox{
   background: #fff;
   padding:20px;
@@ -36,7 +37,8 @@
   }
   .msgcontinfo{
     margin-top:10px;
-    p{color:#666;}
+
+    p{color:#666;font-size: 12px;}
   }
   .pl{
     span{
@@ -44,6 +46,29 @@
       samp{
         color:#00dfb9;
       }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .left_user{
+    display: none;
+  }
+  .right_content{
+    display: block;
+    width: 100%;
+    margin-top: 0;
+    .nav-list{
+      height: 40px;
+      line-height: 38px;
+      width: 100%;
+      li{
+        width: 25%;
+        margin-left: 0!important;
+        text-align: center;
+      }
+    }
+    .content-info{
+      margin-top: 0;
     }
   }
 }
