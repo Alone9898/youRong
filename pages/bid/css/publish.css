@@ -91,4 +91,55 @@
   .container_aaa {
     display: none;
   }
+  .container_aaa {
+    display: none;
+  }
+  body {
+    background: #f4f4f4;
+  }
+  a {
+    color: #333;
+  }
+  .mycontainer,
+  .h5_box {
+    display: none!important;
+  }
+  .mobilebox {
+    display: block!important;
+  }
+  .mobilebox .msgmobiletitle {
+    font-size: 16px!important;
+    text-align: center;
+    padding: 12px 0;
+    background: #fff;
+    margin-bottom: 10px;
+  }
+  .mobilebox .head {
+    display: none;
+  }
+  .mobilebox .container_box .content {
+    margin: 0;
+    width: 100%;
+  }
+  .mobilebox .container_box {
+    width: 100%;
+  }
+  .mobilebox .editorBox {
+    margin-left: 0!important;
+    width: 96%!important;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    border: 1px solid #ddd;
+  }
+  .container_box {
+    padding-left: 0!important;
+  }
+  .code {
+    margin-top: 20px!important;
+    text-align: center!important;
+  }
+  .container_box .content li {
+    text-align: left;
+    margin-bottom: 16px;
+  }
 }

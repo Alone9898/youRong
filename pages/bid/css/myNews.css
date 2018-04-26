@@ -99,3 +99,64 @@
   font-size: 14px;
   color: #333;
 }
+@media screen and (max-width: 768px) {
+  body {
+    background: #f4f4f4;
+  }
+  a {
+    color: #333;
+  }
+  .mycontainer,
+  .h5_box,
+  .container {
+    display: none!important;
+  }
+  .mobilebox {
+    display: block!important;
+  }
+  .mobilebox .msgmobiletitle {
+    font-size: 16px!important;
+    text-align: center;
+    padding: 12px 0;
+    background: #fff;
+    margin-bottom: 10px;
+  }
+  .mobilebox .mobilecont {
+    background: #fff;
+    padding: 14px;
+  }
+  .mobilebox .mobilecont .msgul .msgbordr {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 12px;
+  }
+  .mobilebox .mobilecont .msgul li {
+    width: 100%;
+    position: relative;
+    padding-left: 60px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 14px;
+    margin-bottom: 14px;
+  }
+  .mobilebox .mobilecont .msgul li i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+  }
+  .mobilebox .mobilecont .msgul li i img {
+    width: 100%;
+  }
+  .mobilebox .mobilecont .msgul li a {
+    display: block;
+  }
+  .mobilebox .mobilecont .msgul li a .msgtime {
+    color: #999;
+  }
+  .mobilebox .mobilecont .msgul li a .msgt {
+    font-size: 14px!important;
+  }
+  .mobilebox .mobilecont .msgul li a p {
+    color: #999;
+    margin-top: 8px;
+  }
+}

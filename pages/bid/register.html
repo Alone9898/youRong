@@ -121,6 +121,109 @@
         <h5-nav></h5-nav>
         <h5-model></h5-model>
     </div>
+    <!--mobile-->
+    <div class="mobilebox" style="display: none;">
+        <div class="msgmobiletitle">注册</div>
+        <div class="mobilecont">
+            <div class="container_box">
+                <div class="head">
+                    欢迎免费注册招投标账号
+                </div>
+                <div class="content">
+                    <div class="register">
+                        <div class="reg">
+                            <div class="reg_1" style="height: 50px">
+                                <p>用户类型：<span>*</span></p>
+                                <div class="reg_right">
+                                    <select>
+                                        <option>请选择会员类型</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="reg_1">
+                                <p>用 户 名：<span>*</span></p>
+                                <div class="reg_right">
+                                    <input type="text" placeholder="请输入用户名"/>
+                                </div>
+                            </div>
+                            <div class="reg_1">
+                                <p>输入密码：<span>*</span></p>
+                                <div class="reg_right">
+                                    <input type="password" placeholder="请输入密码"/>
+                                </div>
+                            </div>
+                            <div class="reg_1">
+                                <p>确认密码：<span>*</span></p>
+                                <div class="reg_right">
+                                    <input type="password" placeholder="请输入密码"/>
+                                </div>
+                            </div>
+                            <div class="reg_1">
+                                <p>电子邮箱：<span>*</span></p>
+                                <div class="reg_right">
+                                    <input type="email" placeholder="请输入邮箱"/>
+                                </div>
+                            </div>
+                            <div class="reg_1" >
+                                <p>公司名称：<span>*</span></p>
+                                <div class="reg_right">
+                                    <input type="text" placeholder="请输入公司名称"/>
+                                </div>
+                            </div>
+                            <div class="reg_1" v-bind:style="{height:height + 'px' }">
+                                <p>公司产品：<span>*</span></p>
+                                <div class="reg_right reg_g">
+                                    <input type="text" placeholder="请输入公司产品" v-for="item in reg_input"/>
+                                    <div style="color:#0ab7c7;padding-left: 10px;height: 25px;line-height: 25px;font-size: 12px" @click="add">✚添加产品</div>
+                                </div>
+                            </div>
+                            <div class="reg_1" style="height: 80px;">
+                                <p>所在省市：<span>*</span></p>
+                                <div class="reg_right reg_gl" style="height:auto!important;">
+                                    <select>
+                                        <option>省份</option>
+                                    </select>
+                                    <select>
+                                        <option>城市</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="reg_1">
+                                <p>联 系 人：<span>*</span></p>
+                                <div class="reg_right">
+                                    <input type="text" placeholder="请输入联系人"/>
+                                </div>
+                            </div>
+                            <div class="reg_1">
+                                <p>地&nbsp; &nbsp; 址：<span>*</span></p>
+                                <div class="reg_right">
+                                    <input type="text" placeholder="请输入地址"/>
+                                </div>
+                            </div>
+                            <div class="reg_1">
+                                <p>手 机 号：<span>*</span></p>
+                                <div class="reg_right">
+                                    <input type="text" placeholder="请输入手机号" maxlength="11"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkbox checkbox-primary">
+                            <input id="checkbox2" class="styled" type="checkbox" checked>
+                            <label for="checkbox2" style="vertical-align: middle;color: #999;letter-spacing: 1px;font-size: 12px;line-height: 20px">
+                                我接受并统一网站《用户服务条款》
+                            </label>
+                        </div>
+                        <div class="register_form">提交注册</div>
+                        <div class="register_ZZ">已有招投标账号？<Span @click="loader(1)">登录</Span></div>
+                        <div class="warmPrompt">
+                            <div>温馨提示：</div>
+                            <div>当您 <span>注册</span> 或 <span>登陆</span> 是出现了问题，<br/>请联系我们的服务热线：<i>400-1234-5678</i><br/>我们会尽快帮您处理。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 <script src="../../common/js/jquery-1.11.3.js"></script>
