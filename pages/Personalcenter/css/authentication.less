@@ -1,3 +1,7 @@
+.right_content{
+  margin-top: 0;
+}
+
 .content-info{
   background: #fff;
 }
@@ -7,12 +11,14 @@
   color: #666;
   border:1px solid #ffd9d9;
   margin: 40px 0 20px 0;
+  font-size: 12px;
 }
 #infoform{
   label{
     color:#999;
     width: 110px;
     text-align: left;
+    font-size: 14px;
   }
   .inputcss{
     border:0;
@@ -111,4 +117,17 @@
 }
 select{
   outline:none;
+}
+@media screen and (max-width: 768px) {
+    .left_user{
+      display: none;
+    }
+  .right_content{
+    display: block;
+    width: 100%;
+    margin-top: 0;
+    .content-info{
+     margin-top: 0;
+    }
+  }
 }

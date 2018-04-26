@@ -110,3 +110,32 @@ body {
   color: #666666;
   cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+  .left_user {
+    display: none;
+  }
+  .container {
+    padding: 0;
+  }
+  .right_content {
+    display: block;
+    width: 100%;
+    margin-top: 0;
+  }
+  .right_content .nav-list {
+    height: 40px;
+    line-height: 38px;
+    width: 100%;
+  }
+  .right_content .nav-list li {
+    width: 100%;
+    margin-left: 0!important;
+    text-align: center;
+  }
+  .right_content .content-info {
+    margin-top: 0;
+  }
+  .right_content .content-info .item-li .img-banner {
+    height: 150px;
+  }
+}
