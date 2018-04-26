@@ -404,6 +404,12 @@ body {
 .swiper_style .swiper-container4 {
   overflow: hidden;
 }
+.swiper_style .swiper-container4 .swiper-button-next {
+  right: -8px !important;
+}
+.swiper_style .swiper-container4 .swiper-button-prev {
+  left: -8px !important;
+}
 .swiper_style .swiper-button-next {
   background: url(../../common/img/images/right.png) no-repeat;
   background-size: 100% 100%;

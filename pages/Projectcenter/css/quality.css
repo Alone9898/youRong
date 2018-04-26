@@ -1,8 +1,15 @@
+.swiper-container_lin li {
+  margin-right: 0!important;
+}
 .swiper-container {
   width: 100%;
   height: 300px;
   margin-left: auto;
   margin-right: auto;
+}
+.manageboxcont .div {
+  padding-left: 0!important;
+  padding-right: 0!important;
 }
 .swiper-slide {
   background-size: cover;
@@ -270,7 +277,7 @@ body {
 .wap_nav_card {
   display: none;
   height: 137px;
-  padding-top: 2rem;
+  padding-top: 20px;
 }
 .wap_nav_card .wap_ul_list li {
   width: 25%;
@@ -281,10 +288,10 @@ body {
   width: 70%;
   height: 70%;
   -webkit-border-radius: 50%;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
 }
 .wap_nav_card .wap_ul_list li .item {
-  font-size: 1.4rem;
+  font-size: 14px;
 }
 /*优荣直播*/
 .pc_live {
@@ -294,12 +301,12 @@ body {
 }
 .pc_live .title {
   padding-top: 50px;
-  font-size: 3.2rem;
+  font-size: 32px;
   font-weight: normal;
 }
 .pc_live .subtitle {
   margin-bottom: 30px;
-  font-size: 1.6rem;
+  font-size: 16px;
 }
 .pc_live .banner img {
   width: 100%;
@@ -309,7 +316,7 @@ body {
 }
 .special_content .More_more {
   display: none;
-  font-size: 1rem;
+  font-size: 10px;
   font-weight: normal;
   color: #00dfb9;
   text-align: right;
@@ -321,7 +328,7 @@ body {
   background: #f9f9f9;
 }
 #single {
-  margin-top: 2rem;
+  margin-top: 20px;
 }
 #single .fa-angle-left {
   position: absolute;
@@ -341,15 +348,15 @@ body {
   position: relative;
 }
 .container_inner ul li {
-  padding: 0 1rem;
+  padding: 0 10px;
 }
 .container_inner ul li .dv_title {
-  font-size: 1.4rem;
+  font-size: 14px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 100%;
-  margin-top: 0.5rem;
+  margin-top: 5px;
 }
 .container_inner .tpList {
   position: relative;
@@ -357,9 +364,9 @@ body {
 }
 .container_inner .tpList .dv_time {
   position: absolute;
-  font-size: 1.4rem;
-  bottom: 0.5rem;
-  right: 1rem;
+  font-size: 14px;
+  bottom: 5px;
+  right: 10px;
   color: #fff;
 }
 .container_inner .tpList .img_bg {
@@ -368,11 +375,11 @@ body {
 .container_inner .tpList .fa-play-circle {
   position: absolute;
   top: 50%;
-  margin-top: -4rem;
+  margin-top: -40px;
   font-size: 40px;
   color: #fff;
   left: 50%;
-  margin-left: -4rem;
+  margin-left: -40px;
   cursor: pointer;
 }
 .container_inner .video {
@@ -393,12 +400,12 @@ body {
 }
 .pc_service .title {
   padding-top: 50px;
-  font-size: 3.2rem;
+  font-size: 32px;
   font-weight: normal;
 }
 .pc_service .subtitle {
   margin-bottom: 30px;
-  font-size: 1.6rem;
+  font-size: 16px;
 }
 .pc_service .banner img {
   width: 100%;
@@ -412,14 +419,14 @@ body {
   text-align: center;
 }
 .pc_service .list_service ul li .title_txt {
-  font-size: 2.4rem;
+  font-size: 24px;
   font-weight: normal;
-  margin-top: 1rem;
+  margin-top: 10px;
 }
 .pc_service .list_service ul li .txt_info {
-  font-size: 1.4rem;
+  font-size: 14px;
   color: #666666;
-  padding: 0 4rem;
+  padding: 0 40px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -433,21 +440,21 @@ body {
 }
 .pc_customer .title {
   padding-top: 50px;
-  font-size: 3.2rem;
+  font-size: 32px;
   font-weight: normal;
   text-align: center;
 }
 .pc_customer .subtitle {
   margin-bottom: 30px;
-  font-size: 1.6rem;
+  font-size: 16px;
   text-align: center;
 }
 .pc_customer .color_green {
-  margin-top: 1rem;
+  margin-top: 10px;
   display: block;
-  margin-right: 2rem;
+  margin-right: 20px;
   text-align: right;
-  font-size: 1.6rem;
+  font-size: 16px;
   font-weight: 600;
   color: #00dfb9;
 }
@@ -458,24 +465,24 @@ body {
 .list_customer {
   background: #fff;
   box-shadow: 0 0 10px #dcdcdc;
-  padding-bottom: 2rem;
+  padding-bottom: 20px;
 }
 .list_customer .tips {
   position: absolute;
   top: -6px;
-  right: 2rem;
+  right: 20px;
 }
 .list_customer .hot {
   position: absolute;
   top: -15px;
-  right: 2rem;
+  right: 20px;
 }
 .list_customer li {
   position: relative;
   display: inline-block;
   width: 30% !important;
   margin: 0 1.6%;
-  margin-top: 3rem;
+  margin-top: 30px;
 }
 .list_customer li .img_customer {
   width: 100%;
@@ -483,15 +490,15 @@ body {
 }
 .list_customer li .txt_box {
   border: 1px solid #dcdcdc;
-  padding: 0 1.5rem;
+  padding: 0 15px;
   background: #fff;
 }
 .list_customer li .txt_box .title_txt {
   text-align: left;
-  font-size: 1.4rem;
+  font-size: 14px;
   font-weight: 900;
-  height: 3rem;
-  line-height: 3rem;
+  height: 30px;
+  line-height: 30px;
   border-bottom: 1px solid #dcdcdc;
 }
 .list_customer li .txt_box .title_txt_x {
@@ -510,7 +517,7 @@ body {
   width: 40px;
   padding-top: 20px;
   line-height: 20px;
-  font-size: 1.6rem;
+  font-size: 16px;
 }
 .list_customer li .txt_box .content_x {
   text-align: center;
@@ -522,25 +529,25 @@ body {
   font-size: 16px;
   font-weight: normal;
   color: #666666;
-  margin: 1rem;
+  margin: 10px;
 }
 .list_customer li .txt_box .content {
-  padding: 1rem 0;
-  font-size: 1.2rem;
+  padding: 10px 0;
+  font-size: 12px;
   color: #666666;
   text-align: left;
-  line-height: 2rem;
+  line-height: 20px;
 }
 /*专业诠释*/
 .pc_interpretation .title {
   padding-top: 50px;
-  font-size: 3.2rem;
+  font-size: 32px;
   font-weight: normal;
   text-align: center;
 }
 .pc_interpretation .subtitle {
   margin-bottom: 30px;
-  font-size: 1.6rem;
+  font-size: 16px;
   text-align: center;
 }
 .pc_interpretation .container_x {
@@ -555,7 +562,7 @@ body {
   float: left;
   position: relative;
   margin: 0 15px;
-  margin-top: 2rem;
+  margin-top: 20px;
 }
 .pc_interpretation .container_x li:hover img {
   -webkit-filter: blur(0);
@@ -648,7 +655,7 @@ body {
 .swiper-container4 .pos_bottom .shop {
   width: 100%;
   text-align: center;
-  font-size: 2.4rem;
+  font-size: 24px;
   color: #fff;
 }
 /*banner_two*/
@@ -671,13 +678,13 @@ body {
 /*合作伙伴*/
 .pc_partners .title {
   padding-top: 50px;
-  font-size: 3.2rem;
+  font-size: 32px;
   font-weight: normal;
   text-align: center;
 }
 .pc_partners .subtitle {
   margin-bottom: 30px;
-  font-size: 1.6rem;
+  font-size: 16px;
   text-align: center;
 }
 .partners li {
@@ -711,7 +718,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  margin-top: 0.5rem;
+  margin-top: 5px;
   margin-right: 10px;
 }
 .container_w {
@@ -768,6 +775,9 @@ body {
 }
 /*媒体查询*/
 @media screen and (max-width: 700px) {
+  .swiper-container_lin li {
+    margin-right: 30px!important;
+  }
   .mn > li.active > a,
   .mn > li.active > a:focus,
   .mn > li.active > a:hover {
@@ -912,12 +922,12 @@ body {
   }
   .pc_live {
     margin-top: 0;
-    padding-top: 2rem;
+    padding-top: 20px;
     background: #fff;
   }
   .pc_live .title {
     padding-top: 0;
-    font-size: 2rem;
+    font-size: 20px;
     font-weight: normal;
   }
   .pc_live .subtitle {
@@ -959,7 +969,7 @@ body {
     height: 250px;
   }
   .pc_service .title {
-    font-size: 2rem;
+    font-size: 20px;
     font-weight: normal;
     padding-top: 0;
   }
@@ -973,27 +983,27 @@ body {
     width: 500% !important;
     position: relative;
     border-bottom: 1px solid #ddd;
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
   }
   .pc_service .list_service ul li {
-    padding-top: 2rem;
+    padding-top: 20px;
     display: inline-block;
   }
   .pc_service .list_service ul li img {
-    width: 6rem;
-    height: 6rem;
+    width: 60px;
+    height: 60px;
   }
   .pc_service .list_service ul li .title_txt {
-    font-size: 1.5rem;
+    font-size: 15px;
     font-weight: normal;
     border-bottom: 1px solid #ddd;
     text-align: left;
-    margin: 0.5rem 4rem 1rem 4rem;
+    margin: 5px 40px 10px 40px;
   }
   .pc_service .list_service ul li .txt_info {
-    font-size: 1.2rem;
+    font-size: 12px;
     text-align: left;
-    padding-bottom: 1rem;
+    padding-bottom: 10px;
   }
   .pc_service .list_service .swiper-button-prev {
     background: none;
@@ -1004,17 +1014,17 @@ body {
   }
   .pc_service .list_service .icon_left {
     position: absolute;
-    left: 1.5rem !important;
+    left: 15px !important;
     top: 50% !important;
-    margin-top: -4.2rem !important;
+    margin-top: -42px !important;
     width: inherit;
     height: inherit;
   }
   .pc_service .list_service .icon_right {
     position: absolute;
-    right: 1.5rem !important;
+    right: 15px !important;
     top: 50% !important;
-    margin-top: -4.2rem !important;
+    margin-top: -42px !important;
     width: inherit;
     height: inherit;
   }
@@ -1026,7 +1036,7 @@ body {
   .bg_customer .pc_customer .title {
     margin-top: 0;
     padding-top: 0;
-    font-size: 2rem;
+    font-size: 20px;
     font-weight: normal;
     text-align: center;
   }
@@ -1035,7 +1045,7 @@ body {
   }
   .bg_customer .pc_customer .list_customer {
     box-shadow: none;
-    margin-top: 1.5rem;
+    margin-top: 15px;
   }
   .bg_customer .pc_customer .list_customer li {
     width: 100% !important;
@@ -1049,10 +1059,10 @@ body {
     border: none;
     text-align: center;
     background: rgba(0, 0, 0, 0.3);
-    margin-top: -3rem;
+    margin-top: -30px;
     position: relative;
     z-index: 99;
-    font-size: 2rem;
+    font-size: 20px;
     font-weight: normal;
     color: #ffffff;
   }
@@ -1070,8 +1080,8 @@ body {
     display: none;
   }
   .live_list li .live_img {
-    width: 19rem;
-    height: 18.5rem;
+    width: 190px;
+    height: 185px;
     margin: 0 auto;
   }
   .live_list li .live_img .wap_live {
@@ -1081,7 +1091,7 @@ body {
   .live_list li .title_txt_x {
     width: 44px!important;
     height: 44px!important;
-    font-size: 1rem!important;
+    font-size: 10px!important;
     margin-top: -24px !important;
   }
   .live_list li .title_txt_x .txt {
@@ -1089,17 +1099,17 @@ body {
     width: 30px!important;
     padding-top: 9px!important;
     line-height: 15px!important;
-    font-size: 1.2rem!important;
+    font-size: 12px!important;
   }
   .live_list li .content_x {
-    font-size: 1rem!important;
+    font-size: 10px!important;
   }
   .live_list li .bottom_s {
-    font-size: 1.2rem!important;
-    margin: 0.5rem!important;
+    font-size: 12px!important;
+    margin: 5px!important;
   }
   .live_list .txt_box {
-    width: 19rem;
+    width: 190px;
     margin: 0 auto;
     margin-bottom: 10px;
   }
@@ -1115,7 +1125,7 @@ body {
     border-bottom: 1px solid #dddddd;
   }
   .swiper_style ul li img {
-    height: 21.5rem;
+    height: 215px;
     width: 100%;
   }
   .swiper_style .text_center {
@@ -1128,16 +1138,16 @@ body {
     border: none;
     text-align: center;
     background: rgba(0, 0, 0, 0.3);
-    margin-top: -3rem;
+    margin-top: -30px;
     z-index: 99;
-    font-size: 2rem;
+    font-size: 20px;
     font-weight: normal;
     width: 100%;
-    height: 3.5rem;
+    height: 35px;
   }
   .swiper_style .pos_bottom .shop {
-    line-height: 3.5rem;
-    font-size: 2rem;
+    font-size: 20px;
+    line-height: 35px;
   }
   /*banner_two*/
   .banner_two {
@@ -1153,7 +1163,7 @@ body {
   /*合作伙伴*/
   .pc_partners .title {
     margin-top: 0;
-    font-size: 2rem;
+    font-size: 20px;
     font-weight: normal;
     text-align: center;
     padding-top: 0;
@@ -1166,7 +1176,7 @@ body {
   }
   /*合作伙伴*/
   .wap_partners li {
-    margin-top: 1rem;
+    margin-top: 10px;
     border: 1px solid #ddd;
     height: 45px;
     border-right: none ;
@@ -1200,8 +1210,8 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    margin-top: 0.5rem;
-    font-size: 1.6rem;
+    margin-top: 5px;
+    font-size: 16px;
   }
   .video {
     height: 200px!important;
@@ -1264,7 +1274,7 @@ body {
 .a_link .color_green_l {
   padding: 15px;
   color: #00dfb9;
-  font-size: 1.4rem;
+  font-size: 14px;
 }
 .wap-h {
   margin-top: 15px;
