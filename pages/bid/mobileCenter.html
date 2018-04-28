@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../common/css/swiper.min.css">
+    <link rel="stylesheet" href="../../common/css/base.css"/>
+    <link rel="stylesheet" href="css/model.css"/>
+    <link rel="stylesheet" href="css/mobileCenter.css"/>
+</head>
+<body>
+<div class="container-fluid" v-cloak id="example">
+    <div class="banner">
+        <img src="../../common/img/icon/default.png">
+        <div class="boos">
+            <p>王宇</p>
+            <p>采购商<i>VIP</i><i>></i></p>
+            <P>四川欣新建材</P>
+        </div>
+    </div>
+    <div class="item1">我的应用</div>
+    <div class="mybox">
+        <div class="box1">
+            <ul>
+                <li><a href="myNews.html"><img src="../../common/img/icon/yingy1.png"><div>我的消息<i> ></i></div></a></li>
+                <li><a href="footprint.html"><img src="../../common/img/icon/yingy2.png"><div>我的足迹<i> ></i></div></a></li>
+                <li><a href="favorite.html"><img src="../../common/img/icon/yingy3.png"><div>我的收藏<i> ></i></div></a></li>
+            </ul>
+        </div>
+        <div class="box1">
+            <ul>
+                <li><a href="publish.html"><img src="../../common/img/icon/yingy4.png"><div>发布招标<i> ></i></div></a></li>
+                <li><a href="login.html" @click="cock()"><img src="../../common/img/icon/yingy5.png"><div>注册账号<i> ></i></div></a></li>
+                <li><a href="upgrade.html"><img src="../../common/img/icon/yingy6.png"><div>账号升级<i> ></i></div></a></li>
+                <li><a href="attestation.html"><img src="../../common/img/icon/yingy7.png"><div>诚信认证<i> ></i></div></a></li>
+                <li><a href="mail.html"><img src="../../common/img/icon/yingy8.png"><div>邮件推送<i> ></i></div></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="h5_box" style="background: rgb(238, 238, 238)">
+        <h5-model></h5-model>
+    </div>
+</div>
+</body>
+<script src="../../common/js/jquery-1.11.3.js"></script>
+<script src="../../common/js/swiper.min.js"></script>
+<script src="../../common/js/vue.js"></script>
+<script src="../../common/js/vue-resource.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script src="../../common/js/jquery.cookie.js"></script>
+<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+<script src="../../common/js/distpicker.data.js"></script>
+<script src="../../common/js/distpicker.js"></script>
+<script src="../../common/js/main.js"></script>
+<script type="text/javascript" src="js/model.js"></script>
+<script>
+    new Vue({
+        el: '#example',
+        data:{
+
+        },
+        methods: {
+            cook:function(){
+                localStorage.setItem("state",2);
+            }
+        },
+        mounted:function(){
+
+        }
+    });
+
+</script>
+</html>
