@@ -32,7 +32,10 @@ $(function(){
             var top = $('.leftlist').offset().top;
             var scrolltop = $(window).scrollTop();
             if(scrolltop>top){
+<<<<<<< HEAD
                 $('.fixdnone').hide();
+=======
+>>>>>>> f9acdeb695bf6f3e216c7f87815ef965228184b4
                 $('.rightmain').css({
                     "position": "fixed",
                     "top": "0",
@@ -40,7 +43,10 @@ $(function(){
                     "width": "220px",
                 })
             }else{
+<<<<<<< HEAD
                 $('.fixdnone').show();
+=======
+>>>>>>> f9acdeb695bf6f3e216c7f87815ef965228184b4
                 $('.rightmain').css({
                     "position": "static",
                 })

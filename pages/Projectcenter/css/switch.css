@@ -10,8 +10,8 @@
     cursor: pointer;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    border-radius: 5px;
-    border: 1px solid;
+    border-radius: 20px;
+    border: 0 solid;
     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
     position: relative;
     text-align: left;
@@ -22,7 +22,7 @@
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
-    min-width: 100px;
+    min-width: 90px;
 }
 .has-switch.switch-mini {
     min-width: 72px;
