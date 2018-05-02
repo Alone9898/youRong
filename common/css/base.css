@@ -490,7 +490,11 @@ input{outline: none}
         margin-top: 120px!important;
     }
     .l_header{
+<<<<<<< HEAD
         position: relative;
+=======
+        position: relative;    margin-bottom: 20px;
+>>>>>>> 6c0e98c80d70925757d7e6a059558e7579be2081
     }
     .l_header .navbar-default .navbar-collapse, .navbar-default .navbar-form{
         width: 120px;

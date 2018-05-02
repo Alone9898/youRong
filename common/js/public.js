@@ -85,17 +85,35 @@ Vue.component('sitenav', {
         </nav>\
             <div class="swiper-container header-swiper-container pswiper">\
                 <div class="swiper-wrapper ">\
+<<<<<<< HEAD
                     <div class="swiper-slide"><img src="../../common/img/images/logo_banner.png" width="100%" ></div>\
                     <div class="swiper-slide"><img src="../../common/img/images/logo_banner.png" width="100%" ></div>\
                     <div class="swiper-slide" ><img src="../../common/img/images/logo_banner.png" width="100%" ></div>\
+=======
+<<<<<<< HEAD
+                    <div class="swiper-slide"><img src="../../common/img/images/logo_banner.png" height="100%" ></div>\
+                    <div class="swiper-slide"><img src="../../common/img/images/logo_banner.png" height="100%" ></div>\
+                    <div class="swiper-slide" ><img src="../../common/img/images/logo_banner.png" height="100%" ></div>\
+=======
+                    <div class="swiper-slide"><img src="../../common/img/images/banner_1.png" height="100%" ></div>\
+                    <div class="swiper-slide"><img src="../../common/img/images/banner_1.png" height="100%" ></div>\
+                    <div class="swiper-slide" ><img src="../../common/img/images/banner_1.png" height="100%" ></div>\
+>>>>>>> 5709d49bb338a871b6da2e77ae743658a85eddfa
+>>>>>>> 6c0e98c80d70925757d7e6a059558e7579be2081
                 </div>\
                 <div class="swiper-pagination header-pagination"></div>\
             </div>\
             <div class="swiper-container header-swiper-container mswiper" style="display:none">\
                 <div class="swiper-wrapper ">\
+<<<<<<< HEAD
                     <div class="swiper-slide" ><img src="../../common/img/images/logo_banner.png" width="240px" ></div>\
                     <div class="swiper-slide"><img src="../../common/img/images/logo_banner.png" width="240px" ></div>\
                     <div class="swiper-slide"><img src="../../common/img/images/logo_banner.png" width="240px" ></div>\
+=======
+                    <div class="swiper-slide"><img src="../../common/img/images/logo_banner.png" height="240px" ></div>\
+                    <div class="swiper-slide"><img src="../../common/img/images/logo_banner.png" height="240px" ></div>\
+                    <div class="swiper-slide"><img src="../../common/img/images/logo_banner.png" height="240px" ></div>\
+>>>>>>> 6c0e98c80d70925757d7e6a059558e7579be2081
                 </div>\
                 <div class="swiper-pagination header-pagination pswiper"></div>\
             </div>\

@@ -197,9 +197,10 @@
         },
         mounted:function(){
             this.add();
-            if(localStorage.getItem("state")){
+            if(localStorage.getItem("state")==2){
                 this.state=localStorage.getItem("state");
             }
+            localStorage.removeItem('state');
         }
     });
 

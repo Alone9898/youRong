@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="../../common/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../common/css/swiper.min.css">
     <link rel="stylesheet" href="../../common/css/base.css"/>
-    <link rel="stylesheet" href="css/upgrade.css"/>
     <link rel="stylesheet" href="css/model.css"/>
+    <link rel="stylesheet" href="css/upgrade.css"/>
 </head>
 <body>
 <div class="container-fluid" v-cloak id="example">
@@ -22,24 +22,30 @@
                 <div class="head">
                     账号升级
                 </div>
+                <div></div>
                 <div class="content">
                     <div class="vipList">
                         <div class="vipList1">
                             会员服务列表
                         </div>
                         <div class="vipList2">
-                            <div>非注册会员</div>
-                            <div>注册会员</div>
-                            <div>付费注册会员</div>
+                            <div @click="tab(1)" :class="{cctv:zhaolin==1}">非注册会员</div>
+                            <div @click="tab(2)" :class="{cctv:zhaolin==2}">注册会员</div>
+                            <div @click="tab(3)" :class="{cctv:zhaolin==3}">付费注册会员</div>
                         </div>
+                        <div class="mobilebox">
+                            <div v-html="contenttitle"></div>
+                            <p v-html="contentext"></p>
+                        </div>
+                        <div class="kaitong">{{kaitong}}</div>
                         <div class="vipList3">
                             <div>无需付费，可以浏览网页，但无法查看到重要信息，如联系电话，联系人等。</div>
                             <div>无需付费，免费查看招标信息，重要信息第一时间电子邮件通知！</div>
                             <div>付费会员费用分<i>普通会员</i>和<i>VIP会员</i>，享受到的服务如下<i>《付费会员服务清单》</i></div>
                         </div>
                     </div>
-                    <div class="name">付费会员清单</div>
-                    <table>
+                    <div class="name" :class="{shows:zhaolin==3}">付费会员清单</div>
+                    <table :class="{shows:zhaolin==3}">
                         <tr>
                             <th>服务类别</th>
                             <th>服务项目</th>
@@ -61,7 +67,6 @@
                                 明内容说明内容说明</p></td>
                             <td></td>
                             <td></td>
-                            <td></td>
                         </tr>
                         <tr>
                             <td>拟在建项目</td>
@@ -89,7 +94,6 @@
                             <td>拟在建项目</td>
                             <td><p>内容说明内容说明内容说明内容说明内容说明内容说明
                                 明内容说明内容说明</p></td>
-                            <td></td>
                             <td></td>
                             <td></td>
                         </tr>
@@ -113,7 +117,6 @@
         </div>
     </div>
     <div class="h5_box" style="background: rgb(238, 238, 238)">
-        <h5-nav></h5-nav>
         <h5-model></h5-model>
     </div>
 </div>
@@ -134,11 +137,27 @@
     new Vue({
         el: '#example',
         data:{
-            cctv:''
+          contenttitle:'非注册会员',
+          contentext:"无需付费，可以浏览网页，但无法查看到重要信息，如联系电话，联系人等。",
+          zhaolin:1,
+          kaitong:"去开通"
         },
         methods: {
-            sel(sel){
-                this.cctv=sel
+            tab:function(ct){
+                this.zhaolin=ct;
+                if(ct==1){
+                   this.contenttitle='非注册会员';
+                   this.contentext='无需付费，可以浏览网页，但无法查看到重要信息，如联系电话，联系人等。';
+                    this.kaitong='去开通'
+               }else if(ct==2){
+                   this.contenttitle='注册会员';
+                   this.contentext='无需付费，免费查看招标信息，重要信息第一时间电子邮件通知！';
+                    this.kaitong='去升级'
+               }else {
+                   this.contenttitle='付费会员';
+                   this.contentext='付费会员费用分为<i>普通会员</i>和<i>VIP会员</i>，享受的服务如下<i>《付费会员服务清单》</i>';
+                   this.kaitong='去开通'
+               }
             }
         },
         mounted:function(){
