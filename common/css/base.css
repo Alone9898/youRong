@@ -28,11 +28,86 @@ btn{
     font-size:16px!important;
 }
 
-.swiper-pagination-bullet-active {
-    background: #00dfb9!important;
+.swiper-pagination1 {
+    position: absolute;
+    text-align: center;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    z-index: 10;
 }
+
+
+
 .lcss>h4>b,.myswipert{
     font-size:16px!important;
+}
+/*footer*/
+.foottop{
+    background: #f4f4f4;
+    width:100%;
+    height:285px;
+}
+.footbottom{
+    background: #4e4848;
+    width:100%;
+    height:175px;
+}
+.footmain{
+    width:1200px;
+    margin: 0 auto;
+    padding-top: 62.5px;
+}
+.footmain dl{
+    width:9.5%;
+}
+.footmain dd{
+    margin:4px 0;
+}
+.footmain dl a{
+    color:#666;
+}
+.footmain p{
+    wodth:100%;
+    text-align: center;
+    color:#999;
+    width:130px;
+}
+.footmain1{
+    width:80%;
+    margin:0 auto;
+}
+.footp p{
+    width:100%;
+    color:#fff;
+    margin: 12px 0;
+}
+.wc1{
+    color:#f4f4f4!important;
+    font-size:12px;
+}
+.foul{
+    width:90%;
+}
+.foul li{
+    width:10%;
+    border-right:1px solid #fff;
+    text-align: center;
+}
+.wc{
+    color:#fff;
+}
+.footbor{
+    position: absolute;
+    top: 3px;
+    left: 85px;
+    width: 1px;
+    background: #999999;
 }
 .san{
     color:#999!important;
@@ -122,7 +197,7 @@ input{outline: none}
     position: relative;   
 }
 #navbar-menu{float:right;}
-.navbar-header{ margin-top: 30px;}
+.navbar-header{ margin-top: 23px;}
 .l_header .navbar-default .navbar-nav{
   
 }
@@ -145,14 +220,27 @@ input{outline: none}
 .l_header #person .nav>li{
    width:100%;
 }
+.swiper-pagination-bullet-active {
+    width:14px;
+    height:8px;
+    background: #00dfb9!important;
+    -webkit-border-radius:5px;
+    -moz-border-radius:px;
+    border-radius:px;
+}
+.swiper-pagination-bullet {
+    background: rgba(255,255,255,.4);
+    opacity:1;
+
+}
 .l_header .navbar-default .nav>li{
     height: 81px;
 }
 .l_header .navbar-default .nav li:hover{
-    border-bottom:4px solid #B2B2B2;
+    border-bottom:4px solid #fff;
 }
 .l_header .navbar-default .nav li a:hover{
-    color: #00dfb9;
+    color: #fff;
 }
 .l_header .header-swiper-container{
     width: 100%;
@@ -226,7 +314,7 @@ input{outline: none}
 }
 .modal_tip{
     background-color: rgba(0, 0, 0, 0.3);
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 999;
     left: 0;
@@ -336,6 +424,20 @@ input{outline: none}
     }
 }
 @media screen and (max-width: 768px) {
+    .footerbox{
+        display: none;
+    }
+    .l_header .header-swiper-container .swiper-slide img {
+        width: 100%;
+        min-height: 180px;
+    }
+    .l_header .navbar-default .navbar-nav>li>a {
+        color: white;
+        font-size: 14px!important;
+        text-align: left!important;;
+        height: 100%;
+        font-weight: normal;
+    }
     .l_header .navbar-default .nav li:hover {
         border-bottom: none!important;
 
@@ -371,10 +473,10 @@ input{outline: none}
         bottom: 20px;
         z-index: 1;
         left: 50%;
-        margin-left: -113px;
+        margin-left: -137px;
     }
     .mswiper1 span{color:#fff;    font-size: 14px;}
-    .mswiper1 input{      width: 175px;  background: rgba(255,255,255,.8);
+    .mswiper1 input{      width: 220px;  background: rgba(255,255,255,.8);
     border: 0;font-size: 12px;
     height: 30px;
     padding: 2px 12px;
@@ -388,7 +490,7 @@ input{outline: none}
         margin-top: 120px!important;
     }
     .l_header{
-        position: relative;    margin-bottom: 20px;
+        position: relative;
     }
     .l_header .navbar-default .navbar-collapse, .navbar-default .navbar-form{
         width: 120px;
@@ -400,8 +502,8 @@ input{outline: none}
     .l_header .navbar-default .navbar-nav>li>a{
         color: #666!important;
     }
-    .l_header .navbar-default .navbar-nav{
-        
+    .l_header .navbar-default .navbar-nav li{
+        border: none!important;
     }
     .l_header .navbar-default .nav>li{
          height: auto!important;

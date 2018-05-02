@@ -116,7 +116,7 @@ Vue.component('bid-nav', {
     }
 });
 Vue.component('web-config', {
-    template:'<div class="web-config">\
+    template:'<div class="web-config leftlist"><div class="rightmain" style="background:#fff">\
             <button v-if="login_State==1" type="button" class="btn btn-primary" @click="loginBox(2)">登录</button>\
             <button v-if="login_State==1" type="button" class="btn btn-primary">免费注册</button>\
             <div class="tenderbox">\
@@ -194,36 +194,36 @@ Vue.component('web-config', {
                 <div class="hotline_2">400-1234-567</div>\
             </div>\
             <div class="xxx"></div>\
-            <div class="fix">\
+            <div class="fix fixdnone">\
                 <p>帮助中心</p>\
                 <div>更多></div>\
             </div>\
-            <div class="fixbiox">\
+            <div class="fixbiox fixdnone">\
                 <ul>\
-                    <li><span>*</span>招投标指南</li>\
-                    <li><span>*</span>招投标流程指导</li>\
-                    <li><span>*</span>提前报价价格会不会泄露？</li>\
-                    <li><span>*</span>如何开通会员服务？</li>\
-                    <li><span>*</span>VIP会员的优势？</li>\
-                    <li><span>*</span>如何升级VIP？</li>\
+                    <li class="sl"><span>*</span>招投标指南</li>\
+                    <li class="sl"><span>*</span>招投标流程指导</li>\
+                    <li class="sl"><span>*</span>提前报价价格会不会泄露？</li>\
+                    <li class="sl"><span>*</span>如何开通会员服务？</li>\
+                    <li class="sl"><span>*</span>VIP会员的优势？</li>\
+                    <li class="sl"><span>*</span>如何升级VIP？</li>\
                 </ul>\
             </div>\
-            <div class="xxx"></div>\
-            <div class="fix">\
+            <div class="xxx fixdnone"></div>\
+            <div class="fix fixdnone">\
                 <p> <img src="../../common/img/icon/xiazai.png">招标资料下载</p>\
                 <div>更多></div>\
             </div>\
-            <div class="fixbiox">\
+            <div class="fixbiox fixdnone">\
                 <ul>\
-                    <li><span>*</span>政府招投标法律法规（201...</li>\
-                    <li><span>*</span>工程建设项目施工招投标...</li>\
-                    <li><span>*</span>工程建设项目勘察设计招...</li>\
-                    <li><span>*</span>建设施工合同（示范文本）</li>\
-                    <li><span>*</span>大型设备采购招标文件范本</li>\
-                    <li><span>*</span>国家现行100余部法律全文</li>\
+                    <li class="sl"><span>*</span>政府招投标法律法规（201...</li>\
+                    <li class="sl"><span>*</span>工程建设项目施工招投标...</li>\
+                    <li class="sl"><span>*</span>工程建设项目勘察设计招...</li>\
+                    <li class="sl"><span>*</span>建设施工合同（示范文本）</li>\
+                    <li class="sl"><span>*</span>大型设备采购招标文件范本</li>\
+                    <li class="sl"><span>*</span>国家现行100余部法律全文</li>\
                 </ul>\
             </div>\
-        </div>',
+        </div></div>',
     data: function () {
         return {
             tenderShow:1,

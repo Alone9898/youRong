@@ -35,7 +35,7 @@ video {
 }
 .videobox {
   padding-right: 0;
-  height: 284px;
+  height: 308px;
   overflow: hidden;
 }
 .myacbgd {
@@ -43,7 +43,7 @@ video {
   color: #fff!important;
 }
 .videoobj {
-  height: 284px;
+  height: 308px;
   background-position: 50%!important;
   background-size: cover!important;
 }

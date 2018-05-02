@@ -23,7 +23,7 @@
 		<div class="swiper-container-nav">
 			<div class="myh swiper-wrapper clearfix">
 				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-1 col-md-offset-1 col-xs-offset-1 col-sm-offset-1 swiper-slide myhight" @click="searchcli($event,'quality')" style="margin-left:0;">项目管理</div>
-				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'team')">项目团队</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'team_indx')">项目团队</div>
 				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'Dynamicdiary')">动态日记</div>
 				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'knowledge')">装修知识</div>
 				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'security')">安全文明</div>
@@ -32,77 +32,25 @@
 	</div>
         <div class="cont container" style="margin-top:35px">
 			<!-- Swiper -->
-			<div style="position:relative;">
-				<div>
-					<div class="pczhibo">
-						<div class="swiper-container1 gallery-top mno " style="height:360px;position:relative;overflow: hidden;margin: 0 auto;">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide" style="background-image:url('../../common/img/images/img3.png')"></div>
-								<div class="swiper-slide" style="background-image:url('../../common/img/images/img3.png')"></div>
-								<div class="swiper-slide" style="background-image:url('../../common/img/images/img3.png')"></div>
-								<div class="swiper-slide" style="background-image:url('../../common/img/images/img3.png')"></div>
-								<div class="swiper-slide" style="background-image:url('../../common/img/images/img3.png')"></div>
-							</div>
-						</div>
-						<div class="swiper-container2 gallery-thumbs mno " style="width: 880px;margin-top: 18px;overflow: hidden;margin: 0 auto;">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide" style="background-image:url('../../common/img/images/img3.png')">
-									<div class="acbgd" >1</div>
-								</div>
-								<div class="swiper-slide" style="background-image:url('../../common/img/images/img3.png')">
-									<div class="acbgd" >2</div>
-								</div>
-								<div class="swiper-slide" style="background-image:url('../../common/img/images/img3.png')">
-									<div class="acbgd" >3</div>
-								</div>
-								<div class="swiper-slide" style="background-image:url('../../common/img/images/img3.png')">
-									<div class="acbgd" >4</div>
-								</div>
-								<div class="swiper-slide" style="background-image:url('../../common/img/images/img3.png')">
-									<div class="acbgd" >5</div>
-								</div>
-							</div>
-							<!-- Add Arrows -->
-							<div class="swiper-button-next swiper-button-white"></div>
-							<div class="swiper-button-prev swiper-button-white"></div>
-						</div>
-					</div>
-					<div class="pctup" style="display: none">
-						<div class="swiper-container3 gallery-top mno " style="height:360px;position:relative;overflow: hidden;margin: 0 auto;">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide" style="background-image:url('../../common/img/images/img3.png')"></div>
-								<div class="swiper-slide" style="background-image:url('../../common/img/images/img3.png')"></div>
-								<div class="swiper-slide" style="background-image:url('../../common/img/images/img3.png')"></div>
-								<div class="swiper-slide" style="background-image:url('../../common/img/images/img3.png')"></div>
-								<div class="swiper-slide" style="background-image:url('../../common/img/images/img3.png')"></div>
-							</div>
-						</div>
-						<div class="swiper-container4 gallery-thumbs mno " style="width: 880px;margin-top: 18px;overflow: hidden;margin: 0 auto">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide" style="background-image:url('../../common/img/images/img3.png')">
-									<div class="acbgd" >11</div>
-								</div>
-								<div class="swiper-slide" style="background-image:url('../../common/img/images/img3.png')">
-									<div class="acbgd" >22</div>
-								</div>
-								<div class="swiper-slide" style="background-image:url('../../common/img/images/img3.png')">
-									<div class="acbgd" >33</div>
-								</div>
-								<div class="swiper-slide" style="background-image:url('../../common/img/images/img3.png')">
-									<div class="acbgd" >44</div>
-								</div>
-								<div class="swiper-slide" style="background-image:url('../../common/img/images/img3.png')">
-									<div class="acbgd" >5</div>
-								</div>
-							</div>
-							<!-- Add Arrows -->
-							<div class="swiper-button-next swiper-button-white"></div>
-							<div class="swiper-button-prev swiper-button-white"></div>
-						</div>
-					</div>
-					<div class="switch switch-large myswitch">
-						<input type="checkbox" checked />
-					</div>
+			<div class="swiper-container gallery-top" style="height: 300px;">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" style="background-image:url(../../common/img/images/pp1.jpg)"></div>
+					<div class="swiper-slide" style="background-image:url(../../common/img/images/img1.png)"></div>
+					<div class="swiper-slide" style="background-image:url(../../common/img/images/img2.png)"></div>
+					<div class="swiper-slide" style="background-image:url(../../common/img/images/img3.png)"></div>
+					<div class="swiper-slide" style="background-image:url(../../common/img/images/b2.png)"></div>
+				</div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next swiper-button-white"></div>
+				<div class="swiper-button-prev swiper-button-white"></div>
+			</div>
+			<div class="swiper-container gallery-thumbs">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" style="background-image:url(../../common/img/images/pp1.jpg)"></div>
+					<div class="swiper-slide" style="background-image:url(../../common/img/images/img1.png)"></div>
+					<div class="swiper-slide" style="background-image:url(../../common/img/images/img2.png)"></div>
+					<div class="swiper-slide" style="background-image:url(../../common/img/images/img3.png)"></div>
+					<div class="swiper-slide" style="background-image:url(../../common/img/images/b2.png)"></div>
 				</div>
 			</div>
 			<div class="tongzhi clearfix">
@@ -307,7 +255,7 @@
 							</li>
 						</ul>
 							<div id="myTabContent" style="height: 413px;" class="tab-content">
-							<div class="tab-pane fade in active" id="zhijian">
+								<div class="tab-pane fade in active" id="zhijian">
 								<ul class="ul1 clearfix">
 									<li>
 										<h4>装修前</h4>
@@ -356,291 +304,92 @@
 									</li>
 								</ul>
 							</div>
-							<div class="tab-pane fade" id="tuandui" style="margin-top:30px">
-								<div class="swiper-container swiper-container-box" >
-									<div class="swiper-wrapper clearfix">
-										<div class="swiper-slide">
-											<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
-												<div class="tdimg" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
-												<div class="tdt">
-													<P>李工</P>
-												</div>
-												<div class="tdp">
-													<b>七年质检经验</b>
-												</div>
-												<div class="tdn">
-													<p>质检工地数：<samp>1234</samp></p>
-												</div>
+								<div class="tab-pane fade" id="tuandui">
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<div class="tdimg" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
+											<div class="tdt">
+												<P>李工</P>
 											</div>
-											<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
-												<div class="tdimg" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
-												<div class="tdt">
-													<P>李工</P>
-												</div>
-												<div class="tdp">
-													<b>七年质检经验</b>
-												</div>
-												<div class="tdn">
-													<p>质检工地数：<samp>1234</samp></p>
-												</div>
+											<div class="tdp">
+												<b>七年质检经验</b>
 											</div>
-											<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
-												<div class="tdimg" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
-												<div class="tdt">
-													<P>李工</P>
-												</div>
-												<div class="tdp">
-													<b>七年质检经验</b>
-												</div>
-												<div class="tdn">
-													<p>质检工地数：<samp>1234</samp></p>
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
-												<div class="tdimg" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
-												<div class="tdt">
-													<P>李工</P>
-												</div>
-												<div class="tdp">
-													<b>七年质检经验</b>
-												</div>
-												<div class="tdn">
-													<p>质检工地数：<samp>1234</samp></p>
-												</div>
+											<div class="tdn">
+												<p>质检工地数：<samp>1234</samp></p>
 											</div>
 										</div>
-										<div class="swiper-slide">
-											<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
-												<div class="tdimg" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
-												<div class="tdt">
-													<P>李工</P>
-												</div>
-												<div class="tdp">
-													<b>七年质检经验</b>
-												</div>
-												<div class="tdn">
-													<p>质检工地数：<samp>1234</samp></p>
-												</div>
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<div class="tdimg" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
+											<div class="tdt">
+												<P>李工</P>
 											</div>
-											<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
-												<div class="tdimg" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
-												<div class="tdt">
-													<P>李工</P>
-												</div>
-												<div class="tdp">
-													<b>七年质检经验</b>
-												</div>
-												<div class="tdn">
-													<p>质检工地数：<samp>1234</samp></p>
-												</div>
+											<div class="tdp">
+												<b>七年质检经验</b>
 											</div>
-											<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
-												<div class="tdimg" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
-												<div class="tdt">
-													<P>李工</P>
-												</div>
-												<div class="tdp">
-													<b>七年质检经验</b>
-												</div>
-												<div class="tdn">
-													<p>质检工地数：<samp>1234</samp></p>
-												</div>
-											</div>
-											<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
-												<div class="tdimg" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
-												<div class="tdt">
-													<P>李工</P>
-												</div>
-												<div class="tdp">
-													<b>七年质检经验</b>
-												</div>
-												<div class="tdn">
-													<p>质检工地数：<samp>1234</samp></p>
-												</div>
+											<div class="tdn">
+												<p>质检工地数：<samp>1234</samp></p>
 											</div>
 										</div>
-										<div class="swiper-slide">
-											<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
-												<div class="tdimg" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
-												<div class="tdt">
-													<P>李工</P>
-												</div>
-												<div class="tdp">
-													<b>七年质检经验</b>
-												</div>
-												<div class="tdn">
-													<p>质检工地数：<samp>1234</samp></p>
-												</div>
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<div class="tdimg" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
+											<div class="tdt">
+												<P>李工</P>
 											</div>
-											<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
-												<div class="tdimg" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
-												<div class="tdt">
-													<P>李工</P>
-												</div>
-												<div class="tdp">
-													<b>七年质检经验</b>
-												</div>
-												<div class="tdn">
-													<p>质检工地数：<samp>1234</samp></p>
-												</div>
+											<div class="tdp">
+												<b>七年质检经验</b>
 											</div>
-											<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
-												<div class="tdimg" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
-												<div class="tdt">
-													<P>李工</P>
-												</div>
-												<div class="tdp">
-													<b>七年质检经验</b>
-												</div>
-												<div class="tdn">
-													<p>质检工地数：<samp>1234</samp></p>
-												</div>
+											<div class="tdn">
+												<p>质检工地数：<samp>1234</samp></p>
 											</div>
-											<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
-												<div class="tdimg" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
-												<div class="tdt">
-													<P>李工</P>
-												</div>
-												<div class="tdp">
-													<b>七年质检经验</b>
-												</div>
-												<div class="tdn">
-													<p>质检工地数：<samp>1234</samp></p>
-												</div>
+										</div>
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<div class="tdimg" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
+											<div class="tdt">
+												<P>李工</P>
+											</div>
+											<div class="tdp">
+												<b>七年质检经验</b>
+											</div>
+											<div class="tdn">
+												<p>质检工地数：<samp>1234</samp></p>
+											</div>
+										</div>
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<div class="tdimg" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
+											<div class="tdt">
+												<P>李工</P>
+											</div>
+											<div class="tdp">
+												<b>七年质检经验</b>
+											</div>
+											<div class="tdn">
+												<p>质检工地数：<samp>1234</samp></p>
+											</div>
+										</div>
+										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+											<div class="tdimg" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
+											<div class="tdt">
+												<P>李工</P>
+											</div>
+											<div class="tdp">
+												<b>七年质检经验</b>
+											</div>
+											<div class="tdn">
+												<p>质检工地数：<samp>1234</samp></p>
 											</div>
 										</div>
 									</div>
-									<div class="swiper-pagination mypagination"></div>
+								<div class="tab-pane fade" id="baogao">
+									<img src="../../common/img/icon/zhijian.png">
 								</div>
-								<div class="mobielswiper mbox" style="display: none;">
-									<div class="clearfix">
-										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
-											<div class="tdimg" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
-											<div class="tdt">
-												<P>李工</P>
-											</div>
-											<div class="tdp">
-												<b>七年质检经验</b>
-											</div>
-											<div class="tdn">
-												<p>质检工地数：<samp>1234</samp></p>
-											</div>
-										</div>
-										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
-											<div class="tdimg" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
-											<div class="tdt">
-												<P>李工</P>
-											</div>
-											<div class="tdp">
-												<b>七年质检经验</b>
-											</div>
-											<div class="tdn">
-												<p>质检工地数：<samp>1234</samp></p>
-											</div>
-										</div>
-										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
-											<div class="tdimg" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
-											<div class="tdt">
-												<P>李工</P>
-											</div>
-											<div class="tdp">
-												<b>七年质检经验</b>
-											</div>
-											<div class="tdn">
-												<p>质检工地数：<samp>1234</samp></p>
-											</div>
-										</div>
-									</div>
-									<div class="clearfix zkmorebox" style="display: none;">
-										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
-											<div class="tdimg" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
-											<div class="tdt">
-												<P>李工</P>
-											</div>
-											<div class="tdp">
-												<b>七年质检经验</b>
-											</div>
-											<div class="tdn">
-												<p>质检工地数：<samp>1234</samp></p>
-											</div>
-										</div>
-										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
-											<div class="tdimg" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
-											<div class="tdt">
-												<P>李工</P>
-											</div>
-											<div class="tdp">
-												<b>七年质检经验</b>
-											</div>
-											<div class="tdn">
-												<p>质检工地数：<samp>1234</samp></p>
-											</div>
-										</div>
-										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
-											<div class="tdimg" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
-											<div class="tdt">
-												<P>李工</P>
-											</div>
-											<div class="tdp">
-												<b>七年质检经验</b>
-											</div>
-											<div class="tdn">
-												<p>质检工地数：<samp>1234</samp></p>
-											</div>
-										</div>
-										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
-											<div class="tdimg" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
-											<div class="tdt">
-												<P>李工</P>
-											</div>
-											<div class="tdp">
-												<b>七年质检经验</b>
-											</div>
-											<div class="tdn">
-												<p>质检工地数：<samp>1234</samp></p>
-											</div>
-										</div>
-										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
-											<div class="tdimg" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
-											<div class="tdt">
-												<P>李工</P>
-											</div>
-											<div class="tdp">
-												<b>七年质检经验</b>
-											</div>
-											<div class="tdn">
-												<p>质检工地数：<samp>1234</samp></p>
-											</div>
-										</div>
-										<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
-											<div class="tdimg" style="background: url('../../common/img/images/img1.png')no-repeat;background-size:cover;background-position:50%"></div>
-											<div class="tdt">
-												<P>李工</P>
-											</div>
-											<div class="tdp">
-												<b>七年质检经验</b>
-											</div>
-											<div class="tdn">
-												<p>质检工地数：<samp>1234</samp></p>
-											</div>
-										</div>
-									</div>
-									<div>
-										<img @click="zkmorefun($event)" class="mimgmo" src="../../common/img/icon/zk.png" />
-									</div>
-								</div>
-							</div>
-							<div class="tab-pane fade" id="baogao">
-								<img src="../../common/img/icon/zhijian.png" />
 							</div>
 						</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="managebox">
-				<div class="mtitlebox" style="background: url('../../common/img/icon/zhijianbg.png')no-repeat;background-size:cover;background-position:50%"><h3>服务保障</h3></div>
-				<div class="bg_service" style="margin-top: 100px;">
+			<div class="managebox ">
+				<div class="mtitlebox container" style="background: url('../../common/img/icon/zhijianbg.png')no-repeat;background-size:cover;background-position:50%"><h3>服务保障</h3></div>
+				<div class="bg_service container" style="margin-top: 100px;">
 					<div class="">
 						<div class="row pc_service">
 							<div  class="col-xs-12 list_service" style="overflow: hidden;clear: both" >
@@ -708,49 +457,28 @@
 	browserRedirect();
   </script>
 <script>
-	(function($){
-		$.zhao=function(){
-			var galleryTop = new Swiper('.swiper-container1', {
-				spaceBetween: 10,
-				loop:true,
-				loopedSlides: 5, //looped slides should be the same
-			});
-			var galleryThumbs = new Swiper('.swiper-container2', {
-				spaceBetween: 10,
-				slidesPerView: 3,
-				touchRatio: 0.2,
-				loop: true,
-				loopedSlides: 5, //looped slides should be the same
-				slideToClickedSlide: true,
-				nextButton: '.swiper-button-next',
-				prevButton: '.swiper-button-prev',
+	var galleryTop = new Swiper('.gallery-top', {
+		spaceBetween: 10,
+		loop:true,
+		loopedSlides: 5, //looped slides should be the same
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	});
+	var galleryThumbs = new Swiper('.gallery-thumbs', {
+		spaceBetween: 10,
+		slidesPerView: 4,
+		touchRatio: 0.2,
+		loop: true,
+		loopedSlides: 5, //looped slides should be the same
+		slideToClickedSlide: true,
+	});
+	galleryTop.controller.control = galleryThumbs;
+	galleryThumbs.controller.control = galleryTop;
 
-			});
-			galleryTop.params.control = galleryThumbs;
-			galleryThumbs.params.control = galleryTop;
-		};
-		$.lin=function(){
-			var galleryTop1 = new Swiper('.swiper-container3', {
-				spaceBetween: 10,
-				loop:true,
-				loopedSlides: 5, //looped slides should be the same
-			});
-			var galleryThumbs1 = new Swiper('.swiper-container4', {
-				spaceBetween: 10,
-				slidesPerView: 3,
-				touchRatio: 0.2,
-				loop: true,
-				loopedSlides: 5, //looped slides should be the same
-				slideToClickedSlide: true,
-				nextButton: '.swiper-button-next1',
-				prevButton: '.swiper-button-prev1',
-			});
-			galleryTop1.params.control = galleryThumbs1;
-			galleryThumbs1.params.control = galleryTop1;
-		}
-	}($));
-	$.zhao();
-	$.lin();
+	galleryTop.params.control = galleryThumbs;
+	galleryThumbs.params.control = galleryTop;
 </script>
 <script>
 	$(function() {

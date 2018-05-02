@@ -29,8 +29,8 @@
 		        </div>
 	        </div>
 	    </div>
-        <div class="cont container " style="margin-bottom: 100px">
-			<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12" >
+        <div class="cont container " style="margin-bottom: 100px;padding: 0">
+			<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12" style="width: 960px;padding-left: 0">
 				<div class="manbox clearfix manboxm">
 					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 videobox pczhibo">
 						<div v-for="(item,index) in luntandata" style="position: relative;">
@@ -149,8 +149,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 right_layout" style="padding:0">
-				<div class="copnbg">
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 right_layout leftlist" style="padding:0;width: 220px;">
+				<div class="copnbg rightb">
 					<div class="rigt">
 						<h4>专业品牌知识论坛</h4>
 					</div>
@@ -163,7 +163,7 @@
 						
 					</div>
 				</div>
-				<div class="float_bar_one clearfix">
+				<div class="float_bar_one clearfix rightb rightb1">
 
                   <div class="z_title"><a href="javascript:;">达人推荐</a> </div>
 	                  <ul class="clearfix">
@@ -229,7 +229,7 @@
 	                      </li>
 	                  </ul>
 	              </div>
-	              <div class="float_bar_two clearfix">
+				<div class="float_bar_two clearfix rightb rightb2">
 	                  <div class="z_title clearfix">
 	                      <a href="javascript:;" @click="myultab($event,'multab1')" class="f_l maccss">最新回复</a>
 	                      <a href="javascript:;" @click="myultab($event,'multab2')" class="f_l">最新帖子</a>
@@ -314,7 +314,7 @@
 				spaceBetween: 30,
 			});
 		}else{
-		    var swiper = new Swiper('.swiper-container', {
+		    var swiper = new Swiper('.swiper-container-nav', {
 		        nextButton: '.swiper-button-next',
 		        prevButton: '.swiper-button-prev',
 		        slidesPerView: 6,
@@ -323,6 +323,40 @@
 		}
 	}
 	browserRedirect();
+</script>
+<script>
+	//列表固定
+	$(function(){
+		$(window).scroll(function(){
+			var top = $('.leftlist').offset().top;
+			var scrolltop = $(window).scrollTop();
+			if(scrolltop>top){
+				$('.rightb').css({
+					"position": "fixed",
+					"top": "0",
+					"z-index": "999",
+					"width": "220px",
+				})
+				$('.rightb1').css({
+					"top": "209px",
+				})
+				$('.rightb2').css({
+					"top": "571px",
+				})
+			}else{
+				$('.rightb').css({
+					"position": "static",
+				})
+				$('.rightb1').css({
+					"position": "static",
+				})
+				$('.rightb2').css({
+					"position": "static",
+				})
+			}
+		})
+
+	})
 </script>
 </body>
 </html>

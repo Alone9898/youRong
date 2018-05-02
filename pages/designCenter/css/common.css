@@ -224,8 +224,14 @@ span.disabled {
   width: 16.666667%!important;
   text-align: center;
 }
+.top_style {
+  margin-top: 170px;
+}
 /*end*/
 @media screen and (max-width: 768px) {
+  .top_style {
+    margin-top: inherit;
+  }
   .myh > div {
     font-size: 12px!important;
   }

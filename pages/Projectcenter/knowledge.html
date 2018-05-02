@@ -22,15 +22,15 @@
 		<div class="swiper-container-nav">
 			<div class="myh swiper-wrapper clearfix">
 				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-1 col-md-offset-1 col-xs-offset-1 col-sm-offset-1 swiper-slide" @click="searchcli($event,'quality')" style="margin-left:0;">项目管理</div>
-				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'team')">项目团队</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'team_indx')">项目团队</div>
 				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'Dynamicdiary')">动态日记</div>
 				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight" @click="searchcli($event,'knowledge')">装修知识</div>
 				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'security')">安全文明</div>
 			</div>
 		</div>
 	</div>
-        <div class="cont container" style="margin-top:35px">
-			<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+        <div class="cont container" style="margin-top:35px;padding:0;">
+			<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12" style="width:960px;margin-right: 20px;padding:0;">
 				<div class="manbox clearfix manboxm">
 					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 videobox pczhibo">
 						<div v-for="(item,index) in luntandata" style="position: relative;">
@@ -281,16 +281,18 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 zhishirbox">
-				<div class="h">精选知识</div>
-				<ul class="m">
-					<li><a class="sl" href="Projectcentredetails.html">木材]黄花梨木的装修妙用黄装黄花梨木的装修妙用黄装</a></li>
-					<li><a class="sl" href="Projectcentredetails.html">木材]黄花梨木的装修妙用黄装黄花梨木的装修妙用黄装</a></li>
-					<li><a class="sl" href="Projectcentredetails.html">木材]黄花梨木的装修妙用黄装黄花梨木的装修妙用黄装</a></li>
-					<li><a class="sl" href="Projectcentredetails.html">木材]黄花梨木的装修妙用黄装黄花梨木的装修妙用黄装</a></li>
-					<li><a class="sl" href="Projectcentredetails.html">木材]黄花梨木的装修妙用黄装黄花梨木的装修妙用黄装</a></li>
-				</ul>
-				<div class="a pull-left"><a href="select.html">查看全部 >></a></div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 zhishirbox leftlist" style="width:220px;padding:0;">
+				<div class="rightmain" style="background: #fff;padding:18px 15px;">
+					<div class="h">精选知识</div>
+					<ul class="m clearfix">
+						<li><a class="sl" href="Projectcentredetails.html">木材]黄花梨木的装修妙用黄装黄花梨木的装修妙用黄装</a></li>
+						<li><a class="sl" href="Projectcentredetails.html">木材]黄花梨木的装修妙用黄装黄花梨木的装修妙用黄装</a></li>
+						<li><a class="sl" href="Projectcentredetails.html">木材]黄花梨木的装修妙用黄装黄花梨木的装修妙用黄装</a></li>
+						<li><a class="sl" href="Projectcentredetails.html">木材]黄花梨木的装修妙用黄装黄花梨木的装修妙用黄装</a></li>
+						<li><a class="sl" href="Projectcentredetails.html">木材]黄花梨木的装修妙用黄装黄花梨木的装修妙用黄装</a></li>
+					</ul>
+					<div class="a pull-left"><a href="select.html">查看全部 >></a></div>
+				</div>
 			</div>
         </div>
         <!--footer-->

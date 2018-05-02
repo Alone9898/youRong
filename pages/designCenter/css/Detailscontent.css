@@ -12,6 +12,9 @@
   max-height: 420px;
   width: 100%;
 }
+.mjhboxhover .mjhmainimg {
+  background-size: 200%;
+}
 /*我的位置nav*/
 .z_menu {
   margin-top: 20px;
@@ -37,6 +40,9 @@
   padding-bottom: 100px;
   /*回答*/
   /*相关问题*/
+}
+.tips_info .wap_left {
+  float: left;
 }
 .bg_box {
   background: url(../../../common/img/images/bg-box.png) no-repeat;
@@ -398,6 +404,9 @@
 }
 /*媒体查询*/
 @media screen and (max-width: 700px) {
+  .tips_info .wap_left {
+    float: inherit;
+  }
   .float_box {
     display: none;
   }
