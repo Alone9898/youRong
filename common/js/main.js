@@ -26,6 +26,25 @@ $(function(){
         }
     }($));
     $.cookies('.login','cookieName','.type_text');
+    //固定左边
+    $(window).scroll(function(){
+        if($('.leftlist').length>0){
+            var top = $('.leftlist').offset().top;
+            var scrolltop = $(window).scrollTop();
+            if(scrolltop>top){
+                $('.rightmain').css({
+                    "position": "fixed",
+                    "top": "0",
+                    "z-index": "999",
+                    "width": "220px",
+                })
+            }else{
+                $('.rightmain').css({
+                    "position": "static",
+                })
+            }
+        }
+    })
 });
 $(function(){
     //定位地址
@@ -37,66 +56,66 @@ $(function(){
     var url = window.location.href;
     if(url.indexOf("index")>0){
         $(".sy").css({
-            "border-bottom":"4px solid #B2B2B2"
+            "border-bottom":"4px solid #fff"
         })
         $(".sy a").css({
-            "color":"#00dfb9"
+            "color":"#fff"
         })
     }else if(url.indexOf("designCenter")>0){
         $(".sjzx").css({
-            "border-bottom":"4px solid #B2B2B2"
+            "border-bottom":"4px solid #fff"
         })
         $(".sjzx a").css({
-            "color":"#00dfb9"
+            "color":"#fff"
         })
     }else if(url.indexOf("introduce")>0){
         $(".cpjs").css({
-            "border-bottom":"4px solid #B2B2B2"
+            "border-bottom":"4px solid #fff"
         })
         $(".cpjs a").css({
-            "color":"#00dfb9"
+            "color":"#fff"
         })
     }else if(url.indexOf("brandManage")>0){
         $(".ppzx").css({
-            "border-bottom":"4px solid #B2B2B2"
+            "border-bottom":"4px solid #fff"
         })
         $(".ppzx a").css({
-            "color":"#00dfb9"
+            "color":"#fff"
         })
     }else if(url.indexOf("bid")>0){
         $(".ztb").css({
-            "border-bottom":"4px solid #B2B2B2"
+            "border-bottom":"4px solid #fff"
         })
         $(".ztb a").css({
-            "color":"#00dfb9"
+            "color":"#fff"
         })
     }else if(url.indexOf("bid")>0){
         $(".Projectcenter").css({
-            "border-bottom":"4px solid #B2B2B2"
+            "border-bottom":"4px solid #fff"
         })
         $(".Projectcenter a").css({
-            "color":"#00dfb9"
+            "color":"#fff"
         })
     }else if(url.indexOf("facilitator")>0){
         $(".fws").css({
-            "border-bottom":"4px solid #B2B2B2"
+            "border-bottom":"4px solid #fff"
         })
         $(".fws a").css({
-            "color":"#00dfb9"
+            "color":"#fff"
         })
     }else if(url.indexOf("Aboutus")>0){
         $(".gywm").css({
-            "border-bottom":"4px solid #B2B2B2"
+            "border-bottom":"4px solid #fff"
         })
         $(".gywm a").css({
-            "color":"#00dfb9"
+            "color":"#fff"
         })
     }else if(url.indexOf("Projectcenter")>0){
         $(".xmgl").css({
-            "border-bottom":"4px solid #B2B2B2"
+            "border-bottom":"4px solid #fff"
         })
         $(".xmgl a").css({
-            "color":"#00dfb9"
+            "color":"#fff"
         })
     }
 })

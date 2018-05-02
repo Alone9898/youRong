@@ -23,6 +23,11 @@ a:hover{color:#333;}
 .clearfix {
   *zoom: 1;
 }
+.swiper_list .swiper-slide a {
+  width: 90px;
+  display: block;
+  margin: 0 auto;
+}
 .sl {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -112,12 +117,24 @@ img {
 }
 .conttitle {
   background: #ffffff;
-  padding: 20px 0;
+  padding: 40px 20px;
 }
 .conttitle h3 {
   margin: 0;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+.hover_bg {
+  width: 210px;
+  height: 200px;
+}
+.contmain .contimg div:last-child {
+  margin-right: 0;
+}
+.contmain .contimg div {
+  height: 190px!important;
+  padding: 0!important;
+  margin-right: 18px;
 }
 .btn-success {
   color: #fff;
@@ -192,7 +209,7 @@ img {
 .contmain {
   margin-top: 20px;
   background: #ffffff;
-  padding: 20px;
+  padding: 32px;
 }
 .mycont{margin-bottom:20px;}
 .contmain .contleft {
@@ -589,10 +606,10 @@ img {
   display: table-cell;
   vertical-align: middle;
   position: absolute;
-  width: 91%!important;
+  width: 100%!important;
   height: 100%;
   top:60px;
-  left: 10px;
+  left: 0;
   right: 0;
   bottom:0;
   padding: 0 46px 0 30px!important;
@@ -616,6 +633,7 @@ img {
   display: table-cell;
   color:#fff;
   font-size: 14px;
+  padding: 0 36px;
 }
 @media screen and (max-width: 768px) {
   p,a,span,b{font-size:14px!important;}
@@ -1203,7 +1221,7 @@ img {
   color: #999;
 }
 .rightxinfo b {
-  font-size: 2.8rem;
+  font-size: 28px;
   color: #ffffff;
 }
 .zhead a {

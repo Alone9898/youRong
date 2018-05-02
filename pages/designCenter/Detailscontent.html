@@ -27,11 +27,12 @@
     <div class="title">
         <div class="swiper-container-nav">
             <div class="myh swiper-wrapper clearfix">
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide col-lg-offset-1" @click="searchcli($event)">商业品牌</div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event)">品控管理</div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event)">品牌推广</div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight" @click="searchcli($event,'media')">品牌传媒</div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event)">品牌论坛</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight" @click="searchcli($event,'decoration')">精装工选</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'jzdecoration')">精装家装</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'findDesign')">找设计师</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'mingjiahui')">名家汇</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'question')">设计疑问</div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'interview')">设计专访</div>
             </div>
         </div>
     </div>
@@ -242,7 +243,7 @@
                 spaceBetween: 40,
             });
         }else{
-            var swiper = new Swiper('.swiper-container', {
+            var swiper = new Swiper('.swiper-container-nav', {
                 nextButton: '.swiper-button-next',
                 prevButton: '.swiper-button-prev',
                 slidesPerView: 6,

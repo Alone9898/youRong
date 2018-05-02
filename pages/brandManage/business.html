@@ -21,23 +21,65 @@
 	    <div class="title">
 	    	<div class="swiper-container-nav">
 		        <div class="myh swiper-wrapper clearfix">
-		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide col-lg-offset-1 myhight" @click="searchcli($event,'business')">商业品牌</div>
-		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'Qc_management')">品控管理</div>
+		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide col-lg-offset-3 myhight" @click="searchcli($event,'business')">商业品牌</div>
 		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'promotion')">品牌推广</div>
-		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'media')">品牌传媒</div>
 		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'forum')">品牌论坛</div>
 		        </div>
 	        </div>
 	    </div>
-        
-        <div class="cont container " style="margin-bottom: 100px">
-			<div class="mip col-lg-10 col-md-10 col-sm-10 col-xs-12">
+	<div class="search">
+		<div class="container">
+			<div class="col-lg-12 col-md-12 clearfix">
+				<b class="pull-left">擅长类型</b>
+				<ul class="pull-left">
+					<li @click="searchfun($event)">全部</li>
+					<li @click="searchfun($event)">普通住宅</li>
+					<li @click="searchfun($event)">餐饮空间</li>
+					<li @click="searchfun($event)">办公空间</li>
+					<li @click="searchfun($event)">商业展厅</li>
+					<li @click="searchfun($event)">商业酒店</li>
+					<li @click="searchfun($event)">其他</li>
+				</ul>
+			</div>
+			<div class="col-lg-12 col-md-12 clearfix">
+				<b class="pull-left">服务区域</b>
+				<ul class="pull-left">
+					<li @click="searchfun($event)">成都</li>
+					<li @click="searchfun($event)">崇州市</li>
+					<li @click="searchfun($event)">邛崃市</li>
+					<li @click="searchfun($event)">大邑县</li>
+					<li @click="searchfun($event)">金堂县</li>
+					<li @click="searchfun($event)">双流县</li>
+					<li @click="searchfun($event)">浦江县</li>
+					<li @click="searchfun($event)">新津县</li>
+					<li @click="searchfun($event)">武侯区</li>
+					<li @click="searchfun($event)">成华区</li>
+					<li @click="searchfun($event)">金牛区</li>
+					<li @click="searchfun($event)">更多</li>
+				</ul>
+			</div>
+			<div class="col-lg-12 col-md-12 clearfix">
+				<b class="pull-left">设计收费</b>
+				<ul class="pull-left">
+					<li @click="searchfun($event)">全部</li>
+					<li @click="searchfun($event)">十万以下</li>
+					<li @click="searchfun($event)">10万-30万</li>
+					<li @click="searchfun($event)">30万-50万</li>
+					<li @click="searchfun($event)">50万-100万</li>
+					<li @click="searchfun($event)">100万-300万</li>
+					<li @click="searchfun($event)">300万以上</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+        <div class="cont container " style="margin-bottom: 100px;padding:0">
+			<div class="mip col-lg-10 col-md-10 col-sm-10 col-xs-12" style="padding:0;width:960px;margin-right:20px;">
 				<div class="conttitle">
 					<h3 style="padding-left: 20px;">精选品牌</h3>
 					<div>
 						<!-- Swiper -->
-						<div class="swiper-container-img" style="position: relative;overflow: hidden;width: 95%;padding-left: 15px;margin: 0 auto;">
-						    <div class="swiper-wrapper swiper_list">
+						<div class="swiper-container-zz" style="position: relative;overflow: hidden;width: 97%;padding-left: 3px;margin: 0 auto;">
+							<div class="swiper-wrapper swiper_list">
 								<div class="swiper-slide">
 									<a href="header.html">
 										<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
@@ -104,10 +146,10 @@
 										<p class="myswipert">小龙坎1</p>
 									</a>
 								</div>
-						    </div>
-						    <!-- Add Arrows -->
-						    <div class="swiper-button-next swiper-button-nextmy"></div>
-						    <div class="swiper-button-prev swiper-button-prevmy"></div>
+							</div>
+							<!-- Add Arrows -->
+							<div class="swiper-button-next swiper-button-nextmy"></div>
+							<div class="swiper-button-prev swiper-button-prevmy"></div>
 						</div>
 					</div>
 				</div>
@@ -186,39 +228,41 @@
 					</a>
 				</div>
 			</div>
-			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12" style="padding: 0">
-				<div class="rightb" style="">
-					<h5 style="margin: 5px 0 20px 0;"><b style="font-size:16px;">品牌活动</b></h5>
-					<div class="swiper-container-right" style="    overflow: hidden;">
-						<div class="swiper-wrapper clearfix">
-							<div class="swiper-slide imgcss" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
-							<div class="swiper-slide imgcss" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
-							<div class="swiper-slide imgcss" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 leftlist" style="padding: 0;width:220px;">
+				<div class="rightmain ">
+					<div class="rightb" style="">
+						<h5 style="margin: 5px 0 20px 0;"><b style="font-size:16px;">品牌活动</b></h5>
+						<div class="swiper-container-right" style="    overflow: hidden;">
+							<div class="swiper-wrapper clearfix">
+								<div class="swiper-slide imgcss" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
+								<div class="swiper-slide imgcss" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
+								<div class="swiper-slide imgcss" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
+							</div>
+							<div class="swiper-pagination right-pagination" style="    bottom: 84px;"></div>
 						</div>
-						<div class="swiper-pagination right-pagination" style="    bottom: 84px;"></div>
+						<div>
+							<p class="pinfo sl">工匠才是后来发展的王道……</p>
+						</div>
+						<div>
+							<a class="amore" href="activities.html">查看全部 >></a>
+						</div>
 					</div>
-					<div>
-						<p class="pinfo sl">工匠才是后来发展的王道……</p>
-					</div>
-					<div>
-						<a class="amore" href="forum.html">查看全部 >></a>
-					</div>
-				</div>
-				<div class="rightb" style="margin-top:20px;">
-					<h5 style="margin: 5px 0 20px 0;"><b style="font-size:16px;">品牌论坛</b></h5>
-					<div class="swiper-container-right" style="    overflow: hidden;">
-				        <div class="swiper-wrapper clearfix">
-				            <div class="swiper-slide imgcss" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
-				            <div class="swiper-slide imgcss" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
-				            <div class="swiper-slide imgcss" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
-				        </div>
-				        <div class="swiper-pagination right-pagination" style="    bottom: 84px;"></div>
-			        </div>
-					<div>
-						<p class="pinfo sl">工匠才是后来发展的王道……</p>
-					</div>
-					<div>
-						<a class="amore" href="forum.html">查看全部 >></a>
+					<div class="rightb " style="margin-top:20px;">
+						<h5 style="margin: 5px 0 20px 0;"><b style="font-size:16px;">品牌论坛</b></h5>
+						<div class="swiper-container-right" style="    overflow: hidden;">
+							<div class="swiper-wrapper clearfix">
+								<div class="swiper-slide imgcss" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
+								<div class="swiper-slide imgcss" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
+								<div class="swiper-slide imgcss" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
+							</div>
+							<div class="swiper-pagination right-pagination" style="    bottom: 84px;"></div>
+						</div>
+						<div>
+							<p class="pinfo sl">工匠才是后来发展的王道……</p>
+						</div>
+						<div>
+							<a class="amore" href="activities.html">查看全部 >></a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -240,7 +284,13 @@
 <script src="../../common/js/main.js"></script>
 <script src="js/common.js"></script>
 <script>
-
+	var swiper = new Swiper('.swiper-container-zz', {
+		nextButton: '.swiper-button-next',
+		prevButton: '.swiper-button-prev',
+		slidesPerView: 6,
+		spaceBetween: 0,
+		loop:true,
+	});
     function browserRedirect() {
 		var sUserAgent = navigator.userAgent.toLowerCase();
 		var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
@@ -257,21 +307,6 @@
 				spaceBetween: 40,
 			});
 		}else{
-		    //var swiper = new Swiper('.swiper-container-img', {
-		    //    nextButton: '.swiper-button-next',
-		    //    prevButton: '.swiper-button-prev',
-		    //    slidesPerView: 6,
-		    //    spaceBetween: 0,
-		    //});
-			var swiper2 = new Swiper('.swiper-container-img', {
-				nextButton: '.swiper-button-next',
-				prevButton: '.swiper-button-prev',
-				//paginationClickable: true,
-				spaceBetween: 0,
-				//loop: true,
-				slidesPerView: 6,
-				//spaceBetween: 0,
-			});
 		    var swiper1 = new Swiper('.swiper-container-right', {
 		        slidesPerView: 1,
 		        spaceBetween: 0,

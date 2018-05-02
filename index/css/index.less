@@ -111,6 +111,7 @@ body{
     padding-top: 50px;
     font-size: 32px;
     font-weight: normal;
+    margin-bottom:10px;
   }
   .subtitle {
     margin-bottom: 30px;
@@ -258,6 +259,7 @@ body{
     font-size: 32px;
     font-weight: normal;
     text-align: center;
+    margin-bottom:10px;
   }
   .subtitle {
     margin-bottom: 30px;
@@ -282,6 +284,9 @@ body{
   background: #fff;
   box-shadow: 0 0 10px #dcdcdc;
   padding-bottom: 20px;
+  a{
+    display: block;
+  }
   .tips {
     position: absolute;
     top: -6px;
@@ -296,8 +301,7 @@ body{
     position: relative;
     display: inline-block;
     width: 30% !important;
-    margin: 0 1.6%;
-    margin-top: 30px;
+    margin: 1%;
     .img_customer {
       width: 100%;
       height: 286px;
@@ -313,6 +317,7 @@ body{
         height: 30px;
         line-height: 30px;
         border-bottom: 1px solid #dcdcdc;
+        color:#333;
       }
       .title_txt_x{
         text-align: center;
@@ -324,6 +329,7 @@ body{
         font-size: 18px;
         margin: 0 auto;
         margin-top: -42px;
+        color:#333;
         .txt{
           margin: 0 auto;
           width: 40px;
@@ -336,6 +342,7 @@ body{
           text-align: center;
           font-size: 16px;
           font-weight: normal;
+        color: #666;
       }
       .bottom_s{
         text-align: center;
@@ -346,10 +353,10 @@ body{
       }
       .content{
         padding: 10px 0;
-        font-size: 12px;
         color: #666666;
         text-align: left;
         line-height: 20px;
+        font-size: 14px;
       }
     }
   }
@@ -361,6 +368,7 @@ body{
     font-size: 32px;
     font-weight: normal;
     text-align: center;
+    margin-bottom:10px;
   }
   .subtitle {
     margin-bottom: 30px;
@@ -379,21 +387,24 @@ body{
       position: relative;
       margin: 0 15px;
       margin-top: 20px;
-      &:hover {
-        img {
-          -webkit-filter: blur(0);
-          filter: blur(0);
-          transform: scale(1.1, 1.1);
-          -webkit-transition: 1s;
-        }
-
-      }
       img {
         width: 100%;
         height: 100%;
         position: absolute;
         -webkit-filter: blur(2px);
         filter: blur(2px);
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+        transition: .5s;
+      }
+      &:hover {
+        img {
+          //-webkit-filter: blur(0);
+          //filter: blur(0);
+          transform: scale(1.1, 1.1);
+        }
       }
       .center_box {
         position: absolute;
@@ -426,6 +437,12 @@ body{
   background: #fff;
   .swiper-container4{
     overflow: hidden;
+    .swiper-button-next{
+      right: -8px!important;
+    }
+    .swiper-button-prev{
+      left: -8px!important;
+    }
   }
   .swiper-button-next {
     background: url(../../common/img/images/right.png) no-repeat;
@@ -511,6 +528,7 @@ body{
     padding-top: 50px;
     font-size: 32px;
     font-weight: normal;
+    margin-bottom:10px;
     text-align: center;
   }
   .subtitle {
@@ -587,6 +605,7 @@ body{
       padding-top: 0;
       font-size: 20px;
       font-weight: normal;
+      margin-bottom:10px;
     }
     .subtitle {
       display: none;
@@ -636,6 +655,7 @@ body{
       font-size: 20px;
       font-weight: normal;
       padding-top: 0;
+      margin-bottom:10px;
     }
     .subtitle {
       display: none;
@@ -706,6 +726,7 @@ body{
         font-size: 20px;
         font-weight: normal;
         text-align: center;
+        margin-bottom:10px;
       }
       .subtitle {
         display: none;
@@ -840,6 +861,9 @@ body{
   .bg_process{
     display: none;
   }
+  .title{
+    margin-bottom:10px;
+  }
   /*合作伙伴*/
   .pc_partners{
     .title {
@@ -848,6 +872,7 @@ body{
       font-weight: normal;
       text-align: center;
       padding-top: 0;
+      margin-bottom:10px;
     }
     .subtitle {
       display: none;

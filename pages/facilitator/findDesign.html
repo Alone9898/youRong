@@ -17,7 +17,7 @@
 <div id="app" v-cloak>
 	    <!--header-->
 		<sitenav></sitenav>
-		
+
 	    <div class="title">
 	    	<div class="swiper-container-nav">
 		        <div class="myh swiper-wrapper clearfix">
@@ -28,7 +28,51 @@
 		        </div>
 	        </div>
 	    </div>
-        
+	<div class="search">
+		<div class="container">
+			<div class="col-lg-12 col-md-12 clearfix">
+				<b class="pull-left">擅长类型</b>
+				<ul class="pull-left">
+					<li @click="searchfun($event)">全部</li>
+					<li @click="searchfun($event)">普通住宅</li>
+					<li @click="searchfun($event)">餐饮空间</li>
+					<li @click="searchfun($event)">办公空间</li>
+					<li @click="searchfun($event)">商业展厅</li>
+					<li @click="searchfun($event)">商业酒店</li>
+					<li @click="searchfun($event)">其他</li>
+				</ul>
+			</div>
+			<div class="col-lg-12 col-md-12 clearfix">
+				<b class="pull-left">服务区域</b>
+				<ul class="pull-left">
+					<li @click="searchfun($event)">成都</li>
+					<li @click="searchfun($event)">崇州市</li>
+					<li @click="searchfun($event)">邛崃市</li>
+					<li @click="searchfun($event)">大邑县</li>
+					<li @click="searchfun($event)">金堂县</li>
+					<li @click="searchfun($event)">双流县</li>
+					<li @click="searchfun($event)">浦江县</li>
+					<li @click="searchfun($event)">新津县</li>
+					<li @click="searchfun($event)">武侯区</li>
+					<li @click="searchfun($event)">成华区</li>
+					<li @click="searchfun($event)">金牛区</li>
+					<li @click="searchfun($event)">更多</li>
+				</ul>
+			</div>
+			<div class="col-lg-12 col-md-12 clearfix">
+				<b class="pull-left">设计收费</b>
+				<ul class="pull-left">
+					<li @click="searchfun($event)">全部</li>
+					<li @click="searchfun($event)">十万以下</li>
+					<li @click="searchfun($event)">10万-30万</li>
+					<li @click="searchfun($event)">30万-50万</li>
+					<li @click="searchfun($event)">50万-100万</li>
+					<li @click="searchfun($event)">100万-300万</li>
+					<li @click="searchfun($event)">300万以上</li>
+				</ul>
+			</div>
+		</div>
+	</div>
         <div class="cont container " style="margin-bottom: 100px">
 			<div class="mip col-lg-10 col-md-10 col-sm-10 col-xs-12">
 				<div class="">
@@ -149,7 +193,7 @@
 				spaceBetween: 40,
 			});
 		}else{
-		    var swiper = new Swiper('.swiper-container', {
+		    var swiper = new Swiper('.swiper-container-nav', {
 		        nextButton: '.swiper-button-next',
 		        prevButton: '.swiper-button-prev',
 		        slidesPerView: 6,

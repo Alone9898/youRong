@@ -11,14 +11,14 @@
 }
 /*我的位置nav*/
 .z_menu {
-  margin-top: 2rem;
+  margin-top: 20px;
 }
 .z_menu li {
   float: left;
   clear: right;
-  font-size: 1.2rem;
+  font-size: 12px;
   font-weight: normal;
-  padding: 0 0.1rem;
+  padding: 0 1px;
 }
 .z_menu li a {
   color: #666666;
@@ -29,28 +29,28 @@
 /*AskQuestions_a*/
 .left_layout {
   background: #fff;
-  padding: 2rem 3.2rem;
-  margin-top: 1rem;
+  padding: 20px 32px;
+  margin-top: 10px;
   padding-bottom: 100px;
   /*回答*/
   /*相关问题*/
 }
 .left_layout .questions-title {
-  font-size: 2.4rem;
+  font-size: 24px;
   font-weight: normal;
   color: #333333;
 }
 /*专家推荐*/
 .right_layout {
-  margin-top: 1rem;
+  margin-top: 10px;
 }
 .right_layout .float_bar_one {
-  padding: 0 1.5rem;
+  padding: 0 15px;
   background: #fff;
 }
 .right_layout .float_bar_one .z_title {
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 15px;
   font-size: 16px;
   color: #333;
 }

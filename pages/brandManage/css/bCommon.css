@@ -149,9 +149,7 @@ img {
 .cont {
   margin-top: 20px;
 }
-.swiper_list .swiper-slide{
-    margin-left: -3px;
-}
+
 .swiper_list .swiper-slide a{
     width: 90px;
     display: block;
@@ -159,7 +157,7 @@ img {
 }
 .conttitle {
   background: #ffffff;
-  padding:40px 0;
+  padding:40px 20px;
 }
 .conttitle h3 {
   margin: 0;
@@ -239,11 +237,11 @@ img {
 .contmain {
   margin-top: 20px;
   background: #ffffff;
-  padding: 20px;position: relative;
+  padding: 32px;position: relative;
 
 }
 .img{    position: absolute;
-    top: -27px;
+    top: -33px;
     right: 15px;}
 .mycont{margin-bottom:20px;}
 .contmain .contleft {
@@ -1238,7 +1236,7 @@ img {
   color: #999;
 }
 .rightxinfo b {
-  font-size: 2.8rem;
+  font-size: 28px;
   color: #ffffff;
 }
 .zhead a {

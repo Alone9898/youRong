@@ -98,6 +98,7 @@ body {
   padding-top: 50px;
   font-size: 32px;
   font-weight: normal;
+  margin-bottom: 10px;
 }
 .pc_live .subtitle {
   margin-bottom: 30px;
@@ -202,6 +203,7 @@ body {
   padding-top: 50px;
   font-size: 32px;
   font-weight: normal;
+  margin-bottom: 10px;
 }
 .pc_service .subtitle {
   margin-bottom: 30px;
@@ -243,6 +245,7 @@ body {
   font-size: 32px;
   font-weight: normal;
   text-align: center;
+  margin-bottom: 10px;
 }
 .pc_customer .subtitle {
   margin-bottom: 30px;
@@ -267,6 +270,9 @@ body {
   box-shadow: 0 0 10px #dcdcdc;
   padding-bottom: 20px;
 }
+.list_customer a {
+  display: block;
+}
 .list_customer .tips {
   position: absolute;
   top: -6px;
@@ -281,8 +287,7 @@ body {
   position: relative;
   display: inline-block;
   width: 30% !important;
-  margin: 0 1.6%;
-  margin-top: 30px;
+  margin: 1%;
 }
 .list_customer li .img_customer {
   width: 100%;
@@ -300,6 +305,7 @@ body {
   height: 30px;
   line-height: 30px;
   border-bottom: 1px solid #dcdcdc;
+  color: #333;
 }
 .list_customer li .txt_box .title_txt_x {
   text-align: center;
@@ -311,6 +317,7 @@ body {
   font-size: 18px;
   margin: 0 auto;
   margin-top: -42px;
+  color: #333;
 }
 .list_customer li .txt_box .title_txt_x .txt {
   margin: 0 auto;
@@ -323,6 +330,7 @@ body {
   text-align: center;
   font-size: 16px;
   font-weight: normal;
+  color: #666;
 }
 .list_customer li .txt_box .bottom_s {
   text-align: center;
@@ -333,10 +341,10 @@ body {
 }
 .list_customer li .txt_box .content {
   padding: 10px 0;
-  font-size: 12px;
   color: #666666;
   text-align: left;
   line-height: 20px;
+  font-size: 14px;
 }
 /*专业诠释*/
 .pc_interpretation .title {
@@ -344,6 +352,7 @@ body {
   font-size: 32px;
   font-weight: normal;
   text-align: center;
+  margin-bottom: 10px;
 }
 .pc_interpretation .subtitle {
   margin-bottom: 30px;
@@ -364,18 +373,20 @@ body {
   margin: 0 15px;
   margin-top: 20px;
 }
-.pc_interpretation .container_x li:hover img {
-  -webkit-filter: blur(0);
-  filter: blur(0);
-  transform: scale(1.1, 1.1);
-  -webkit-transition: 1s;
-}
 .pc_interpretation .container_x li img {
   width: 100%;
   height: 100%;
   position: absolute;
   -webkit-filter: blur(2px);
   filter: blur(2px);
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+.pc_interpretation .container_x li:hover img {
+  transform: scale(1.1, 1.1);
 }
 .pc_interpretation .container_x li .center_box {
   position: absolute;
@@ -403,6 +414,12 @@ body {
 }
 .swiper_style .swiper-container4 {
   overflow: hidden;
+}
+.swiper_style .swiper-container4 .swiper-button-next {
+  right: -8px !important;
+}
+.swiper_style .swiper-container4 .swiper-button-prev {
+  left: -8px !important;
 }
 .swiper_style .swiper-button-next {
   background: url(../../common/img/images/right.png) no-repeat;
@@ -480,6 +497,7 @@ body {
   padding-top: 50px;
   font-size: 32px;
   font-weight: normal;
+  margin-bottom: 10px;
   text-align: center;
 }
 .pc_partners .subtitle {
@@ -551,6 +569,7 @@ body {
     padding-top: 0;
     font-size: 20px;
     font-weight: normal;
+    margin-bottom: 10px;
   }
   .pc_live .subtitle {
     display: none;
@@ -594,6 +613,7 @@ body {
     font-size: 20px;
     font-weight: normal;
     padding-top: 0;
+    margin-bottom: 10px;
   }
   .pc_service .subtitle {
     display: none;
@@ -661,6 +681,7 @@ body {
     font-size: 20px;
     font-weight: normal;
     text-align: center;
+    margin-bottom: 10px;
   }
   .bg_customer .pc_customer .subtitle {
     display: none;
@@ -782,6 +803,9 @@ body {
   .bg_process {
     display: none;
   }
+  .title {
+    margin-bottom: 10px;
+  }
   /*合作伙伴*/
   .pc_partners .title {
     margin-top: 0;
@@ -789,6 +813,7 @@ body {
     font-weight: normal;
     text-align: center;
     padding-top: 0;
+    margin-bottom: 10px;
   }
   .pc_partners .subtitle {
     display: none;

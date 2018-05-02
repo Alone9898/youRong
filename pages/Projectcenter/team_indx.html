@@ -20,63 +20,126 @@
 
 	    <div class="title">
 	    	<div class="swiper-container-nav">
-		        <div class="myh swiper-wrapper clearfix">
-		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'decoration')">精装工选</div>
-		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'jzdecoration')">精装家装</div>
-		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight" @click="searchcli($event,'findDesign')">找设计师</div>
-		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'mingjiahui')">名家汇</div>
-		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'question')">设计疑问</div>
-		            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'interview')">设计专访</div>
-		        </div>
+				<div class="myh swiper-wrapper clearfix">
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg-offset-1 col-md-offset-1 col-xs-offset-1 col-sm-offset-1 swiper-slide " @click="searchcli($event,'quality')">项目管理</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide myhight" @click="searchcli($event,'team_indx')">项目团队</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'Dynamicdiary')">动态日记</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide " @click="searchcli($event,'knowledge')">装修知识</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 swiper-slide" @click="searchcli($event,'security')">安全文明</div>
+				</div>
 	        </div>
 	    </div>
-        
-        <div class="cont container " style="margin-bottom: 100px">
-			<div class="mip col-lg-10 col-md-10 col-sm-10 col-xs-12">
+	<div class="search">
+		<div class="container">
+			<div class="col-lg-12 col-md-12 clearfix">
+				<b class="pull-left">擅长类型</b>
+				<ul class="pull-left">
+					<li @click="searchfun($event)">全部</li>
+					<li @click="searchfun($event)">普通住宅</li>
+					<li @click="searchfun($event)">餐饮空间</li>
+					<li @click="searchfun($event)">办公空间</li>
+					<li @click="searchfun($event)">商业展厅</li>
+					<li @click="searchfun($event)">商业酒店</li>
+					<li @click="searchfun($event)">其他</li>
+				</ul>
+			</div>
+			<div class="col-lg-12 col-md-12 clearfix">
+				<b class="pull-left">服务区域</b>
+				<ul class="pull-left">
+					<li @click="searchfun($event)">成都</li>
+					<li @click="searchfun($event)">崇州市</li>
+					<li @click="searchfun($event)">邛崃市</li>
+					<li @click="searchfun($event)">大邑县</li>
+					<li @click="searchfun($event)">金堂县</li>
+					<li @click="searchfun($event)">双流县</li>
+					<li @click="searchfun($event)">浦江县</li>
+					<li @click="searchfun($event)">新津县</li>
+					<li @click="searchfun($event)">武侯区</li>
+					<li @click="searchfun($event)">成华区</li>
+					<li @click="searchfun($event)">金牛区</li>
+					<li @click="searchfun($event)">更多</li>
+				</ul>
+			</div>
+			<div class="col-lg-12 col-md-12 clearfix">
+				<b class="pull-left">设计收费</b>
+				<ul class="pull-left">
+					<li @click="searchfun($event)">全部</li>
+					<li @click="searchfun($event)">十万以下</li>
+					<li @click="searchfun($event)">10万-30万</li>
+					<li @click="searchfun($event)">30万-50万</li>
+					<li @click="searchfun($event)">50万-100万</li>
+					<li @click="searchfun($event)">100万-300万</li>
+					<li @click="searchfun($event)">300万以上</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+        <div class="cont container " style="margin-bottom: 100px;padding:0;">
+			<div class="mip col-lg-10 col-md-10 col-sm-10 col-xs-12" style="width:960px;padding:0;margin-right:20px;">
 				<div class="conttitle">
-					<div class="buttno" style="float: left;padding-left: 30px;"><a class="btn btn-success btn-block">优秀服务商</a></div><h3 style="padding-left: 30px;line-height: 31px;float: left; ">优秀设计师</h3>
+					<div class="buttno" style="float: left;padding-left: 30px;"><a class="btn btn-success btn-block" style="font-size:16px;">优秀服务商</a></div><h3 style="    font-size: 18px;padding-left: 30px;line-height: 31px;float: left; ">优秀项目经理</h3>
 					<div>
 						<!-- Swiper -->
-						<div class="swiper-container" style="position: relative;overflow: hidden;width: 93%;padding-left: 3px;margin: 0 auto;">
+						<div class="swiper-container-zz" style="position: relative;overflow: hidden;width: 100%;margin: 0 auto;">
 						    <div class="swiper-wrapper">
 						      	<div class="swiper-slide">
-						      		<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
+									<a href="../../pages/facilitator/header.html">
+						      			<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
+									</a>
 						      		<p class="myswipert">老李头1</p>
 						      	</div>
 						      	<div class="swiper-slide">
-						      		<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
+									<a href="../../pages/facilitator/header.html">
+										<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
+									</a>
 						      		<p class="myswipert">老李头2</p>
 						      	</div>
 						      	<div class="swiper-slide">
-						      		<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
+									<a href="../../pages/facilitator/header.html">
+										<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
+									</a>
 						      		<p class="myswipert">老李头3</p>
 						      	</div>
 						      	<div class="swiper-slide">
-						      		<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
+									<a href="../../pages/facilitator/header.html">
+										<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
+									</a>
 						      		<p class="myswipert">老李头4</p>
 						      	</div>
 						      	<div class="swiper-slide">
-						      		<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
+									<a href="../../pages/facilitator/header.html">
+										<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
+									</a>
 						      		<p class="myswipert">老李头5</p>
 						      	</div>
 						      	<div class="swiper-slide">
-						      		<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
+									<a href="../../pages/facilitator/header.html">
+										<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
+									</a>
 						      		<p class="myswipert">老李头6</p>
 						      	</div>
 						      	<div class="swiper-slide">
-						      		<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
+									<a href="../../pages/facilitator/header.html">
+										<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
+									</a>
 						      		<p class="myswipert">老李头7</p>
 						      	</div>
 						      	<div class="swiper-slide">
-						      		<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
+									<a href="../../pages/facilitator/header.html">
+										<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
+									</a>
 						      		<p class="myswipert">老李头8</p>
 						      	</div>
 						      	<div class="swiper-slide">
-						      		<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
+									<a href="../../pages/facilitator/header.html">
+										<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
+									</a>
 						      		<p class="myswipert">老李头9</p>
 						      	</div>
 						      	<div class="swiper-slide">
-						      		<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
+									<a href="../../pages/facilitator/header.html">
+										<p class="myswiperbox" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></p>
+									</a>
 						      		<p class="myswipert">老李头0</p>
 						      	</div>
 						    </div>
@@ -104,37 +167,44 @@
 								</div>
 							</div>
 							<div class="contimg clearfix">
-								<div class="col-lg-3 col-md-3 col-sm-3 hover_bg" >
-									<p style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></p>
-									<div class="projection_txt">
-										<div class="flex_display">
-											<p> 商品类别商品类别商品类别商品类别商品类别商品类别商品类别</p>
+								<div class="col-lg-3 col-md-3 col-sm-3 hover_bg">
+										<p style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover" ></p>
+										<div class="projection_txt">
+											<div class="flex_display">
+												<p> 商品类别商品类别商品类别商品类别商品类别商品类别商品类别</p>
+											</div>
 										</div>
-									</div>
+
 								</div>
 								<div class="col-lg-3 col-md-3 col-sm-3 hover_bg">
-									<p style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></p>
-									<div class="projection_txt">
-										<div class="flex_display">
-											<p> 商品类别商品类别商品类别商品类别商品类别商品类别商品类别</p>
+
+										<p style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></p>
+										<div class="projection_txt">
+											<div class="flex_display">
+												<p> 商品类别商品类别商品类别商品类别商品类别商品类别商品类别</p>
+											</div>
 										</div>
-									</div>
+
 								</div>
 								<div class="col-lg-3 col-md-3 col-sm-3 hover_bg">
-									<p style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></p>
-									<div class="projection_txt">
-										<div class="flex_display">
-											<p> 商品类别商品类别商品类别商品类别商品类别商品类别商品类别</p>
+
+										<p style="background: url('../../common/img/images/img1.png'); background-position: 50%;background-size: cover"></p>
+										<div class="projection_txt">
+											<div class="flex_display">
+												<p> 商品类别商品类别商品类别商品类别商品类别商品类别商品类别</p>
+											</div>
 										</div>
-									</div>
+
 								</div>
 								<div class="col-lg-3 col-md-3 col-sm-3 hover_bg" >
-									<p style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></p>
-									<div class="projection_txt">
-										<div class="flex_display">
-											<p> 商品类别商品类别商品类别商品类别商品类别商品类别商品类别</p>
+
+										<p style="background: url('../../common/img/images/img2.png'); background-position: 50%;background-size: cover"></p>
+										<div class="projection_txt">
+											<div class="flex_display">
+												<p> 商品类别商品类别商品类别商品类别商品类别商品类别商品类别</p>
+											</div>
 										</div>
-									</div>
+
 								</div>
 							</div>
 						</div>
@@ -245,8 +315,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12" style="padding: 0">
-				<div class="rightb">
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 leftlist" style="padding: 0;width:220px">
+				<div class="rightb rightmain">
 					<h5 style="margin-bottom:10px"><b>团队活动</b></h5>
 					<div class="imgcss" style="background: url('../../common/img/images/avatar1.png'); background-position: 50%;background-size: cover"></div>
 					<div>
@@ -275,6 +345,13 @@
 <script src="../../common/js/main.js"></script>
 <script src="js/designCommon.js"></script>
 <script>
+	var swiper_zz= new Swiper('.swiper-container-zz', {
+		nextButton: '.swiper-button-next',
+		prevButton: '.swiper-button-prev',
+		slidesPerView: 6,
+		spaceBetween: 0,
+		loop:true,
+	});
     function browserRedirect() {
 		var sUserAgent = navigator.userAgent.toLowerCase();
 		var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
@@ -291,10 +368,8 @@
 				spaceBetween: 40,
 			});
 		}else{
-		    var swiper = new Swiper('.swiper-container', {
-		        nextButton: '.swiper-button-next',
-		        prevButton: '.swiper-button-prev',
-		        slidesPerView: 5,
+		    var swiper = new Swiper('.swiper-container-nav', {
+		        slidesPerView: 6,
 		        spaceBetween: 0,
 		    });
 		}

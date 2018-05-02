@@ -14,14 +14,14 @@
 }
 /*我的位置nav*/
 .z_menu {
-  margin-top: 2rem;
+  margin-top: 20px;
 }
 .z_menu li {
   float: left;
   clear: right;
-  font-size: 1.2rem;
+  font-size: 12px;
   font-weight: normal;
-  padding: 0 0.1rem;
+  padding: 0 1px;
 }
 .z_menu li a {
   color: #666666;
@@ -32,14 +32,14 @@
 /*AskQuestions_a*/
 .left_layout {
   background: #fff;
-  padding: 4rem 3.2rem;
-  margin-top: 1rem;
+  padding: 40px 32px;
+  margin-top: 10px;
   padding-bottom: 100px;
   /*回答*/
   /*相关问题*/
 }
 .left_layout .questions-title {
-  font-size: 2.4rem;
+  font-size: 24px;
   font-weight: normal;
   color: #333333;
 }
@@ -79,15 +79,15 @@
 }
 /*专家推荐*/
 .right_layout {
-  margin-top: 1rem;
+  margin-top: 10px;
 }
 .right_layout .float_bar_one {
-  padding: 0 1.5rem;
+  padding: 0 15px;
   background: #fff;
 }
 .right_layout .float_bar_one .z_title {
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 15px;
   font-size: 16px;
   color: #333;
 }
@@ -137,38 +137,38 @@
   color: #00dfb9;
 }
 .right_layout .float_bar_two {
-  padding: 0 1.5rem;
+  padding: 0 15px;
   background: #fff;
 }
 .right_layout .float_bar_two .z_title {
-  margin-top: 2rem;
+  margin-top: 20px;
 }
 .right_layout .float_bar_two .z_title a {
   color: #666666;
-  font-size: 1.4rem;
+  font-size: 14px;
 }
 .right_layout .float_bar_two .z_title .f_l {
   float: left;
   clear: left;
   border-bottom: 2px solid #00dfb9;
-  padding-bottom: 0.3rem;
+  padding-bottom: 3px;
 }
 .right_layout .float_bar_two .z_title .f_r {
   float: right;
   clear: right;
-  font-size: 1.2rem;
+  font-size: 12px;
   line-height: 24px;
 }
 .right_layout .float_bar_two .z_title .f_r:hover {
   color: #00dfb9;
 }
 .right_layout .float_bar_two ul {
-  margin-bottom: 5rem;
+  margin-bottom: 50px;
 }
 .right_layout .float_bar_two ul li {
   width: 100%;
-  font-size: 1.2rem;
-  margin-top: 1.5rem;
+  font-size: 12px;
+  margin-top: 15px;
 }
 .right_layout .float_bar_two ul li a {
   color: #999999;
@@ -201,8 +201,8 @@
   display: none;
 }
 .questions_box {
-  padding-top: 5rem;
-  margin-top: 1rem;
+  padding-top: 50px;
+  margin-top: 10px;
   background: #fff;
 }
 .questions_box .title_txt {
@@ -237,8 +237,8 @@
   height: 100%;
   background-color: #f4f4f4;
   resize: none;
-  padding: 1rem 1rem;
-  font-size: 1.4rem;
+  padding: 10px 10px;
+  font-size: 14px;
   font-weight: 600;
   color: #333;
   border: none;
@@ -250,12 +250,12 @@
 .questions_box .upload_box {
   position: relative;
   height: 40px;
-  margin-top: 1rem;
+  margin-top: 10px;
 }
 .questions_box .upload_box .upload_btn {
   line-height: 40px;
   float: left;
-  font-size: 1.4rem;
+  font-size: 14px;
   font-weight: 600;
   color: #666666;
 }
@@ -268,7 +268,7 @@
   height: 30px;
   background: #00dfb9;
   border: none;
-  font-size: 1.4rem;
+  font-size: 14px;
   font-weight: 600;
   color: #ffffff;
   border-radius: 5px;
@@ -361,10 +361,10 @@
     font-weight: inherit!important;
   }
   .bottom_h {
-    margin-bottom: 3rem;
+    margin-bottom: 30px;
   }
   .z_menu {
-    padding-left: 1rem;
+    padding-left: 10px;
   }
   .right_layout {
     display: none;
@@ -376,19 +376,19 @@
     background: #fff;
   }
   .left_layout {
-    padding: 1rem 1.5rem 3rem 1.5rem;
+    padding: 10px 15px 30px 15px;
   }
   .left_layout .h1_questions {
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 16px;
   }
   .left_layout .z-tips {
-    font-size: 1.4rem;
+    font-size: 14px;
   }
   .left_layout .z-tips .z_item {
     margin-right: 0;
     display: block;
-    font-size: 1.4rem;
+    font-size: 14px;
   }
   .left_layout .z-tips .wap_fl {
     float: left;
@@ -407,19 +407,19 @@
   .left_layout .questions_box .upload_box {
     width: 90%;
     margin: 0 auto;
-    margin-top: 1rem;
+    margin-top: 10px;
   }
   .left_layout .questions_box .upload_box .submit_btn {
-    height: 2.5rem;
-    width: 6rem;
-    font-size: 1.4rem;
+    height: 25px;
+    width: 60px;
+    font-size: 14px;
   }
   .left_layout .questions_box .upload_box .upload_btn {
-    line-height: 3rem;
-    font-size: 1.4rem;
+    line-height: 30px;
+    font-size: 14px;
   }
   .left_layout .questions_box .upload_box .upload_btn img {
-    width: 2rem;
+    width: 20px;
   }
   .left_layout .questions_box .fileUploadContent {
     width: 90%;
@@ -433,11 +433,11 @@
     height: 100px;
   }
   .left_layout .questions_box .selectFileBt {
-    font-size: 1rem!important;
+    font-size: 10px!important;
     padding: 7px!important;
   }
   .left_layout .questions_box .iconfont {
-    font-size: 2.5rem!important;
+    font-size: 25px!important;
     line-height: 28px!important;
   }
   .left_layout .questions_box .type_txt {
@@ -448,16 +448,16 @@
     font-weight: inherit;
   }
   .left_layout .questions-title {
-    font-size: 1.8rem;
+    font-size: 18px;
     margin-top: 0;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
   }
   .side_ht {
     overflow: hidden;
   }
   .right_content .tips_top .z_right {
-    font-size: 1.4rem;
+    font-size: 14px;
   }
   .right_content .tips_top {
     margin-top: 2px!important;

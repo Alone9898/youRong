@@ -112,13 +112,20 @@ img {
 }
 .conttitle {
   background: #ffffff;
-  padding: 20px 0;
+  padding: 40px 32px;
 }
 .conttitle h3 {
   margin: 0;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom:30px;
 }
+.swiper-container-zz a{
+  display: block;
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+}
+
 .btn-success {
   color: #fff;
   background-color: #00dfb9;
@@ -192,7 +199,11 @@ img {
 .contmain {
   margin-top: 20px;
   background: #ffffff;
-  padding: 20px;
+  padding: 32px;
+}
+.hover_bg{
+  width:210px;
+  height:200px;
 }
 .mycont{margin-bottom:20px;}
 .contmain .contleft {
@@ -223,12 +234,18 @@ img {
 }
 .contmain .contimg div {
   height: 190px;
-  padding: 0 10px;
+  padding: 0;
+  margin-right:18px;
+}
+.contmain .contimg div:last-child
+{
+  margin-right:0;
 }
 .contmain .contimg p {
   width: 100%;
   height: 100%;
 }
+
 .swiper-button-nextmy,
 .swiper-container-rtl .swiper-button-next {
   background-image: url('../../../common/img/icon/ricon.png');
@@ -634,10 +651,10 @@ img {
   display: table-cell;
   vertical-align: middle;
   position: absolute;
-  width: 91%!important;
+  width: 100%!important;
   height: 100%;
   top:60px;
-  left: 10px;
+  left: 0;
   right: 0;
   bottom:0;
   padding: 0 46px 0 30px!important;
@@ -1248,7 +1265,7 @@ img {
   color: #999;
 }
 .rightxinfo b {
-  font-size: 2.8rem;
+  font-size: 28px;
   color: #ffffff;
 }
 .zhead a {

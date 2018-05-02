@@ -28,11 +28,86 @@ btn{
     font-size:16px!important;
 }
 
-.swiper-pagination-bullet-active {
-    background: #00dfb9!important;
+.swiper-pagination1 {
+    position: absolute;
+    text-align: center;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    z-index: 10;
 }
+
+
+
 .lcss>h4>b,.myswipert{
     font-size:16px!important;
+}
+/*footer*/
+.foottop{
+    background: #f4f4f4;
+    width:100%;
+    height:285px;
+}
+.footbottom{
+    background: #4e4848;
+    width:100%;
+    height:175px;
+}
+.footmain{
+    width:1200px;
+    margin: 0 auto;
+    padding-top: 62.5px;
+}
+.footmain dl{
+    width:9.5%;
+}
+.footmain dd{
+    margin:4px 0;
+}
+.footmain dl a{
+    color:#666;
+}
+.footmain p{
+    wodth:100%;
+    text-align: center;
+    color:#999;
+    width:130px;
+}
+.footmain1{
+    width:80%;
+    margin:0 auto;
+}
+.footp p{
+    width:100%;
+    color:#fff;
+    margin: 12px 0;
+}
+.wc1{
+    color:#f4f4f4!important;
+    font-size:12px;
+}
+.foul{
+    width:90%;
+}
+.foul li{
+    width:10%;
+    border-right:1px solid #fff;
+    text-align: center;
+}
+.wc{
+    color:#fff;
+}
+.footbor{
+    position: absolute;
+    top: 3px;
+    left: 85px;
+    width: 1px;
+    background: #999999;
 }
 .san{
     color:#999!important;
@@ -101,20 +176,19 @@ input{outline: none}
     color: #666666;
 }
 /* header */
-.l_header{
-   /* height: 9.6rem;*/
-    height: 557px;
-}
+
 .l_header .navbar{
     margin-bottom: 0;
     z-index: 99;
 }
 .l_header .navbar-default{
-    background-color: rgba(0, 0, 0, 0.6);    height: 111px;
-    border:none;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 111px;
+    border: none;
     border-radius: inherit;
-    position: relative;
-    top: -4px;
+    position: absolute;
+    top: 33px;
+    width: 100%;
 }
 .l_header .navbar-default .container{
     height: 100%;
@@ -123,7 +197,7 @@ input{outline: none}
     position: relative;   
 }
 #navbar-menu{float:right;}
-.navbar-header{ margin-top: 30px;}
+.navbar-header{ margin-top: 23px;}
 .l_header .navbar-default .navbar-nav{
   
 }
@@ -132,7 +206,7 @@ input{outline: none}
 }
 .l_header .navbar-default .navbar-nav>li>a{
     color: white;
-    font-size: 1.6rem;
+    font-size: 16px;
     text-align: center;
     height: 100%;
     font-weight: normal;
@@ -146,20 +220,31 @@ input{outline: none}
 .l_header #person .nav>li{
    width:100%;
 }
+.swiper-pagination-bullet-active {
+    width:14px;
+    height:8px;
+    background: #00dfb9!important;
+    -webkit-border-radius:5px;
+    -moz-border-radius:px;
+    border-radius:px;
+}
+.swiper-pagination-bullet {
+    background: rgba(255,255,255,.4);
+    opacity:1;
+
+}
 .l_header .navbar-default .nav>li{
     height: 81px;
 }
 .l_header .navbar-default .nav li:hover{
-    border-bottom:4px solid #B2B2B2;
+    border-bottom:4px solid #fff;
 }
 .l_header .navbar-default .nav li a:hover{
-    color: #00dfb9;
+    color: #fff;
 }
 .l_header .header-swiper-container{
     width: 100%;
-    height: 560px;
     position: relative;
-    top: -9.6rem;
 }
 .l_header .header-swiper-container .swiper-slide img{
     width: 100%;
@@ -198,12 +283,12 @@ input{outline: none}
 /*footer*/
 .footer{
     background-color: #4e4848;
-    height: 21.4rem;
+    height: 200px;
 }
 .footer .footerBox{
     color: white;
-    padding-top: 7.5rem;
-    font-size: 1.4rem;
+    padding-top: 75px;
+    font-size: 14px;
     text-align: center;
 }
 .footer .footerBox span{
@@ -217,19 +302,19 @@ input{outline: none}
 .footer .footerBox span a{
     cursor: pointer;
     color: white;
-    font-size: 1.4rem;
+    font-size: 14px;
 }
 .footer .footerBox span a:hover{
     color: #2ccaaf;
 }
 .footer .Copy{
-    font-size: 1.4rem;
-    padding:3rem 0;
+    font-size: 14px;
+    padding:30px 0;
     color:#fff;
 }
 .modal_tip{
     background-color: rgba(0, 0, 0, 0.3);
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 999;
     left: 0;
@@ -240,7 +325,7 @@ input{outline: none}
     width: 380px;
     height: 400px;
     margin: 0 auto;
-    margin-top:20rem;
+    margin-top:200px;
     background-color: #ffffff;
     border: solid 1px #dcdcdc;
     color: #999999;
@@ -261,7 +346,7 @@ input{outline: none}
     padding-top: 14px;
     padding-bottom: 36px;
     text-align: center;
-    font-size: 2rem;
+    font-size: 20px;
     font-weight: normal;
     font-stretch: normal;
     line-height: 12px;
@@ -305,7 +390,7 @@ input{outline: none}
     text-align: center;
     line-height: 38px;
     color: white;
-    font-size: 1.6rem;
+    font-size: 16px;
     font-weight: inherit;
     margin: 0 auto;
     margin-bottom: 25px;
@@ -339,6 +424,20 @@ input{outline: none}
     }
 }
 @media screen and (max-width: 768px) {
+    .footerbox{
+        display: none;
+    }
+    .l_header .header-swiper-container .swiper-slide img {
+        width: 100%;
+        min-height: 180px;
+    }
+    .l_header .navbar-default .navbar-nav>li>a {
+        color: white;
+        font-size: 14px!important;
+        text-align: left!important;;
+        height: 100%;
+        font-weight: normal;
+    }
     .l_header .navbar-default .nav li:hover {
         border-bottom: none!important;
 
@@ -391,8 +490,7 @@ input{outline: none}
         margin-top: 120px!important;
     }
     .l_header{
-        height: 174px!important;
-        position: relative;    margin-bottom: 20px;
+        position: relative;
     }
     .l_header .navbar-default .navbar-collapse, .navbar-default .navbar-form{
         width: 120px;
@@ -404,14 +502,15 @@ input{outline: none}
     .l_header .navbar-default .navbar-nav>li>a{
         color: #666!important;
     }
-    .l_header .navbar-default .navbar-nav{
-        
+    .l_header .navbar-default .navbar-nav li{
+        border: none!important;
     }
     .l_header .navbar-default .nav>li{
          height: auto!important;
     }
     .l_header .navbar-default{
         height: 50px!important;
+        top: 0!important;
     }
     .l_header .navbar-toggle{
         float: left!important;
@@ -428,12 +527,12 @@ input{outline: none}
         height:auto!important;
     }
     .l_header .header-swiper-container{
-        height: 240px!important; 
+        height: 180px!important;
     }
     .l_header .person{
         display: block!important;
     }
     .footer .footerBox{
-        padding-top: 4.8rem!important;
+        padding-top: 48px!important;
     }
 }
