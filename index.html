@@ -79,9 +79,7 @@
                 <div class="subtitle">优荣直播展现</div>
             </div>
             <div class="col-xs-12 banner">
-                <!--<img src="common/img/images/banner1.jpg" alt="">-->
-                <iframe src ="vr/index.html" width="100%" height="500">
-                </iframe>
+                <img src="common/img/images/banner1.jpg" alt="">
             </div>
         </div>
         <!--优荣轮播-->
@@ -93,9 +91,12 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide pd_15" v-for="(item,index) in shuffling">
                                     <div class="tpList video">
-                                        <video class="myvideo" controls poster="common/img/images/sp.png">
+                                        <video class="myvideo" poster="common/img/images/sp.png">
                                             <source :src="item.bg_img" type="video/mp4">
                                         </video>
+                                        <div class="videobtn" onclick="videoplay(this)">
+                                            <img src="common/img/images/bf.png" />
+                                        </div>
                                         <!--<img :src="item.icon_img" alt="" class="fa-play-circle" @click="playClick(index)">-->
                                     </div>
                                     <div class="dv_title">{{item.title}}</div>
@@ -311,7 +312,6 @@
             </div>
         <!--footer-->
         <footer-model></footer-model>
-<<<<<<< HEAD
         <div class="footermobile" style="display: none;">
             <div class="footermobiletop">
                 <h4>服务热线</h4>
@@ -341,9 +341,6 @@
                 <div style="padding-bottom:20px;">Copyright © 2016 - 2018 加速器.com 版权所有</div>
             </div>
         </div>
-=======
-
->>>>>>> f9acdeb695bf6f3e216c7f87815ef965228184b4
     </div>
 
 <script src="common/js/jquery-1.11.3.js"></script>

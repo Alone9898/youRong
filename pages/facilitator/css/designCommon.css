@@ -194,6 +194,10 @@ img {
   background: #ffffff;
   padding: 20px;
 }
+.contmain:hover,.mainbox:hover{
+  background: #eee;
+  cursor: pointer;
+}
 .mycont{margin-bottom:20px;}
 .contmain .contleft {
   width: 100px;

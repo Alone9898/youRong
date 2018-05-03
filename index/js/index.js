@@ -54,7 +54,6 @@ $(function () {
         $(this).text('收起')
             $('.wap_ht').toggleClass('add_ht')
     });
-
     function boot(){
         //加载页面时执行一次
         changeMargin();
@@ -84,4 +83,8 @@ $(function () {
     }
     boot();
 });
+//点击视频
+function videoplay(){
+    
+}
 
