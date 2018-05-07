@@ -286,6 +286,8 @@ img {
   background-image: url('../../../common/img/icon/licon.png');
 }
 @media screen and (max-width: 768px) {
+  .rightmain{
+    display: none;}
   body {
     overflow-x: hidden;
   }
@@ -653,10 +655,7 @@ img {
     height: 128px!important;
 }
   .container1{margin-top:0!important;}
-  .myh > div {
-    font-size: 16px;
-    margin-right: 33px!important;
-  }
+
   .mip {
     width: 100%;
   }
@@ -891,9 +890,11 @@ img {
 
 @media screen and (max-width: 320px) {
   .myh > div {
-    font-size: 12px!important;
-    margin-right: 36px!important;
+    font-size: 12px !important;
+    width: 33.333% !important;
+    margin-right: 0 !important;
   }
+
   .ji {
     margin: 0 1px;
     padding: 0px 8px;
@@ -906,6 +907,11 @@ img {
   .myh > div {
     font-size: 12px!important;
     margin-right: 36px!important;
+  }
+  .myh > div {
+    font-size: 12px !important;
+    width: 33.333% !important;
+    margin-right: 0 !important;
   }
 }
 /**************************************************************************************************/

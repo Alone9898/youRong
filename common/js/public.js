@@ -83,7 +83,7 @@ Vue.component('sitenav', {
                 </div>\
             </div>\
         </nav>\
-            <div class="swiper-container header-swiper-container pswiper">\
+            <div class="swiper-container header-swiper-container pswiper sweipr_radio">\
                 <div class="swiper-wrapper ">\
                     <div class="swiper-slide"><img src="../../common/img/images/logo_banner.png" width="100%" ></div>\
                     <div class="swiper-slide"><img src="../../common/img/images/logo_banner.png" width="100%" ></div>\
@@ -91,7 +91,7 @@ Vue.component('sitenav', {
                 </div>\
                 <div class="swiper-pagination header-pagination"></div>\
             </div>\
-            <div class="swiper-container header-swiper-container mswiper" style="display:none">\
+            <div class="swiper-container header-swiper-container mswiper sweipr_radio" style="display:none">\
                 <div class="swiper-wrapper ">\
                     <div class="swiper-slide" ><img src="../../common/img/images/logo_banner.png" width="240px" ></div>\
                     <div class="swiper-slide"><img src="../../common/img/images/logo_banner.png" width="240px" ></div>\

@@ -52,7 +52,7 @@
 /*.....................*/
 .web-config {
     padding-top: 15px;
-    width: 220px;
+    width: 210px;
     margin-left: 20px;
     float: left;
     background: white;
@@ -228,6 +228,7 @@
 }
 .web-config .fixbiox {
     width: 190px;
+    height: 198px;
     margin-left: 12px;
     border: solid 1px #e5e5e5;
     margin-bottom: 12px;
@@ -238,14 +239,12 @@
 .web-config .fixbiox ul li {
     text-align: left;
     margin-top: 12px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
     width: 158px;
     cursor: pointer;
-
-}
-.sl{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
 }
 .web-config .fixbiox ul li span {
     padding-right: 10px;

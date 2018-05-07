@@ -23,6 +23,27 @@ a:hover{color:#333;}
 .clearfix {
   *zoom: 1;
 }
+.mjhmainimg{
+  position: relative;
+}
+.mjhmainimg:hover .hovbox{
+  height:100%;
+  padding:100px 20px 0 20px;
+}
+.hovbox{
+  position: absolute;
+  bottom:0;
+  width:100%;
+  height:0;
+  -webkit-transition: .7s ;
+  -moz-transition: .7s ;
+  -ms-transition: .7s ;
+  -o-transition: .7s ;
+  transition: .7s ;
+  color:#fff;
+  text-align:center;
+  background: rgba(0,0,0,.6);
+}
 .sl {
   overflow: hidden;
   text-overflow: ellipsis;

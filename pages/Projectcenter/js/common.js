@@ -140,14 +140,12 @@ var app = new Vue({
 
         //视频
         clickfun(ev,a){
-            
             $(ev.target).addClass('myacbgd').parent().siblings().find('a').removeClass('myacbgd');
             $('.'+a+'').parent().fadeIn();
             $('.'+a+'').parent().siblings().hide();
             console.log($('.'+a+''));
         },
         playvideo(ev,index){
-
             var videoobj = document.getElementsByClassName("videoobj")[index];
             console.log(videoobj);
             if(videoobj.paused){

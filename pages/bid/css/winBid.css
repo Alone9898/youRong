@@ -29,7 +29,6 @@
   padding-right: 33px;
   letter-spacing: 0px;
   color: #232323;
-  font-size: 12px;
 }
 .container_box .filter .areabox ul {
   width: 517px;
@@ -38,7 +37,6 @@
   margin-left: 20px;
   float: left;
   cursor: pointer;
-  font-size: 12px;
 }
 .container_box .filter .areabox ul li:hover {
   color: #0ab7c7;

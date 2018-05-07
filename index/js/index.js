@@ -83,8 +83,5 @@ $(function () {
     }
     boot();
 });
-//点击视频
-function videoplay(){
-    
-}
+
 

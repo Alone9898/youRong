@@ -12,6 +12,9 @@ a{text-decoration:none;}
 html,body{
     font-family:'微软雅黑', Helvetica Neue, Helvetica, Arial, sans-serif;
 }
+.swiper-container_zll img{
+    min-height: 200px;
+}
 .container{
     min-width: 1200px!important;
 }
@@ -215,23 +218,23 @@ input{outline: none}
 #navbar-menu{margin-top:30px;}
 .l_header #person .navbar-nav>li>a {
     padding: 9px 0;
-
 }
 .l_header #person .nav>li{
    width:100%;
 }
-.swiper-pagination-bullet-active {
+.sweipr_radio .swiper-pagination-bullet-active {
     width:14px;
     height:8px;
     background: #00dfb9!important;
     -webkit-border-radius:5px;
-    -moz-border-radius:px;
-    border-radius:px;
+}
+.swiper-pagination-bullet-active {
+    background: #00dfb9!important;
+    -webkit-border-radius:5px;
 }
 .swiper-pagination-bullet {
     background: rgba(255,255,255,.4);
     opacity:1;
-
 }
 .l_header .navbar-default .nav>li{
     height: 81px;
@@ -410,6 +413,10 @@ input{outline: none}
     background-color: #0ab7c7!important;
     color: white!important;
 }
+.l_header .logo img{
+    width: 200px;
+    margin-top: 10px;
+}
 /*媒介查询*/
 @media screen and (max-width: 1200px) {
     .footer .footerBox span{
@@ -424,6 +431,27 @@ input{outline: none}
     }
 }
 @media screen and (max-width: 768px) {
+    .scroll-box a{
+        width:180px!important;
+    }
+    .tongzhiicon{
+        position: absolute;
+    }
+    .tongzhicont {
+        padding-left: 42px!important;
+    }
+    .tongzhi{
+        width:100%!important;
+    }
+    .leftlist,.switch_box{
+        display: none!important;
+    }
+    .myw,.mip,.infoleft,.ww{
+        width:100%!important;
+    }
+    .l_header{
+        position: relative;
+    }
     .footerbox{
         display: none;
     }
@@ -470,7 +498,7 @@ input{outline: none}
     top: 0;}
     .mswiper1{
         position: absolute;
-        bottom: 20px;
+        bottom: 40px;
         z-index: 1;
         left: 50%;
         margin-left: -137px;
@@ -490,15 +518,8 @@ input{outline: none}
         margin-top: 120px!important;
     }
     .l_header{
-<<<<<<< HEAD
         position: relative;
-=======
-<<<<<<< HEAD
-        position: relative;
-=======
-        position: relative;    margin-bottom: 20px;
->>>>>>> 6c0e98c80d70925757d7e6a059558e7579be2081
->>>>>>> f9acdeb695bf6f3e216c7f87815ef965228184b4
+        margin-bottom: 20px;
     }
     .l_header .navbar-default .navbar-collapse, .navbar-default .navbar-form{
         width: 120px;

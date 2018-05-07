@@ -10,8 +10,11 @@
     <link href="common/img/icon/logo-icon.png" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="index/css/bootstrap1.min.css">
     <link rel="stylesheet" type="text/css" href="common/css/swiper.min.css">
+    <link href="common/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="common/css/base.css">
     <link rel="stylesheet" type="text/css" href="index/css/index.css">
+    <link rel="stylesheet" type="text/css" href="index/css/style.css">
+
     <script src="common/js/swiper.min.js"></script>
     <!--[if lte IE 9]>
     <script>window.location.href='http://cdn.dmeng.net/upgrade-your-browser.html?referrer='+location.href;</script>
@@ -21,6 +24,38 @@
     </style>
 </head>
 <body>
+<div class="htmleaf-container">
+    <div class="wrapper">
+        <i class="fa fa-times-circle-o"></i>
+        <div class="js-video">
+            <video class="js-media" poster="index/video/sintel.jpg">
+                <source src="" type="" class="video-src"/>
+                <p>你的浏览器不支持 HTML5 Video。</p>
+            </video>
+            <i data-playPause class="playPause fa fa-play ui-icon"><span></span></i>
+            <div class="ui">
+                <div>
+                    <div data-progress class="progress">
+                        <div data-buffer class="progress-buffer"></div>
+                        <div data-time class="progress-time"></div>
+                    </div><!-- progress -->
+                </div>
+                <div>
+                    <span class="timeDisplay"><i data-currentTime>0:00</i> / <i data-duration>0:00</i></span>
+                </div>
+                <div>
+                    <i data-mute class="fa fa-volume-up ui-icon"></i>
+                </div>
+                <div>
+                    <div data-volume="100" class="volumeControl"><span class="ui-slider-handle"></span></div>
+                </div>
+            </div><!-- ui -->
+            <i data-fullscreen class="fullscreen iconicfill-fullscreen" title="fullscreen"></i>
+
+        </div><!-- js-video -->
+
+    </div><!-- wrapper -->
+</div>
 <div class="container-fluid" id="app"  v-cloak>
         <!--header-->
         <sitenav></sitenav>
@@ -78,35 +113,49 @@
                 <div class="title">优荣直播</div>
                 <div class="subtitle">优荣直播展现</div>
             </div>
-            <div class="col-xs-12 banner">
-                <img src="common/img/images/banner1.jpg" alt="">
-            </div>
         </div>
         <!--优荣轮播-->
-        <div class="bg_color" style="margin:40px 0">
-            <div class="container container_w hidden_wap ">
-                    <div class="row container_inner lb" >
-                        <!-- Swiper -->
-                        <div class="swiper-container7">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide pd_15" v-for="(item,index) in shuffling">
-                                    <div class="tpList video">
-                                        <video class="myvideo" poster="common/img/images/sp.png">
-                                            <source :src="item.bg_img" type="video/mp4">
-                                        </video>
-                                        <div class="videobtn" onclick="videoplay(this)">
-                                            <img src="common/img/images/bf.png" />
-                                        </div>
-                                        <!--<img :src="item.icon_img" alt="" class="fa-play-circle" @click="playClick(index)">-->
-                                    </div>
-                                    <div class="dv_title">{{item.title}}</div>
-                                </div>
+        <div class="bg_color">
+                <div class="tw-bg"></div>
+            <div class="container">
+                <div class="video-content">
+                    <div class="top_left">
+                        <div class="first-video">
+                            <img src="common/img/images/z1.png" alt="" data-video="index/video/240.mp4" class="video-itm">
+                            <div class="video-time">00:00</div>
+                        </div>
+                        <div class="bottom_img">
+                            <div class="item-list">
+                                <img src="common/img/images/z4.png" alt="" data-video="index/video/sintel.mp4" class="video-itm">
+                                <div class="video-time">00:00</div>
+                                <div class="title-txt">我是大直播我是大直播</div>
                             </div>
-                            <!-- Add Arrows -->
-                            <img  src="common/img/images/left.png" class="swiper-button-next">
-                            <img  src="common/img/images/right.png" class="swiper-button-prev">
+                            <div class="item-list pd_lr">
+                                <img src="common/img/images/z4.png" alt="" data-video="index/video/240.mp4" class="video-itm">
+                                <div class="video-times video-time title-txts">00:00</div>
+                                <div class="title-txt">我是大直播我是大直播</div>
+                            </div>
+                            <div class="item-list">
+                                <img src="common/img/images/z4.png" alt="" data-video="index/video/sintel.mp4" class="video-itm">
+                                <div class="video-time">00:00</div>
+                                <div class="title-txt">我是大直播我是大直播</div>
+                            </div>
                         </div>
                     </div>
+                    <div class="top_right ">
+                        <div class="right-item img-bottom">
+                            <img src="common/img/images/z2.png" alt=""  data-video="index/video/sintel.mp4" class="video-itm">
+                            <div class="video-times video-time">00:00</div>
+                            <div class="title-txt">我是大直播我是大直播</div>
+                        </div>
+                        <div class="right-item">
+                            <img src="common/img/images/z3.png" alt="" data-video="index/video/240.mp4" class="video-itm">
+                            <div class="video-times video-time">00:00</div>
+                            <div class="title-txt">我是大直播我是大直播</div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
             <div class="container container_w hidden_pc">
                 <div class="row container_inner wap_ht" >
@@ -117,7 +166,6 @@
                                 <video class="myvideo" controls poster="common/img/images/sp.png">
                                     <source :src="item.bg_img" type="video/mp4">
                                 </video>
-                                <!--<img :src="item.icon_img" alt="" class="fa-play-circle" @click="playClick(index)">-->
                             </div>
                             <div class="dv_title">{{item.title}}</div>
                         </div>
@@ -180,14 +228,22 @@
         <!--专业诠释-->
         <div class="bg_card">
             <div class="container">
+
                 <div class="row pc_interpretation">
                     <div class="title">专业诠释</div>
                     <div class="subtitle">我们的服务我们的服务我们的服务我们的服务</div>
+                    <div class="bg_cards">
+
+                    </div>
                     <ul class="container_x">
                         <li v-for="item in list_inet">
                             <img :src="item.bg_img" alt="">
                             <div class="center_box">
-                                品牌与装修的关系
+                                <div class="center_boxs">
+                                    <img src="common/img/icon/left-rad.png" alt="" class="left-jiao">
+                                    <img src="common/img/icon/right-rad.png" alt="" class="right-jiao">
+                                    品牌与装修的关系
+                                </div>
                             </div>
                         </li>
                     </ul>
@@ -343,6 +399,7 @@
         </div>
     </div>
 
+
 <script src="common/js/jquery-1.11.3.js"></script>
 <script src="common/js/bootstrap.min.js"></script>
 <script src="common/js/vue.js"></script>
@@ -351,7 +408,9 @@
 <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
 <script src="common/js/distpicker.data.js"></script>
 <script src="common/js/distpicker.js"></script>
-<script src="common/js/main.js"></script>
+<script src="common/js/distpicker.js"></script>
+<script src="index/js/vedio.js"></script>
+<script src="index/js/modernizr.min.js"></script>
 <script src="index/js/index.js"></script>
 <script>
 
@@ -367,7 +426,18 @@
                 var a=$(id).val(cookie)
             }
         }($));
-        $.cookies('.login','cookieName','.type_text')
+        $.cookies('.login','cookieName','.type_text');
+        $('.video-content .video-itm').click(function(){
+            var data=$(this).attr('data-video');
+            var img=$(this).attr('src');
+             var a=$('.video-src').prop('src',data);
+            $('video').load();
+             $('.js-media').attr('poster',img);
+            $('.htmleaf-container').addClass('add-active')
+        })
+        $('.fa-times-circle-o').click(function(){
+            $('.htmleaf-container').removeClass('add-active')
+        })
     })
 </script>
     <script>
@@ -468,13 +538,11 @@
 
             },
             methods:{
-                playClick(index){
-                   id= document.getElementsByClassName('myvideo')[index];
-                   id.play();
-                },
+
             },
         });
 
     </script>
+
 </body>
 </html>

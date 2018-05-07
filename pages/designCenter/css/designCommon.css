@@ -326,7 +326,7 @@ img {
     margin-bottom: 10px;
   }
   .contmain .contleft {
-    width: 65px;
+    width: 57px;
     height: 65px;
     margin-right: 10px;
   }
@@ -636,6 +636,8 @@ img {
   padding: 0 36px;
 }
 @media screen and (max-width: 768px) {
+  .mingjiahuibox{
+    display: none;}
   p,a,span,b{font-size:14px!important;}
   .title .myh {
     height: 58px;

@@ -83,7 +83,7 @@ Vue.component('sitenav', {
                 </div>\
             </div>\
         </nav>\
-           <div class="swiper-container_zll" style="overflow:hidden;position:relative">\
+           <div class="swiper-container_zll sweipr_radio" style="overflow:hidden;position:relative">\
                 <div class="swiper-wrapper">\
                 <div class="swiper-slide"><img src="common/img/images/banner1.jpg" width="100%" ></div>\
                 <div class="swiper-slide"><img src="common/img/images/banner1.jpg" width="100%" ></div>\
